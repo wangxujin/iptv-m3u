@@ -1,7 +1,8 @@
 {
-  "url": "https://iptv.cqshushu.com/",
+  "url": "https://blog.cqshushu.com/multicast-iptv",
   "request_interval_seconds": 15,
-  "timeout_seconds": 30,
+  "timeout_seconds": 60,
+  "max_attempts": 3,
   "max_pages_per_province": 30,
   "max_servers_per_operator": 5
 }
