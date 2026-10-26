@@ -32,9 +32,11 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+      - name: Install source dependency
+        run: python -m pip install pycryptodome==3.23.0
       - name: Update and validate
         run: |
-          python rtp/b.py
+          python -u rtp/b.py
           python rtp/b.py --check
       - name: Upload lists
         uses: actions/upload-artifact@v4
