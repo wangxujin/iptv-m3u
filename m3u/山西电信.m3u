@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="http://epg.51zmt.top:8000/e.xml.gz"
+#EXTM3U x-tvg-url="https://s.102031.xyz/xml/a1999882e1.xml.gz"
 #EXTINF:-1 tvg-id="CCTV16高清" group-title="央视",CCTV16高清
 http://110.177.180.47:5555/rtp/239.1.1.122:8122
 #EXTINF:-1 tvg-id="CCTV世界地理高清" group-title="央视",CCTV世界地理高清
