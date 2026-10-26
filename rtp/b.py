@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""直接读取源站，按省份＋运营商合并。"""
+"""直接读取源站，按省份＋运营商合并，按 lemonTV 规则映射频道分组。"""
 from __future__ import annotations
 
 import argparse
@@ -35,9 +35,10 @@ DEFAULT_README = """# IPTV M3U
 
 ## 本地使用
 
-需要 Python 3.10+，无第三方依赖。
+需要 Python 3.10+。在线采集依赖 PyCryptodome，Actions 会自动安装。
 
 ```sh
+python3 -m pip install pycryptodome==3.23.0
 python3 rtp/b.py           # 从源站采集并生成
 python3 rtp/b.py --offline # 使用已有缓存重建
 python3 rtp/b.py --check   # 校验生成结果
