@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""直接读取源站，按省份＋运营商合并，按 lemonTV 规则映射频道分组。"""
+"""直接读取源站，按省份＋运营商合并。"""
 from __future__ import annotations
 
 import argparse
