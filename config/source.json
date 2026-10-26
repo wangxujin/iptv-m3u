@@ -1,0 +1,7 @@
+{
+  "url": "https://iptv.cqshushu.com/",
+  "request_interval_seconds": 15,
+  "timeout_seconds": 30,
+  "max_pages_per_province": 30,
+  "max_servers_per_operator": 5
+}
