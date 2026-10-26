@@ -1,0 +1,60 @@
+name: Update IPTV Lists
+
+on:
+  workflow_dispatch:
+  schedule:
+    # UTC 04:00 / 17:00，即北京时间每天 12:00 / 次日 01:00。
+    - cron: "0 4,17 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "rtp/**"
+      - "config/**"
+      - "docs/README.template.md"
+      - ".github/workflows/update-rtp.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-iptv-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Update and validate
+        run: |
+          python rtp/b.py
+          python rtp/b.py --check
+      - name: Upload lists
+        uses: actions/upload-artifact@v4
+        with:
+          name: iptv-m3u
+          path: |
+            m3u/
+            manifest.json
+            README.md
+          if-no-files-found: error
+      - name: Commit generated changes
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- m3u manifest.json data/sources.json README.md
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore: update province and operator playlists"
+            git push origin "HEAD:$TARGET_BRANCH"
+          fi
