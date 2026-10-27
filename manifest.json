@@ -22,11 +22,11 @@
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
-        "fetched_at": "2026-10-27T09:26:32+00:00",
+        "fetched_at": "2026-10-27T20:18:59+00:00",
         "max_servers_per_operator": 5,
         "servers": [
           {
-            "host": "114.223.20.79:4022",
+            "host": "114.128.20.79:4022",
             "channels": 138,
             "sha256": "0a8aad3229952568d209cfdd9dd38faff280410c61b813069e5a705ae921ef88"
           }
@@ -50,16 +50,16 @@
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
-        "fetched_at": "2026-10-27T09:26:32+00:00",
+        "fetched_at": "2026-10-27T20:18:59+00:00",
         "max_servers_per_operator": 5,
         "servers": [
           {
-            "host": "117.87.23.154:4022",
+            "host": "117.92.23.154:4022",
             "channels": 160,
             "sha256": "ac2f095376b0aa394dcb9ce34dc20aad7d8535bc745a4ee00b3f2d2fea683e90"
           },
           {
-            "host": "60.20.60.19:8000",
+            "host": "60.96.60.19:8000",
             "channels": 160,
             "sha256": "67d24c8adb9c51b070554b0b5a2affc7c2664a833f3ed6d1f71173fe818f1a24"
           }
@@ -96,48 +96,38 @@
       "retained": true
     },
     "山西联通": {
-      "input_channels": 925,
-      "channels": 920,
-      "duplicates_removed": 5,
+      "input_channels": 555,
+      "channels": 552,
+      "duplicates_removed": 3,
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "央视": 10,
-        "卫视": 340,
-        "其它": 415,
-        "央视专版": 155
+        "央视": 6,
+        "卫视": 204,
+        "其它": 249,
+        "央视专版": 93
       },
-      "bytes": 107994,
-      "sha256": "2e311e403c9dadd5efeb2b4f58edd625702e8f8b8fc8d8ccb909c358f1ba94ce",
+      "bytes": 65138,
+      "sha256": "a44189f3ef878bfa458660a1b50825d0740a52fb29ba47d7d21df1c8775aac16",
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
-        "fetched_at": "2026-10-27T09:26:32+00:00",
+        "fetched_at": "2026-10-27T20:18:59+00:00",
         "max_servers_per_operator": 5,
         "servers": [
           {
-            "host": "118.35.107.10:8085",
+            "host": "171.121.116.202:9999",
             "channels": 185,
-            "sha256": "5af1d040e9ac0a46d66dadf75bdf695b0e565ebfc21472210a62443d7892c7a8"
+            "sha256": "cb6fa3bbd164cd593df5718f245d670f684dc6e7073f08b464e028d39c82aabc"
           },
           {
-            "host": "183.198.98.234:4022",
-            "channels": 185,
-            "sha256": "356ea07b5c46bc7c833f31dc4b02f1f71e48386dfc2926ba2e9efe6aed6dbf2e"
-          },
-          {
-            "host": "124.107.232.26:8082",
+            "host": "124.70.232.26:8082",
             "channels": 185,
             "sha256": "146ef59d68cd7106e78bb791caad5a70e11fd577c14096a80b952222bf761477"
           },
           {
-            "host": "60.140.72.117:8001",
+            "host": "183.138.98.234:4022",
             "channels": 185,
-            "sha256": "3c0b0f7ed3b3bc4f52921726616c6d8c52c770548219aa9db1b19b6c60dd625d"
-          },
-          {
-            "host": "171.89.116.202:9999",
-            "channels": 185,
-            "sha256": "cb6fa3bbd164cd593df5718f245d670f684dc6e7073f08b464e028d39c82aabc"
+            "sha256": "356ea07b5c46bc7c833f31dc4b02f1f71e48386dfc2926ba2e9efe6aed6dbf2e"
           }
         ]
       },
@@ -159,16 +149,16 @@
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
-        "fetched_at": "2026-10-27T09:26:32+00:00",
+        "fetched_at": "2026-10-27T20:18:59+00:00",
         "max_servers_per_operator": 5,
         "servers": [
           {
-            "host": "42.191.252.7:9008",
+            "host": "42.98.252.7:9008",
             "channels": 133,
             "sha256": "572ca40de10196cae9b50a96c7069ff8784f52fdf8d620fb80f56c6ab6446dec"
           },
           {
-            "host": "1gx.wifi98.com:9001",
+            "host": "1av.wifi98.com:9001",
             "channels": 133,
             "sha256": "9d1e76f93099b426ef7ce3b949676ef25576e38002537637b1836ef70eae369c"
           }
@@ -192,18 +182,18 @@
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
-        "fetched_at": "2026-10-27T09:26:32+00:00",
+        "fetched_at": "2026-10-27T20:18:59+00:00",
         "max_servers_per_operator": 5,
         "servers": [
           {
-            "host": "wda.rogerxlj.top:9997",
-            "channels": 203,
-            "sha256": "09bef97b53cf5fa0270f5d879ae1efea69784511649aa64088c171836e21a946"
-          },
-          {
-            "host": "wdx.rogerxlj.top:9998",
+            "host": "wjr.rogerxlj.top:9998",
             "channels": 203,
             "sha256": "ca479cf6dd4fe1726684b0ed4ed8b12dc4b24e11fb57b12657bb22167cfa42af"
+          },
+          {
+            "host": "wet.rogerxlj.top:9997",
+            "channels": 203,
+            "sha256": "09bef97b53cf5fa0270f5d879ae1efea69784511649aa64088c171836e21a946"
           }
         ]
       },
@@ -235,7 +225,7 @@
           }
         ]
       },
-      "retained": false
+      "retained": true
     },
     "安徽电信": {
       "input_channels": 200,
@@ -253,11 +243,11 @@
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
-        "fetched_at": "2026-10-27T09:26:32+00:00",
+        "fetched_at": "2026-10-27T20:18:59+00:00",
         "max_servers_per_operator": 5,
         "servers": [
           {
-            "host": "114.214.215.186:8888",
+            "host": "114.72.215.186:8888",
             "channels": 200,
             "sha256": "f9e1e8add77ef8a5063ef9420fc6bd082d7a165c4ecbaea1a4102e9ae3e178dd"
           }
@@ -281,11 +271,11 @@
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
-        "fetched_at": "2026-10-27T09:26:32+00:00",
+        "fetched_at": "2026-10-27T20:18:59+00:00",
         "max_servers_per_operator": 5,
         "servers": [
           {
-            "host": "27.225.198.20:10000",
+            "host": "27.90.198.20:10000",
             "channels": 114,
             "sha256": "062c0d343b926bb2724d973ee729a6f17dade61beecf0e4d806eaab7e7c71371"
           }
@@ -309,11 +299,11 @@
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
-        "fetched_at": "2026-10-27T09:26:32+00:00",
+        "fetched_at": "2026-10-27T20:18:59+00:00",
         "max_servers_per_operator": 5,
         "servers": [
           {
-            "host": "115.213.216.33:5800",
+            "host": "115.98.216.33:5800",
             "channels": 262,
             "sha256": "39e316a6c17c72d5b41b155c88833bedec713081aaa36f7654b3b5719dd1c8c4"
           }
@@ -347,7 +337,7 @@
           }
         ]
       },
-      "retained": false
+      "retained": true
     },
     "湖南电信": {
       "input_channels": 330,
@@ -393,11 +383,11 @@
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
-        "fetched_at": "2026-10-27T09:26:32+00:00",
+        "fetched_at": "2026-10-27T20:18:59+00:00",
         "max_servers_per_operator": 5,
         "servers": [
           {
-            "host": "vfr.jk960.cn:8686",
+            "host": "vuy.jk960.cn:8686",
             "channels": 374,
             "sha256": "af6e5ffb5d2f8828910c9becda620bcc408a8603b9f850f2125584b38b10f17c"
           }
@@ -421,18 +411,18 @@
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
-        "fetched_at": "2026-10-27T09:26:32+00:00",
+        "fetched_at": "2026-10-27T20:18:59+00:00",
         "max_servers_per_operator": 5,
         "servers": [
           {
-            "host": "1xo82331118.top:8188",
-            "channels": 340,
-            "sha256": "453d59ad2a0d6f3abe4568c347e0644693dc38ec1ffd200edfa8dfef068fe44d"
-          },
-          {
-            "host": "wjd.wpfhome.cn:5555",
+            "host": "wpv.wpfhome.cn:5555",
             "channels": 340,
             "sha256": "7be43139e4f266e0e3eb220fc76281662ba3b647b06efc5daf03750bdca96677"
+          },
+          {
+            "host": "1sa82331118.top:8188",
+            "channels": 340,
+            "sha256": "453d59ad2a0d6f3abe4568c347e0644693dc38ec1ffd200edfa8dfef068fe44d"
           }
         ]
       },
@@ -454,11 +444,11 @@
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
-        "fetched_at": "2026-10-27T09:26:32+00:00",
+        "fetched_at": "2026-10-27T20:18:59+00:00",
         "max_servers_per_operator": 5,
         "servers": [
           {
-            "host": "116.29.44.65:10000",
+            "host": "116.167.44.65:10000",
             "channels": 167,
             "sha256": "04e366fc92fe701e3f21a1a465121b4e446d3e7d7db3b059079d76e7f9d859de"
           }
@@ -497,7 +487,7 @@
   },
   "file_count": 16,
   "province_count": 14,
-  "total_channels": 4934,
-  "current_provider_count": 13,
-  "retained_provider_count": 3
+  "total_channels": 4566,
+  "current_provider_count": 11,
+  "retained_provider_count": 5
 }
