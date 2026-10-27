@@ -1,14 +1,15 @@
-name: Update IPTV Lists
+name: Update IPTV Lists and EPG
 
 on:
   workflow_dispatch:
   schedule:
-    # UTC 04:00 / 17:00，即北京时间每天 12:00 / 次日 01:00。
-    - cron: "0 4,17 * * *"
+    # UTC 04:00 / 16:00，即北京时间每天 12:00 / 次日 00:00。
+    - cron: "0 4,16 * * *"
   push:
     branches: [main]
     paths:
       - "rtp/**"
+      - "epg/**"
       - "config/**"
       - "docs/README.template.md"
       - ".github/workflows/update-rtp.yml"
@@ -21,7 +22,55 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  epg:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Update and validate EPG
+        run: |
+          python -u epg/update.py
+          python epg/update.py --check
+      - name: Sync cached playlist EPG URL
+        id: cached_lists
+        if: ${{ hashFiles('data/sources.json') != '' }}
+        continue-on-error: true
+        run: |
+          python rtp/b.py --offline
+          python rtp/b.py --check
+      - name: Upload EPG
+        uses: actions/upload-artifact@v4
+        with:
+          name: iptv-epg
+          path: epg.xml
+          if-no-files-found: error
+      - name: Commit EPG
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+          CACHED_LISTS_OUTCOME: ${{ steps.cached_lists.outcome }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- epg.xml
+          if [ "$CACHED_LISTS_OUTCOME" = "success" ]; then
+            git add -- m3u manifest.json data/sources.json README.md
+          fi
+          if git diff --cached --quiet; then
+            echo "No EPG changes."
+          else
+            git commit -m "chore: update merged EPG and cached playlist metadata"
+            git push origin "HEAD:$TARGET_BRANCH"
+          fi
   update:
+    # EPG 先独立发布；任一采集失败都不会阻止另一个采集任务。
+    needs: epg
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
