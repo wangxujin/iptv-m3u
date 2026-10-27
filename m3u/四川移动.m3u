@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://s.102031.xyz/xml/a1999882e1.xml.gz"
+#EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml"
 #EXTINF:-1 tvg-id="CCTV4K测试" group-title="央视",CCTV4K测试
 http://117.172.235.50:60000/rtp/239.10.0.108:5140
 #EXTINF:-1 tvg-id="CGTN" group-title="央视",CGTN

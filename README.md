@@ -35,6 +35,13 @@ python3 -m pip install pycryptodome==3.23.0
 python3 rtp/b.py           # 从源站采集并生成
 python3 rtp/b.py --offline # 使用已有缓存重建
 python3 rtp/b.py --check   # 校验生成结果
+python3 epg/update.py     # 按 1 → 3 → 2 合并 EPG
+python3 epg/update.py --check # 校验 epg.xml
 ```
 
-首次成功采集后自动创建 data/、m3u/、manifest.json 和本文件。采集失败不会清空已有结果。
+EPG 每天与频道列表一起在北京时间 00:00、12:00 更新；EPG 先独立发布。
+来源顺序见 config/epg.json，同名频道合并，节目冲突优先保留前面的来源，后面的来源补齐空缺时段。
+仅输出北京时间当天及与当天相交的跨天节目，保留跨天节目的完整起止时间。
+M3U 文件头引用项目配置中的 EPG 地址。
+
+首次成功采集后自动创建 data/、m3u/、manifest.json、epg.xml 和本文件。采集失败不会清空已有结果。

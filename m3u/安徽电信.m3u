@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://s.102031.xyz/xml/a1999882e1.xml.gz"
+#EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml"
 #EXTINF:-1 tvg-id="CCTV世界地理HD" group-title="央视",CCTV世界地理HD
 http://114.97.215.186:8888/rtp/238.1.79.60:4616
 #EXTINF:-1 tvg-id="CCTV兵器科技HD" group-title="央视",CCTV兵器科技HD

@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://s.102031.xyz/xml/a1999882e1.xml.gz"
+#EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml"
 #EXTINF:-1 tvg-id="CCTV5+体育赛事" group-title="央视",CCTV5+体育赛事
 http://101.wifi98.com:9001/rtp/232.0.0.93:1234
 #EXTINF:-1 tvg-id="CCTV-1综合" group-title="央视",CCTV-1综合
