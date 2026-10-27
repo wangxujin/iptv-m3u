@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {"id": "1", "url": "https://s.102031.xyz/xml/a1999882e1.xml.gz"},
+    {"id": "3", "url": "https://gitee.com/taksssss/tv/raw/main/epg/112114.xml.gz"},
+    {"id": "2", "url": "https://epg.zsdc.eu.org/t.xml.gz"}
+  ],
+  "timeout_seconds": 60,
+  "max_attempts": 3
+}
