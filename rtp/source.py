@@ -218,12 +218,13 @@ def servers(page, province):
         if not row['token']:
             if not page.empty: raise SourceError(f'{province} 列表缺少服务器入口')
             continue
-        if len(cells) < 6 or province not in cells[2]: raise SourceError(f'{province} 列表内容不完整或省份不符')
+        if len(cells) < 6: raise SourceError(f'{province} 服务器列数不足：{len(cells)}/6')
         if not usable_status(cells[5]): continue
         operator = operator_name(cells[2])
         if operator is None:
             print(f'[{province}] 列表运营商无法识别，跳过该服务器', flush=True)
             continue
+        if province not in cells[2]: raise SourceError(f'{province} 可用服务器省份不符')
         if not re.fullmatch(r'[0-9]+', cells[1]): raise SourceError(f'{province} 频道数量无效：{cells[1][:40]!r}')
         if not int(cells[1]): continue
         try: datetime.fromisoformat(cells[4])
