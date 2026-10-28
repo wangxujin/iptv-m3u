@@ -613,6 +613,7 @@
       "retained": true
     }
   },
+  "unavailable_provinces": [],
   "file_count": 16,
   "province_count": 14,
   "total_channels": 2465,
