@@ -41,6 +41,12 @@ def operator_name(value):
     return matches[0] if len(matches) == 1 else None
 
 
+def update_time(value):
+    try: datetime.fromisoformat(value or '')
+    except ValueError: return None
+    return value
+
+
 def same_site(url, base):
     a, b = urlsplit(url), urlsplit(base)
     return valid_http(url) and (a.scheme, a.netloc) == (b.scheme, b.netloc)
@@ -211,9 +217,9 @@ class Client:
         for session in self.sessions: session.close()
 
 
-def servers(page, province):
+def servers(page, province, skip):
     if not page.provinces or not page.has_table and not page.empty: raise SourceError(f'{province} 列表页结构异常')
-    result = []
+    result, matching, conflicting = [], 0, 0
     for row in page.rows:
         cells = row['cells']
         if not cells: continue
@@ -227,12 +233,19 @@ def servers(page, province):
         if operator is None:
             print(f'[{province}] 列表运营商无法识别，跳过该服务器', flush=True)
             continue
-        if province not in cells[2]: raise SourceError(f'{province} 可用服务器省份不符')
-        if not re.fullmatch(r'[0-9]+', cells[1]): raise SourceError(f'{province} 频道数量无效：{cells[1][:40]!r}')
-        if not int(cells[1]): continue
-        try: datetime.fromisoformat(cells[4])
-        except ValueError as exc: raise SourceError(f'{province} 更新时间无效') from exc
-        result.append(dict(row, provider=province + operator, count=int(cells[1]), updated=cells[4]))
+        provider = province + operator
+        if province not in cells[2]:
+            conflicting += 1
+            skip(provider, '列表省份归属不符')
+            continue
+        matching += 1
+        count = int(cells[1]) if re.fullmatch(r'[0-9]+', cells[1]) else None
+        if count == 0: continue
+        if count is None: print(f'[{provider}] 列表频道数量无效，按实际下载内容处理', flush=True)
+        updated = update_time(cells[4])
+        if updated is None: print(f'[{provider}] 列表更新时间无效，尝试详情时间', flush=True)
+        result.append(dict(row, provider=provider, count=count, updated=updated))
+    if conflicting and not matching: raise SourceError(f'{province} 列表可用服务器全部跨省')
     if not any(row['token'] for row in page.rows) and not page.empty: raise SourceError(f'{province} 列表缺少明确记录或空结果')
     return result
 
@@ -278,10 +291,15 @@ def fetch_source(config, provinces=None, client=None):
 
         def collect(province):
             url = config['url'] + '?' + urlencode(dict(t='all', province=home.provinces[province], limit=10, page=1))
-            seen, candidates, groups = set(), [], {}
+            seen, candidates, groups, skipped = set(), [], {}, []
+
+            def skip(provider, reason):
+                skipped.append({'provider': provider, 'reason': reason})
+                print(f'[{provider}] {reason}，跳过该服务器', flush=True)
+
             for number in range(1, fallback + 1):
                 page = Page(client.get(url, f'{province} 列表第 {number} 页'))
-                candidates.extend(row for row in servers(page, province) if (row['type'], row['token']) not in seen)
+                candidates.extend(row for row in servers(page, province, skip) if (row['type'], row['token']) not in seen)
                 tokens = {(r.get('type'), r['token']) for r in page.rows if r['token']}
                 if tokens and not tokens - seen: raise SourceError(f'{province} 分页内容重复')
                 seen.update(tokens)
@@ -294,23 +312,43 @@ def fetch_source(config, provinces=None, client=None):
                         if len(group['source']['servers']) >= maximum: continue
                         detail = Page(client.get(config['url']+'?'+urlencode(dict(p=server['token'], t=server['type'])), f'{provider} 详情'))
                         status = detail.field('状态')
-                        if status is None: raise SourceError(f'{provider} 详情状态缺失')
-                        if not usable_status(status): continue
+                        if status is None:
+                            skip(provider, '详情状态缺失')
+                            continue
+                        if not usable_status(status):
+                            if '失效' not in status: skip(provider, '详情状态无法识别')
+                            continue
                         owner = detail.field('类型')
                         operator = operator_name(owner)
                         if operator is None:
-                            print(f'[{provider}] 详情运营商无法识别，跳过该服务器', flush=True)
+                            skip(provider, '详情运营商无法识别')
                             continue
-                        if province not in owner or province + operator != provider: raise SourceError(f'{provider} 详情归属不符')
-                        updated = detail.field('更新时间')
-                        try: datetime.fromisoformat(updated or '')
-                        except ValueError as exc: raise SourceError(f'{provider} 详情更新时间无效') from exc
-                        updated = max((server['updated'], updated), key=source_timestamp)
-                        raw = client.get(download_url(detail, config['url'], server['type']), f'{provider} 完整 M3U')
-                        rows = parse_playlist(raw)
-                        if len(rows) < server['count']:
-                            raise SourceError(f'{provider} M3U 频道数不足：下载 {len(rows)} 条，列表标注 {server["count"]} 条')
+                        if province not in owner or province + operator != provider:
+                            skip(provider, '详情省份或运营商归属不符')
+                            continue
+                        updated = update_time(detail.field('更新时间'))
+                        times = [value for value in (server['updated'], updated) if value is not None]
+                        if not times:
+                            skip(provider, '列表与详情均无有效更新时间')
+                            continue
+                        if updated is None: print(f'[{provider}] 详情更新时间无效，使用列表时间', flush=True)
+                        updated = max(times, key=source_timestamp)
+                        try: target = download_url(detail, config['url'], server['type'])
+                        except ValueError as exc:
+                            skip(provider, str(exc))
+                            continue
+                        # 网络异常继续向外抛出，保持整轮失败保护。
+                        try: raw = client.get(target, f'{provider} 完整 M3U')
+                        except UnicodeDecodeError:
+                            skip(provider, 'M3U 不是有效 UTF-8 文本')
+                            continue
+                        try: rows = parse_playlist(raw)
+                        except ValueError as exc:
+                            skip(provider, f'M3U 格式异常：{exc}')
+                            continue
                         downloaded = len(rows)
+                        if server['count'] is not None and downloaded != server['count']:
+                            print(f'[{provider}] 列表标注 {server["count"]} 条，下载 {downloaded} 条，按实际内容处理', flush=True)
                         rows = [row for row in rows if valid_http(row['url'])]
                         if len(rows) < downloaded:
                             print(f'[{provider}] 下载 {downloaded} 条，跳过 {downloaded - len(rows)} 条无效或非 HTTP 地址，保留 {len(rows)} 条', flush=True)
@@ -324,26 +362,32 @@ def fetch_source(config, provinces=None, client=None):
                 url = next_page(page, url, config['url'])
             result = {name: g for name, g in groups.items() if g['records']}
             print(f'[{province}] 完成：{number} 页，{len(result)} 个运营商组合', flush=True)
-            return result, number, datetime.now(timezone.utc).isoformat(timespec='seconds')
+            return result, number, datetime.now(timezone.utc).isoformat(timespec='seconds'), skipped
 
-        groups, pages, checked = {}, {}, {}
+        groups, pages, checked, skipped = {}, {}, {}, {}
         with ThreadPoolExecutor(max_workers=workers) as pool:
             tasks = {pool.submit(collect, province): province for province in selected}
             try:
                 for task in as_completed(tasks):
-                    data, count, checked_at = task.result()
-                    groups.update(data); pages[tasks[task]] = count; checked[tasks[task]] = checked_at
+                    data, count, checked_at, issues = task.result()
+                    province = tasks[task]
+                    groups.update(data); pages[province] = count; checked[province] = checked_at; skipped[province] = issues
             except Exception:
                 client.stop.set()
                 for task in tasks: task.cancel()
                 raise
         source['pages'] = {p: pages[p] for p in selected}
+        source['skipped_servers'] = [issue for p in selected for issue in skipped[p]]
+        source['protected_providers'] = sorted({issue['provider'] for issue in source['skipped_servers']} - set(groups))
         source['unavailable_provinces'] = [
             {'province': p, 'pages': 8, 'checked_at': checked[p],
              'url': config['url'] + '?' + urlencode(dict(t='all', province=home.provinces[p], limit=10, page=8))}
-            for p in selected if pages[p] == 8 and not any(name.startswith(p) for name in groups)]
+            for p in selected if pages[p] == 8 and not any(name.startswith(p) for name in groups)
+            and not any(name.startswith(p) for name in source['protected_providers'])]
         source['metrics'] = dict(client.stats, elapsed_seconds=round(time.monotonic() - started, 2))
-        for group in groups.values(): group['source'].update({k: v for k, v in source.items() if k != 'unavailable_provinces'})
+        for group in groups.values():
+            group['source'].update({k: v for k, v in source.items()
+                                    if k not in ('unavailable_provinces', 'protected_providers', 'skipped_servers')})
         print(json.dumps({'crawler': source['metrics'], 'pages': source['pages']}, ensure_ascii=False), flush=True)
         return SourceSnapshot(groups, tuple(provinces or PROVINCES), source)
     finally:
