@@ -1,6 +1,5 @@
 {
   "repository": "wangxujin/iptv-m3u",
   "branch": "main",
-  "epg_url": "https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml"
+  "epg_url": "https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml.gz"
 }
-
