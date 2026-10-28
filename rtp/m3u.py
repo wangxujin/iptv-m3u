@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from collections import Counter
+from datetime import datetime, timedelta, timezone
 import hashlib
 import json
 from pathlib import Path
@@ -84,32 +85,93 @@ def normalized_name(value: str) -> str:
     return value
 
 
+def normalize_group(name: str, g: str = '') -> str:
+    """按用户给出的顺序规范 OK影视 / TVBox 菜单，英文忽略大小写。"""
+    s = unicodedata.normalize('NFKC', f'{name} {g}')
+    for pattern, group in [
+        (r'4K|2160|UHD|超高清|8K', '4K超清'),
+        (r'CCTV|CGTN|央视|中央', '央视频道')]:
+        if re.search(pattern, s, re.I):
+            return group
+    if re.search(r'卫视', name):
+        return '卫视频道'
+    for pattern, group in [
+        (r'体育|运动|NBA|足球|篮球|赛事|奥运', '体育频道'),
+        (r'港|澳|台|HK|Macau|Taiwan|Hong', '港澳台'),
+        (r'少儿|动画|卡通|亲子', '少儿频道'),
+        (r'电影|影视|剧场|综艺', '影视频道'),
+        (r'纪录|探索|Discovery|科教|知识', '纪实频道'),
+        (r'新闻|财经|法治|军事', '新闻频道')]:
+        if re.search(pattern, s, re.I):
+            return group
+    if re.search(r'频道', g) and not re.search(r'高清|备用|Undefined|General', g, re.I):
+        return '地方频道'
+    if re.search(r'高清|卫视|央视|备用', g, re.I):
+        return g
+    return '其他'
+
+
 class Classifier:
     def __init__(self, config: dict):
         self.order = config['group_order']
         if not self.order or len(set(self.order)) != len(self.order):
             raise ValueError('group_order 必须非空且不能重复')
-        self.default = config['default_group']
-        self.exact = {}
-        for group, names in config['exact_channels'].items():
-            if group not in self.order:
-                raise ValueError(f'未声明的分组：{group}')
-            for name in names:
-                key = normalized_name(name)
-                if key in self.exact and self.exact[key] != group:
-                    raise ValueError(f'频道映射冲突：{name}')
-                self.exact[key] = group
         self.aliases = {normalized_name(k): normalized_name(v) for k, v in config.get('aliases', {}).items()}
-        self.rules = [(re.compile(row['pattern'], re.I), row['group']) for row in config['rules']]
-        if self.default not in self.order or any(group not in self.order for _, group in self.rules):
-            raise ValueError('规则使用了未声明的分组')
 
-    def classify(self, name: str) -> str:
-        key = normalized_name(name)
-        key = self.aliases.get(key, key)
-        if key in self.exact:
-            return self.exact[key]
-        return next((group for pattern, group in self.rules if pattern.search(key)), self.default)
+    def classify(self, name: str, g: str = '') -> str:
+        return normalize_group(name, g)
+
+
+def channel_key(name: str, classifier: Classifier) -> str:
+    key = normalized_name(name)
+    suffix = r'(?:[-_（(\[]?(?:4K|8K|2160[PI]?|4320[PI]?|1080[PI]?|720[PI]?|超高清|超清|高清|标清|蓝光|FHD|UHD|HD|SD)[）)\]]?)+$'
+    while key not in ('CCTV4K', 'CCTV8K'):
+        base = re.sub(suffix, '', key).strip('-_ ')
+        if base == key or not base:
+            break
+        key = base
+    key = classifier.aliases.get(key, key)
+    descriptions = {'1': '综合', '2': '财经', '3': '综艺', '4': '中文国际', '5': '体育',
+                    '5+': '体育赛事', '6': '电影', '7': '国防军事', '8': '电视剧', '9': '纪录',
+                    '10': '科教', '11': '戏曲', '12': '社会与法', '13': '新闻', '14': '少儿',
+                    '15': '音乐', '16': '奥林匹克', '17': '农业农村'}
+    for number, description in descriptions.items():
+        if key in (f'CCTV{number}', f'CCTV{number}{description}', f'CCTV{number}-{description}'):
+            return f'CCTV{number}'
+    return key
+
+
+def quality_rank(record: dict) -> int:
+    attrs = record.get('attrs', {})
+    text = ' '.join(str(value) for value in (record['name'], attrs.get('group-title', ''),
+                    attrs.get('tvg-name', ''), record.get('resolution', '')))
+    text = unicodedata.normalize('NFKC', text)
+    if re.search(r'8K|4320', text, re.I):
+        return 4
+    if re.search(r'4K|2160|UHD|超高清', text, re.I):
+        return 3
+    if re.search(r'HD|1080|720|高清|蓝光', text, re.I):
+        return 2
+    return 1
+
+
+def source_timestamp(value: str) -> float:
+    try:
+        stamp = datetime.fromisoformat(value.replace('Z', '+00:00'))
+        stamp = stamp.replace(tzinfo=timezone(timedelta(hours=8))) if stamp.tzinfo is None else stamp
+        return stamp.timestamp()
+    except (ValueError, TypeError, AttributeError, OverflowError):
+        return 0
+
+
+def route_rank(record: dict) -> tuple:
+    return (source_timestamp(record.get('source_updated_at', '')),
+            record.get('source_type') == 'multicast', quality_rank(record))
+
+
+def better_route(record: dict, previous: dict) -> bool:
+    rank, old_rank = route_rank(record), route_rank(previous)
+    return rank > old_rank or rank == old_rank and (record['url'], record['name']) < (previous['url'], previous['name'])
 
 
 def clean_attribute(value: str) -> str:
@@ -130,19 +192,29 @@ def playlist_header(epg_url: str | None = None) -> str:
 
 def build_provider(records: list[dict], classifier: Classifier, epg_url: str | None = None) -> tuple[str, dict]:
     """一个省份＋运营商始终只生成一个 M3U，不按来源、数量或字节数分卷。"""
-    accepted, seen = [], set()
+    by_url = {}
     invalid = duplicate = 0
     for record in records:
         url = record['url']
         if not valid_http(url):
             invalid += 1
-        elif url in seen:
+        elif url in by_url:
             duplicate += 1
+            if better_route(record, by_url[url]):
+                by_url[url] = record
         else:
-            seen.add(url)
-            accepted.append((classifier.classify(record['name']), record))
+            by_url[url] = record
+    selected = {}
+    for record in by_url.values():
+        key = channel_key(record['name'], classifier), quality_rank(record) >= 3
+        if key not in selected or better_route(record, selected[key]):
+            selected[key] = record
+    channel_duplicates = len(by_url) - len(selected)
+    accepted = [(classifier.classify(record['name'], record.get('attrs', {}).get('group-title', '')), record)
+                for record in selected.values()]
     rank = {group: index for index, group in enumerate(classifier.order)}
-    accepted.sort(key=lambda item: (rank[item[0]], natural_key(item[1]['name']), item[1]['url']))
+    accepted.sort(key=lambda item: (rank.get(item[0], len(rank)), item[0],
+                  natural_key(channel_key(item[1]['name'], classifier)), -quality_rank(item[1]), item[1]['url']))
     m3u = [playlist_header(epg_url)]
     for group, record in accepted:
         attrs = dict(record.get('attrs', {}))
@@ -157,7 +229,9 @@ def build_provider(records: list[dict], classifier: Classifier, epg_url: str | N
         m3u.append(record['url'])
     content = '\n'.join(m3u) + '\n'
     stats = {'input_channels': len(records), 'channels': len(accepted),
-             'duplicates_removed': duplicate, 'invalid_or_non_http_removed': invalid,
+             'duplicates_removed': duplicate + channel_duplicates, 'exact_url_duplicates_removed': duplicate,
+             'channel_duplicates_removed': channel_duplicates,
+             'selection_policy': 'one_uhd_and_one_other_newest_update_multicast_tie', 'invalid_or_non_http_removed': invalid,
              'groups': dict(Counter(group for group, _ in accepted)), 'bytes': len(content.encode('utf-8')),
              'sha256': hashlib.sha256(content.encode('utf-8')).hexdigest()}
     return content, stats

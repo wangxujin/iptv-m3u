@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""直接读取源站，按省份＋运营商合并，按 lemonTV 规则映射频道分组。"""
+"""直接读取源站，按省份＋运营商合并，按顶层菜单规则分组并优选每档线路。"""
 from __future__ import annotations
 
 import argparse
@@ -16,14 +16,17 @@ from urllib.parse import quote
 from zoneinfo import ZoneInfo
 
 from m3u import Classifier, PROVINCES, OPERATORS, build_provider, parse_playlist, playlist_header, provider_name
-from source import fetch_source
+from source import SourceSnapshot, fetch_source
 
 ROOT = Path(__file__).resolve().parents[1]
+ONLINE_POLICY = 'replace_confirmed_scope_remove_unavailable'
 DEFAULT_README = """# IPTV M3U
 
 {{SUMMARY}}
 
-每个省份与运营商组合只输出一个 M3U。点击下方链接获取订阅地址。
+组播源与酒店源合并；每个省份与运营商组合只输出一个 M3U。点击下方链接获取订阅地址。
+同一频道超高清与其他画质各保留一条，各档先按更新时间从新到旧选择，更新时间相同优先组播，再比较清晰度。
+分组按 4K超清、央视频道、卫视频道、体育频道、港澳台、少儿频道、影视频道、纪实频道、新闻频道等顺序规范。
 频道分类见 [config/groups.json](config/groups.json)，源站设置见 [config/source.json](config/source.json)，
 仓库、分支与 EPG 设置见 [config/project.json](config/project.json)。
 
@@ -47,11 +50,15 @@ python3 epg/update.py --check # 校验 epg.xml
 ```
 
 EPG 每天与频道列表一起在北京时间 00:00、12:00 更新；EPG 先独立发布。
+GitHub schedule 显式设置 timezone: Asia/Shanghai；平台负载仍可能造成触发延迟。
 来源顺序见 config/epg.json，同名频道合并，节目冲突优先保留前面的来源，后面的来源补齐空缺时段。
 仅输出北京时间当天及与当天相交的跨天节目，保留跨天节目的完整起止时间。
 M3U 文件头引用项目配置中的 EPG 地址。
 
 首次成功采集后自动创建 data/、m3u/、manifest.json、epg.xml 和本文件。采集失败不会清空已有结果。
+在线采集成功后自动删除本轮范围内没有可用来源的 M3U；仅接收新上线或存活 N 天，并复查详情状态。
+完整采集确认零可用来源时允许清空该范围。超时、访问或解析失败保留旧文件。
+酒店与组播全部采集成功后才合并；任一侧访问失败都保留本轮旧文件。
 """
 
 
@@ -90,6 +97,25 @@ def merge_source(state: dict, incoming: dict) -> dict:
     result['last_sync'] = next(iter(incoming.values()))['source'].copy()
     result['last_sync'].pop('files', None)
     result['last_sync'].pop('servers', None)
+    return result
+
+
+def apply_snapshot(state: dict, snapshot: SourceSnapshot) -> dict:
+    """只在完整采集成功后替换已确认范围；局部更新保留其他省份。"""
+    if not isinstance(snapshot, SourceSnapshot) or not snapshot.scope or not snapshot.source.get('checked_provinces'):
+        raise ValueError('在线结果缺少已完成的采集范围')
+    if not set(snapshot.scope) <= set(PROVINCES) or snapshot.source.get('kind') != 'website':
+        raise ValueError('在线结果的采集范围或来源类型无效')
+    for provider, data in snapshot.providers.items():
+        provider_name(provider)
+        if not any(provider.startswith(province) for province in snapshot.scope) or data.get('retained') is not False:
+            raise ValueError('在线结果超出已确认范围或混入历史来源')
+    result = json.loads(json.dumps(state))
+    result['providers'] = {name: dict(data, retained=True) for name, data in result['providers'].items()
+                           if not any(name.startswith(province) for province in snapshot.scope)}
+    result['providers'].update(snapshot.providers)
+    result['last_sync'] = snapshot.source.copy()
+    result['source_policy'] = ONLINE_POLICY
     return result
 
 
@@ -142,7 +168,7 @@ def generate(state: dict, config: dict, output: Path, template: str, repository:
     for provider in state['providers']:
         if provider_name(provider) != provider:
             raise ValueError('数据缓存包含编号来源而非合并运营商：' + provider)
-    manifest = {'schema_version': 1, 'source_policy': 'direct_website_with_explicit_retention',
+    manifest = {'schema_version': 1, 'source_policy': state.get('source_policy', 'direct_website_with_explicit_retention'),
                 'split_files': False,
                 'mapping_sha256': hashlib.sha256(json.dumps(config, sort_keys=True, ensure_ascii=False).encode()).hexdigest(),
                 'epg_url': epg_url, 'playback_tested': False, 'providers': {}}
@@ -154,7 +180,10 @@ def generate(state: dict, config: dict, output: Path, template: str, repository:
             raise ValueError(f'{provider} 没有有效 HTTP(S) 地址，停止更新并保留旧输出')
         files[f'm3u/{provider}.m3u'] = content
         manifest['providers'][provider] = dict(stats, source=data['source'], retained=data['retained'])
-    if not files:
+    confirmed_empty = (state.get('source_policy') == ONLINE_POLICY
+                       and state.get('last_sync', {}).get('kind') == 'website'
+                       and state.get('last_sync', {}).get('checked_provinces'))
+    if not files and not confirmed_empty:
         raise ValueError('没有可输出的数据，保留旧文件')
     manifest.update(file_count=len(manifest['providers']),
                     province_count=len({next(p for p in PROVINCES if name.startswith(p)) for name in manifest['providers']}),
@@ -166,6 +195,7 @@ def generate(state: dict, config: dict, output: Path, template: str, repository:
     files['README.md'] = build_readme(template, manifest, repository, branch)
     # 所有输入先解析、分类、校验成功，再替换输出；请求和解析异常不会清空旧结果。
     output.mkdir(parents=True, exist_ok=True)
+    (output / 'm3u').mkdir(exist_ok=True)
     previous = output / 'manifest.json'
     old_providers = json.loads(previous.read_text(encoding='utf-8')).get('providers', {}) if previous.exists() else {}
     for provider in old_providers:
@@ -189,6 +219,9 @@ def generate(state: dict, config: dict, output: Path, template: str, repository:
 
 def validate_outputs(output: Path, config: dict, epg_url: str | None = None) -> dict:
     manifest = json.loads((output / 'manifest.json').read_text(encoding='utf-8'))
+    state = json.loads((output / 'data/sources.json').read_text(encoding='utf-8'))
+    if set(state['providers']) != set(manifest['providers']):
+        raise ValueError('缓存与清单中的运营商组合不一致')
     header = playlist_header(epg_url)
     if manifest.get('epg_url') != epg_url:
         raise ValueError('清单中的 EPG 地址与项目配置不一致')
@@ -209,8 +242,9 @@ def validate_outputs(output: Path, config: dict, epg_url: str | None = None) -> 
             raise ValueError('文件内容与清单不一致：' + provider)
         if len({record['url'] for record in records}) != len(records):
             raise ValueError('存在重复 URL：' + provider)
-        if any(record['attrs'].get('group-title') != classifier.classify(record['name']) for record in records):
-            raise ValueError('频道分组映射不一致：' + provider)
+        expected_content, _ = build_provider(state['providers'][provider]['records'], classifier, epg_url)
+        if raw != expected_content.encode('utf-8'):
+            raise ValueError('频道分组或线路选择与缓存不一致：' + provider)
         total += len(records)
     if total != manifest['total_channels']:
         raise ValueError('频道总数不一致')
@@ -227,7 +261,7 @@ def main() -> int:
     parser.add_argument('--repository', help='用于订阅链接的 owner/repository；Actions 中自动识别')
     parser.add_argument('--branch', help='输出订阅地址的分支，默认使用 Actions 分支或项目配置')
     parser.add_argument('--provinces', nargs='+', choices=PROVINCES, help='仅从源站更新指定省份，其他省份保留')
-    parser.add_argument('--drop-retained', action='store_true', help='明确移除未在最近成功更新中出现的历史组合')
+    parser.add_argument('--drop-retained', action='store_true', help='离线或导入时移除历史组合；在线已自动清理采集范围')
     args = parser.parse_args()
     try:
         config = json.loads((ROOT / 'config/groups.json').read_text(encoding='utf-8'))
@@ -249,8 +283,8 @@ def main() -> int:
             state = merge_source(state, read_source(args.source_dir))
         elif not args.offline:
             source_config = json.loads((ROOT / 'config/source.json').read_text(encoding='utf-8'))
-            state = merge_source(state, fetch_source(source_config, args.provinces))
-        if args.drop_retained:
+            state = apply_snapshot(state, fetch_source(source_config, args.provinces))
+        if args.drop_retained and (args.offline or args.source_dir):
             state['providers'] = {name: data for name, data in state['providers'].items() if not data['retained']}
         template_path = ROOT / 'docs/README.template.md'
         template = template_path.read_text(encoding='utf-8') if template_path.exists() else DEFAULT_README
@@ -261,7 +295,7 @@ def main() -> int:
                               retained=manifest['retained_provider_count'], output=str(args.output.resolve())), ensure_ascii=False))
         return 0
     except (OSError, ValueError, KeyError, subprocess.SubprocessError) as exc:
-        print(f'更新失败，未用空结果覆盖旧列表：{type(exc).__name__}: {exc}', file=sys.stderr)
+        print(f'更新失败，保留旧列表：{type(exc).__name__}: {exc}', file=sys.stderr)
         return 2
 
 
