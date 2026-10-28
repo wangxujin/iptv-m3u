@@ -58,10 +58,13 @@ GitHub schedule 显式设置 timezone: Asia/Shanghai；平台负载仍可能造�
 M3U 文件头引用项目配置中的 EPG 地址。
 
 首次成功采集后自动创建 data/、m3u/、manifest.json、epg.xml.gz 和本文件。采集失败不会清空已有结果。
-在线采集成功后自动删除本轮范围内没有可用来源的 M3U；仅接收新上线或存活 N 天，并复查详情状态。
+在线采集成功后自动删除本轮范围内确认没有可用来源的 M3U；仅接收新上线或存活 N 天，并复查详情状态。
 列表或详情无法唯一识别运营商时，记录日志并跳过该服务器。
-完整采集确认零可用来源时允许清空该范围。超时、访问或解析失败保留旧文件。
-统一列表完整采集、所有选中服务器处理成功后才更新文件；访问或解析失败保留旧文件。
+完整采集确认零可用来源时允许清空该范围；异常情况按以下规则处理。
+列表数量仅供参考，数量无效仍下载，下载数量不一致只提示；更新时间由列表、详情互补，两处均无效则跳过。
+单台归属冲突、缺少状态或频道入口、M3U 格式损坏时跳过，不占来源名额。
+单台数据异常导致某组合无有效新结果时保留旧文件，并在“来源异常待核查”中记录。
+任一网络请求、列表或分页失败仍保留本轮全部旧文件。
 按省份采集，每页 10 条，先采前 5 页；没有有效频道才延伸至第 6～8 页，找到即停。
 两个省份并行，线程共用限速和 429 冷却；每轮直接下载新地址的完整 M3U。
 可用 --fresh 从空数据开始验证指定省份。
@@ -116,9 +119,14 @@ def apply_snapshot(state: dict, snapshot: SourceSnapshot) -> dict:
         provider_name(provider)
         if not any(provider.startswith(province) for province in snapshot.scope) or data.get('retained') is not False:
             raise ValueError('在线结果超出已确认范围或混入历史来源')
+    protected = set(snapshot.source.get('protected_providers', []))
+    for provider in protected:
+        provider_name(provider)
+        if not any(provider.startswith(province) for province in snapshot.scope):
+            raise ValueError('异常保留组合超出采集范围')
     result = json.loads(json.dumps(state))
     result['providers'] = {name: dict(data, retained=True) for name, data in result['providers'].items()
-                           if not any(name.startswith(province) for province in snapshot.scope)}
+                           if name in protected or not any(name.startswith(province) for province in snapshot.scope)}
     result['providers'].update(snapshot.providers)
     result['last_sync'] = snapshot.source.copy()
     result['source_policy'] = ONLINE_POLICY
@@ -177,6 +185,15 @@ def build_readme(template: str, manifest: dict, repository: str | None, branch: 
             unavailable.append(f'| {item["province"]} | {item["pages"]} | {checked:%Y-%m-%d %H:%M:%S} | [查看第 8 页]({item["url"]}) |')
     else:
         unavailable.append('本轮没有“已采到第 8 页仍无可用来源”的记录。')
+    protected = manifest.get('protected_providers', [])
+    if protected:
+        unavailable += ['', '## 来源异常待核查', '',
+                        '以下组合因单台来源异常未取得有效新结果；已有旧文件保留，不按无来源删除。', '',
+                        '| 省份／运营商 | 处理 | 原因 |', '|---|---|---|']
+        for provider in protected:
+            status = '保留旧文件' if provider in manifest['providers'] else '无旧文件'
+            reasons = sorted({item['reason'] for item in manifest.get('skipped_servers', []) if item['provider'] == provider})
+            unavailable.append(f'| {provider} | {status} | {"；".join(reasons)} |')
     if '{{UNAVAILABLE}}' not in template:
         template += '\n\n{{UNAVAILABLE}}\n'
     return (template.replace('{{SUMMARY}}', summary).replace('{{FILES}}', '\n'.join(rows))
@@ -195,6 +212,8 @@ def generate(state: dict, config: dict, output: Path, template: str, repository:
                 'mapping_sha256': hashlib.sha256(json.dumps(config, sort_keys=True, ensure_ascii=False).encode()).hexdigest(),
                 'epg_url': epg_url, 'playback_tested': False, 'providers': {}}
     manifest['unavailable_provinces'] = state.get('last_sync', {}).get('unavailable_provinces', [])
+    manifest['protected_providers'] = state.get('last_sync', {}).get('protected_providers', [])
+    manifest['skipped_servers'] = state.get('last_sync', {}).get('skipped_servers', [])
     files = {}
     for provider in sorted(state['providers'], key=lambda p: (PROVINCES.index(next(v for v in PROVINCES if p.startswith(v))), p)):
         data = state['providers'][provider]
