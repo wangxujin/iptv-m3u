@@ -1,7 +1,8 @@
-"""读取源站公开的 WordPress AJAX 接口，按省份和运营商收集完整频道。"""
+"""读取酒店和组播的公开 AJAX 接口，按省份和运营商合并完整频道。"""
 from __future__ import annotations
 
 import base64
+from dataclasses import dataclass
 from datetime import datetime, timezone
 import hashlib
 from html.parser import HTMLParser
@@ -16,11 +17,23 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urljoin, urlsplit
 from urllib.request import HTTPCookieProcessor, HTTPRedirectHandler, Request, build_opener
 
-from m3u import OPERATORS, PROVINCES, valid_http
+from m3u import OPERATORS, PROVINCES, source_timestamp, valid_http
 
 
 class SourceError(ValueError):
     pass
+
+
+@dataclass(frozen=True)
+class SourceSnapshot:
+    """完整采集的结果；空 providers 也可表示已确认没有可用来源。"""
+    providers: dict
+    scope: tuple[str, ...]
+    source: dict
+
+
+def usable_status(value: str) -> bool:
+    return re.fullmatch(r'新上线|存活\s*[0-9]+\s*天', value.strip()) is not None
 
 
 def same_site(url: str, base: str) -> bool:
@@ -127,15 +140,31 @@ class Page(HTMLParser):
         self.row = self.cell = self.option = None
         self.region_select = False
         self.has_table = False
+        self.table_depth = 0
+        self.hidden_depth = 0
+        self.text_parts = []
         self.feed(content)
+        if self.table_depth or self.row is not None or self.cell is not None:
+            raise SourceError('源站表格响应不完整')
+        visible = '\n'.join(self.text_parts)
+        self.empty_list = bool(re.search(r'暂无(?:数据|记录|结果|组播源|酒店源)|未找到(?:相关)?(?:数据|记录|组播源|酒店源)|没有(?:可用的?)?(?:组播源|酒店源)', visible))
+        match = re.search(r'(?:^|\n)\s*状态\s*[:：]\s*([^\n]+)', visible)
+        self.status = match.group(1).strip() if match else None
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         if tag == 'table':
             self.has_table = True
+            self.table_depth += 1
+        if tag in ('script', 'style'):
+            self.hidden_depth += 1
         if tag == 'tr':
+            if self.row is not None:
+                raise SourceError('源站表格行未完整结束')
             self.row = {'cells': [], 'token': None}
         elif tag == 'td' and self.row is not None:
+            if self.cell is not None:
+                raise SourceError('源站表格单元格未完整结束')
             self.cell = []
         elif tag == 'select':
             self.region_select = attrs.get('name') == 'region'
@@ -155,12 +184,20 @@ class Page(HTMLParser):
                 raise SourceError('源站分页格式变化') from exc
 
     def handle_data(self, data):
+        if self.hidden_depth:
+            return
+        if data.strip():
+            self.text_parts.append(data.strip())
         if self.cell is not None:
             self.cell.append(data)
         if self.option is not None:
             self.option[1].append(data)
 
     def handle_endtag(self, tag):
+        if tag == 'table':
+            self.table_depth -= 1
+        if tag in ('script', 'style'):
+            self.hidden_depth -= 1
         if tag == 'td' and self.cell is not None and self.row is not None:
             self.row['cells'].append(''.join(self.cell).strip())
             self.cell = None
@@ -188,13 +225,19 @@ def encrypt_token(token: str) -> str:
 
 
 class AjaxSite:
-    def __init__(self, client: Client, url: str):
+    def __init__(self, client: Client, url: str, kind: str = 'multicast'):
+        protocols = {'multicast': ('multicastIptvAjax', 'multicast_iptv_ajax'),
+                     'hotel': ('hotelIptvAjax', 'hotel_iptv_ajax')}
+        if kind not in protocols:
+            raise SourceError('不支持的 IPTV 来源类型')
+        variable, self.action = protocols[kind]
+        self.kind = kind
         self.client = client
         content = client.get(url)
         self.home = Page(content)
-        match = re.search(r'var\s+multicastIptvAjax\s*=\s*(\{.*?\});', content, re.DOTALL)
+        match = re.search(r'var\s+' + variable + r'\s*=\s*(\{.*?\});', content, re.DOTALL)
         if not match:
-            raise SourceError('源站首页缺少 multicastIptvAjax 配置；请检查 source.url 是否为新的组播页面')
+            raise SourceError(f'源站首页缺少 {variable} 配置；请核对来源类型和 URL')
         try:
             config = json.loads(match.group(1))
         except ValueError as exc:
@@ -208,8 +251,9 @@ class AjaxSite:
         self.nonce, self.token = config['nonce'], config['token']
 
     def call(self, action: str, label: str, **fields) -> str:
-        content = self.client.post(self.url, dict(fields, action='multicast_iptv_ajax',
-            action_type=action, nonce=self.nonce, token=encrypt_token(self.token)), label)
+        token = encrypt_token(self.token) if self.kind == 'multicast' else self.token
+        content = self.client.post(self.url, dict(fields, action=self.action,
+            action_type=action, nonce=self.nonce, token=token), label)
         try:
             response = json.loads(content)
         except ValueError as exc:
@@ -218,7 +262,7 @@ class AjaxSite:
             detail = response.get('data') if isinstance(response, dict) else None
             message = detail.get('message', '') if isinstance(detail, dict) else ''
             message = re.sub(r'<[^>]+>', '', str(message))
-            for secret in (self.nonce, self.token, encrypt_token(self.token)):
+            for secret in (self.nonce, self.token, token):
                 message = message.replace(secret, '[redacted]')
             message = ' '.join(message.split())[:160]
             raise SourceError(f'[{label}] 源站 AJAX 返回失败：{message or "未提供原因"}')
@@ -237,23 +281,29 @@ def server_rows(page: Page, province: str) -> list[dict]:
     for row in page.rows:
         cells = row['cells']
         if not row['token']:
-            if len(cells) >= 6:
+            if len(cells) >= 6 or cells and not page.empty_list:
                 raise SourceError('源站服务器表缺少 data-p')
             continue
         if len(cells) < 6:
             raise SourceError('源站服务器表结构变化')
         if province not in cells[2]:
             raise SourceError('源站返回了其他省份的数据')
-        if not any(status in cells[5] for status in ('新上线', '存活')):
+        if not usable_status(cells[5]):
             continue
         operators = [operator for operator in OPERATORS if operator in cells[2]]
         if len(operators) != 1:
             raise SourceError(f'{province} 存在无法确定运营商的可用服务器')
         if not cells[1].isdigit() or int(cells[1]) < 1:
             raise SourceError(f'{province} 可用服务器缺少有效频道数量')
+        try:
+            datetime.fromisoformat(cells[4])
+        except ValueError as exc:
+            raise SourceError(f'{province} 可用服务器的更新时间缺失或无效') from exc
         result.append({'token': row['token'], 'provider': province + operators[0],
                        'host': cells[0], 'channels': int(cells[1]),
                        'status': cells[5], 'updated_at': cells[4]})
+    if not any(row['token'] for row in page.rows) and not page.empty_list:
+        raise SourceError('服务器列表缺少记录或明确的空结果标记')
     return result
 
 
@@ -275,24 +325,30 @@ def channel_records(content: str) -> list[dict]:
     return records
 
 
-def fetch_source(config: dict, provinces: list[str] | None = None, client=None) -> dict:
+def _fetch_site(config: dict, provinces: list[str] | None = None, client=None,
+                allow_absent_provinces: bool = False) -> SourceSnapshot:
     """所有选定省份成功后才返回；请求或解析失败不会交付部分更新。"""
     max_pages = int(config['max_pages_per_province'])
     max_servers = int(config['max_servers_per_operator'])
     if max_pages < 1 or max_servers < 0:
         raise SourceError('分页上限须大于零，每运营商来源上限须非负')
-    site = AjaxSite(client or Client(config), config['url'])
+    kind = config.get('type', 'multicast')
+    label = '酒店' if kind == 'hotel' else '组播'
+    site = AjaxSite(client or Client(config), config['url'], kind)
     if not site.home.provinces:
         raise SourceError('源站没有可识别的省份筛选项')
-    selected = provinces or [name for name in PROVINCES if name in site.home.provinces]
-    if any(name not in site.home.provinces for name in selected):
+    selected = list(dict.fromkeys(provinces or [name for name in PROVINCES if name in site.home.provinces]))
+    if not allow_absent_provinces and any(name not in site.home.provinces for name in selected):
         raise SourceError('所选省份未出现在源站当前筛选项中')
+    selected = [name for name in selected if name in site.home.provinces]
     groups = {}
     fetched_at = datetime.now(timezone.utc).isoformat(timespec='seconds')
+    source = {'kind': 'website', 'url': config['url'], 'fetched_at': fetched_at,
+              'source_type': kind, 'checked_provinces': selected, 'max_servers_per_operator': max_servers}
     for province in selected:
         servers, seen = [], set()
         for number in range(1, max_pages + 1):
-            page = Page(site.call('list', f'{province} 列表第 {number} 页', page_num=number,
+            page = Page(site.call('list', f'{label}/{province} 列表第 {number} 页', page_num=number,
                 limit=20, region=site.home.provinces[province], search=''))
             if not page.has_table or province not in page.provinces:
                 raise SourceError(f'{province} 列表页结构变化或内容不完整')
@@ -308,27 +364,66 @@ def fetch_source(config: dict, provinces: list[str] | None = None, client=None) 
                 raise SourceError(f'{province} 分页跳过了下一页')
             if number == max_pages:
                 raise SourceError(f'{province} 达到分页上限仍有下一页，停止更新以免截断数据')
-        servers.sort(key=lambda row: ('新上线' in row['status'], row['updated_at']), reverse=True)
+        servers.sort(key=lambda row: source_timestamp(row['updated_at']), reverse=True)
         counts = {}
         for server in servers:
             provider = server['provider']
             if max_servers and counts.get(provider, 0) >= max_servers:
                 continue
-            detail = Page(site.call('detail', f'{provider} 服务器详情', p=server['token']))
+            detail = Page(site.call('detail', f'{label}/{provider} 服务器详情', p=server['token']))
+            if detail.status is None:
+                raise SourceError(f'{provider} 详情页缺少状态字段')
+            if not usable_status(detail.status):
+                print(f'[{provider}] 详情状态不符合条件，跳过该服务器', flush=True)
+                continue
             if len(detail.channel_tokens) != 1:
                 raise SourceError(f'{provider} 详情页缺少唯一的频道入口')
-            content = site.call('channels', f'{provider} 频道列表', s=next(iter(detail.channel_tokens)))
+            content = site.call('channels', f'{label}/{provider} 频道列表', s=next(iter(detail.channel_tokens)))
             records = channel_records(content)
             if len(records) < server['channels']:
                 raise SourceError(f'{provider} 频道数量少于源站声明值：{len(records)}/{server["channels"]}')
-            group = groups.setdefault(provider, {'records': [], 'retained': False, 'source': {
-                'kind': 'website', 'url': config['url'], 'fetched_at': fetched_at,
-                'max_servers_per_operator': max_servers, 'servers': []}})
+            for record in records:
+                record.update(source_type=kind, source_status=detail.status, source_updated_at=server['updated_at'])
+            group = groups.setdefault(provider, {'records': [], 'retained': False,
+                'source': dict(source, servers=[])})
             group['records'].extend(records)
-            group['source']['servers'].append({'host': server['host'], 'channels': len(records),
+            group['source']['servers'].append({'host': server['host'], 'channels': len(records), 'status': detail.status,
+                'source_type': kind, 'source_url': config['url'], 'updated_at': server['updated_at'],
                 'sha256': hashlib.sha256(content.encode('utf-8')).hexdigest()})
             counts[provider] = counts.get(provider, 0) + 1
-        print(f'[{province}] 完成：{sum(counts.values())} 个服务器，{len(counts)} 个运营商组合', flush=True)
-    if not groups:
-        raise SourceError('源站没有可用的频道列表，保留已有文件')
-    return groups
+        print(f'[{label}/{province}] 完成：{sum(counts.values())} 个服务器，{len(counts)} 个运营商组合', flush=True)
+    return SourceSnapshot(groups, tuple(provinces or PROVINCES), source)
+
+
+def fetch_source(config: dict, provinces: list[str] | None = None, client=None) -> SourceSnapshot:
+    """全部来源成功才返回合并结果；任何一侧失败都不交付部分更新。"""
+    if 'sources' not in config:
+        return _fetch_site(config, provinces, client)
+    definitions = config['sources']
+    if not isinstance(definitions, list) or not definitions:
+        raise SourceError('sources 必须为非空来源列表')
+    seen = set()
+    for definition in definitions:
+        if not isinstance(definition, dict) or definition.get('type') not in ('multicast', 'hotel'):
+            raise SourceError('每个来源须指定 multicast 或 hotel 类型')
+        key = definition.get('type'), definition.get('url')
+        if not isinstance(key[1], str) or not valid_http(key[1]) or key in seen:
+            raise SourceError('来源 URL 无效或重复')
+        seen.add(key)
+    snapshots = []
+    for index, definition in enumerate(definitions):
+        if index:
+            time.sleep(float(config['request_interval_seconds']))
+        settings = dict(config, **definition)
+        snapshots.append(_fetch_site(settings, provinces, client, allow_absent_provinces=True))
+    checked = list(dict.fromkeys(provinces or [name for item in snapshots for name in item.source['checked_provinces']]))
+    source = {'kind': 'website', 'fetched_at': snapshots[0].source['fetched_at'],
+              'checked_provinces': checked, 'sources': [item.source for item in snapshots]}
+    groups = {}
+    for snapshot in snapshots:
+        for provider, data in snapshot.providers.items():
+            group = groups.setdefault(provider, {'records': [], 'retained': False,
+                                                 'source': dict(source, servers=[])})
+            group['records'].extend(data['records'])
+            group['source']['servers'].extend(data['source']['servers'])
+    return SourceSnapshot(groups, tuple(provinces or PROVINCES), source)
