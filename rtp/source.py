@@ -25,6 +25,10 @@ class SourceError(ValueError):
     pass
 
 
+class PlaylistError(ValueError):
+    pass
+
+
 @dataclass(frozen=True)
 class SourceSnapshot:
     providers: dict
@@ -130,7 +134,7 @@ class Client:
         try: import requests
         except ImportError as exc: raise SourceError('在线采集需安装 requests==2.34.2') from exc
         self.requests, self.base = requests, config['url']
-        self.delay = float(config.get('request_interval_seconds', 3))
+        self.delay = float(config.get('request_interval_seconds', 5))
         self.timeout = float(config.get('timeout_seconds', 45))
         self.attempts = int(config.get('max_attempts', 5))
         if (not valid_http(self.base) or urlsplit(self.base).query or urlsplit(self.base).path != '/index.php'
@@ -159,6 +163,9 @@ class Client:
                     return
             if self.stop.wait(pause): raise SourceError('其他请求失败，停止剩余采集')
 
+    def cooldown(self, seconds):
+        with self.lock: self.next_request = max(self.next_request, time.monotonic() + seconds)
+
     def get(self, url, label='首页', signed=True):
         url = urljoin(self.base, url)
         if not same_site(url, self.base): raise SourceError('拒绝请求源站以外的地址')
@@ -181,6 +188,9 @@ class Client:
                             size += len(chunk)
                             if size > 32 * 1024 * 1024: raise SourceError(f'[{label}] 响应超过 32 MiB')
                             chunks.append(chunk)
+                        if label.endswith('完整 M3U'):
+                            content_type = response.headers.get('Content-Type', '未提供').split(';')[0][:80]
+                            print(f'[{label}] HTTP 200，响应 {size} 字节，Content-Type {content_type}', flush=True)
                         return b''.join(chunks).decode('utf-8-sig')
                     if status not in (408, 429, 500, 502, 503, 504): raise SourceError(f'[{label}] HTTP {status}，停止更新')
                     reason = f'HTTP {status}'
@@ -273,11 +283,39 @@ def download_url(page, base, kind):
     return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(params, doseq=True), ''))
 
 
+def download_playlist(client, target, label):
+    parts = urlsplit(target)
+    params = parse_qs(parts.query)
+    params.pop('download', None)
+    params['format'] = ['m3u']
+    interface = urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(params, doseq=True), ''))
+    for attempt, url in enumerate((target, interface)):
+        # 仅处理响应内容异常；网络异常仍向外抛出并保留整轮旧文件。
+        try:
+            raw = client.get(url, f'{label} 完整 M3U')
+            rows = parse_playlist(raw)
+        except UnicodeDecodeError:
+            reason = 'M3U 不是有效 UTF-8 文本'
+        except SourceError:
+            raise
+        except ValueError as exc:
+            reason = f'M3U 格式异常：{exc}'
+        else:
+            print(f'[{label}] EXTINF {raw.count("#EXTINF:")} 条，解析 {len(rows)} 条，'
+                  f'有效 HTTP {sum(valid_http(row["url"]) for row in rows)} 条', flush=True)
+            if rows: return raw, rows, 'format' if attempt else 'download'
+            reason = 'M3U 空目录'
+        if not attempt:
+            print(f'[{label}] {reason}，冷却 30s 后使用网页 M3U 接口复核', flush=True)
+            client.cooldown(30)
+    raise PlaylistError(f'{reason}，下载与接口复核均未取得频道')
+
+
 def fetch_source(config, provinces=None, client=None):
     normal, fallback = int(config.get('pages_per_province', 5)), int(config.get('fallback_pages', 8))
-    workers, maximum = int(config.get('max_workers', 2)), int(config.get('max_servers_per_operator', 5))
-    if not 1 <= normal <= fallback <= 8 or not 1 <= workers <= 4 or maximum < 1:
-        raise SourceError('页数须为 1～8，并发为 1～4，每运营商来源上限须大于零')
+    workers = int(config.get('max_workers', 2))
+    if not 1 <= normal <= fallback <= 8 or not 1 <= workers <= 4:
+        raise SourceError('页数须为 1～8，并发为 1～4')
     owned, started = client is None, time.monotonic()
     client = client or Client(config)
     try:
@@ -286,6 +324,7 @@ def fetch_source(config, provinces=None, client=None):
         if not selected or any(p not in home.provinces for p in selected): raise SourceError('所选省份不在当前源站列表中')
         source = {'kind': 'website', 'url': config['url'], 'protocol': 'index',
                   'source_types': list(SOURCE_TYPES),
+                  'selection_policy': 'one_server_per_provider_multicast_first_newest_within_type',
                   'fetched_at': datetime.now(timezone.utc).isoformat(timespec='seconds'), 'checked_provinces': selected,
                   'page_policy': {'size': 10, 'normal': normal, 'fallback_if_empty': fallback}}
 
@@ -305,12 +344,14 @@ def fetch_source(config, provinces=None, client=None):
                 seen.update(tokens)
                 ended = page.empty and not tokens or not any(label == '下一页' for _, label in page.links)
                 if number >= normal or ended:
-                    candidates.sort(key=lambda r: (source_timestamp(r['updated']), r['type'] == 'multicast'), reverse=True)
+                    candidates.sort(key=lambda r: (r['type'] == 'multicast', source_timestamp(r['updated'])), reverse=True)
                     for server in candidates:
                         provider = server['provider']
                         group = groups.setdefault(provider, {'records': [], 'retained': False, 'source': {'servers': []}})
-                        if len(group['source']['servers']) >= maximum: continue
-                        detail = Page(client.get(config['url']+'?'+urlencode(dict(p=server['token'], t=server['type'])), f'{provider} 详情'))
+                        if group['records']: continue
+                        source_id = hashlib.sha256(server['token'].encode()).hexdigest()[:8]
+                        label = f'{provider}/{server["type"]}#{source_id}'
+                        detail = Page(client.get(config['url']+'?'+urlencode(dict(p=server['token'], t=server['type'])), f'{label} 详情'))
                         status = detail.field('状态')
                         if status is None:
                             skip(provider, '详情状态缺失')
@@ -337,14 +378,9 @@ def fetch_source(config, provinces=None, client=None):
                         except ValueError as exc:
                             skip(provider, str(exc))
                             continue
-                        # 网络异常继续向外抛出，保持整轮失败保护。
-                        try: raw = client.get(target, f'{provider} 完整 M3U')
-                        except UnicodeDecodeError:
-                            skip(provider, 'M3U 不是有效 UTF-8 文本')
-                            continue
-                        try: rows = parse_playlist(raw)
-                        except ValueError as exc:
-                            skip(provider, f'M3U 格式异常：{exc}')
+                        try: raw, rows, mode = download_playlist(client, target, label)
+                        except PlaylistError as exc:
+                            skip(provider, f'来源 {source_id}：{exc}')
                             continue
                         downloaded = len(rows)
                         if server['count'] is not None and downloaded != server['count']:
@@ -355,8 +391,10 @@ def fetch_source(config, provinces=None, client=None):
                         if not rows: continue
                         for row in rows: row.update(source_type=server['type'], source_status=status, source_updated_at=updated)
                         group['records'].extend(rows)
-                        group['source']['servers'].append({'type': server['type'], 'channels': len(rows), 'updated_at': updated,
+                        group['source']['servers'].append({'id': source_id, 'type': server['type'], 'channels': len(rows), 'updated_at': updated,
+                                                           'download_mode': mode, 'response_bytes': len(raw.encode()),
                                                            'sha256': hashlib.sha256(raw.encode()).hexdigest()})
+                        print(f'[{provider}] 已选 {server["type"]}#{source_id}，保留 {len(rows)} 条，跳过后续同组服务器', flush=True)
                     candidates.clear()
                     if any(g['records'] for g in groups.values()) or ended or number == fallback: break
                 url = next_page(page, url, config['url'])
