@@ -6,37 +6,38 @@
   "epg_url": "https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml.gz",
   "playback_tested": false,
   "providers": {
-    "北京联通": {
-      "input_channels": 138,
+    "北京电信": {
+      "input_channels": 186,
       "channels": 135,
-      "duplicates_removed": 3,
+      "duplicates_removed": 51,
       "exact_url_duplicates_removed": 0,
-      "channel_duplicates_removed": 3,
+      "channel_duplicates_removed": 51,
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 10,
-        "央视频道": 30,
-        "卫视频道": 32,
+        "4K超清": 3,
+        "央视频道": 18,
+        "卫视频道": 38,
         "体育频道": 2,
+        "港澳台": 1,
         "少儿频道": 5,
         "影视频道": 10,
         "纪实频道": 1,
         "新闻频道": 3,
-        "其他": 42
+        "其他": 54
       },
-      "bytes": 24538,
-      "sha256": "22afe30c247327e37640f96af1b317962ffe334331016539dc22b2730f285fd4",
+      "bytes": 24292,
+      "sha256": "985bfe1cce2b6eea9dcd0b2a75b9b695bbc57865111622dcfdc1745d2ce614b7",
       "source": {
         "servers": [
           {
-            "id": "bc1952c3",
+            "id": "72ad7d91",
             "type": "multicast",
-            "channels": 138,
-            "updated_at": "2026-10-28 19:19:34",
+            "channels": 186,
+            "updated_at": "2026-10-29 04:46:40",
             "download_mode": "download",
-            "response_bytes": 27143,
-            "sha256": "34d75e4d2ad7732c83f9c769a4ccb2c9cf31d3f35f3e2ab632e921f11e64db1a"
+            "response_bytes": 36167,
+            "sha256": "1f419b562a10790a4110340a14f82cdfac51262d9fe619476098927d2721f157"
           }
         ],
         "kind": "website",
@@ -47,7 +48,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -92,7 +93,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -118,9 +119,128 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
+        }
+      },
+      "retained": false
+    },
+    "北京联通": {
+      "input_channels": 138,
+      "channels": 135,
+      "duplicates_removed": 3,
+      "exact_url_duplicates_removed": 0,
+      "channel_duplicates_removed": 3,
+      "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
+      "invalid_or_non_http_removed": 0,
+      "groups": {
+        "4K超清": 10,
+        "央视频道": 30,
+        "卫视频道": 32,
+        "体育频道": 2,
+        "少儿频道": 5,
+        "影视频道": 10,
+        "纪实频道": 1,
+        "新闻频道": 3,
+        "其他": 42
+      },
+      "bytes": 24538,
+      "sha256": "221aaf622bfdebe0d56d077adb8fc0cdc2da2150ae5717421caec2a232b9eb55",
+      "source": {
+        "servers": [
+          {
+            "id": "088e6494",
+            "type": "multicast",
+            "channels": 138,
+            "updated_at": "2026-10-29 04:45:17",
+            "download_mode": "download",
+            "response_bytes": 27143,
+            "sha256": "0671b1f1be7788871f626c57db31da2d16b4a61af84ce81f2cd4aa6d3f3ae8ee"
+          }
+        ],
+        "kind": "website",
+        "url": "https://iptv.cqshushu.com/index.php",
+        "protocol": "index",
+        "source_types": [
+          "hotel",
+          "multicast"
+        ],
+        "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
+        "checked_provinces": [
+          "北京",
+          "天津",
+          "河北",
+          "山西",
+          "内蒙古",
+          "辽宁",
+          "吉林",
+          "黑龙江",
+          "上海",
+          "江苏",
+          "浙江",
+          "安徽",
+          "福建",
+          "江西",
+          "山东",
+          "河南",
+          "湖北",
+          "湖南",
+          "广东",
+          "广西",
+          "海南",
+          "重庆",
+          "四川",
+          "贵州",
+          "云南",
+          "陕西",
+          "甘肃",
+          "青海",
+          "宁夏",
+          "新疆"
+        ],
+        "page_policy": {
+          "size": 10,
+          "normal": 5,
+          "fallback_if_empty": 8
+        },
+        "pages": {
+          "北京": 5,
+          "天津": 5,
+          "河北": 5,
+          "山西": 5,
+          "内蒙古": 3,
+          "辽宁": 5,
+          "吉林": 5,
+          "黑龙江": 5,
+          "上海": 5,
+          "江苏": 5,
+          "浙江": 5,
+          "安徽": 5,
+          "福建": 4,
+          "江西": 2,
+          "山东": 5,
+          "河南": 5,
+          "湖北": 5,
+          "湖南": 5,
+          "广东": 5,
+          "广西": 5,
+          "海南": 5,
+          "重庆": 5,
+          "四川": 5,
+          "贵州": 2,
+          "云南": 4,
+          "陕西": 5,
+          "甘肃": 1,
+          "青海": 2,
+          "宁夏": 1,
+          "新疆": 1
+        },
+        "metrics": {
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -145,18 +265,18 @@
         "新闻频道": 2,
         "其他": 72
       },
-      "bytes": 28608,
-      "sha256": "18aea945656cabb9533323c8e62ddeca055b2489d9c2a1dd1aef1a09bee016d1",
+      "bytes": 29088,
+      "sha256": "d3f7566465f97b37534441cc6a9db50093dd5edeead3b2aa30c7d8e3085e13be",
       "source": {
         "servers": [
           {
-            "id": "4196fd16",
+            "id": "53f58302",
             "type": "multicast",
             "channels": 160,
-            "updated_at": "2026-10-28 19:25:43",
+            "updated_at": "2026-10-29 04:46:07",
             "download_mode": "download",
-            "response_bytes": 31076,
-            "sha256": "41b90e0d175b75e708d0e602edb6d703c69f5db4972e0bdfd16033321e925a70"
+            "response_bytes": 31556,
+            "sha256": "83715a1ace08f10b517dcefa951e2752b929d37216a73c9620d1484843a27663"
           }
         ],
         "kind": "website",
@@ -167,7 +287,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -212,7 +332,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -238,9 +358,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -265,18 +385,18 @@
         "新闻频道": 12,
         "其他": 193
       },
-      "bytes": 54120,
-      "sha256": "7c3ce69088cda9b9635dd04a19c0297c2483c47e0a296f18e2731092e85c6996",
+      "bytes": 53540,
+      "sha256": "1f5283718de05c18889d5f33c31c4a5fdd855fa0b8b1db246dc14f1564334bcc",
       "source": {
         "servers": [
           {
-            "id": "b00f1995",
+            "id": "ade5f0fb",
             "type": "multicast",
             "channels": 310,
-            "updated_at": "2026-10-28 19:25:16",
+            "updated_at": "2026-10-29 04:48:18",
             "download_mode": "download",
-            "response_bytes": 64857,
-            "sha256": "4025bbff88d50ec19f441fe8e0f5a3f26a5a327aca4b7a77a290d99327560785"
+            "response_bytes": 64237,
+            "sha256": "d6abdba43a44932a5cbf70f5941d5d7beb52240d462810722c901e5f17933755"
           }
         ],
         "kind": "website",
@@ -287,7 +407,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -332,7 +452,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -358,9 +478,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -385,18 +505,18 @@
         "新闻频道": 14,
         "其他": 208
       },
-      "bytes": 54518,
-      "sha256": "d7faa4848e56543286591e1a310ef85953c2b7b2de69774573182a5e6784b1ce",
+      "bytes": 53930,
+      "sha256": "00a67eb102c114b782b97d8a2b152f6bce6df1ea63d95fc5d8774a7e8225b06f",
       "source": {
         "servers": [
           {
-            "id": "ceb60952",
+            "id": "a41212e3",
             "type": "multicast",
             "channels": 313,
-            "updated_at": "2026-10-28 19:25:58",
+            "updated_at": "2026-10-29 04:47:52",
             "download_mode": "download",
-            "response_bytes": 66181,
-            "sha256": "50fe36b83b936b41d3dd3a4d5c24d7fe2673ed15bf3877fd3e422697203e8203"
+            "response_bytes": 65555,
+            "sha256": "de8ed90e9a66a02cd46420e5cb93a0cfc62b1313ac23fce63b480f5d7ed93f5f"
           }
         ],
         "kind": "website",
@@ -407,7 +527,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -452,7 +572,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -478,9 +598,127 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
+        }
+      },
+      "retained": false
+    },
+    "山西电信": {
+      "input_channels": 119,
+      "channels": 119,
+      "duplicates_removed": 0,
+      "exact_url_duplicates_removed": 0,
+      "channel_duplicates_removed": 0,
+      "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
+      "invalid_or_non_http_removed": 0,
+      "groups": {
+        "央视频道": 30,
+        "卫视频道": 39,
+        "体育频道": 1,
+        "港澳台": 6,
+        "少儿频道": 4,
+        "影视频道": 2,
+        "新闻频道": 3,
+        "其他": 34
+      },
+      "bytes": 22536,
+      "sha256": "a505838606b2db49b6c76f4881782817be182e922cd171c734275f352d8762aa",
+      "source": {
+        "servers": [
+          {
+            "id": "b1d34fab",
+            "type": "multicast",
+            "channels": 119,
+            "updated_at": "2026-10-29 04:49:28",
+            "download_mode": "download",
+            "response_bytes": 24960,
+            "sha256": "68b7c4747c01d8080d17dda1948990ca161dfa9790c3f44aba9272e09e18e39c"
+          }
+        ],
+        "kind": "website",
+        "url": "https://iptv.cqshushu.com/index.php",
+        "protocol": "index",
+        "source_types": [
+          "hotel",
+          "multicast"
+        ],
+        "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
+        "checked_provinces": [
+          "北京",
+          "天津",
+          "河北",
+          "山西",
+          "内蒙古",
+          "辽宁",
+          "吉林",
+          "黑龙江",
+          "上海",
+          "江苏",
+          "浙江",
+          "安徽",
+          "福建",
+          "江西",
+          "山东",
+          "河南",
+          "湖北",
+          "湖南",
+          "广东",
+          "广西",
+          "海南",
+          "重庆",
+          "四川",
+          "贵州",
+          "云南",
+          "陕西",
+          "甘肃",
+          "青海",
+          "宁夏",
+          "新疆"
+        ],
+        "page_policy": {
+          "size": 10,
+          "normal": 5,
+          "fallback_if_empty": 8
+        },
+        "pages": {
+          "北京": 5,
+          "天津": 5,
+          "河北": 5,
+          "山西": 5,
+          "内蒙古": 3,
+          "辽宁": 5,
+          "吉林": 5,
+          "黑龙江": 5,
+          "上海": 5,
+          "江苏": 5,
+          "浙江": 5,
+          "安徽": 5,
+          "福建": 4,
+          "江西": 2,
+          "山东": 5,
+          "河南": 5,
+          "湖北": 5,
+          "湖南": 5,
+          "广东": 5,
+          "广西": 5,
+          "海南": 5,
+          "重庆": 5,
+          "四川": 5,
+          "贵州": 2,
+          "云南": 4,
+          "陕西": 5,
+          "甘肃": 1,
+          "青海": 2,
+          "宁夏": 1,
+          "新疆": 1
+        },
+        "metrics": {
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -505,18 +743,18 @@
         "新闻频道": 3,
         "其他": 61
       },
-      "bytes": 25881,
-      "sha256": "248a3ae95d50861cfbe97cbdf25d67ae956537a153db7965d665af6e530c81e9",
+      "bytes": 25601,
+      "sha256": "a4640901b603c939c25dfe366492d814386e64abaef01fa51941b51585be65de",
       "source": {
         "servers": [
           {
-            "id": "379ff247",
+            "id": "6b4a303b",
             "type": "multicast",
             "channels": 185,
-            "updated_at": "2026-10-28 19:28:58",
+            "updated_at": "2026-10-29 04:50:32",
             "download_mode": "download",
-            "response_bytes": 38066,
-            "sha256": "c24c3856b940ee2bf5cc041819d642c47de7f6d4024765af12d11fd98db9905b"
+            "response_bytes": 37696,
+            "sha256": "29334b8bb724f3fd0621132058e041d58cdda5df99d365d6e47f11fb51dddf77"
           }
         ],
         "kind": "website",
@@ -527,7 +765,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -572,7 +810,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -598,9 +836,127 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
+        }
+      },
+      "retained": false
+    },
+    "内蒙古电信": {
+      "input_channels": 250,
+      "channels": 168,
+      "duplicates_removed": 82,
+      "exact_url_duplicates_removed": 4,
+      "channel_duplicates_removed": 78,
+      "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
+      "invalid_or_non_http_removed": 0,
+      "groups": {
+        "4K超清": 10,
+        "央视频道": 26,
+        "卫视频道": 36,
+        "少儿频道": 4,
+        "影视频道": 6,
+        "纪实频道": 1,
+        "新闻频道": 12,
+        "其他": 73
+      },
+      "bytes": 31019,
+      "sha256": "7ff21439756c35a09850f4248a930c2c738fdf72625cbbcfe5abbcc20dcc0d2c",
+      "source": {
+        "servers": [
+          {
+            "id": "9f600f2f",
+            "type": "multicast",
+            "channels": 250,
+            "updated_at": "2026-10-29 04:49:52",
+            "download_mode": "download",
+            "response_bytes": 54227,
+            "sha256": "e198692b00a3866f67406aee5edfe69633dcc1ea2b14c244df83c3ed5154635e"
+          }
+        ],
+        "kind": "website",
+        "url": "https://iptv.cqshushu.com/index.php",
+        "protocol": "index",
+        "source_types": [
+          "hotel",
+          "multicast"
+        ],
+        "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
+        "checked_provinces": [
+          "北京",
+          "天津",
+          "河北",
+          "山西",
+          "内蒙古",
+          "辽宁",
+          "吉林",
+          "黑龙江",
+          "上海",
+          "江苏",
+          "浙江",
+          "安徽",
+          "福建",
+          "江西",
+          "山东",
+          "河南",
+          "湖北",
+          "湖南",
+          "广东",
+          "广西",
+          "海南",
+          "重庆",
+          "四川",
+          "贵州",
+          "云南",
+          "陕西",
+          "甘肃",
+          "青海",
+          "宁夏",
+          "新疆"
+        ],
+        "page_policy": {
+          "size": 10,
+          "normal": 5,
+          "fallback_if_empty": 8
+        },
+        "pages": {
+          "北京": 5,
+          "天津": 5,
+          "河北": 5,
+          "山西": 5,
+          "内蒙古": 3,
+          "辽宁": 5,
+          "吉林": 5,
+          "黑龙江": 5,
+          "上海": 5,
+          "江苏": 5,
+          "浙江": 5,
+          "安徽": 5,
+          "福建": 4,
+          "江西": 2,
+          "山东": 5,
+          "河南": 5,
+          "湖北": 5,
+          "湖南": 5,
+          "广东": 5,
+          "广西": 5,
+          "海南": 5,
+          "重庆": 5,
+          "四川": 5,
+          "贵州": 2,
+          "云南": 4,
+          "陕西": 5,
+          "甘肃": 1,
+          "青海": 2,
+          "宁夏": 1,
+          "新疆": 1
+        },
+        "metrics": {
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -629,7 +985,7 @@
             "id": "17c93d8b",
             "type": "multicast",
             "channels": 151,
-            "updated_at": "2026-10-28 19:28:43",
+            "updated_at": "2026-10-29 04:50:17",
             "download_mode": "download",
             "response_bytes": 33249,
             "sha256": "7e79d87fcaa2ae23c0ec7a0fc316d1d942c0c2ec2ed3ef3b8975c905ca58d3c1"
@@ -643,7 +999,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -688,7 +1044,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -714,43 +1070,42 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
     },
-    "辽宁联通": {
-      "input_channels": 148,
-      "channels": 81,
-      "duplicates_removed": 67,
+    "辽宁电信": {
+      "input_channels": 88,
+      "channels": 84,
+      "duplicates_removed": 4,
       "exact_url_duplicates_removed": 0,
-      "channel_duplicates_removed": 67,
+      "channel_duplicates_removed": 4,
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "央视频道": 18,
-        "卫视频道": 34,
+        "央视频道": 26,
+        "卫视频道": 31,
         "体育频道": 2,
-        "港澳台": 1,
-        "少儿频道": 4,
-        "影视频道": 3,
+        "少儿频道": 6,
+        "影视频道": 2,
         "新闻频道": 2,
-        "其他": 17
+        "其他": 15
       },
-      "bytes": 14758,
-      "sha256": "38784c58e45dd2d24454635d9043c4a55c756a8492c3869c6d45644e621df6fe",
+      "bytes": 15197,
+      "sha256": "9e57333eca842cb8c9f37759663b2480c5ddfff71aa15775b65efdbf547962ad",
       "source": {
         "servers": [
           {
-            "id": "59bf84bd",
+            "id": "08665195",
             "type": "hotel",
-            "channels": 148,
-            "updated_at": "2026-10-28 19:32:33",
+            "channels": 88,
+            "updated_at": "2026-10-29 04:53:28",
             "download_mode": "download",
-            "response_bytes": 31235,
-            "sha256": "df72c3d864acb163adb25abe48909ac97337dbc4d9b3a7f758d6244863c7143f"
+            "response_bytes": 17622,
+            "sha256": "6d32db3efcdd31a19028386c4b24d73cf0080d56cf1b7dd5b74348a81f57f646"
           }
         ],
         "kind": "website",
@@ -761,7 +1116,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -806,7 +1161,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -832,41 +1187,158 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
+        }
+      },
+      "retained": false
+    },
+    "辽宁联通": {
+      "input_channels": 133,
+      "channels": 132,
+      "duplicates_removed": 1,
+      "exact_url_duplicates_removed": 1,
+      "channel_duplicates_removed": 0,
+      "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
+      "invalid_or_non_http_removed": 0,
+      "groups": {
+        "4K超清": 2,
+        "央视频道": 29,
+        "卫视频道": 37,
+        "体育频道": 4,
+        "少儿频道": 5,
+        "影视频道": 8,
+        "新闻频道": 3,
+        "其他": 44
+      },
+      "bytes": 24383,
+      "sha256": "846d09169fbed2305b2d64506d7014e2418dc635ce244cfe27928945efcf7ff8",
+      "source": {
+        "servers": [
+          {
+            "id": "955882cd",
+            "type": "multicast",
+            "channels": 133,
+            "updated_at": "2026-10-29 04:52:58",
+            "download_mode": "download",
+            "response_bytes": 27307,
+            "sha256": "4c38076a6e1a102a6a6fe8b63044222015f257f20833db4a5566c580a87b9853"
+          }
+        ],
+        "kind": "website",
+        "url": "https://iptv.cqshushu.com/index.php",
+        "protocol": "index",
+        "source_types": [
+          "hotel",
+          "multicast"
+        ],
+        "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
+        "checked_provinces": [
+          "北京",
+          "天津",
+          "河北",
+          "山西",
+          "内蒙古",
+          "辽宁",
+          "吉林",
+          "黑龙江",
+          "上海",
+          "江苏",
+          "浙江",
+          "安徽",
+          "福建",
+          "江西",
+          "山东",
+          "河南",
+          "湖北",
+          "湖南",
+          "广东",
+          "广西",
+          "海南",
+          "重庆",
+          "四川",
+          "贵州",
+          "云南",
+          "陕西",
+          "甘肃",
+          "青海",
+          "宁夏",
+          "新疆"
+        ],
+        "page_policy": {
+          "size": 10,
+          "normal": 5,
+          "fallback_if_empty": 8
+        },
+        "pages": {
+          "北京": 5,
+          "天津": 5,
+          "河北": 5,
+          "山西": 5,
+          "内蒙古": 3,
+          "辽宁": 5,
+          "吉林": 5,
+          "黑龙江": 5,
+          "上海": 5,
+          "江苏": 5,
+          "浙江": 5,
+          "安徽": 5,
+          "福建": 4,
+          "江西": 2,
+          "山东": 5,
+          "河南": 5,
+          "湖北": 5,
+          "湖南": 5,
+          "广东": 5,
+          "广西": 5,
+          "海南": 5,
+          "重庆": 5,
+          "四川": 5,
+          "贵州": 2,
+          "云南": 4,
+          "陕西": 5,
+          "甘肃": 1,
+          "青海": 2,
+          "宁夏": 1,
+          "新疆": 1
+        },
+        "metrics": {
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
     },
     "吉林联通": {
-      "input_channels": 102,
-      "channels": 102,
+      "input_channels": 57,
+      "channels": 57,
       "duplicates_removed": 0,
       "exact_url_duplicates_removed": 0,
       "channel_duplicates_removed": 0,
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "央视频道": 21,
-        "卫视频道": 35,
-        "体育频道": 2,
-        "少儿频道": 1,
-        "影视频道": 7,
-        "其他": 36
+        "央视频道": 14,
+        "卫视频道": 31,
+        "少儿频道": 2,
+        "影视频道": 1,
+        "其他": 9
       },
-      "bytes": 23141,
-      "sha256": "392bda99ee9fd6630836e3d19b3a7ff7ac775182f03c24260dfe4b40018c344e",
+      "bytes": 10204,
+      "sha256": "651f8264cc243cbcf3fb712e9b6ed704e42e7fe3929def2ddae276676ffcbb3d",
       "source": {
         "servers": [
           {
-            "id": "c43b38c5",
+            "id": "ec87eb0a",
             "type": "hotel",
-            "channels": 102,
-            "updated_at": "2026-10-28 19:32:44",
+            "channels": 57,
+            "updated_at": "2026-10-29 04:57:03",
             "download_mode": "download",
-            "response_bytes": 25236,
-            "sha256": "a71b0c770a24dca90b19009e5fb5c5149b90ad43cb9fd1325b6bb5cdb8b81dd6"
+            "response_bytes": 11282,
+            "sha256": "b1cbbe0a7bc966800b1d01e71f0dea1e8627d8a41b535ad97981293a90241f59"
           }
         ],
         "kind": "website",
@@ -877,7 +1349,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -922,7 +1394,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -948,44 +1420,41 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
     },
     "黑龙江电信": {
-      "input_channels": 420,
-      "channels": 341,
-      "duplicates_removed": 79,
-      "exact_url_duplicates_removed": 76,
-      "channel_duplicates_removed": 3,
+      "input_channels": 51,
+      "channels": 51,
+      "duplicates_removed": 0,
+      "exact_url_duplicates_removed": 0,
+      "channel_duplicates_removed": 0,
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "央视频道": 88,
-        "卫视频道": 99,
-        "体育频道": 3,
-        "港澳台": 2,
-        "少儿频道": 23,
-        "影视频道": 5,
-        "纪实频道": 1,
-        "新闻频道": 10,
-        "其他": 110
+        "央视频道": 15,
+        "卫视频道": 27,
+        "少儿频道": 3,
+        "影视频道": 1,
+        "新闻频道": 1,
+        "其他": 4
       },
-      "bytes": 62729,
-      "sha256": "38b1d16cef1f8f5f3df9f69187e29256dc5129c8f3023737e2d0667403f429bc",
+      "bytes": 11590,
+      "sha256": "683499add88f83747f783680dcff1a9e9cfb638415d5687c5e9721a0344e1fdf",
       "source": {
         "servers": [
           {
-            "id": "c4e5e657",
+            "id": "e67400ab",
             "type": "hotel",
-            "channels": 420,
-            "updated_at": "2026-10-28 19:35:04",
+            "channels": 51,
+            "updated_at": "2026-10-29 04:59:28",
             "download_mode": "download",
-            "response_bytes": 100040,
-            "sha256": "065ccda86e7e68b448f34b799215f742b79e86e6f142d02b348c20be012e58d6"
+            "response_bytes": 13289,
+            "sha256": "8fdf69009a17595db25945cc92670f5339e7bcaf60aa29c22ff829d07d10c4b4"
           }
         ],
         "kind": "website",
@@ -996,7 +1465,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -1041,7 +1510,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -1067,44 +1536,36 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
     },
     "黑龙江联通": {
-      "input_channels": 196,
-      "channels": 131,
-      "duplicates_removed": 65,
+      "input_channels": 1,
+      "channels": 1,
+      "duplicates_removed": 0,
       "exact_url_duplicates_removed": 0,
-      "channel_duplicates_removed": 65,
+      "channel_duplicates_removed": 0,
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 1,
-        "央视频道": 24,
-        "卫视频道": 37,
-        "体育频道": 1,
-        "少儿频道": 8,
-        "影视频道": 8,
-        "纪实频道": 1,
-        "新闻频道": 13,
-        "其他": 38
+        "影视频道": 1
       },
-      "bytes": 24025,
-      "sha256": "e9fdc3f7f5144e2d11f88c09b8e8b333699cae57bedf0b7f3681bf49ee6c7d7c",
+      "bytes": 308,
+      "sha256": "1844c9e850f341d7b91d27be2854ec15240ff97cd86e531730c878c85113a57e",
       "source": {
         "servers": [
           {
-            "id": "85a6b139",
+            "id": "9e5d0fec",
             "type": "hotel",
-            "channels": 196,
-            "updated_at": "2026-10-28 19:35:59",
+            "channels": 1,
+            "updated_at": "2026-10-29 04:56:28",
             "download_mode": "download",
-            "response_bytes": 41426,
-            "sha256": "fb5d784bf20840a743b3ce663cd182540e5080f7af5f8a826152f03dfbe03460"
+            "response_bytes": 277,
+            "sha256": "b297f6954951631ee2cd59ad3f297bf3e0aa354b491348aed5f03da9c421a543"
           }
         ],
         "kind": "website",
@@ -1115,7 +1576,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -1160,7 +1621,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -1186,9 +1647,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -1211,18 +1672,18 @@
         "新闻频道": 3,
         "其他": 32
       },
-      "bytes": 22642,
-      "sha256": "1c6c2adb35b03ea95ef0e182317dbc0a871b63f21b40f92c65fce60551d18e04",
+      "bytes": 22521,
+      "sha256": "fa27a814a2f8bedc753f89992c7b2373b46ac9f1917bbf9448ec54b64dd81216",
       "source": {
         "servers": [
           {
-            "id": "152c8108",
+            "id": "55b2d359",
             "type": "multicast",
             "channels": 203,
-            "updated_at": "2026-10-28 19:37:43",
+            "updated_at": "2026-10-29 04:59:44",
             "download_mode": "download",
-            "response_bytes": 40911,
-            "sha256": "ce7a15e14ba96d69dfb62b73e2df93c60a40d63905993af14f72f27bcb730101"
+            "response_bytes": 40708,
+            "sha256": "755832f63fc80d4441c0662fcabc907031694527a5a063204977d4cdb15fda5b"
           }
         ],
         "kind": "website",
@@ -1233,7 +1694,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -1278,7 +1739,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -1304,9 +1765,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -1331,7 +1792,7 @@
             "id": "ddf228c9",
             "type": "hotel",
             "channels": 32,
-            "updated_at": "2026-10-28 19:38:13",
+            "updated_at": "2026-10-29 05:00:33",
             "download_mode": "download",
             "response_bytes": 7884,
             "sha256": "3b5755e29e20178054b9287ec4d2c349a062aa0c40afdf104ae3dd079c4d6723"
@@ -1345,7 +1806,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -1390,7 +1851,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -1416,9 +1877,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -1443,18 +1904,18 @@
         "新闻频道": 12,
         "其他": 93
       },
-      "bytes": 34589,
-      "sha256": "401f236fdb7b21b47d2a1169dead75ade7a11189f6030bf2b1b3dba1fa109e51",
+      "bytes": 34967,
+      "sha256": "d3cf763c3d61d705a4be99cc8969d328352a0beb9f2be5d11c4967a348319805",
       "source": {
         "servers": [
           {
-            "id": "51fb82bf",
+            "id": "cbe5e8a5",
             "type": "multicast",
             "channels": 276,
-            "updated_at": "2026-10-28 19:40:44",
+            "updated_at": "2026-10-29 05:03:18",
             "download_mode": "download",
-            "response_bytes": 55919,
-            "sha256": "6897fe6f75aca5794d0fe7d973392f9e2a4d677df920c69abc7a4b231936b862"
+            "response_bytes": 56471,
+            "sha256": "5cd0677a0e56737d35f635b15c8f0749327379547c9c0f72262fb39ba991fb28"
           }
         ],
         "kind": "website",
@@ -1465,7 +1926,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -1510,7 +1971,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -1536,37 +1997,44 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
     },
     "浙江电信": {
-      "input_channels": 37,
-      "channels": 37,
-      "duplicates_removed": 0,
+      "input_channels": 199,
+      "channels": 114,
+      "duplicates_removed": 85,
       "exact_url_duplicates_removed": 0,
-      "channel_duplicates_removed": 0,
+      "channel_duplicates_removed": 85,
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "央视频道": 16,
-        "卫视频道": 21
+        "4K超清": 15,
+        "央视频道": 17,
+        "卫视频道": 30,
+        "体育频道": 4,
+        "少儿频道": 2,
+        "影视频道": 4,
+        "纪实频道": 2,
+        "新闻频道": 6,
+        "其他": 34
       },
-      "bytes": 8457,
-      "sha256": "b367a15abaffb45afa2e37f652870dbc26f53cc2102555232fb20589dd02157e",
+      "bytes": 21104,
+      "sha256": "d2ce2b4437ba09b4e0d3220fc2e18ea0beab7cd00dc8ef23902ded947cfbd871",
       "source": {
         "servers": [
           {
-            "id": "9b4ca204",
-            "type": "hotel",
-            "channels": 37,
-            "updated_at": "2026-10-28 19:40:13",
+            "id": "078b479e",
+            "type": "multicast",
+            "channels": 199,
+            "updated_at": "2026-10-29 05:04:43",
             "download_mode": "download",
-            "response_bytes": 9101,
-            "sha256": "25f739c834b902577f44c2f0857065cb32a684e68f46737cd42b3ea1e9fb3f50"
+            "response_bytes": 40695,
+            "sha256": "faf97e732c83fbe03bfd2bacf60afebc39183d34244f9a0925f7585936f895e4"
           }
         ],
         "kind": "website",
@@ -1577,7 +2045,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -1622,7 +2090,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -1648,9 +2116,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -1675,18 +2143,18 @@
         "新闻频道": 46,
         "其他": 62
       },
-      "bytes": 38062,
-      "sha256": "d98fc378023165a169b5f8793ba9057561c53b4a37b208dbe7578dd6c31ab873",
+      "bytes": 37465,
+      "sha256": "98635275207fb92e4f42b62a98c680fad33c7658953d13a36a1388c51cfac848",
       "source": {
         "servers": [
           {
-            "id": "8c4d3450",
+            "id": "a02715f2",
             "type": "multicast",
             "channels": 200,
-            "updated_at": "2026-10-28 19:44:43",
+            "updated_at": "2026-10-29 05:03:42",
             "download_mode": "download",
-            "response_bytes": 42412,
-            "sha256": "b0da984881b977d22a65f52be65c927196b42d7729515c698ac55be155205d5e"
+            "response_bytes": 41812,
+            "sha256": "78f177b234af8b1d56558addb7feb42a94a3673259c69bc0d19b1256578aee65"
           }
         ],
         "kind": "website",
@@ -1697,7 +2165,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -1742,7 +2210,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -1768,9 +2236,242 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
+        }
+      },
+      "retained": false
+    },
+    "福建联通": {
+      "input_channels": 40,
+      "channels": 40,
+      "duplicates_removed": 0,
+      "exact_url_duplicates_removed": 0,
+      "channel_duplicates_removed": 0,
+      "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
+      "invalid_or_non_http_removed": 0,
+      "groups": {
+        "央视频道": 16,
+        "卫视频道": 18,
+        "新闻频道": 1,
+        "其他": 5
+      },
+      "bytes": 9277,
+      "sha256": "f1bc48b3e792252dac6d4b6fbbea907c058b510310606e15f1b9f0742366c9d0",
+      "source": {
+        "servers": [
+          {
+            "id": "55f21131",
+            "type": "hotel",
+            "channels": 40,
+            "updated_at": "2026-10-29 05:07:58",
+            "download_mode": "download",
+            "response_bytes": 10248,
+            "sha256": "0eeb27f74748ad3ba156ed60ccf74f71fb86667af5c7c4dd000e3fde2bcad89d"
+          }
+        ],
+        "kind": "website",
+        "url": "https://iptv.cqshushu.com/index.php",
+        "protocol": "index",
+        "source_types": [
+          "hotel",
+          "multicast"
+        ],
+        "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
+        "checked_provinces": [
+          "北京",
+          "天津",
+          "河北",
+          "山西",
+          "内蒙古",
+          "辽宁",
+          "吉林",
+          "黑龙江",
+          "上海",
+          "江苏",
+          "浙江",
+          "安徽",
+          "福建",
+          "江西",
+          "山东",
+          "河南",
+          "湖北",
+          "湖南",
+          "广东",
+          "广西",
+          "海南",
+          "重庆",
+          "四川",
+          "贵州",
+          "云南",
+          "陕西",
+          "甘肃",
+          "青海",
+          "宁夏",
+          "新疆"
+        ],
+        "page_policy": {
+          "size": 10,
+          "normal": 5,
+          "fallback_if_empty": 8
+        },
+        "pages": {
+          "北京": 5,
+          "天津": 5,
+          "河北": 5,
+          "山西": 5,
+          "内蒙古": 3,
+          "辽宁": 5,
+          "吉林": 5,
+          "黑龙江": 5,
+          "上海": 5,
+          "江苏": 5,
+          "浙江": 5,
+          "安徽": 5,
+          "福建": 4,
+          "江西": 2,
+          "山东": 5,
+          "河南": 5,
+          "湖北": 5,
+          "湖南": 5,
+          "广东": 5,
+          "广西": 5,
+          "海南": 5,
+          "重庆": 5,
+          "四川": 5,
+          "贵州": 2,
+          "云南": 4,
+          "陕西": 5,
+          "甘肃": 1,
+          "青海": 2,
+          "宁夏": 1,
+          "新疆": 1
+        },
+        "metrics": {
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
+        }
+      },
+      "retained": false
+    },
+    "江西电信": {
+      "input_channels": 214,
+      "channels": 207,
+      "duplicates_removed": 7,
+      "exact_url_duplicates_removed": 1,
+      "channel_duplicates_removed": 6,
+      "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
+      "invalid_or_non_http_removed": 0,
+      "groups": {
+        "4K超清": 4,
+        "央视频道": 28,
+        "卫视频道": 35,
+        "体育频道": 3,
+        "港澳台": 1,
+        "少儿频道": 7,
+        "影视频道": 17,
+        "新闻频道": 5,
+        "其他": 107
+      },
+      "bytes": 38383,
+      "sha256": "1ffadedef1159db5f05e39a1f66200bde5c885f4313eb22628747a18646c0990",
+      "source": {
+        "servers": [
+          {
+            "id": "c7ac1a7a",
+            "type": "multicast",
+            "channels": 214,
+            "updated_at": "2026-10-29 05:08:43",
+            "download_mode": "download",
+            "response_bytes": 44296,
+            "sha256": "c017e42208ad8d46820cacd8da6be0e0ed11d5a294b5b0fabf8e628b7b2446a4"
+          }
+        ],
+        "kind": "website",
+        "url": "https://iptv.cqshushu.com/index.php",
+        "protocol": "index",
+        "source_types": [
+          "hotel",
+          "multicast"
+        ],
+        "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
+        "checked_provinces": [
+          "北京",
+          "天津",
+          "河北",
+          "山西",
+          "内蒙古",
+          "辽宁",
+          "吉林",
+          "黑龙江",
+          "上海",
+          "江苏",
+          "浙江",
+          "安徽",
+          "福建",
+          "江西",
+          "山东",
+          "河南",
+          "湖北",
+          "湖南",
+          "广东",
+          "广西",
+          "海南",
+          "重庆",
+          "四川",
+          "贵州",
+          "云南",
+          "陕西",
+          "甘肃",
+          "青海",
+          "宁夏",
+          "新疆"
+        ],
+        "page_policy": {
+          "size": 10,
+          "normal": 5,
+          "fallback_if_empty": 8
+        },
+        "pages": {
+          "北京": 5,
+          "天津": 5,
+          "河北": 5,
+          "山西": 5,
+          "内蒙古": 3,
+          "辽宁": 5,
+          "吉林": 5,
+          "黑龙江": 5,
+          "上海": 5,
+          "江苏": 5,
+          "浙江": 5,
+          "安徽": 5,
+          "福建": 4,
+          "江西": 2,
+          "山东": 5,
+          "河南": 5,
+          "湖北": 5,
+          "湖南": 5,
+          "广东": 5,
+          "广西": 5,
+          "海南": 5,
+          "重庆": 5,
+          "四川": 5,
+          "贵州": 2,
+          "云南": 4,
+          "陕西": 5,
+          "甘肃": 1,
+          "青海": 2,
+          "宁夏": 1,
+          "新疆": 1
+        },
+        "metrics": {
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -1798,7 +2499,7 @@
             "id": "f3d3a743",
             "type": "multicast",
             "channels": 284,
-            "updated_at": "2026-10-28 19:48:03",
+            "updated_at": "2026-10-29 05:15:03",
             "download_mode": "download",
             "response_bytes": 57230,
             "sha256": "1e5d8a7346283f3ec6ea459176f1445d5b1d4626bbbdee20af6d53f4d881b6f0"
@@ -1812,7 +2513,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -1857,7 +2558,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -1883,9 +2584,126 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
+        }
+      },
+      "retained": false
+    },
+    "山东移动": {
+      "input_channels": 52,
+      "channels": 52,
+      "duplicates_removed": 0,
+      "exact_url_duplicates_removed": 0,
+      "channel_duplicates_removed": 0,
+      "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
+      "invalid_or_non_http_removed": 0,
+      "groups": {
+        "央视频道": 15,
+        "卫视频道": 23,
+        "体育频道": 1,
+        "少儿频道": 1,
+        "影视频道": 2,
+        "新闻频道": 1,
+        "其他": 9
+      },
+      "bytes": 11751,
+      "sha256": "ba4579d0407cefe3157d5d78cbf0689d435bb798385091e9c8dbb1bb18f41b9f",
+      "source": {
+        "servers": [
+          {
+            "id": "2b0565cc",
+            "type": "hotel",
+            "channels": 52,
+            "updated_at": "2026-10-29 05:15:59",
+            "download_mode": "download",
+            "response_bytes": 12734,
+            "sha256": "6f30edf960096dbc8fa8607c5e7c43684c528c8efecdbab1c3f5a4f27a3872c7"
+          }
+        ],
+        "kind": "website",
+        "url": "https://iptv.cqshushu.com/index.php",
+        "protocol": "index",
+        "source_types": [
+          "hotel",
+          "multicast"
+        ],
+        "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
+        "checked_provinces": [
+          "北京",
+          "天津",
+          "河北",
+          "山西",
+          "内蒙古",
+          "辽宁",
+          "吉林",
+          "黑龙江",
+          "上海",
+          "江苏",
+          "浙江",
+          "安徽",
+          "福建",
+          "江西",
+          "山东",
+          "河南",
+          "湖北",
+          "湖南",
+          "广东",
+          "广西",
+          "海南",
+          "重庆",
+          "四川",
+          "贵州",
+          "云南",
+          "陕西",
+          "甘肃",
+          "青海",
+          "宁夏",
+          "新疆"
+        ],
+        "page_policy": {
+          "size": 10,
+          "normal": 5,
+          "fallback_if_empty": 8
+        },
+        "pages": {
+          "北京": 5,
+          "天津": 5,
+          "河北": 5,
+          "山西": 5,
+          "内蒙古": 3,
+          "辽宁": 5,
+          "吉林": 5,
+          "黑龙江": 5,
+          "上海": 5,
+          "江苏": 5,
+          "浙江": 5,
+          "安徽": 5,
+          "福建": 4,
+          "江西": 2,
+          "山东": 5,
+          "河南": 5,
+          "湖北": 5,
+          "湖南": 5,
+          "广东": 5,
+          "广西": 5,
+          "海南": 5,
+          "重庆": 5,
+          "四川": 5,
+          "贵州": 2,
+          "云南": 4,
+          "陕西": 5,
+          "甘肃": 1,
+          "青海": 2,
+          "宁夏": 1,
+          "新疆": 1
+        },
+        "metrics": {
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -1908,18 +2726,18 @@
         "新闻频道": 3,
         "其他": 28
       },
-      "bytes": 16803,
-      "sha256": "5979f909cbf4bc42e53134dfe12933c8331728c15f256034e924ebd9a9f64c5c",
+      "bytes": 16711,
+      "sha256": "f15f9d2e3945304f4b3c59454a073d1c71c9b7b01f3922e081bb8ad008042306",
       "source": {
         "servers": [
           {
-            "id": "c91eda17",
+            "id": "ac50571a",
             "type": "multicast",
             "channels": 105,
-            "updated_at": "2026-10-28 19:47:18",
+            "updated_at": "2026-10-29 05:13:58",
             "download_mode": "download",
-            "response_bytes": 21246,
-            "sha256": "24f0e432d915ba8360208ebde56832ddff0fcb3ceaacc08da533d986fffdc74d"
+            "response_bytes": 21141,
+            "sha256": "1781f63f5e043f9dd53b30d1402821c22b0a6f9cf4467d280b87236aa2ddc7ae"
           }
         ],
         "kind": "website",
@@ -1930,7 +2748,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -1975,7 +2793,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -2001,9 +2819,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -2029,7 +2847,7 @@
             "id": "7b29d1f6",
             "type": "hotel",
             "channels": 36,
-            "updated_at": "2026-10-28 19:50:04",
+            "updated_at": "2026-10-29 05:12:43",
             "download_mode": "download",
             "response_bytes": 8966,
             "sha256": "3094958e1c90acfa7792a81c14f3ee45061522f74b8b4b54d1f1a8cf652f835d"
@@ -2043,7 +2861,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -2088,7 +2906,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -2114,9 +2932,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -2141,18 +2959,18 @@
         "新闻频道": 17,
         "其他": 89
       },
-      "bytes": 38954,
-      "sha256": "756c53f2fb1e3dda9a7d4111bfcfb4531680ab20f6f2d337efc58d5f05dadc6f",
+      "bytes": 38744,
+      "sha256": "bee6471541575e6a4c56ebef741b0b17092e49d6181a143e0d4204773c950994",
       "source": {
         "servers": [
           {
-            "id": "f0c8567c",
+            "id": "edf70519",
             "type": "multicast",
             "channels": 262,
-            "updated_at": "2026-10-28 19:47:43",
+            "updated_at": "2026-10-29 05:11:27",
             "download_mode": "download",
-            "response_bytes": 54761,
-            "sha256": "b32a8ef8fcd0d1d67e4327127cfc1ed0f1731c2d5e0290c1bb2775f54b677706"
+            "response_bytes": 53713,
+            "sha256": "7e8963051061238311db18083b9b132c5644e504ba80ee203844becb343218a4"
           }
         ],
         "kind": "website",
@@ -2163,7 +2981,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -2208,7 +3026,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -2234,9 +3052,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -2260,18 +3078,18 @@
         "新闻频道": 3,
         "其他": 49
       },
-      "bytes": 25509,
-      "sha256": "df5d80552aea3a0262d375870329b45d9301b0899d275489e161439f5b5b3366",
+      "bytes": 25233,
+      "sha256": "33b80121614b54d92d3954176df4f90d6b490c5a7c860e54fb3f0cebec1f8db4",
       "source": {
         "servers": [
           {
-            "id": "04568180",
+            "id": "bbdd29e8",
             "type": "multicast",
             "channels": 207,
-            "updated_at": "2026-10-28 19:51:03",
+            "updated_at": "2026-10-29 05:16:13",
             "download_mode": "download",
-            "response_bytes": 42585,
-            "sha256": "416ae6a8fcb9d8c8a90e8655920fddd96da3c9d5af658a7cd7bac0ca4374b564"
+            "response_bytes": 42171,
+            "sha256": "1896eec610dad5aeaca9241723a238a8473327ea7c08d5c755e2ab39f7d885b2"
           }
         ],
         "kind": "website",
@@ -2282,7 +3100,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -2327,7 +3145,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -2353,9 +3171,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -2380,18 +3198,18 @@
         "新闻频道": 4,
         "其他": 56
       },
-      "bytes": 26199,
-      "sha256": "74c42e771b3cf60d25d7d467881bb6ec0fcde2145a220db083ca246ad927c06f",
+      "bytes": 26634,
+      "sha256": "be69ba9c9fb1b7660e5a9fc6456cfb202693c2f00d19df1cfcf6d70f153af0ce",
       "source": {
         "servers": [
           {
-            "id": "34ec929c",
+            "id": "c1566b28",
             "type": "multicast",
             "channels": 330,
-            "updated_at": "2026-10-28 19:52:40",
+            "updated_at": "2026-10-29 05:18:28",
             "download_mode": "download",
-            "response_bytes": 66590,
-            "sha256": "2680035a8120496ee3570fda59c317bfaf0abe54e762bd802f7c0c0a5ab70b9e"
+            "response_bytes": 67580,
+            "sha256": "6371a14c6555132f3bee6ae7b53709989c6f3209306d374227287613b0a02bcc"
           }
         ],
         "kind": "website",
@@ -2402,7 +3220,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -2447,7 +3265,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -2473,9 +3291,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -2499,18 +3317,18 @@
         "新闻频道": 4,
         "其他": 88
       },
-      "bytes": 36496,
-      "sha256": "422efff8d1811daa699b72f4958f18e011b38744d79ae6a7e4bc32f2d72b9e93",
+      "bytes": 36298,
+      "sha256": "8a82e355130135fd1f1598acf5aba334668bc904ef5b11b8baf6edbb95c909e4",
       "source": {
         "servers": [
           {
-            "id": "1f754b5f",
+            "id": "4113762e",
             "type": "multicast",
             "channels": 344,
-            "updated_at": "2026-10-28 19:49:33",
+            "updated_at": "2026-10-29 05:21:03",
             "download_mode": "download",
-            "response_bytes": 70409,
-            "sha256": "5ef538e3d2a5909f09b6d0d8e993760d828995111da8c3c5c5b72d143776fa94"
+            "response_bytes": 70065,
+            "sha256": "8b8bd186a59afd3e5220ce78d55dbb8d89f04e772d2b12b99270f86f52b5ea5b"
           }
         ],
         "kind": "website",
@@ -2521,7 +3339,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -2566,7 +3384,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -2592,9 +3410,128 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
+        }
+      },
+      "retained": false
+    },
+    "广东移动": {
+      "input_channels": 123,
+      "channels": 101,
+      "duplicates_removed": 22,
+      "exact_url_duplicates_removed": 0,
+      "channel_duplicates_removed": 22,
+      "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
+      "invalid_or_non_http_removed": 0,
+      "groups": {
+        "4K超清": 3,
+        "央视频道": 30,
+        "卫视频道": 36,
+        "体育频道": 2,
+        "少儿频道": 4,
+        "影视频道": 4,
+        "纪实频道": 1,
+        "新闻频道": 1,
+        "其他": 20
+      },
+      "bytes": 20158,
+      "sha256": "5d58251ebb443cbdc9b6301c60dac7e0a31c72a924c998e4541e45ec7e8e3567",
+      "source": {
+        "servers": [
+          {
+            "id": "22999a0c",
+            "type": "hotel",
+            "channels": 123,
+            "updated_at": "2026-10-29 05:22:03",
+            "download_mode": "download",
+            "response_bytes": 28436,
+            "sha256": "84fcb897389865d1270d3f6481027540e0dc0a2680d26e364ab62430f8002f0b"
+          }
+        ],
+        "kind": "website",
+        "url": "https://iptv.cqshushu.com/index.php",
+        "protocol": "index",
+        "source_types": [
+          "hotel",
+          "multicast"
+        ],
+        "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
+        "checked_provinces": [
+          "北京",
+          "天津",
+          "河北",
+          "山西",
+          "内蒙古",
+          "辽宁",
+          "吉林",
+          "黑龙江",
+          "上海",
+          "江苏",
+          "浙江",
+          "安徽",
+          "福建",
+          "江西",
+          "山东",
+          "河南",
+          "湖北",
+          "湖南",
+          "广东",
+          "广西",
+          "海南",
+          "重庆",
+          "四川",
+          "贵州",
+          "云南",
+          "陕西",
+          "甘肃",
+          "青海",
+          "宁夏",
+          "新疆"
+        ],
+        "page_policy": {
+          "size": 10,
+          "normal": 5,
+          "fallback_if_empty": 8
+        },
+        "pages": {
+          "北京": 5,
+          "天津": 5,
+          "河北": 5,
+          "山西": 5,
+          "内蒙古": 3,
+          "辽宁": 5,
+          "吉林": 5,
+          "黑龙江": 5,
+          "上海": 5,
+          "江苏": 5,
+          "浙江": 5,
+          "安徽": 5,
+          "福建": 4,
+          "江西": 2,
+          "山东": 5,
+          "河南": 5,
+          "湖北": 5,
+          "湖南": 5,
+          "广东": 5,
+          "广西": 5,
+          "海南": 5,
+          "重庆": 5,
+          "四川": 5,
+          "贵州": 2,
+          "云南": 4,
+          "陕西": 5,
+          "甘肃": 1,
+          "青海": 2,
+          "宁夏": 1,
+          "新疆": 1
+        },
+        "metrics": {
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -2614,17 +3551,17 @@
         "港澳台": 50
       },
       "bytes": 18422,
-      "sha256": "e72bad1692b9f85b7fc61caf7f84d7c1851d7bd60f7ce41bb97edf88d5f880bf",
+      "sha256": "e5b0ce4f537fade44464a947394aeb1a68385f783193a52d6657f70a8c071e56",
       "source": {
         "servers": [
           {
-            "id": "17e52716",
+            "id": "d8aaa44f",
             "type": "hotel",
             "channels": 116,
-            "updated_at": "2026-10-28 19:55:59",
+            "updated_at": "2026-10-29 05:23:48",
             "download_mode": "download",
             "response_bytes": 22777,
-            "sha256": "3aaafe2e7fdf14a0e8ce241204884f83cc9e3b702efde18517279c7c1feb3835"
+            "sha256": "80fdb557f63bc53d2a62e2a090f0920944eadf84284b75e7e22722cf867df294"
           }
         ],
         "kind": "website",
@@ -2635,7 +3572,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -2680,7 +3617,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -2706,9 +3643,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -2739,7 +3676,7 @@
             "id": "d391089c",
             "type": "multicast",
             "channels": 209,
-            "updated_at": "2026-10-28 20:00:01",
+            "updated_at": "2026-10-29 05:25:43",
             "download_mode": "download",
             "response_bytes": 42643,
             "sha256": "501b3dc6bebfc20a1983e0da51088e7e7e29c5c811af8ce47e1d3d517b9a4a15"
@@ -2753,7 +3690,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -2798,7 +3735,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -2824,9 +3761,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -2850,17 +3787,17 @@
         "其他": 67
       },
       "bytes": 30226,
-      "sha256": "47e0d580e0d9134e7658bb17d1a102332640415139bc6494954d4d3507fc5bde",
+      "sha256": "504d15ca960720f87e9dce495cfae993930ac5e1e0412f2f7fa8db9da174d28d",
       "source": {
         "servers": [
           {
-            "id": "ab1684bf",
+            "id": "c5819703",
             "type": "multicast",
             "channels": 340,
-            "updated_at": "2026-10-28 19:59:01",
+            "updated_at": "2026-10-29 05:26:33",
             "download_mode": "download",
             "response_bytes": 68425,
-            "sha256": "92069ee667c09988a415ce10ebd6f42675dc7a1bcacdf1d08a9849e67f636065"
+            "sha256": "a2a5aa2ca6a241d7272a836a6369b5e3f899f014cc6aa160de58df056c39cb3a"
           }
         ],
         "kind": "website",
@@ -2871,7 +3808,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -2916,7 +3853,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -2942,9 +3879,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -2969,17 +3906,17 @@
         "其他": 39
       },
       "bytes": 23744,
-      "sha256": "ae63927f35220f3b225ed32f374e09e4f1612f222052f5357f6e57fc92f2652c",
+      "sha256": "3a777c2ea42a1a56b175ce6cd9890f507b644f2f297d67dd0e9c2f2e11cff86e",
       "source": {
         "servers": [
           {
-            "id": "ce21b678",
+            "id": "cad43378",
             "type": "multicast",
             "channels": 167,
-            "updated_at": "2026-10-28 19:53:26",
+            "updated_at": "2026-10-29 05:25:33",
             "download_mode": "download",
             "response_bytes": 33511,
-            "sha256": "6db26361e2718b736002d8d653d6d8bdc4f6419069772dac73e8d712fc08d47e"
+            "sha256": "ca1bc544aaee470aa42d2c856e17eadb89b9652baafda380177944874bf31d59"
           }
         ],
         "kind": "website",
@@ -2990,7 +3927,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -3035,7 +3972,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -3061,9 +3998,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -3088,17 +4025,17 @@
         "其他": 114
       },
       "bytes": 43164,
-      "sha256": "bf73695d61a52d06da6c7586985f581a40c73764e6d6c93757ce2b7381998526",
+      "sha256": "4976530adcd4d2f39355d199e2457d73d855903f5a803ac8a7237b8faab4c982",
       "source": {
         "servers": [
           {
-            "id": "9009ae66",
+            "id": "7f9d408f",
             "type": "multicast",
             "channels": 376,
-            "updated_at": "2026-10-28 20:03:18",
+            "updated_at": "2026-10-29 05:29:28",
             "download_mode": "download",
             "response_bytes": 76956,
-            "sha256": "f737523e42a672b03603af710b7dd965f500c07239e919969d446f881b4a3d67"
+            "sha256": "aa5b1c0cae8e883f6dc761592c28c01fca77eae0da365b199988a164be8d65b1"
           }
         ],
         "kind": "website",
@@ -3109,7 +4046,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -3154,7 +4091,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -3180,9 +4117,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -3215,7 +4152,7 @@
             "id": "e5f08b2c",
             "type": "multicast",
             "channels": 259,
-            "updated_at": "2026-10-28 20:02:03",
+            "updated_at": "2026-10-29 05:29:57",
             "download_mode": "download",
             "response_bytes": 53083,
             "sha256": "356f5580c0b485e482c0a8188f8315dc1d33b952ce6178750b40a39d7c65b46e"
@@ -3229,7 +4166,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -3274,7 +4211,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -3300,126 +4237,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
-        }
-      },
-      "retained": false
-    },
-    "云南电信": {
-      "input_channels": 296,
-      "channels": 238,
-      "duplicates_removed": 58,
-      "exact_url_duplicates_removed": 0,
-      "channel_duplicates_removed": 58,
-      "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
-      "invalid_or_non_http_removed": 0,
-      "groups": {
-        "4K超清": 13,
-        "央视频道": 26,
-        "卫视频道": 35,
-        "少儿频道": 4,
-        "影视频道": 6,
-        "纪实频道": 1,
-        "其他": 153
-      },
-      "bytes": 44443,
-      "sha256": "6a66b90c5a28e83e61ece4dee46cc6e37ca004edaf401c34f70fc8d53e6813fc",
-      "source": {
-        "servers": [
-          {
-            "id": "003ccea0",
-            "type": "multicast",
-            "channels": 296,
-            "updated_at": "2026-10-28 20:03:58",
-            "download_mode": "download",
-            "response_bytes": 61348,
-            "sha256": "ece918b9f8400443184ebeb7160a3db7c295a8fbfc25df59daa44eb7a6e7d876"
-          }
-        ],
-        "kind": "website",
-        "url": "https://iptv.cqshushu.com/index.php",
-        "protocol": "index",
-        "source_types": [
-          "hotel",
-          "multicast"
-        ],
-        "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
-        "checked_provinces": [
-          "北京",
-          "天津",
-          "河北",
-          "山西",
-          "内蒙古",
-          "辽宁",
-          "吉林",
-          "黑龙江",
-          "上海",
-          "江苏",
-          "浙江",
-          "安徽",
-          "福建",
-          "江西",
-          "山东",
-          "河南",
-          "湖北",
-          "湖南",
-          "广东",
-          "广西",
-          "海南",
-          "重庆",
-          "四川",
-          "贵州",
-          "云南",
-          "陕西",
-          "甘肃",
-          "青海",
-          "宁夏",
-          "新疆"
-        ],
-        "page_policy": {
-          "size": 10,
-          "normal": 5,
-          "fallback_if_empty": 8
-        },
-        "pages": {
-          "北京": 5,
-          "天津": 5,
-          "河北": 5,
-          "山西": 5,
-          "内蒙古": 3,
-          "辽宁": 5,
-          "吉林": 6,
-          "黑龙江": 5,
-          "上海": 5,
-          "江苏": 5,
-          "浙江": 5,
-          "安徽": 5,
-          "福建": 4,
-          "江西": 2,
-          "山东": 5,
-          "河南": 5,
-          "湖北": 5,
-          "湖南": 5,
-          "广东": 5,
-          "广西": 5,
-          "海南": 5,
-          "重庆": 5,
-          "四川": 5,
-          "贵州": 2,
-          "云南": 4,
-          "陕西": 5,
-          "甘肃": 1,
-          "青海": 2,
-          "宁夏": 1,
-          "新疆": 1
-        },
-        "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -3446,7 +4266,7 @@
             "id": "70497f7b",
             "type": "hotel",
             "channels": 34,
-            "updated_at": "2026-10-28 20:04:28",
+            "updated_at": "2026-10-29 05:33:13",
             "download_mode": "download",
             "response_bytes": 8402,
             "sha256": "f0bda56f152b080b3fbf99464ff8b6a3377418700a892717bb0cf3184e018d75"
@@ -3460,7 +4280,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -3505,7 +4325,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -3531,9 +4351,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -3557,18 +4377,18 @@
         "新闻频道": 2,
         "其他": 88
       },
-      "bytes": 32833,
-      "sha256": "9d90c0db91912f50379675fd3a7b4a04f0e618b7d96058d6716a7ce896f527a5",
+      "bytes": 33370,
+      "sha256": "c39e6d986a8847a0265ba34b4520480cd19827b1a7766fe95606685ab06f607e",
       "source": {
         "servers": [
           {
-            "id": "7eb33500",
+            "id": "1fdd519f",
             "type": "multicast",
             "channels": 435,
-            "updated_at": "2026-10-28 20:07:43",
+            "updated_at": "2026-10-29 05:33:33",
             "download_mode": "download",
-            "response_bytes": 89096,
-            "sha256": "4ba675a0dc57988d7c5cb6e9342c9ef50cf6856a1f648201ccab8d6fd5e9c919"
+            "response_bytes": 90401,
+            "sha256": "e1f94145a982711a12b75cf651b6e07f45cd61b0e0a5fafaeddcc704b4db355f"
           }
         ],
         "kind": "website",
@@ -3579,7 +4399,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -3624,7 +4444,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -3650,9 +4470,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -3681,7 +4501,7 @@
             "id": "a2664cb6",
             "type": "hotel",
             "channels": 44,
-            "updated_at": "2026-10-28 20:06:28",
+            "updated_at": "2026-10-29 05:35:13",
             "download_mode": "download",
             "response_bytes": 11080,
             "sha256": "942c4a603d9c39a95dd6cec28bd99e55a37ef78fd22e4e3768ca39a73c661876"
@@ -3695,7 +4515,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -3740,7 +4560,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -3766,9 +4586,9 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
@@ -3795,7 +4615,7 @@
             "id": "6cb3e043",
             "type": "hotel",
             "channels": 23,
-            "updated_at": "2026-10-28 20:08:29",
+            "updated_at": "2026-10-29 05:36:48",
             "download_mode": "download",
             "response_bytes": 6115,
             "sha256": "1de242f34badaede1cc3105cd42912bcc038f5c433ad1dcfff7e3988a05386ca"
@@ -3809,7 +4629,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-10-28T11:20:37+00:00",
+        "fetched_at": "2026-10-28T20:43:31+00:00",
         "checked_provinces": [
           "北京",
           "天津",
@@ -3854,7 +4674,7 @@
           "山西": 5,
           "内蒙古": 3,
           "辽宁": 5,
-          "吉林": 6,
+          "吉林": 5,
           "黑龙江": 5,
           "上海": 5,
           "江苏": 5,
@@ -3880,20 +4700,27 @@
           "新疆": 1
         },
         "metrics": {
-          "requests": 197,
-          "retries": 2,
-          "elapsed_seconds": 2905.97
+          "requests": 228,
+          "retries": 12,
+          "elapsed_seconds": 3210.78
         }
       },
       "retained": false
     }
   },
   "unavailable_provinces": [],
-  "protected_providers": [],
-  "skipped_servers": [],
-  "file_count": 33,
-  "province_count": 25,
-  "total_channels": 4943,
-  "current_provider_count": 33,
+  "protected_providers": [
+    "浙江联通"
+  ],
+  "skipped_servers": [
+    {
+      "provider": "浙江联通",
+      "reason": "详情运营商无法识别"
+    }
+  ],
+  "file_count": 40,
+  "province_count": 27,
+  "total_channels": 5274,
+  "current_provider_count": 40,
   "retained_provider_count": 0
 }
