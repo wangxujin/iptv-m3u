@@ -1,23 +1,22 @@
-"""读取酒店和组播的公开 AJAX 接口，按省份和运营商合并完整频道。"""
+"""统一源采集：按省前 5 页，无有效频道时延伸至第 8 页。"""
 from __future__ import annotations
 
-import base64
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 import hashlib
+import hmac
 from html.parser import HTMLParser
-from http.client import HTTPException
-from http.cookiejar import CookieJar
 import json
 import math
 import re
-import ssl
+import secrets
+import threading
 import time
-from urllib.error import HTTPError, URLError
-from urllib.parse import urlencode, urljoin, urlsplit
-from urllib.request import HTTPCookieProcessor, HTTPRedirectHandler, Request, build_opener
+from urllib.parse import parse_qs, urlencode, urljoin, urlsplit, urlunsplit
 
-from m3u import OPERATORS, PROVINCES, source_timestamp, valid_http
+from m3u import OPERATORS, PROVINCES, parse_playlist, source_timestamp, valid_http
 
 
 class SourceError(ValueError):
@@ -26,408 +25,305 @@ class SourceError(ValueError):
 
 @dataclass(frozen=True)
 class SourceSnapshot:
-    """完整采集的结果；空 providers 也可表示已确认没有可用来源。"""
     providers: dict
     scope: tuple[str, ...]
     source: dict
 
 
-def usable_status(value: str) -> bool:
+def usable_status(value):
     return re.fullmatch(r'新上线|存活\s*[0-9]+\s*天', value.strip()) is not None
 
 
-def same_site(url: str, base: str) -> bool:
-    left, right = urlsplit(url), urlsplit(base)
-    return valid_http(url) and (left.scheme, left.netloc) == (right.scheme, right.netloc)
-
-
-class SiteRedirects(HTTPRedirectHandler):
-    def __init__(self, base: str):
-        self.base = base
-
-    def redirect_request(self, req, fp, code, msg, headers, newurl):
-        if not same_site(newurl, self.base):
-            target = urlsplit(newurl)
-            raise SourceError(f'源站重定向到其他域名或协议：{target.scheme}://{target.netloc}{target.path}')
-        return super().redirect_request(req, fp, code, msg, headers, newurl)
-
-
-class Client:
-    def __init__(self, config: dict):
-        self.base = config['url']
-        if not valid_http(self.base):
-            raise SourceError('source.url 必须是 HTTP(S) 地址')
-        self.delay = float(config['request_interval_seconds'])
-        self.timeout = float(config['timeout_seconds'])
-        self.attempts = int(config.get('max_attempts', 3))
-        if (not math.isfinite(self.delay) or not math.isfinite(self.timeout)
-                or self.delay < 0 or self.timeout <= 0 or not 1 <= self.attempts <= 5):
-            raise SourceError('请求间隔须非负，超时须大于零，尝试次数须为 1～5')
-        self.last_request = None
-        self.opener = build_opener(SiteRedirects(self.base), HTTPCookieProcessor(CookieJar()))
-
-    def get(self, path: str, label: str = '首页') -> str:
-        return self.request(path, label=label)
-
-    def post(self, path: str, fields: dict, label: str) -> str:
-        return self.request(path, fields, label)
-
-    def request(self, path: str, fields: dict | None = None, label: str = '源站') -> str:
-        url = urljoin(self.base, path)
-        if not same_site(url, self.base):
-            raise SourceError('拒绝请求源站以外的地址')
-        parts = urlsplit(url)
-        # 只打印请求路径与业务阶段，不记录 nonce、token、Cookie 或查询参数。
-        target = f'{parts.scheme}://{parts.netloc}{parts.path}'
-        data = urlencode(fields).encode() if fields is not None else None
-        request = Request(url, data=data, headers={
-            'User-Agent': 'Mozilla/5.0 (compatible; IPTV-M3U/1.0)',
-            'Accept': 'text/html,application/json,*/*', 'Referer': self.base})
-        for attempt in range(1, self.attempts + 1):
-            spacing = (max(0, self.delay - (time.monotonic() - self.last_request))
-                       if self.last_request is not None else 0)
-            pause = max(spacing, min(5 * 2 ** (attempt - 2), 30) if attempt > 1 else 0)
-            if pause:
-                time.sleep(pause)
-            started = self.last_request = time.monotonic()
-            phase = '连接／等待响应头'
-            print(f'[{label}] {request.get_method()} {target}，尝试 {attempt}/{self.attempts}，'
-                  f'超时 {self.timeout:g}s', flush=True)
-            try:
-                with self.opener.open(request, timeout=self.timeout) as response:
-                    phase = '读取响应正文'
-                    payload = response.read(32 * 1024 * 1024 + 1)
-                if len(payload) > 32 * 1024 * 1024:
-                    raise SourceError(f'[{label}] 源站响应超过 32 MiB')
-                return payload.decode('utf-8-sig')
-            except SourceError as exc:
-                raise SourceError(f'[{label}] {target}：{exc}') from exc
-            except HTTPError as exc:
-                code = exc.code
-                exc.close()
-                retryable = code in (408, 500, 502, 503, 504)
-                reason = f'HTTP {code}'
-                if code in (401, 403):
-                    reason += '：访问受限或需要浏览器验证'
-                elif code == 429:
-                    reason += '：请求被限流，停止本轮更新'
-                error = exc
-            except (URLError, OSError, HTTPException, UnicodeError) as exc:
-                cause = exc.reason if isinstance(exc, URLError) else exc
-                retryable = isinstance(cause, (OSError, HTTPException)) and not isinstance(cause, ssl.SSLError)
-                reason = type(cause).__name__
-                if isinstance(cause, ssl.SSLCertVerificationError):
-                    reason += '：证书校验失败'
-                elif str(cause):
-                    reason += ': ' + str(cause)[:160]
-                error = exc
-            message = (f'[{label}] {target}，{phase}失败，耗时 {time.monotonic() - started:.1f}s，'
-                       f'尝试 {attempt}/{self.attempts}：{reason}')
-            if not retryable or attempt == self.attempts:
-                raise SourceError(message) from error
-            print(message + '；稍后重试', flush=True)
-        raise AssertionError('unreachable')
+def same_site(url, base):
+    a, b = urlsplit(url), urlsplit(base)
+    return valid_http(url) and (a.scheme, a.netloc) == (b.scheme, b.netloc)
 
 
 class Page(HTMLParser):
-    """读取省份、服务器和频道表，以及 data-page / data-p / data-s。"""
-    def __init__(self, content: str):
+    def __init__(self, raw):
         super().__init__(convert_charrefs=True)
-        if not content.strip() or any(word in content for word in (
-                '安全验证中', '正在确认您的浏览器', 'captcha-container', '域名不在安全策略')):
-            raise SourceError('源站返回空页面、浏览器验证或网络拦截页面')
-        self.rows, self.provinces, self.pages, self.channel_tokens = [], {}, set(), set()
-        self.row = self.cell = self.option = None
-        self.region_select = False
+        if raw.lstrip().startswith('{'):
+            data = json.loads(raw)
+            if data.get('status') != 'success' or not isinstance(data.get('html'), str):
+                raise SourceError('源站接口未成功返回 HTML')
+            raw = data['html']
+        if not raw.strip() or any(s in raw for s in ('安全验证中', 'Access denied', 'captcha-container', '域名不在安全策略')):
+            raise SourceError('源站返回验证页面、访问拦截或空响应')
+        self.rows, self.links, self.scripts, self.provinces, self.text = [], [], [], {}, []
+        self.row = self.cell = self.option = self.link = None
+        self.region, self.hidden, self.tables = False, 0, 0
         self.has_table = False
-        self.table_depth = 0
-        self.hidden_depth = 0
-        self.text_parts = []
-        self.feed(content)
-        if self.table_depth or self.row is not None or self.cell is not None:
+        self.feed(raw)
+        if self.tables or self.row is not None or self.cell is not None:
             raise SourceError('源站表格响应不完整')
-        visible = '\n'.join(self.text_parts)
-        self.empty_list = bool(re.search(r'暂无(?:数据|记录|结果|组播源|酒店源)|未找到(?:相关)?(?:数据|记录|组播源|酒店源)|没有(?:可用的?)?(?:组播源|酒店源)', visible))
-        match = re.search(r'(?:^|\n)\s*状态\s*[:：]\s*([^\n]+)', visible)
-        self.status = match.group(1).strip() if match else None
+        self.empty = bool(re.search(r'暂无(?:相关)?(?:数据|记录|结果)|暂无(?:可用)?\s*IP|没有找到(?:匹配|符合条件)的\s*IP', '\n'.join(self.text), re.I))
 
     def handle_starttag(self, tag, attrs):
-        attrs = dict(attrs)
-        if tag == 'table':
-            self.has_table = True
-            self.table_depth += 1
-        if tag in ('script', 'style'):
-            self.hidden_depth += 1
+        a = dict(attrs)
+        if tag in ('script', 'style'): self.hidden += 1
+        if tag == 'script' and a.get('src'): self.scripts.append(a['src'])
+        if tag == 'table': self.tables += 1; self.has_table = True
         if tag == 'tr':
-            if self.row is not None:
-                raise SourceError('源站表格行未完整结束')
+            if self.row is not None: raise SourceError('源站表格行未结束')
             self.row = {'cells': [], 'token': None}
-        elif tag == 'td' and self.row is not None:
-            if self.cell is not None:
-                raise SourceError('源站表格单元格未完整结束')
+        if tag == 'td' and self.row is not None:
+            if self.cell is not None: raise SourceError('源站表格单元格未结束')
             self.cell = []
-        elif tag == 'select':
-            self.region_select = attrs.get('name') == 'region'
-        elif tag == 'option' and self.region_select:
-            self.option = [attrs.get('value', ''), []]
-        if attrs.get('data-p') and self.row is not None:
-            self.row['token'] = attrs['data-p']
-        if attrs.get('data-s'):
-            self.channel_tokens.add(attrs['data-s'])
-        if 'page-link' in attrs.get('class', '').split():
-            try:
-                number = int(attrs['data-page'])
-                if number < 1:
-                    raise ValueError('invalid page')
-                self.pages.add(number)
-            except (KeyError, ValueError) as exc:
-                raise SourceError('源站分页格式变化') from exc
+        if tag == 'select': self.region = a.get('name') == 'province'
+        if tag == 'option' and self.region: self.option = [a.get('value', ''), []]
+        if tag == 'a':
+            self.link = [a.get('href', ''), []]
+            match = re.fullmatch(r"\s*gotoIP\(['\"]([^'\"]+)['\"],\s*['\"]([a-z]+)['\"]\)\s*;?\s*", a.get('onclick', ''))
+            if match and self.row is not None: self.row.update(token=match[1], type=match[2])
 
-    def handle_data(self, data):
-        if self.hidden_depth:
-            return
-        if data.strip():
-            self.text_parts.append(data.strip())
-        if self.cell is not None:
-            self.cell.append(data)
-        if self.option is not None:
-            self.option[1].append(data)
+    def handle_data(self, text):
+        if self.hidden: return
+        if text.strip(): self.text.append(text.strip())
+        for target in (self.cell, self.option[1] if self.option else None, self.link[1] if self.link else None):
+            if target is not None: target.append(text)
 
     def handle_endtag(self, tag):
-        if tag == 'table':
-            self.table_depth -= 1
-        if tag in ('script', 'style'):
-            self.hidden_depth -= 1
+        if tag in ('script', 'style'): self.hidden -= 1
+        if tag == 'table': self.tables -= 1
         if tag == 'td' and self.cell is not None and self.row is not None:
-            self.row['cells'].append(''.join(self.cell).strip())
-            self.cell = None
-        elif tag == 'tr' and self.row is not None:
-            self.rows.append(self.row)
-            self.row = self.cell = None
-        elif tag == 'option' and self.option is not None:
+            self.row['cells'].append(''.join(self.cell).strip()); self.cell = None
+        if tag == 'tr' and self.row is not None:
+            self.rows.append(self.row); self.row = self.cell = None
+        if tag == 'option' and self.option:
             name = ''.join(self.option[1]).strip()
-            if name in PROVINCES and self.option[0]:
-                self.provinces[name] = self.option[0]
+            if name in PROVINCES and self.option[0]: self.provinces[name] = self.option[0]
             self.option = None
-        elif tag == 'select':
-            self.region_select = False
+        if tag == 'select': self.region = False
+        if tag == 'a' and self.link:
+            self.links.append((self.link[0], ''.join(self.link[1]).strip())); self.link = None
+
+    def field(self, label):
+        match = re.search(r'(?:^|\n)\s*' + re.escape(label) + r'\s*[:：]\s*([^\n]+)', '\n'.join(self.text))
+        return match[1].strip() if match else None
 
 
-def encrypt_token(token: str) -> str:
-    # 与公开网页客户端的 AES-ECB / PKCS7 编码一致；每次使用页面实时返回的令牌。
-    try:
-        from Crypto.Cipher import AES
-        from Crypto.Util.Padding import pad
-    except ImportError as exc:
-        raise SourceError('在线采集需要依赖：python -m pip install pycryptodome==3.23.0') from exc
-    cipher = AES.new(b'cQshuShu88888888', AES.MODE_ECB)
-    return base64.b64encode(cipher.encrypt(pad(token.encode('utf-8'), AES.block_size))).decode('ascii')
+def signing_key(script):
+    # 只解析公开网页参数，不执行下载的 JavaScript。
+    match = re.search(r'var\s+constantPool\s*=\s*(\[.*?\]);', script, re.S)
+    try: key = json.loads(match[1])[0] if match else None
+    except (ValueError, IndexError, TypeError) as exc: raise SourceError('源站签名脚本结构变化') from exc
+    if not isinstance(key, str) or not re.fullmatch(r'[A-Za-z0-9]{32,128}', key) or 'generatePaerToken' not in script:
+        raise SourceError('源站签名脚本结构变化')
+    return key.encode('ascii')
 
 
-class AjaxSite:
-    def __init__(self, client: Client, url: str, kind: str = 'multicast'):
-        protocols = {'multicast': ('multicastIptvAjax', 'multicast_iptv_ajax'),
-                     'hotel': ('hotelIptvAjax', 'hotel_iptv_ajax')}
-        if kind not in protocols:
-            raise SourceError('不支持的 IPTV 来源类型')
-        variable, self.action = protocols[kind]
-        self.kind = kind
-        self.client = client
-        content = client.get(url)
-        self.home = Page(content)
-        match = re.search(r'var\s+' + variable + r'\s*=\s*(\{.*?\});', content, re.DOTALL)
-        if not match:
-            raise SourceError(f'源站首页缺少 {variable} 配置；请核对来源类型和 URL')
-        try:
-            config = json.loads(match.group(1))
-        except ValueError as exc:
-            raise SourceError('源站 AJAX 配置不是有效 JSON') from exc
-        if not isinstance(config, dict) or any(not isinstance(config.get(k), str) or not config[k]
-                                               for k in ('ajaxUrl', 'nonce', 'token')):
-            raise SourceError('源站 AJAX 配置字段缺失')
-        self.url = urljoin(url, config['ajaxUrl'])
-        if not same_site(self.url, url):
-            raise SourceError('源站 AJAX 地址指向其他域名或协议')
-        self.nonce, self.token = config['nonce'], config['token']
+class Client:
+    def __init__(self, config):
+        try: import requests
+        except ImportError as exc: raise SourceError('在线采集需安装 requests==2.34.2') from exc
+        self.requests, self.base = requests, config['url']
+        self.delay = float(config.get('request_interval_seconds', 3))
+        self.timeout = float(config.get('timeout_seconds', 45))
+        self.attempts = int(config.get('max_attempts', 5))
+        if (not valid_http(self.base) or urlsplit(self.base).query or urlsplit(self.base).path != '/index.php'
+                or not math.isfinite(self.delay) or self.delay < 0 or not math.isfinite(self.timeout)
+                or self.timeout <= 0 or not 1 <= self.attempts <= 5):
+            raise SourceError('源站地址或网络参数无效')
+        self.lock, self.local, self.stop = threading.Lock(), threading.local(), threading.Event()
+        self.sessions, self.key, self.next_request = [], None, 0
+        self.stats = {'requests': 0, 'retries': 0}
 
-    def call(self, action: str, label: str, **fields) -> str:
-        token = encrypt_token(self.token) if self.kind == 'multicast' else self.token
-        content = self.client.post(self.url, dict(fields, action=self.action,
-            action_type=action, nonce=self.nonce, token=token), label)
-        try:
-            response = json.loads(content)
-        except ValueError as exc:
-            raise SourceError(f'[{label}] 源站 AJAX 没有返回 JSON，可能为网络拦截或验证页面') from exc
-        if not isinstance(response, dict) or response.get('success') is not True:
-            detail = response.get('data') if isinstance(response, dict) else None
-            message = detail.get('message', '') if isinstance(detail, dict) else ''
-            message = re.sub(r'<[^>]+>', '', str(message))
-            for secret in (self.nonce, self.token, token):
-                message = message.replace(secret, '[redacted]')
-            message = ' '.join(message.split())[:160]
-            raise SourceError(f'[{label}] 源站 AJAX 返回失败：{message or "未提供原因"}')
-        data = response.get('data')
-        if not isinstance(data, dict) or not isinstance(data.get('html'), str):
-            raise SourceError(f'[{label}] 源站 AJAX 缺少 HTML 内容')
-        if data.get('new_token'):
-            if not isinstance(data['new_token'], str):
-                raise SourceError(f'[{label}] 源站新令牌格式变化')
-            self.token = data['new_token']
-        return data['html']
+    def session(self):
+        if not hasattr(self.local, 'session'):
+            session = self.requests.Session()
+            session.headers.update({'User-Agent': 'Mozilla/5.0 (compatible; IPTV-M3U/1.0)', 'Referer': self.base})
+            if hasattr(self, 'cookies'): session.cookies.update(self.cookies)
+            with self.lock: self.sessions.append(session)
+            self.local.session = session
+        return self.local.session
+
+    def wait(self):
+        while True:
+            with self.lock:
+                pause = max(0, self.next_request - time.monotonic())
+                if not pause and not self.stop.is_set():
+                    self.next_request = time.monotonic() + self.delay
+                    return
+            if self.stop.wait(pause): raise SourceError('其他请求失败，停止剩余采集')
+
+    def get(self, url, label='首页', signed=True):
+        url = urljoin(self.base, url)
+        if not same_site(url, self.base): raise SourceError('拒绝请求源站以外的地址')
+        for attempt in range(1, self.attempts + 1):
+            self.wait()
+            headers, retry_after = {}, 0
+            if signed:
+                if not self.key: raise SourceError('请求协议尚未初始化')
+                message = f'{int(time.time())}|{secrets.token_hex(10)}'
+                headers = {'X-Requested-With': 'XMLHttpRequest',
+                           'X-CSRF-TOKEN': message + '|' + hmac.new(self.key, message.encode(), hashlib.sha256).hexdigest()}
+            with self.lock: self.stats['requests'] += 1
+            print(f'[{label}] GET {urlsplit(url).path}，尝试 {attempt}/{self.attempts}', flush=True)
+            try:
+                with self.session().get(url, headers=headers, timeout=(15, self.timeout), allow_redirects=False, stream=True) as response:
+                    status = response.status_code
+                    if status == 200:
+                        chunks, size = [], 0
+                        for chunk in response.iter_content(65536):
+                            size += len(chunk)
+                            if size > 32 * 1024 * 1024: raise SourceError(f'[{label}] 响应超过 32 MiB')
+                            chunks.append(chunk)
+                        return b''.join(chunks).decode('utf-8-sig')
+                    if status not in (408, 429, 500, 502, 503, 504): raise SourceError(f'[{label}] HTTP {status}，停止更新')
+                    reason = f'HTTP {status}'
+                    value = response.headers.get('Retry-After', '0')
+                    try:
+                        retry_after = float(value) if value.isdigit() else max(0, parsedate_to_datetime(value).timestamp() - time.time())
+                    except (ValueError, TypeError, OverflowError): pass
+                    if retry_after > 120: raise SourceError(f'[{label}] 服务端要求长时间冷却，停止本轮')
+            except self.requests.exceptions.SSLError as exc:
+                raise SourceError(f'[{label}] HTTPS 证书或 TLS 校验失败') from exc
+            except (self.requests.exceptions.Timeout, self.requests.exceptions.ConnectionError,
+                    self.requests.exceptions.ChunkedEncodingError, self.requests.exceptions.ContentDecodingError) as exc:
+                reason = type(exc).__name__
+            except self.requests.exceptions.RequestException as exc:
+                raise SourceError(f'[{label}] 请求失败：{type(exc).__name__}') from exc
+            if attempt == self.attempts: raise SourceError(f'[{label}] {reason}，尝试次数已用完')
+            pause = max(retry_after, 60 if reason == 'HTTP 429' else min(2 ** attempt, 30))
+            with self.lock:
+                self.stats['retries'] += 1
+                if reason == 'HTTP 429': self.delay = min(max(5, self.delay * 2), 15)
+                self.next_request = max(self.next_request, time.monotonic() + pause)
+            print(f'[{label}] {reason}，全局冷却 {pause:g}s 后重试', flush=True)
+
+    def bootstrap(self):
+        home = Page(self.get(self.base, signed=False))
+        scripts = [urljoin(self.base, p) for p in home.scripts if re.fullmatch(r'pae\d+\.js', urlsplit(p).path.rsplit('/', 1)[-1])]
+        if len(scripts) != 1 or not same_site(scripts[0], self.base) or not home.provinces:
+            raise SourceError('源站首页缺少省份选项或唯一的签名脚本')
+        self.key = signing_key(self.get(scripts[0], '初始化请求协议', signed=False))
+        self.cookies = self.session().cookies.copy()
+        return home
+
+    def close(self):
+        for session in self.sessions: session.close()
 
 
-def server_rows(page: Page, province: str) -> list[dict]:
+def servers(page, province):
+    if not page.provinces or not page.has_table and not page.empty: raise SourceError(f'{province} 列表页结构异常')
     result = []
     for row in page.rows:
         cells = row['cells']
+        if not cells: continue
         if not row['token']:
-            if len(cells) >= 6 or cells and not page.empty_list:
-                raise SourceError('源站服务器表缺少 data-p')
+            if not page.empty: raise SourceError(f'{province} 列表缺少服务器入口')
             continue
-        if len(cells) < 6:
-            raise SourceError('源站服务器表结构变化')
-        if province not in cells[2]:
-            raise SourceError('源站返回了其他省份的数据')
-        if not usable_status(cells[5]):
-            continue
-        operators = [operator for operator in OPERATORS if operator in cells[2]]
-        if len(operators) != 1:
-            raise SourceError(f'{province} 存在无法确定运营商的可用服务器')
-        if not re.fullmatch(r'[0-9]+', cells[1]):
-            raise SourceError(f'{province} 可用服务器的频道数量格式无效：{cells[1][:40]!r}')
-        channels = int(cells[1])
-        if channels == 0:
-            print(f'[{province}{operators[0]}] 频道数为 0，跳过该服务器', flush=True)
-            continue
-        try:
-            datetime.fromisoformat(cells[4])
-        except ValueError as exc:
-            raise SourceError(f'{province} 可用服务器的更新时间缺失或无效') from exc
-        result.append({'token': row['token'], 'provider': province + operators[0],
-                       'host': cells[0], 'channels': channels,
-                       'status': cells[5], 'updated_at': cells[4]})
-    if not any(row['token'] for row in page.rows) and not page.empty_list:
-        raise SourceError('服务器列表缺少记录或明确的空结果标记')
+        if len(cells) < 6 or province not in cells[2]: raise SourceError(f'{province} 列表内容不完整或省份不符')
+        if not usable_status(cells[5]): continue
+        operators = [op for op in OPERATORS if op in cells[2]]
+        if len(operators) != 1: raise SourceError(f'{province} 运营商无法确认')
+        if not re.fullmatch(r'[0-9]+', cells[1]): raise SourceError(f'{province} 频道数量无效：{cells[1][:40]!r}')
+        if not int(cells[1]): continue
+        try: datetime.fromisoformat(cells[4])
+        except ValueError as exc: raise SourceError(f'{province} 更新时间无效') from exc
+        if row.get('type') not in ('multicast', 'hotel', 'migu', 'other'): raise SourceError('服务器类型无法确认')
+        result.append(dict(row, provider=province + operators[0], count=int(cells[1]), updated=cells[4]))
+    if not any(row['token'] for row in page.rows) and not page.empty: raise SourceError(f'{province} 列表缺少明确记录或空结果')
     return result
 
 
-def channel_records(content: str) -> list[dict]:
-    page = Page(content)
-    if not page.has_table:
-        raise SourceError('源站频道表缺失')
-    records = []
-    for row in page.rows:
-        cells = row['cells']
-        if not cells:
-            continue  # 表头使用 th，不是频道。
-        if len(cells) < 3 or not cells[0].isdigit() or not cells[1] or not valid_http(cells[2]):
-            raise SourceError('源站频道行不完整或播放地址不是完整 HTTP(S) URL')
-        # 直接保留频道页中的完整地址；列表页显示的服务器地址可能与播放地址不同。
-        records.append({'name': cells[1], 'url': cells[2], 'attrs': {}, 'options': []})
-    if not records:
-        raise SourceError('源站频道列表为空')
-    return records
+def next_page(page, current, base):
+    links = {urljoin(current, href) for href, label in page.links if label == '下一页'}
+    if not links: return None
+    if len(links) != 1: raise SourceError('下一页链接冲突')
+    target = links.pop()
+    old, new = parse_qs(urlsplit(current).query), parse_qs(urlsplit(target).query)
+    if (not same_site(target, base) or urlsplit(target).path != urlsplit(base).path
+            or any(old.get(k) != new.get(k) for k in ('t', 'province', 'limit'))
+            or new.get('page') != [str(int(old['page'][0]) + 1)]):
+        raise SourceError('源站分页跳过、换组或离开源站')
+    return target
 
 
-def _fetch_site(config: dict, provinces: list[str] | None = None, client=None,
-                allow_absent_provinces: bool = False) -> SourceSnapshot:
-    """所有选定省份成功后才返回；请求或解析失败不会交付部分更新。"""
-    max_pages = int(config['max_pages_per_province'])
-    max_servers = int(config['max_servers_per_operator'])
-    if max_pages < 1 or max_servers < 0:
-        raise SourceError('分页上限须大于零，每运营商来源上限须非负')
-    kind = config.get('type', 'multicast')
-    label = '酒店' if kind == 'hotel' else '组播'
-    site = AjaxSite(client or Client(config), config['url'], kind)
-    if not site.home.provinces:
-        raise SourceError('源站没有可识别的省份筛选项')
-    selected = list(dict.fromkeys(provinces or [name for name in PROVINCES if name in site.home.provinces]))
-    if not allow_absent_provinces and any(name not in site.home.provinces for name in selected):
-        raise SourceError('所选省份未出现在源站当前筛选项中')
-    selected = [name for name in selected if name in site.home.provinces]
-    groups = {}
-    fetched_at = datetime.now(timezone.utc).isoformat(timespec='seconds')
-    source = {'kind': 'website', 'url': config['url'], 'fetched_at': fetched_at,
-              'source_type': kind, 'checked_provinces': selected, 'max_servers_per_operator': max_servers}
-    for province in selected:
-        servers, seen = [], set()
-        for number in range(1, max_pages + 1):
-            page = Page(site.call('list', f'{label}/{province} 列表第 {number} 页', page_num=number,
-                limit=20, region=site.home.provinces[province], search=''))
-            if not page.has_table or province not in page.provinces:
-                raise SourceError(f'{province} 列表页结构变化或内容不完整')
-            tokens = {row['token'] for row in page.rows if row['token']}
-            following = sorted(p for p in page.pages if p > number)
-            if (following or number > 1 and tokens) and not tokens - seen:
-                raise SourceError(f'{province} 分页内容重复或缺失')
-            servers.extend(row for row in server_rows(page, province) if row['token'] not in seen)
-            seen.update(tokens)
-            if not following:
-                break
-            if following[0] != number + 1:
-                raise SourceError(f'{province} 分页跳过了下一页')
-            if number == max_pages:
-                raise SourceError(f'{province} 达到分页上限仍有下一页，停止更新以免截断数据')
-        servers.sort(key=lambda row: source_timestamp(row['updated_at']), reverse=True)
-        counts = {}
-        for server in servers:
-            provider = server['provider']
-            if max_servers and counts.get(provider, 0) >= max_servers:
-                continue
-            detail = Page(site.call('detail', f'{label}/{provider} 服务器详情', p=server['token']))
-            if detail.status is None:
-                raise SourceError(f'{provider} 详情页缺少状态字段')
-            if not usable_status(detail.status):
-                print(f'[{provider}] 详情状态不符合条件，跳过该服务器', flush=True)
-                continue
-            if len(detail.channel_tokens) != 1:
-                raise SourceError(f'{provider} 详情页缺少唯一的频道入口')
-            content = site.call('channels', f'{label}/{provider} 频道列表', s=next(iter(detail.channel_tokens)))
-            records = channel_records(content)
-            if len(records) < server['channels']:
-                raise SourceError(f'{provider} 频道数量少于源站声明值：{len(records)}/{server["channels"]}')
-            for record in records:
-                record.update(source_type=kind, source_status=detail.status, source_updated_at=server['updated_at'])
-            group = groups.setdefault(provider, {'records': [], 'retained': False,
-                'source': dict(source, servers=[])})
-            group['records'].extend(records)
-            group['source']['servers'].append({'host': server['host'], 'channels': len(records), 'status': detail.status,
-                'source_type': kind, 'source_url': config['url'], 'updated_at': server['updated_at'],
-                'sha256': hashlib.sha256(content.encode('utf-8')).hexdigest()})
-            counts[provider] = counts.get(provider, 0) + 1
-        print(f'[{label}/{province}] 完成：{sum(counts.values())} 个服务器，{len(counts)} 个运营商组合', flush=True)
-    return SourceSnapshot(groups, tuple(provinces or PROVINCES), source)
+def download_url(page, base, kind):
+    links = {urljoin(base, href) for href, _ in page.links if parse_qs(urlsplit(href).query).get('s')}
+    if len(links) != 1: raise SourceError('详情页缺少唯一频道入口')
+    parts = urlsplit(links.pop()); params = parse_qs(parts.query)
+    if not same_site(urlunsplit(parts), base) or parts.path != urlsplit(base).path or params.get('t') != [kind]:
+        raise SourceError('频道入口不属于本次源站或类型')
+    params.update(channels=['1'], download=['m3u'])
+    return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(params, doseq=True), ''))
 
 
-def fetch_source(config: dict, provinces: list[str] | None = None, client=None) -> SourceSnapshot:
-    """全部来源成功才返回合并结果；任何一侧失败都不交付部分更新。"""
-    if 'sources' not in config:
-        return _fetch_site(config, provinces, client)
-    definitions = config['sources']
-    if not isinstance(definitions, list) or not definitions:
-        raise SourceError('sources 必须为非空来源列表')
-    seen = set()
-    for definition in definitions:
-        if not isinstance(definition, dict) or definition.get('type') not in ('multicast', 'hotel'):
-            raise SourceError('每个来源须指定 multicast 或 hotel 类型')
-        key = definition.get('type'), definition.get('url')
-        if not isinstance(key[1], str) or not valid_http(key[1]) or key in seen:
-            raise SourceError('来源 URL 无效或重复')
-        seen.add(key)
-    snapshots = []
-    for index, definition in enumerate(definitions):
-        if index:
-            time.sleep(float(config['request_interval_seconds']))
-        settings = dict(config, **definition)
-        snapshots.append(_fetch_site(settings, provinces, client, allow_absent_provinces=True))
-    checked = list(dict.fromkeys(provinces or [name for item in snapshots for name in item.source['checked_provinces']]))
-    source = {'kind': 'website', 'fetched_at': snapshots[0].source['fetched_at'],
-              'checked_provinces': checked, 'sources': [item.source for item in snapshots]}
-    groups = {}
-    for snapshot in snapshots:
-        for provider, data in snapshot.providers.items():
-            group = groups.setdefault(provider, {'records': [], 'retained': False,
-                                                 'source': dict(source, servers=[])})
-            group['records'].extend(data['records'])
-            group['source']['servers'].extend(data['source']['servers'])
-    return SourceSnapshot(groups, tuple(provinces or PROVINCES), source)
+def fetch_source(config, provinces=None, client=None):
+    normal, fallback = int(config.get('pages_per_province', 5)), int(config.get('fallback_pages', 8))
+    workers, maximum = int(config.get('max_workers', 2)), int(config.get('max_servers_per_operator', 5))
+    if not 1 <= normal <= fallback <= 8 or not 1 <= workers <= 4 or maximum < 1:
+        raise SourceError('页数须为 1～8，并发为 1～4，每运营商来源上限须大于零')
+    owned, started = client is None, time.monotonic()
+    client = client or Client(config)
+    try:
+        home = client.bootstrap()
+        selected = list(dict.fromkeys(provinces or [p for p in PROVINCES if p in home.provinces]))
+        if not selected or any(p not in home.provinces for p in selected): raise SourceError('所选省份不在当前源站列表中')
+        source = {'kind': 'website', 'url': config['url'], 'protocol': 'index',
+                  'fetched_at': datetime.now(timezone.utc).isoformat(timespec='seconds'), 'checked_provinces': selected,
+                  'page_policy': {'size': 10, 'normal': normal, 'fallback_if_empty': fallback}}
+
+        def collect(province):
+            url = config['url'] + '?' + urlencode(dict(t='all', province=home.provinces[province], limit=10, page=1))
+            seen, candidates, groups = set(), [], {}
+            for number in range(1, fallback + 1):
+                page = Page(client.get(url, f'{province} 列表第 {number} 页'))
+                candidates.extend(row for row in servers(page, province) if (row['type'], row['token']) not in seen)
+                tokens = {(r.get('type'), r['token']) for r in page.rows if r['token']}
+                if tokens and not tokens - seen: raise SourceError(f'{province} 分页内容重复')
+                seen.update(tokens)
+                ended = page.empty and not tokens or not any(label == '下一页' for _, label in page.links)
+                if number >= normal or ended:
+                    candidates.sort(key=lambda r: (source_timestamp(r['updated']), r['type'] == 'multicast'), reverse=True)
+                    for server in candidates:
+                        provider = server['provider']
+                        group = groups.setdefault(provider, {'records': [], 'retained': False, 'source': {'servers': []}})
+                        if len(group['source']['servers']) >= maximum: continue
+                        detail = Page(client.get(config['url']+'?'+urlencode(dict(p=server['token'], t=server['type'])), f'{provider} 详情'))
+                        status = detail.field('状态')
+                        if status is None: raise SourceError(f'{provider} 详情状态缺失')
+                        if not usable_status(status): continue
+                        if provider not in (detail.field('类型') or ''): raise SourceError(f'{provider} 详情归属不符')
+                        updated = detail.field('更新时间')
+                        try: datetime.fromisoformat(updated or '')
+                        except ValueError as exc: raise SourceError(f'{provider} 详情更新时间无效') from exc
+                        updated = max((server['updated'], updated), key=source_timestamp)
+                        raw = client.get(download_url(detail, config['url'], server['type']), f'{provider} 完整 M3U')
+                        rows = parse_playlist(raw)
+                        if len(rows) < server['count'] or any(not valid_http(r['url']) for r in rows):
+                            raise SourceError(f'{provider} M3U 不完整：{len(rows)}/{server["count"]}')
+                        for row in rows: row.update(source_type=server['type'], source_status=status, source_updated_at=updated)
+                        group['records'].extend(rows)
+                        group['source']['servers'].append({'type': server['type'], 'channels': len(rows), 'updated_at': updated,
+                                                           'sha256': hashlib.sha256(raw.encode()).hexdigest()})
+                    candidates.clear()
+                    if any(g['records'] for g in groups.values()) or ended or number == fallback: break
+                url = next_page(page, url, config['url'])
+            result = {name: g for name, g in groups.items() if g['records']}
+            print(f'[{province}] 完成：{number} 页，{len(result)} 个运营商组合', flush=True)
+            return result, number, datetime.now(timezone.utc).isoformat(timespec='seconds')
+
+        groups, pages, checked = {}, {}, {}
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            tasks = {pool.submit(collect, province): province for province in selected}
+            try:
+                for task in as_completed(tasks):
+                    data, count, checked_at = task.result()
+                    groups.update(data); pages[tasks[task]] = count; checked[tasks[task]] = checked_at
+            except Exception:
+                client.stop.set()
+                for task in tasks: task.cancel()
+                raise
+        source['pages'] = {p: pages[p] for p in selected}
+        source['unavailable_provinces'] = [
+            {'province': p, 'pages': 8, 'checked_at': checked[p],
+             'url': config['url'] + '?' + urlencode(dict(t='all', province=home.provinces[p], limit=10, page=8))}
+            for p in selected if pages[p] == 8 and not any(name.startswith(p) for name in groups)]
+        source['metrics'] = dict(client.stats, elapsed_seconds=round(time.monotonic() - started, 2))
+        for group in groups.values(): group['source'].update({k: v for k, v in source.items() if k != 'unavailable_provinces'})
+        print(json.dumps({'crawler': source['metrics'], 'pages': source['pages']}, ensure_ascii=False), flush=True)
+        return SourceSnapshot(groups, tuple(provinces or PROVINCES), source)
+    finally:
+        if owned: client.close()

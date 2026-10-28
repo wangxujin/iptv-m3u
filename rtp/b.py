@@ -24,7 +24,7 @@ DEFAULT_README = """# IPTV M3U
 
 {{SUMMARY}}
 
-组播源与酒店源合并；每个省份与运营商组合只输出一个 M3U。点击下方链接获取订阅地址。
+从 https://iptv.cqshushu.com/index.php 的统一入口采集；每个省份与运营商组合只输出一个 M3U。
 同一频道超高清与其他画质各保留一条，各档先按更新时间从新到旧选择，更新时间相同优先组播，再比较清晰度。
 分组按 4K超清、央视频道、卫视频道、体育频道、港澳台、少儿频道、影视频道、纪实频道、新闻频道等顺序规范。
 频道分类见 [config/groups.json](config/groups.json)，源站设置见 [config/source.json](config/source.json)，
@@ -34,14 +34,16 @@ DEFAULT_README = """# IPTV M3U
 
 {{FILES}}
 
+{{UNAVAILABLE}}
+
 来源时间不代表播放可用性已验证；历史来源表示保留的缓存。
 
 ## 本地使用
 
-需要 Python 3.10+。在线采集依赖 PyCryptodome，Actions 会自动安装。
+需要 Python 3.10+。在线采集依赖 Requests，Actions 会自动安装。
 
 ```sh
-python3 -m pip install pycryptodome==3.23.0
+python3 -m pip install requests==2.34.2
 python3 rtp/b.py           # 从源站采集并生成
 python3 rtp/b.py --offline # 使用已有缓存重建
 python3 rtp/b.py --check   # 校验生成结果
@@ -58,7 +60,10 @@ M3U 文件头引用项目配置中的 EPG 地址。
 首次成功采集后自动创建 data/、m3u/、manifest.json、epg.xml.gz 和本文件。采集失败不会清空已有结果。
 在线采集成功后自动删除本轮范围内没有可用来源的 M3U；仅接收新上线或存活 N 天，并复查详情状态。
 完整采集确认零可用来源时允许清空该范围。超时、访问或解析失败保留旧文件。
-酒店与组播全部采集成功后才合并；任一侧访问失败都保留本轮旧文件。
+统一列表完整采集、所有选中服务器处理成功后才更新文件；访问或解析失败保留旧文件。
+按省份采集，每页 10 条，先采前 5 页；没有有效频道才延伸至第 6～8 页，找到即停。
+两个省份并行，线程共用限速和 429 冷却；每轮直接下载新地址的完整 M3U。
+可用 --fresh 从空数据开始验证指定省份。
 """
 
 
@@ -153,12 +158,28 @@ def build_readme(template: str, manifest: dict, repository: str | None, branch: 
     summary = (f'当前输出 **{manifest["province_count"]} 个省份、{manifest["file_count"]} 份 M3U、'
                f'{manifest["total_channels"]:,} 条频道线路**。其中 {manifest["current_provider_count"]} 份来自最近成功采集或导入，'
                f'{manifest["retained_provider_count"]} 份保留历史来源。每个省份与运营商的组合只有一份文件。')
+    scopes = {tuple(item['source'].get('checked_provinces', [])) for item in manifest['providers'].values()}
+    if len(scopes) == 1 and next(iter(scopes)):
+        summary += '\n\n本轮采集范围：' + '、'.join(next(iter(scopes))) + '；只代表配置的分页范围。'
     coverage = ['| 省份 | 有输出的运营商 | 无输出的运营商 |', '|---|---|---|']
     for province in PROVINCES:
         present = [operator for operator in OPERATORS if province + operator in manifest['providers']]
         missing = [operator for operator in OPERATORS if operator not in present]
         coverage.append(f'| {province} | {"、".join(present) or "—"} | {"、".join(missing) or "—"} |')
-    return template.replace('{{SUMMARY}}', summary).replace('{{FILES}}', '\n'.join(rows)).replace('{{COVERAGE}}', '\n'.join(coverage))
+    unavailable = ['## 第 8 页仍无可用来源', '']
+    failed = manifest.get('unavailable_provinces', [])
+    if failed:
+        unavailable += ['以下省份已成功处理到第 8 页，仍没有通过状态及详情复查的有效频道，可按链接人工对照。', '',
+                        '| 省份 | 已采页数 | 检查时间（北京时间） | 对照查询 |', '|---|---:|---|---|']
+        for item in failed:
+            checked = datetime.fromisoformat(item['checked_at'].replace('Z', '+00:00')).astimezone(ZoneInfo('Asia/Shanghai'))
+            unavailable.append(f'| {item["province"]} | {item["pages"]} | {checked:%Y-%m-%d %H:%M:%S} | [查看第 8 页]({item["url"]}) |')
+    else:
+        unavailable.append('本轮没有“已采到第 8 页仍无可用来源”的记录。')
+    if '{{UNAVAILABLE}}' not in template:
+        template += '\n\n{{UNAVAILABLE}}\n'
+    return (template.replace('{{SUMMARY}}', summary).replace('{{FILES}}', '\n'.join(rows))
+            .replace('{{COVERAGE}}', '\n'.join(coverage)).replace('{{UNAVAILABLE}}', '\n'.join(unavailable)))
 
 
 def generate(state: dict, config: dict, output: Path, template: str, repository: str | None, branch: str,
@@ -172,6 +193,7 @@ def generate(state: dict, config: dict, output: Path, template: str, repository:
                 'split_files': False,
                 'mapping_sha256': hashlib.sha256(json.dumps(config, sort_keys=True, ensure_ascii=False).encode()).hexdigest(),
                 'epg_url': epg_url, 'playback_tested': False, 'providers': {}}
+    manifest['unavailable_provinces'] = state.get('last_sync', {}).get('unavailable_provinces', [])
     files = {}
     for provider in sorted(state['providers'], key=lambda p: (PROVINCES.index(next(v for v in PROVINCES if p.startswith(v))), p)):
         data = state['providers'][provider]
@@ -262,6 +284,7 @@ def main() -> int:
     parser.add_argument('--branch', help='输出订阅地址的分支，默认使用 Actions 分支或项目配置')
     parser.add_argument('--provinces', nargs='+', choices=PROVINCES, help='仅从源站更新指定省份，其他省份保留')
     parser.add_argument('--drop-retained', action='store_true', help='离线或导入时移除历史组合；在线已自动清理采集范围')
+    parser.add_argument('--fresh', action='store_true', help='在线采集从空数据开始，只生成本轮来源')
     args = parser.parse_args()
     try:
         config = json.loads((ROOT / 'config/groups.json').read_text(encoding='utf-8'))
@@ -269,11 +292,14 @@ def main() -> int:
         branch = args.branch or os.getenv('GITHUB_REF_NAME') or project['branch']
         if args.provinces and (args.offline or args.source_dir or args.check):
             raise ValueError('--provinces 只能用于在线源站采集')
+        if args.fresh and (args.offline or args.source_dir or args.check):
+            raise ValueError('--fresh 只能用于在线源站采集')
         if args.check:
             print(json.dumps(validate_outputs(args.output, config, project['epg_url']), ensure_ascii=False))
             return 0
-        state_path = ROOT / 'data/sources.json'
-        if state_path.exists():
+        state_root = ROOT if args.offline or args.source_dir else args.output.resolve()
+        state_path = state_root / 'data/sources.json'
+        if state_path.exists() and not args.fresh:
             state = json.loads(state_path.read_text(encoding='utf-8'))
         elif args.offline:
             raise ValueError('尚无数据缓存；请先在线采集或使用 --source-dir 导入 M3U')
