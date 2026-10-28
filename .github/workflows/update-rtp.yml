@@ -54,7 +54,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: iptv-epg
-          path: epg.xml
+          path: epg.xml.gz
           if-no-files-found: error
       - name: Commit EPG
         env:
@@ -63,9 +63,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- epg.xml
+          git add -- epg.xml.gz
           if [ "$CACHED_LISTS_OUTCOME" = "success" ]; then
             git add -- m3u manifest.json data/sources.json README.md
+            # 文件头已切到 gzip 地址后，才清理旧版明文产物。
+            git rm --ignore-unmatch -- epg.xml
           fi
           if git diff --cached --quiet; then
             echo "No EPG changes."
