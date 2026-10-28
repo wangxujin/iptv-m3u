@@ -1,4 +1,4 @@
-"""统一源采集：按省前 5 页，无有效频道时延伸至第 8 页。"""
+"""仅采集酒店和组播：按省前 5 页，无有效频道时延伸至第 8 页。"""
 from __future__ import annotations
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -17,6 +17,8 @@ import time
 from urllib.parse import parse_qs, urlencode, urljoin, urlsplit, urlunsplit
 
 from m3u import OPERATORS, PROVINCES, parse_playlist, source_timestamp, valid_http
+
+SOURCE_TYPES = ('hotel', 'multicast')
 
 
 class SourceError(ValueError):
@@ -218,6 +220,7 @@ def servers(page, province):
         if not row['token']:
             if not page.empty: raise SourceError(f'{province} 列表缺少服务器入口')
             continue
+        if row.get('type') not in SOURCE_TYPES: continue
         if len(cells) < 6: raise SourceError(f'{province} 服务器列数不足：{len(cells)}/6')
         if not usable_status(cells[5]): continue
         operator = operator_name(cells[2])
@@ -229,7 +232,6 @@ def servers(page, province):
         if not int(cells[1]): continue
         try: datetime.fromisoformat(cells[4])
         except ValueError as exc: raise SourceError(f'{province} 更新时间无效') from exc
-        if row.get('type') not in ('multicast', 'hotel', 'migu', 'other'): raise SourceError('服务器类型无法确认')
         result.append(dict(row, provider=province + operator, count=int(cells[1]), updated=cells[4]))
     if not any(row['token'] for row in page.rows) and not page.empty: raise SourceError(f'{province} 列表缺少明确记录或空结果')
     return result
@@ -270,6 +272,7 @@ def fetch_source(config, provinces=None, client=None):
         selected = list(dict.fromkeys(provinces or [p for p in PROVINCES if p in home.provinces]))
         if not selected or any(p not in home.provinces for p in selected): raise SourceError('所选省份不在当前源站列表中')
         source = {'kind': 'website', 'url': config['url'], 'protocol': 'index',
+                  'source_types': list(SOURCE_TYPES),
                   'fetched_at': datetime.now(timezone.utc).isoformat(timespec='seconds'), 'checked_provinces': selected,
                   'page_policy': {'size': 10, 'normal': normal, 'fallback_if_empty': fallback}}
 
@@ -305,8 +308,13 @@ def fetch_source(config, provinces=None, client=None):
                         updated = max((server['updated'], updated), key=source_timestamp)
                         raw = client.get(download_url(detail, config['url'], server['type']), f'{provider} 完整 M3U')
                         rows = parse_playlist(raw)
-                        if len(rows) < server['count'] or any(not valid_http(r['url']) for r in rows):
-                            raise SourceError(f'{provider} M3U 不完整：{len(rows)}/{server["count"]}')
+                        if len(rows) < server['count']:
+                            raise SourceError(f'{provider} M3U 频道数不足：下载 {len(rows)} 条，列表标注 {server["count"]} 条')
+                        downloaded = len(rows)
+                        rows = [row for row in rows if valid_http(row['url'])]
+                        if len(rows) < downloaded:
+                            print(f'[{provider}] 下载 {downloaded} 条，跳过 {downloaded - len(rows)} 条无效或非 HTTP 地址，保留 {len(rows)} 条', flush=True)
+                        if not rows: continue
                         for row in rows: row.update(source_type=server['type'], source_status=status, source_updated_at=updated)
                         group['records'].extend(rows)
                         group['source']['servers'].append({'type': server['type'], 'channels': len(rows), 'updated_at': updated,
