@@ -46,7 +46,7 @@ python3 rtp/b.py           # 从源站采集并生成
 python3 rtp/b.py --offline # 使用已有缓存重建
 python3 rtp/b.py --check   # 校验生成结果
 python3 epg/update.py     # 按 1 → 3 → 2 合并 EPG
-python3 epg/update.py --check # 校验 epg.xml
+python3 epg/update.py --check # 校验 epg.xml.gz
 ```
 
 EPG 每天与频道列表一起在北京时间 00:00、12:00 更新；EPG 先独立发布。
@@ -55,7 +55,7 @@ GitHub schedule 显式设置 timezone: Asia/Shanghai；平台负载仍可能造�
 仅输出北京时间当天及与当天相交的跨天节目，保留跨天节目的完整起止时间。
 M3U 文件头引用项目配置中的 EPG 地址。
 
-首次成功采集后自动创建 data/、m3u/、manifest.json、epg.xml 和本文件。采集失败不会清空已有结果。
+首次成功采集后自动创建 data/、m3u/、manifest.json、epg.xml.gz 和本文件。采集失败不会清空已有结果。
 在线采集成功后自动删除本轮范围内没有可用来源的 M3U；仅接收新上线或存活 N 天，并复查详情状态。
 完整采集确认零可用来源时允许清空该范围。超时、访问或解析失败保留旧文件。
 酒店与组播全部采集成功后才合并；任一侧访问失败都保留本轮旧文件。
