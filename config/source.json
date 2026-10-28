@@ -1,5 +1,8 @@
 {
-  "url": "https://blog.cqshushu.com/multicast-iptv",
+  "sources": [
+    {"type": "multicast", "url": "https://blog.cqshushu.com/multicast-iptv"},
+    {"type": "hotel", "url": "https://blog.cqshushu.com/hotel-iptv"}
+  ],
   "request_interval_seconds": 15,
   "timeout_seconds": 60,
   "max_attempts": 3,
