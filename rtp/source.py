@@ -293,14 +293,18 @@ def server_rows(page: Page, province: str) -> list[dict]:
         operators = [operator for operator in OPERATORS if operator in cells[2]]
         if len(operators) != 1:
             raise SourceError(f'{province} 存在无法确定运营商的可用服务器')
-        if not cells[1].isdigit() or int(cells[1]) < 1:
-            raise SourceError(f'{province} 可用服务器缺少有效频道数量')
+        if not re.fullmatch(r'[0-9]+', cells[1]):
+            raise SourceError(f'{province} 可用服务器的频道数量格式无效：{cells[1][:40]!r}')
+        channels = int(cells[1])
+        if channels == 0:
+            print(f'[{province}{operators[0]}] 频道数为 0，跳过该服务器', flush=True)
+            continue
         try:
             datetime.fromisoformat(cells[4])
         except ValueError as exc:
             raise SourceError(f'{province} 可用服务器的更新时间缺失或无效') from exc
         result.append({'token': row['token'], 'provider': province + operators[0],
-                       'host': cells[0], 'channels': int(cells[1]),
+                       'host': cells[0], 'channels': channels,
                        'status': cells[5], 'updated_at': cells[4]})
     if not any(row['token'] for row in page.rows) and not page.empty_list:
         raise SourceError('服务器列表缺少记录或明确的空结果标记')
