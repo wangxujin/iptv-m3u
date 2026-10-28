@@ -19,6 +19,7 @@ import sys
 import tempfile
 import time
 import unicodedata
+import zlib
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
@@ -253,14 +254,27 @@ def write_atomic(root: ET.Element, output: Path, target_date: date | None = None
         with tempfile.NamedTemporaryFile(prefix='.epg-', suffix='.tmp', dir=output.parent, delete=False) as stream:
             temporary = Path(stream.name)
             ET.indent(root, space='  ')
-            ET.ElementTree(root).write(stream, encoding='utf-8', xml_declaration=True)
-            stream.write(b'\n')
-        validate(ET.parse(temporary).getroot(), target_date)
+            if output.suffix.lower() == '.gz':
+                # 不写文件名和当前时间，保证相同节目内容生成相同压缩字节。
+                with gzip.GzipFile(filename='', mode='wb', fileobj=stream, mtime=0) as compressed:
+                    ET.ElementTree(root).write(compressed, encoding='utf-8', xml_declaration=True)
+                    compressed.write(b'\n')
+            else:
+                ET.ElementTree(root).write(stream, encoding='utf-8', xml_declaration=True)
+                stream.write(b'\n')
+        validate(parse_source(temporary.read_bytes()), target_date)
         os.replace(temporary, output)
     finally:
         if temporary is not None:
             temporary.unlink(missing_ok=True)
     return stats
+
+
+def read_output(output: Path) -> ET.Element:
+    raw = output.read_bytes()
+    if output.suffix.lower() == '.gz' and not raw.startswith(b'\x1f\x8b'):
+        raise ValueError('epg.xml.gz 不是有效的 gzip 文件')
+    return parse_source(raw)
 
 
 def run(config_path: Path, output: Path, source_dir: Path | None = None, target_date: date | None = None) -> dict:
@@ -294,18 +308,18 @@ def run(config_path: Path, output: Path, source_dir: Path | None = None, target_
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--config', type=Path, default=ROOT / 'config/epg.json')
-    parser.add_argument('--output', type=Path, default=ROOT / 'epg.xml')
+    parser.add_argument('--output', type=Path, default=ROOT / 'epg.xml.gz')
     parser.add_argument('--date', type=date.fromisoformat, help='目标北京时间日期 YYYY-MM-DD，默认当天')
     modes = parser.add_mutually_exclusive_group()
-    modes.add_argument('--check', action='store_true', help='只校验现有 epg.xml，不联网')
+    modes.add_argument('--check', action='store_true', help='解压并校验现有 epg.xml.gz，不联网')
     modes.add_argument('--source-dir', type=Path, help='从 source-<id>.xml.gz 离线读取三个来源')
     args = parser.parse_args()
     try:
-        stats = (validate(ET.parse(args.output).getroot(), args.date) if args.check
+        stats = (validate(read_output(args.output), args.date) if args.check
                  else run(args.config, args.output, args.source_dir, args.date))
         print(json.dumps(stats, ensure_ascii=False, indent=2))
         return 0
-    except (OSError, ValueError, KeyError, TypeError, ET.ParseError, HTTPException, EOFError) as exc:
+    except (OSError, ValueError, KeyError, TypeError, ET.ParseError, HTTPException, EOFError, zlib.error) as exc:
         print(f'EPG 更新失败，保留旧文件：{type(exc).__name__}: {exc}', file=sys.stderr)
         return 2
 
