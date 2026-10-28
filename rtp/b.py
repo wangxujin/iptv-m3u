@@ -24,7 +24,7 @@ DEFAULT_README = """# IPTV M3U
 
 {{SUMMARY}}
 
-从 https://iptv.cqshushu.com/index.php 的统一入口仅采集酒店和组播源；每个省份与运营商组合只输出一个 M3U。
+仅采集酒店和组播源；每个省份与运营商组合只输出一个 M3U。
 同一频道超高清与其他画质各保留一条，各档先按更新时间从新到旧选择，更新时间相同优先组播，再比较清晰度。
 分组按 4K超清、央视频道、卫视频道、体育频道、港澳台、少儿频道、影视频道、纪实频道、新闻频道等顺序规范。
 频道分类见 [config/groups.json](config/groups.json)，源站设置见 [config/source.json](config/source.json)，
