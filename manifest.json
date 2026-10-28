@@ -3,7 +3,7 @@
   "source_policy": "direct_website_with_explicit_retention",
   "split_files": false,
   "mapping_sha256": "68618bd5aa6cb707839fcc417a1a727a7f5b3a75e88b33d67e954d494b4c2f4e",
-  "epg_url": "https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml",
+  "epg_url": "https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml.gz",
   "playback_tested": false,
   "providers": {
     "北京联通": {
@@ -25,8 +25,8 @@
         "新闻频道": 3,
         "其他": 42
       },
-      "bytes": 15760,
-      "sha256": "47ac90f082d48cb25d19bf65a8910eeb8a2f25a33696e6b67b4bcac929e28b26",
+      "bytes": 15763,
+      "sha256": "f03c9ad3d9fd598d25ed64b1534056f55816972ba4fe83ab5c55e51dbc63c5d6",
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
@@ -62,8 +62,8 @@
         "新闻频道": 2,
         "其他": 72
       },
-      "bytes": 18845,
-      "sha256": "bbbfc493877e89fb5038725358e9a8d75b3663c3f085902fb883f509886aadfe",
+      "bytes": 18848,
+      "sha256": "d9727e5ad20a65377ea0f8958b4132f0cf3989b6ee89c7190c4773a829c0ddd7",
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
@@ -102,8 +102,8 @@
         "新闻频道": 3,
         "其他": 34
       },
-      "bytes": 15036,
-      "sha256": "b809b36c091a0e912d73bdc479ef1cd5a7fe414d50ad5b6d301118f08d3162a2",
+      "bytes": 15039,
+      "sha256": "d3bbed98bac4c0d549d77412851638beece4401701a26b8de64ea42f028adfa4",
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
@@ -139,8 +139,8 @@
         "新闻频道": 3,
         "其他": 61
       },
-      "bytes": 16918,
-      "sha256": "d4d0ed0fdc0772194daf611a6fa2e8a71bd52bb5f749b76f9f0f1c238c0991c5",
+      "bytes": 16921,
+      "sha256": "edc86ca79489553148dc69b36cad22443de6c3404c66b1b465984be3fee57d79",
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
@@ -184,8 +184,8 @@
         "新闻频道": 3,
         "其他": 44
       },
-      "bytes": 16064,
-      "sha256": "bfeb2563addc9451f1e420368d794b61f8163fbcee96cdaf73bb455487ec7557",
+      "bytes": 16067,
+      "sha256": "92b0f4c418b92b9bd8d9dfa3dd378a3fa66dc2aa9169ace92b9b77e43d071669",
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
@@ -224,8 +224,8 @@
         "新闻频道": 3,
         "其他": 32
       },
-      "bytes": 15258,
-      "sha256": "dbe250b5a8cd7da5963a6e9169aaef0a96ce58c7ac3bcd37f17e0ffc76080b33",
+      "bytes": 15261,
+      "sha256": "a53f5e0ac3c8cc53c8ace02e2816b175f4dfd3bd80c47ef0e589233f86288d69",
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
@@ -265,8 +265,8 @@
         "新闻频道": 6,
         "其他": 34
       },
-      "bytes": 13805,
-      "sha256": "ac202b1f7055f18b6c60c578ad3b982b2bceb4ba0a4c789d4e7a2f7733723502",
+      "bytes": 13808,
+      "sha256": "0c47937e42afa3e8f897265b1ab51c302824324e7fea5b7ebba329f768ae0809",
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
@@ -302,8 +302,8 @@
         "新闻频道": 46,
         "其他": 62
       },
-      "bytes": 25323,
-      "sha256": "4d7ca5f6bf988881a6a37e8e0bacfd3e1a6e9a6f95f78b7f19ceba76b0dea1fc",
+      "bytes": 25326,
+      "sha256": "67ce4645a735031e1dbba24b26d4f797f0ea770a62862e3d26646d028f88ce7f",
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
@@ -336,8 +336,8 @@
         "新闻频道": 3,
         "其他": 41
       },
-      "bytes": 13312,
-      "sha256": "450484091d1302d3fef5eb1295c781d1939c83236034bf2e7b7884ba412b29f8",
+      "bytes": 13315,
+      "sha256": "fb125106b8cecf3fa121b22317e9d5cd884cc557e790663cfcf191d329bfcfc5",
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
@@ -373,8 +373,8 @@
         "新闻频道": 17,
         "其他": 89
       },
-      "bytes": 25511,
-      "sha256": "63a4580df2773d9adb0346cfec1638915d8a232452a5263ff57d87c785f749ea",
+      "bytes": 25514,
+      "sha256": "aa2ee3732748b1f12043233e6eb5bd2e45ccd315cef04cdd394a61360fcf181a",
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
@@ -409,8 +409,8 @@
         "新闻频道": 3,
         "其他": 49
       },
-      "bytes": 16950,
-      "sha256": "c456f17df7a75f15cc34620472ceec33be5e557c4db7b08c3c161484da290f3b",
+      "bytes": 16953,
+      "sha256": "bb8d9825174f2feba9221d6e96abcf42db457f99f39fc38e625006d2c122f9fb",
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
@@ -446,8 +446,8 @@
         "新闻频道": 4,
         "其他": 56
       },
-      "bytes": 17206,
-      "sha256": "eda5972b25d3a9cac872d9aee2cb2ef05ec21a09fcb73f63a188c8ef5f70ea2f",
+      "bytes": 17209,
+      "sha256": "c41df5ec09961d9bc73c5b495c6a077803fa6da3bdf4a2afbb54153458ac23d5",
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
@@ -482,8 +482,8 @@
         "新闻频道": 7,
         "其他": 94
       },
-      "bytes": 24587,
-      "sha256": "5e36dff422999afee8f4ce7a187f53941187b448f10d8094ffce30f869bc2781",
+      "bytes": 24590,
+      "sha256": "3d3d67e56c07385848884408db9ff3418dfc8cc573d610b44155ca199fc6a352",
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
@@ -517,8 +517,8 @@
         "新闻频道": 3,
         "其他": 67
       },
-      "bytes": 20179,
-      "sha256": "385f1ae462d5ec35d9f628a8d58dec37e5b44795a1e3d6da1b3f90510ac3d18c",
+      "bytes": 20182,
+      "sha256": "56d4315428ec82c5e03f5e4803c1130e519ed9485723e275d466fe292751b76a",
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
@@ -558,8 +558,8 @@
         "新闻频道": 3,
         "其他": 39
       },
-      "bytes": 16055,
-      "sha256": "8155405f6431769af778f52cfbe13fcc25f966d87ad459b4c3162217312c3dfd",
+      "bytes": 16058,
+      "sha256": "57fa9c86d15d515b1a0fccdea0011fd70813aaf0f9192895476e386c5264391d",
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",
@@ -595,8 +595,8 @@
         "新闻频道": 6,
         "其他": 124
       },
-      "bytes": 29325,
-      "sha256": "a21fbe4cc99d70514000d46cfe2e670cd7243280475c28b1094a8a0fc35d6fbb",
+      "bytes": 29328,
+      "sha256": "20c75a9a7391da2e7e38004c6e3c6dee4bc289c64449ce400445e7c3c79327f1",
       "source": {
         "kind": "website",
         "url": "https://blog.cqshushu.com/multicast-iptv",

@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml"
+#EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml.gz"
 #EXTINF:-1 tvg-id="4K欢笑剧场" group-title="4K超清",4K欢笑剧场
 http://101.wifi98.com:9001/rtp/232.0.0.98:1234
 #EXTINF:-1 tvg-id="爱上4K" group-title="4K超清",爱上4K

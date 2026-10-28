@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml"
+#EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml.gz"
 #EXTINF:-1 tvg-id="CCTV4K" group-title="4K超清",CCTV4K
 http://125.118.207.78:4000/rtp/233.50.201.226:5140
 #EXTINF:-1 tvg-id="CCTV16 4K" group-title="4K超清",CCTV16 4K

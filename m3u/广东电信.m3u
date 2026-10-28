@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml"
+#EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml.gz"
 #EXTINF:-1 tvg-id="CCTV4K" group-title="4K超清",CCTV4K
 http://vpn.jk960.cn:8686/rtp/239.77.0.194:5146
 #EXTINF:-1 tvg-id="CCTV16 4K" group-title="4K超清",CCTV16 4K

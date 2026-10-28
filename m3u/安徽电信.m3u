@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml"
+#EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml.gz"
 #EXTINF:-1 tvg-id="东方卫视4K" group-title="4K超清",东方卫视4K
 http://114.97.215.186:8888/rtp/238.1.79.39:4428
 #EXTINF:-1 tvg-id="北京卫视4K" group-title="4K超清",北京卫视4K

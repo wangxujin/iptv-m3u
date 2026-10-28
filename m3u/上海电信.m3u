@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml"
+#EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml.gz"
 #EXTINF:-1 tvg-id="BesTV4K动画" group-title="4K超清",BesTV4K动画
 http://www.rogerxlj.top:9997/rtp/233.18.204.171:5140
 #EXTINF:-1 tvg-id="BesTV4K电影" group-title="4K超清",BesTV4K电影
