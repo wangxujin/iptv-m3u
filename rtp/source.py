@@ -34,6 +34,11 @@ def usable_status(value):
     return re.fullmatch(r'新上线|存活\s*[0-9]+\s*天', value.strip()) is not None
 
 
+def operator_name(value):
+    matches = [op for op in OPERATORS if op in (value or '')]
+    return matches[0] if len(matches) == 1 else None
+
+
 def same_site(url, base):
     a, b = urlsplit(url), urlsplit(base)
     return valid_http(url) and (a.scheme, a.netloc) == (b.scheme, b.netloc)
@@ -215,14 +220,16 @@ def servers(page, province):
             continue
         if len(cells) < 6 or province not in cells[2]: raise SourceError(f'{province} 列表内容不完整或省份不符')
         if not usable_status(cells[5]): continue
-        operators = [op for op in OPERATORS if op in cells[2]]
-        if len(operators) != 1: raise SourceError(f'{province} 运营商无法确认')
+        operator = operator_name(cells[2])
+        if operator is None:
+            print(f'[{province}] 列表运营商无法识别，跳过该服务器', flush=True)
+            continue
         if not re.fullmatch(r'[0-9]+', cells[1]): raise SourceError(f'{province} 频道数量无效：{cells[1][:40]!r}')
         if not int(cells[1]): continue
         try: datetime.fromisoformat(cells[4])
         except ValueError as exc: raise SourceError(f'{province} 更新时间无效') from exc
         if row.get('type') not in ('multicast', 'hotel', 'migu', 'other'): raise SourceError('服务器类型无法确认')
-        result.append(dict(row, provider=province + operators[0], count=int(cells[1]), updated=cells[4]))
+        result.append(dict(row, provider=province + operator, count=int(cells[1]), updated=cells[4]))
     if not any(row['token'] for row in page.rows) and not page.empty: raise SourceError(f'{province} 列表缺少明确记录或空结果')
     return result
 
@@ -285,7 +292,12 @@ def fetch_source(config, provinces=None, client=None):
                         status = detail.field('状态')
                         if status is None: raise SourceError(f'{provider} 详情状态缺失')
                         if not usable_status(status): continue
-                        if provider not in (detail.field('类型') or ''): raise SourceError(f'{provider} 详情归属不符')
+                        owner = detail.field('类型')
+                        operator = operator_name(owner)
+                        if operator is None:
+                            print(f'[{provider}] 详情运营商无法识别，跳过该服务器', flush=True)
+                            continue
+                        if province not in owner or province + operator != provider: raise SourceError(f'{provider} 详情归属不符')
                         updated = detail.field('更新时间')
                         try: datetime.fromisoformat(updated or '')
                         except ValueError as exc: raise SourceError(f'{provider} 详情更新时间无效') from exc
