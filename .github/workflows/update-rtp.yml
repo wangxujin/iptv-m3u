@@ -3,8 +3,9 @@ name: Update IPTV Lists and EPG
 on:
   workflow_dispatch:
   schedule:
-    # UTC 04:00 / 16:00，即北京时间每天 12:00 / 次日 00:00。
-    - cron: "0 4,16 * * *"
+    # 显式按北京时间每天 00:00 / 12:00 调度。
+    - cron: "0 0,12 * * *"
+      timezone: "Asia/Shanghai"
   push:
     branches: [main]
     paths:
@@ -17,6 +18,9 @@ on:
 permissions:
   contents: write
 
+env:
+  TZ: Asia/Shanghai
+
 concurrency:
   group: update-iptv-${{ github.ref }}
   cancel-in-progress: false
@@ -26,6 +30,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
+      - name: Show Beijing execution time
+        run: date '+Beijing time %Y-%m-%d %H:%M:%S %Z (%z)'
       - uses: actions/checkout@v5
         with:
           ref: ${{ github.ref_name }}
