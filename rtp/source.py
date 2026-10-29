@@ -402,8 +402,12 @@ def download_playlist(client, target, label):
 
 
 def fetch_source(config, provinces=None, client=None):
+    requested = provinces if provinces is not None else config.get('provinces', [])
+    if not isinstance(requested, (list, tuple)) or any(not isinstance(p, str) or p not in PROVINCES for p in requested):
+        raise SourceError('provinces 须为有效省份名称数组，如 ["北京", "浙江"]；空数组表示全部省份')
+    provinces = list(dict.fromkeys(requested))
     normal, fallback = int(config.get('pages_per_province', 5)), int(config.get('fallback_pages', 8))
-    workers = int(config.get('max_workers', 3))
+    workers = int(config.get('max_workers', 2))
     if not 1 <= normal <= fallback <= 8 or not 1 <= workers <= 4:
         raise SourceError('页数须为 1～8，并发为 1～4')
     owned, started = client is None, time.monotonic()
@@ -412,6 +416,7 @@ def fetch_source(config, provinces=None, client=None):
         home = client.bootstrap()
         selected = list(dict.fromkeys(provinces or [p for p in PROVINCES if p in home.provinces]))
         if not selected or any(p not in home.provinces for p in selected): raise SourceError('所选省份不在当前源站列表中')
+        print(f'[采集范围] {"、".join(selected)}', flush=True)
         source = {'kind': 'website', 'url': config['url'], 'protocol': 'index',
                   'source_types': list(SOURCE_TYPES),
                   'selection_policy': 'one_server_per_provider_multicast_first_newest_within_type',
