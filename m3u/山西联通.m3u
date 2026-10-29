@@ -1,281 +1,281 @@
 #EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml.gz"
 #EXTINF:-1 tvg-id="东方卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",东方卫视4K
-http://60.223.72.205:8001/rtp/226.0.1.248:2121
+http://221.205.181.72:8003/rtp/226.0.1.248:2121
 #EXTINF:-1 tvg-id="北京卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",北京卫视4K
-http://60.223.72.205:8001/rtp/226.0.2.155:9172
+http://221.205.181.72:8003/rtp/226.0.2.155:9172
 #EXTINF:-1 tvg-id="四川卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",四川卫视4K
-http://60.223.72.205:8001/rtp/226.0.1.250:2126
+http://221.205.181.72:8003/rtp/226.0.1.250:2126
 #EXTINF:-1 tvg-id="山东卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",山东卫视4K
-http://60.223.72.205:8001/rtp/226.0.1.251:2124
+http://221.205.181.72:8003/rtp/226.0.1.251:2124
 #EXTINF:-1 tvg-id="广东卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",广东卫视4K
-http://60.223.72.205:8001/rtp/226.0.1.245:2120
+http://221.205.181.72:8003/rtp/226.0.1.245:2120
 #EXTINF:-1 tvg-id="江苏卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",江苏卫视4K
-http://60.223.72.205:8001/rtp/226.0.1.249:2122
+http://221.205.181.72:8003/rtp/226.0.1.249:2122
 #EXTINF:-1 tvg-id="浙江卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",浙江卫视4K
-http://60.223.72.205:8001/rtp/226.0.1.247:2123
+http://221.205.181.72:8003/rtp/226.0.1.247:2123
 #EXTINF:-1 tvg-id="深圳卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",深圳卫视4K
-http://60.223.72.205:8001/rtp/226.0.1.244:2119
+http://221.205.181.72:8003/rtp/226.0.1.244:2119
 #EXTINF:-1 tvg-id="湖南卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",湖南卫视4K
-http://60.223.72.205:8001/rtp/226.0.1.246:2125
+http://221.205.181.72:8003/rtp/226.0.1.246:2125
 #EXTINF:-1 tvg-id="CCTV1HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV1HD
-http://60.223.72.205:8001/rtp/226.0.2.153:9136
+http://221.205.181.72:8003/rtp/226.0.2.153:9136
 #EXTINF:-1 tvg-id="CCTV2HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV2HD
-http://60.223.72.205:8001/rtp/226.0.2.154:9144
+http://221.205.181.72:8003/rtp/226.0.2.154:9144
 #EXTINF:-1 tvg-id="CCTV3HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV3HD
-http://60.223.72.205:8001/rtp/226.0.2.208:9576
+http://221.205.181.72:8003/rtp/226.0.2.208:9576
 #EXTINF:-1 tvg-id="CCTV4HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV4HD
-http://60.223.72.205:8001/rtp/226.0.2.156:9160
+http://221.205.181.72:8003/rtp/226.0.2.156:9160
 #EXTINF:-1 tvg-id="CCTV5HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV5HD
-http://60.223.72.205:8001/rtp/226.0.2.209:9584
+http://221.205.181.72:8003/rtp/226.0.2.209:9584
 #EXTINF:-1 tvg-id="CCTV5+HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV5+HD
-http://60.223.72.205:8001/rtp/226.0.2.168:9256
+http://221.205.181.72:8003/rtp/226.0.2.168:9256
 #EXTINF:-1 tvg-id="CCTV6HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV6HD
-http://60.223.72.205:8001/rtp/226.0.2.210:9592
+http://221.205.181.72:8003/rtp/226.0.2.210:9592
 #EXTINF:-1 tvg-id="CCTV7HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV7HD
-http://60.223.72.205:8001/rtp/226.0.2.159:9184
+http://221.205.181.72:8003/rtp/226.0.2.159:9184
 #EXTINF:-1 tvg-id="CCTV8HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV8HD
-http://60.223.72.205:8001/rtp/226.0.2.211:9600
+http://221.205.181.72:8003/rtp/226.0.2.211:9600
 #EXTINF:-1 tvg-id="CCTV9HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV9HD
-http://60.223.72.205:8001/rtp/226.0.2.161:9200
+http://221.205.181.72:8003/rtp/226.0.2.161:9200
 #EXTINF:-1 tvg-id="CCTV10HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV10HD
-http://60.223.72.205:8001/rtp/226.0.2.162:9208
+http://221.205.181.72:8003/rtp/226.0.2.162:9208
 #EXTINF:-1 tvg-id="CCTV11SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV11SD
-http://60.223.72.205:8001/rtp/226.0.2.28:8136
+http://221.205.181.72:8003/rtp/226.0.2.28:8136
 #EXTINF:-1 tvg-id="CCTV12HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV12HD
-http://60.223.72.205:8001/rtp/226.0.2.164:9224
+http://221.205.181.72:8003/rtp/226.0.2.164:9224
 #EXTINF:-1 tvg-id="CCTV13HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV13HD
-http://60.223.72.205:8001/rtp/226.0.2.165:9232
+http://221.205.181.72:8003/rtp/226.0.2.165:9232
 #EXTINF:-1 tvg-id="CCTV14HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV14HD
-http://60.223.72.205:8001/rtp/226.0.2.166:9240
+http://221.205.181.72:8003/rtp/226.0.2.166:9240
 #EXTINF:-1 tvg-id="CCTV15SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV15SD
-http://60.223.72.205:8001/rtp/226.0.2.32:8168
+http://221.205.181.72:8003/rtp/226.0.2.32:8168
 #EXTINF:-1 tvg-id="CCTV16HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV16HD
-http://60.223.72.205:8001/rtp/226.0.2.169:9264
+http://221.205.181.72:8003/rtp/226.0.2.169:9264
 #EXTINF:-1 tvg-id="CCTV17HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV17HD
-http://60.223.72.205:8001/rtp/226.0.2.170:9272
+http://221.205.181.72:8003/rtp/226.0.2.170:9272
 #EXTINF:-1 tvg-id="央视台球HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",央视台球HD
-http://60.223.72.205:8001/rtp/226.0.2.216:9640
+http://221.205.181.72:8003/rtp/226.0.2.216:9640
 #EXTINF:-1 tvg-id="央视文化精品HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",央视文化精品HD
-http://60.223.72.205:8001/rtp/226.0.2.219:9664
+http://221.205.181.72:8003/rtp/226.0.2.219:9664
 #EXTINF:-1 tvg-id="东南卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",东南卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.188:9416
+http://221.205.181.72:8003/rtp/226.0.2.188:9416
 #EXTINF:-1 tvg-id="东方卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",东方卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.175:9312
+http://221.205.181.72:8003/rtp/226.0.2.175:9312
 #EXTINF:-1 tvg-id="云南卫视SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",云南卫视SD
-http://60.223.72.205:8001/rtp/226.0.2.60:8392
+http://221.205.181.72:8003/rtp/226.0.2.60:8392
 #EXTINF:-1 tvg-id="兵团卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",兵团卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.62:8408
+http://221.205.181.72:8003/rtp/226.0.2.62:8408
 #EXTINF:-1 tvg-id="内蒙古卫视SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",内蒙古卫视SD
-http://60.223.72.205:8001/rtp/226.0.2.63:8416
+http://221.205.181.72:8003/rtp/226.0.2.63:8416
 #EXTINF:-1 tvg-id="北京卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",北京卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.177:9328
+http://221.205.181.72:8003/rtp/226.0.2.177:9328
 #EXTINF:-1 tvg-id="吉林卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",吉林卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.58:8376
+http://221.205.181.72:8003/rtp/226.0.2.58:8376
 #EXTINF:-1 tvg-id="四川卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",四川卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.179:9344
+http://221.205.181.72:8003/rtp/226.0.2.179:9344
 #EXTINF:-1 tvg-id="天津卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",天津卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.148:9096
+http://221.205.181.72:8003/rtp/226.0.2.148:9096
 #EXTINF:-1 tvg-id="宁夏卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",宁夏卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.64:8424
+http://221.205.181.72:8003/rtp/226.0.2.64:8424
 #EXTINF:-1 tvg-id="安徽卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",安徽卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.145:9072
+http://221.205.181.72:8003/rtp/226.0.2.145:9072
 #EXTINF:-1 tvg-id="山东卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",山东卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.149:9104
+http://221.205.181.72:8003/rtp/226.0.2.149:9104
 #EXTINF:-1 tvg-id="山东教育卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",山东教育卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.130:8952
+http://221.205.181.72:8003/rtp/226.0.2.130:8952
 #EXTINF:-1 tvg-id="山西卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",山西卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.152:9128
+http://221.205.181.72:8003/rtp/226.0.2.152:9128
 #EXTINF:-1 tvg-id="广东卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",广东卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.146:9080
+http://221.205.181.72:8003/rtp/226.0.2.146:9080
 #EXTINF:-1 tvg-id="广西卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",广西卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.231:9760
+http://221.205.181.72:8003/rtp/226.0.2.231:9760
 #EXTINF:-1 tvg-id="新疆卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",新疆卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.67:8448
+http://221.205.181.72:8003/rtp/226.0.2.67:8448
 #EXTINF:-1 tvg-id="旅游卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",旅游卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.212:9608
+http://221.205.181.72:8003/rtp/226.0.2.212:9608
 #EXTINF:-1 tvg-id="江苏卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",江苏卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.176:9320
+http://221.205.181.72:8003/rtp/226.0.2.176:9320
 #EXTINF:-1 tvg-id="江西卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",江西卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.54:8344
+http://221.205.181.72:8003/rtp/226.0.2.54:8344
 #EXTINF:-1 tvg-id="河北卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",河北卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.178:9336
+http://221.205.181.72:8003/rtp/226.0.2.178:9336
 #EXTINF:-1 tvg-id="河南卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",河南卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.52:8328
+http://221.205.181.72:8003/rtp/226.0.2.52:8328
 #EXTINF:-1 tvg-id="浙江卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",浙江卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.144:9064
+http://221.205.181.72:8003/rtp/226.0.2.144:9064
 #EXTINF:-1 tvg-id="深圳卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",深圳卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.147:9088
+http://221.205.181.72:8003/rtp/226.0.2.147:9088
 #EXTINF:-1 tvg-id="湖北卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",湖北卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.150:9112
+http://221.205.181.72:8003/rtp/226.0.2.150:9112
 #EXTINF:-1 tvg-id="湖南卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",湖南卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.143:9056
+http://221.205.181.72:8003/rtp/226.0.2.143:9056
 #EXTINF:-1 tvg-id="甘肃卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",甘肃卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.55:8352
+http://221.205.181.72:8003/rtp/226.0.2.55:8352
 #EXTINF:-1 tvg-id="西藏卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",西藏卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.66:8440
+http://221.205.181.72:8003/rtp/226.0.2.66:8440
 #EXTINF:-1 tvg-id="贵州卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",贵州卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.180:9352
+http://221.205.181.72:8003/rtp/226.0.2.180:9352
 #EXTINF:-1 tvg-id="辽宁卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",辽宁卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.173:9296
+http://221.205.181.72:8003/rtp/226.0.2.173:9296
 #EXTINF:-1 tvg-id="重庆卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",重庆卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.174:9304
+http://221.205.181.72:8003/rtp/226.0.2.174:9304
 #EXTINF:-1 tvg-id="陕西卫视SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",陕西卫视SD
-http://60.223.72.205:8001/rtp/226.0.2.53:8336
+http://221.205.181.72:8003/rtp/226.0.2.53:8336
 #EXTINF:-1 tvg-id="青海卫视SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",青海卫视SD
-http://60.223.72.205:8001/rtp/226.0.2.59:8384
+http://221.205.181.72:8003/rtp/226.0.2.59:8384
 #EXTINF:-1 tvg-id="黑龙江卫视HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="卫视频道",黑龙江卫视HD
-http://60.223.72.205:8001/rtp/226.0.2.151:9120
+http://221.205.181.72:8003/rtp/226.0.2.151:9120
 #EXTINF:-1 tvg-id="风云足球HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="体育频道",风云足球HD
-http://60.223.72.205:8001/rtp/226.0.2.225:9712
+http://221.205.181.72:8003/rtp/226.0.2.225:9712
 #EXTINF:-1 tvg-id="古交电视台SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="港澳台",古交电视台SD
-http://60.223.72.205:8001/rtp/226.0.2.192:9448
+http://221.205.181.72:8003/rtp/226.0.2.192:9448
 #EXTINF:-1 tvg-id="卡酷少儿HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="少儿频道",卡酷少儿HD
-http://60.223.72.205:8001/rtp/226.0.2.57:8368
+http://221.205.181.72:8003/rtp/226.0.2.57:8368
 #EXTINF:-1 tvg-id="金鹰卡通HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="少儿频道",金鹰卡通HD
-http://60.223.72.205:8001/rtp/226.0.2.172:9288
+http://221.205.181.72:8003/rtp/226.0.2.172:9288
 #EXTINF:-1 tvg-id="CHC动作电影HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="影视频道",CHC动作电影HD
-http://60.223.72.205:8001/rtp/226.0.2.94:8012
+http://221.205.181.72:8003/rtp/226.0.2.94:8012
 #EXTINF:-1 tvg-id="CHC影迷电影HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="影视频道",CHC影迷电影HD
-http://60.223.72.205:8001/rtp/226.0.2.93:8004
+http://221.205.181.72:8003/rtp/226.0.2.93:8004
 #EXTINF:-1 tvg-id="山西影视SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="影视频道",山西影视SD
-http://60.223.72.205:8001/rtp/226.0.2.14:8024
+http://221.205.181.72:8003/rtp/226.0.2.14:8024
 #EXTINF:-1 tvg-id="怀旧剧场HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="影视频道",怀旧剧场HD
-http://60.223.72.205:8001/rtp/226.0.2.224:9704
+http://221.205.181.72:8003/rtp/226.0.2.224:9704
 #EXTINF:-1 tvg-id="第一剧场HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="影视频道",第一剧场HD
-http://60.223.72.205:8001/rtp/226.0.2.221:9680
+http://221.205.181.72:8003/rtp/226.0.2.221:9680
 #EXTINF:-1 tvg-id="都市剧场HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="影视频道",都市剧场HD
-http://60.223.72.205:8001/rtp/226.0.2.81:8560
+http://221.205.181.72:8003/rtp/226.0.2.81:8560
 #EXTINF:-1 tvg-id="风云剧场HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="影视频道",风云剧场HD
-http://60.223.72.205:8001/rtp/226.0.2.227:9728
+http://221.205.181.72:8003/rtp/226.0.2.227:9728
 #EXTINF:-1 tvg-id="北京纪实科教HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="纪实频道",北京纪实科教HD
-http://60.223.72.205:8001/rtp/226.0.2.141:9040
+http://221.205.181.72:8003/rtp/226.0.2.141:9040
 #EXTINF:-1 tvg-id="阳泉科教SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="纪实频道",阳泉科教SD
-http://60.223.72.205:8001/rtp/226.0.2.234:9784
+http://221.205.181.72:8003/rtp/226.0.2.234:9784
 #EXTINF:-1 tvg-id="东方财经HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="新闻频道",东方财经HD
-http://60.223.72.205:8001/rtp/226.0.2.76:8520
+http://221.205.181.72:8003/rtp/226.0.2.76:8520
 #EXTINF:-1 tvg-id="山西社会与法治HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="新闻频道",山西社会与法治HD
-http://60.223.72.205:8001/rtp/226.0.2.238:9816
+http://221.205.181.72:8003/rtp/226.0.2.238:9816
 #EXTINF:-1 tvg-id="法治天地HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="新闻频道",法治天地HD
-http://60.223.72.205:8001/rtp/226.0.2.83:8576
+http://221.205.181.72:8003/rtp/226.0.2.83:8576
 #EXTINF:-1 tvg-id="CETV1HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",CETV1HD
-http://60.223.72.205:8001/rtp/226.0.2.181:9360
+http://221.205.181.72:8003/rtp/226.0.2.181:9360
 #EXTINF:-1 tvg-id="CETV2SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",CETV2SD
-http://60.223.72.205:8001/rtp/226.0.2.69:8464
+http://221.205.181.72:8003/rtp/226.0.2.69:8464
 #EXTINF:-1 tvg-id="CETV4SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",CETV4SD
-http://60.223.72.205:8001/rtp/226.0.2.70:8472
+http://221.205.181.72:8003/rtp/226.0.2.70:8472
 #EXTINF:-1 tvg-id="CETV早期教育HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",CETV早期教育HD
-http://60.223.72.205:8001/rtp/226.0.2.99:8704
+http://221.205.181.72:8003/rtp/226.0.2.99:8704
 #EXTINF:-1 tvg-id="CEV1SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",CEV1SD
-http://60.223.72.205:8001/rtp/226.0.2.68:8456
+http://221.205.181.72:8003/rtp/226.0.2.68:8456
 #EXTINF:-1 tvg-id="CHC家庭影院HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",CHC家庭影院HD
-http://60.223.72.205:8001/rtp/226.0.2.240:9820
+http://221.205.181.72:8003/rtp/226.0.2.240:9820
 #EXTINF:-1 tvg-id="世界地理HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",世界地理HD
-http://60.223.72.205:8001/rtp/226.0.2.222:9688
+http://221.205.181.72:8003/rtp/226.0.2.222:9688
 #EXTINF:-1 tvg-id="中华特产SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",中华特产SD
-http://60.223.72.205:8001/rtp/226.0.2.128:8936
+http://221.205.181.72:8003/rtp/226.0.2.128:8936
 #EXTINF:-1 tvg-id="中国天气HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",中国天气HD
-http://60.223.72.205:8001/rtp/226.0.2.103:8736
+http://221.205.181.72:8003/rtp/226.0.2.103:8736
 #EXTINF:-1 tvg-id="中视购物SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",中视购物SD
-http://60.223.72.205:8001/rtp/226.0.2.72:8488
+http://221.205.181.72:8003/rtp/226.0.2.72:8488
 #EXTINF:-1 tvg-id="乐游HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",乐游HD
-http://60.223.72.205:8001/rtp/226.0.2.77:8528
+http://221.205.181.72:8003/rtp/226.0.2.77:8528
 #EXTINF:-1 tvg-id="九屏测试HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",九屏测试HD
-http://60.223.72.205:8001/rtp/226.0.2.197:9488
+http://221.205.181.72:8003/rtp/226.0.2.197:9488
 #EXTINF:-1 tvg-id="书法频道SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",书法频道SD
-http://60.223.72.205:8001/rtp/226.0.2.102:8728
+http://221.205.181.72:8003/rtp/226.0.2.102:8728
 #EXTINF:-1 tvg-id="优优宝贝SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",优优宝贝SD
-http://60.223.72.205:8001/rtp/226.0.2.119:8864
+http://221.205.181.72:8003/rtp/226.0.2.119:8864
 #EXTINF:-1 tvg-id="优购物SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",优购物SD
-http://60.223.72.205:8001/rtp/226.0.2.131:8960
+http://221.205.181.72:8003/rtp/226.0.2.131:8960
 #EXTINF:-1 tvg-id="先锋乒羽SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",先锋乒羽SD
-http://60.223.72.205:8001/rtp/226.0.2.121:8880
+http://221.205.181.72:8003/rtp/226.0.2.121:8880
 #EXTINF:-1 tvg-id="兵器科技HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",兵器科技HD
-http://60.223.72.205:8001/rtp/226.0.2.223:9696
+http://221.205.181.72:8003/rtp/226.0.2.223:9696
 #EXTINF:-1 tvg-id="动漫秀场HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",动漫秀场HD
-http://60.223.72.205:8001/rtp/226.0.2.183:9376
+http://221.205.181.72:8003/rtp/226.0.2.183:9376
 #EXTINF:-1 tvg-id="哈哈炫动HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",哈哈炫动HD
-http://60.223.72.205:8001/rtp/226.0.2.44:8264
+http://221.205.181.72:8003/rtp/226.0.2.44:8264
 #EXTINF:-1 tvg-id="四海钓鱼HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",四海钓鱼HD
-http://60.223.72.205:8001/rtp/226.0.2.123:8896
+http://221.205.181.72:8003/rtp/226.0.2.123:8896
 #EXTINF:-1 tvg-id="国学频道SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",国学频道SD
-http://60.223.72.205:8001/rtp/226.0.2.116:8840
+http://221.205.181.72:8003/rtp/226.0.2.116:8840
 #EXTINF:-1 tvg-id="大同教育HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",大同教育HD
-http://60.223.72.205:8001/rtp/226.0.2.232:9772
+http://221.205.181.72:8003/rtp/226.0.2.232:9772
 #EXTINF:-1 tvg-id="太原1SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",太原1SD
-http://60.223.72.205:8001/rtp/226.0.2.201:9520
+http://221.205.181.72:8003/rtp/226.0.2.201:9520
 #EXTINF:-1 tvg-id="太原2SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",太原2SD
-http://60.223.72.205:8001/rtp/226.0.2.202:9528
+http://221.205.181.72:8003/rtp/226.0.2.202:9528
 #EXTINF:-1 tvg-id="太原3SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",太原3SD
-http://60.223.72.205:8001/rtp/226.0.2.203:9536
+http://221.205.181.72:8003/rtp/226.0.2.203:9536
 #EXTINF:-1 tvg-id="太原4SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",太原4SD
-http://60.223.72.205:8001/rtp/226.0.2.204:9544
+http://221.205.181.72:8003/rtp/226.0.2.204:9544
 #EXTINF:-1 tvg-id="太原5SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",太原5SD
-http://60.223.72.205:8001/rtp/226.0.2.205:9552
+http://221.205.181.72:8003/rtp/226.0.2.205:9552
 #EXTINF:-1 tvg-id="太原佰乐购SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",太原佰乐购SD
-http://60.223.72.205:8001/rtp/226.0.2.215:9632
+http://221.205.181.72:8003/rtp/226.0.2.215:9632
 #EXTINF:-1 tvg-id="太原教育SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",太原教育SD
-http://60.223.72.205:8001/rtp/226.0.2.206:9560
+http://221.205.181.72:8003/rtp/226.0.2.206:9560
 #EXTINF:-1 tvg-id="央广购物SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",央广购物SD
-http://60.223.72.205:8001/rtp/226.0.2.230:9752
+http://221.205.181.72:8003/rtp/226.0.2.230:9752
 #EXTINF:-1 tvg-id="女性时尚HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",女性时尚HD
-http://60.223.72.205:8001/rtp/226.0.2.226:9720
+http://221.205.181.72:8003/rtp/226.0.2.226:9720
 #EXTINF:-1 tvg-id="山西文体生活HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",山西文体生活HD
-http://60.223.72.205:8001/rtp/226.0.2.16:8040
+http://221.205.181.72:8003/rtp/226.0.2.16:8040
 #EXTINF:-1 tvg-id="山西经济与科技HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",山西经济与科技HD
-http://60.223.72.205:8001/rtp/226.0.2.236:9800
+http://221.205.181.72:8003/rtp/226.0.2.236:9800
 #EXTINF:-1 tvg-id="山西黄河HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",山西黄河HD
-http://60.223.72.205:8001/rtp/226.0.2.235:9792
+http://221.205.181.72:8003/rtp/226.0.2.235:9792
 #EXTINF:-1 tvg-id="快乐垂钓HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",快乐垂钓HD
-http://60.223.72.205:8001/rtp/226.0.2.214:9624
+http://221.205.181.72:8003/rtp/226.0.2.214:9624
 #EXTINF:-1 tvg-id="收藏天下SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",收藏天下SD
-http://60.223.72.205:8001/rtp/226.0.2.132:8968
+http://221.205.181.72:8003/rtp/226.0.2.132:8968
 #EXTINF:-1 tvg-id="文物宝库HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",文物宝库HD
-http://60.223.72.205:8001/rtp/226.0.2.110:8792
+http://221.205.181.72:8003/rtp/226.0.2.110:8792
 #EXTINF:-1 tvg-id="新动漫SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",新动漫SD
-http://60.223.72.205:8001/rtp/226.0.2.73:8496
+http://221.205.181.72:8003/rtp/226.0.2.73:8496
 #EXTINF:-1 tvg-id="晋能控股SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",晋能控股SD
-http://60.223.72.205:8001/rtp/226.0.2.229:9744
+http://221.205.181.72:8003/rtp/226.0.2.229:9744
 #EXTINF:-1 tvg-id="朔州-1SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",朔州-1SD
-http://60.223.72.205:8001/rtp/226.0.2.185:9392
+http://221.205.181.72:8003/rtp/226.0.2.185:9392
 #EXTINF:-1 tvg-id="朔州-2SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",朔州-2SD
-http://60.223.72.205:8001/rtp/226.0.2.186:9400
+http://221.205.181.72:8003/rtp/226.0.2.186:9400
 #EXTINF:-1 tvg-id="梨园频道HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",梨园频道HD
-http://60.223.72.205:8001/rtp/226.0.2.115:8832
+http://221.205.181.72:8003/rtp/226.0.2.115:8832
 #EXTINF:-1 tvg-id="武术世界HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",武术世界HD
-http://60.223.72.205:8001/rtp/226.0.2.97:8688
+http://221.205.181.72:8003/rtp/226.0.2.97:8688
 #EXTINF:-1 tvg-id="清徐HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",清徐HD
-http://60.223.72.205:8001/rtp/226.0.2.191:9440
+http://221.205.181.72:8003/rtp/226.0.2.191:9440
 #EXTINF:-1 tvg-id="游戏风云HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",游戏风云HD
-http://60.223.72.205:8001/rtp/226.0.2.78:8536
+http://221.205.181.72:8003/rtp/226.0.2.78:8536
 #EXTINF:-1 tvg-id="环球奇观SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",环球奇观SD
-http://60.223.72.205:8001/rtp/226.0.2.111:8800
+http://221.205.181.72:8003/rtp/226.0.2.111:8800
 #EXTINF:-1 tvg-id="环球旅游SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",环球旅游SD
-http://60.223.72.205:8001/rtp/226.0.2.127:8928
+http://221.205.181.72:8003/rtp/226.0.2.127:8928
 #EXTINF:-1 tvg-id="生态环境SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",生态环境SD
-http://60.223.72.205:8001/rtp/226.0.2.120:8872
+http://221.205.181.72:8003/rtp/226.0.2.120:8872
 #EXTINF:-1 tvg-id="生活时尚HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",生活时尚HD
-http://60.223.72.205:8001/rtp/226.0.2.84:8584
+http://221.205.181.72:8003/rtp/226.0.2.84:8584
 #EXTINF:-1 tvg-id="电视指南HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",电视指南HD
-http://60.223.72.205:8001/rtp/226.0.2.218:9656
+http://221.205.181.72:8003/rtp/226.0.2.218:9656
 #EXTINF:-1 tvg-id="经济与科技SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",经济与科技SD
-http://60.223.72.205:8001/rtp/226.0.2.13:8016
+http://221.205.181.72:8003/rtp/226.0.2.13:8016
 #EXTINF:-1 tvg-id="老故事SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",老故事SD
-http://60.223.72.205:8001/rtp/226.0.2.112:8808
+http://221.205.181.72:8003/rtp/226.0.2.112:8808
 #EXTINF:-1 tvg-id="聚鲨环球精选SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",聚鲨环球精选SD
-http://60.223.72.205:8001/rtp/226.0.2.122:8888
+http://221.205.181.72:8003/rtp/226.0.2.122:8888
 #EXTINF:-1 tvg-id="茶频道HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",茶频道HD
-http://60.223.72.205:8001/rtp/226.0.2.213:9616
+http://221.205.181.72:8003/rtp/226.0.2.213:9616
 #EXTINF:-1 tvg-id="重庆汽摩SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",重庆汽摩SD
-http://60.223.72.205:8001/rtp/226.0.2.95:8672
+http://221.205.181.72:8003/rtp/226.0.2.95:8672
 #EXTINF:-1 tvg-id="金色学堂HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",金色学堂HD
-http://60.223.72.205:8001/rtp/226.0.2.182:9368
+http://221.205.181.72:8003/rtp/226.0.2.182:9368
 #EXTINF:-1 tvg-id="金鹰纪实HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",金鹰纪实HD
-http://60.223.72.205:8001/rtp/226.0.2.194:9464
+http://221.205.181.72:8003/rtp/226.0.2.194:9464
 #EXTINF:-1 tvg-id="阳曲SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",阳曲SD
-http://60.223.72.205:8001/rtp/226.0.2.196:9480
+http://221.205.181.72:8003/rtp/226.0.2.196:9480
 #EXTINF:-1 tvg-id="阳泉综合SD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",阳泉综合SD
-http://60.223.72.205:8001/rtp/226.0.2.233:9776
+http://221.205.181.72:8003/rtp/226.0.2.233:9776
 #EXTINF:-1 tvg-id="风云音乐HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",风云音乐HD
-http://60.223.72.205:8001/rtp/226.0.2.220:9672
+http://221.205.181.72:8003/rtp/226.0.2.220:9672
 #EXTINF:-1 tvg-id="高尔夫网球HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="其他",高尔夫网球HD
-http://60.223.72.205:8001/rtp/226.0.2.217:9648
+http://221.205.181.72:8003/rtp/226.0.2.217:9648
