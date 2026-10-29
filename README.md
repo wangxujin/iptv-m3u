@@ -1,6 +1,8 @@
 # IPTV M3U
 
-当前输出 **26 个省份、34 份 M3U、5,082 条频道线路**。其中 5 份来自最近成功采集或导入，29 份保留历史来源。每个省份与运营商的组合只有一份文件。
+当前输出 **4 个省份、5 份 M3U、893 条频道线路**。其中 5 份来自最近成功采集或导入，0 份保留历史来源。每个省份与运营商的组合只有一份文件。
+
+本轮采集范围：北京、浙江、湖南、河北；只代表配置的分页范围。
 
 仅采集酒店和组播源；每个省份与运营商组合只输出一个 M3U。
 同一频道超高清与其他画质各保留一条，各档先按更新时间从新到旧选择，更新时间相同优先组播，再比较清晰度。
@@ -12,40 +14,11 @@
 
 | 省份／运营商 | M3U | 频道线路 | 数据快照（北京时间） | 来源状态 |
 |---|---|---:|---|---|
-| 北京联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%8C%97%E4%BA%AC%E8%81%94%E9%80%9A.m3u) | 50 | 2026-10-29 15:44 | 源站直接采集 |
-| 天津联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%A4%A9%E6%B4%A5%E8%81%94%E9%80%9A.m3u) | 160 | 2026-10-29 13:00 | 保留的历史来源 |
-| 河北电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B2%B3%E5%8C%97%E7%94%B5%E4%BF%A1.m3u) | 290 | 2026-10-29 15:44 | 源站直接采集 |
-| 河北联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B2%B3%E5%8C%97%E8%81%94%E9%80%9A.m3u) | 294 | 2026-10-29 15:44 | 源站直接采集 |
-| 山西电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%B1%B1%E8%A5%BF%E7%94%B5%E4%BF%A1.m3u) | 119 | 2026-10-29 13:00 | 保留的历史来源 |
-| 山西联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%B1%B1%E8%A5%BF%E8%81%94%E9%80%9A.m3u) | 140 | 2026-10-29 13:00 | 保留的历史来源 |
-| 内蒙古电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%86%85%E8%92%99%E5%8F%A4%E7%94%B5%E4%BF%A1.m3u) | 168 | 2026-10-29 13:00 | 保留的历史来源 |
-| 内蒙古联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%86%85%E8%92%99%E5%8F%A4%E8%81%94%E9%80%9A.m3u) | 102 | 2026-10-29 13:00 | 保留的历史来源 |
-| 辽宁电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E8%BE%BD%E5%AE%81%E7%94%B5%E4%BF%A1.m3u) | 84 | 2026-10-29 13:00 | 保留的历史来源 |
-| 吉林联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%90%89%E6%9E%97%E8%81%94%E9%80%9A.m3u) | 32 | 2026-10-29 13:00 | 保留的历史来源 |
-| 黑龙江电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E9%BB%91%E9%BE%99%E6%B1%9F%E7%94%B5%E4%BF%A1.m3u) | 341 | 2026-10-29 13:00 | 保留的历史来源 |
-| 黑龙江联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E9%BB%91%E9%BE%99%E6%B1%9F%E8%81%94%E9%80%9A.m3u) | 163 | 2026-10-29 13:00 | 保留的历史来源 |
-| 上海电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E4%B8%8A%E6%B5%B7%E7%94%B5%E4%BF%A1.m3u) | 121 | 2026-10-29 13:00 | 保留的历史来源 |
-| 上海联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E4%B8%8A%E6%B5%B7%E8%81%94%E9%80%9A.m3u) | 32 | 2026-10-29 13:00 | 保留的历史来源 |
-| 江苏电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B1%9F%E8%8B%8F%E7%94%B5%E4%BF%A1.m3u) | 189 | 2026-10-29 13:00 | 保留的历史来源 |
-| 浙江电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B5%99%E6%B1%9F%E7%94%B5%E4%BF%A1.m3u) | 114 | 2026-10-29 15:44 | 源站直接采集 |
-| 安徽电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%AE%89%E5%BE%BD%E7%94%B5%E4%BF%A1.m3u) | 199 | 2026-10-29 13:00 | 保留的历史来源 |
-| 福建联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E7%A6%8F%E5%BB%BA%E8%81%94%E9%80%9A.m3u) | 40 | 2026-10-29 13:00 | 保留的历史来源 |
-| 江西电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B1%9F%E8%A5%BF%E7%94%B5%E4%BF%A1.m3u) | 207 | 2026-10-29 13:00 | 保留的历史来源 |
-| 山东电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%B1%B1%E4%B8%9C%E7%94%B5%E4%BF%A1.m3u) | 230 | 2026-10-29 13:00 | 保留的历史来源 |
-| 山东移动 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%B1%B1%E4%B8%9C%E7%A7%BB%E5%8A%A8.m3u) | 52 | 2026-10-29 13:00 | 保留的历史来源 |
-| 山东联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%B1%B1%E4%B8%9C%E8%81%94%E9%80%9A.m3u) | 92 | 2026-10-29 13:00 | 保留的历史来源 |
-| 河南联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B2%B3%E5%8D%97%E8%81%94%E9%80%9A.m3u) | 210 | 2026-10-29 13:00 | 保留的历史来源 |
-| 湖北电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B9%96%E5%8C%97%E7%94%B5%E4%BF%A1.m3u) | 138 | 2026-10-29 13:00 | 保留的历史来源 |
-| 湖南电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B9%96%E5%8D%97%E7%94%B5%E4%BF%A1.m3u) | 145 | 2026-10-29 15:44 | 源站直接采集 |
-| 广东电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%B9%BF%E4%B8%9C%E7%94%B5%E4%BF%A1.m3u) | 198 | 2026-10-29 13:00 | 保留的历史来源 |
-| 海南电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B5%B7%E5%8D%97%E7%94%B5%E4%BF%A1.m3u) | 151 | 2026-10-29 13:00 | 保留的历史来源 |
-| 重庆电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E9%87%8D%E5%BA%86%E7%94%B5%E4%BF%A1.m3u) | 162 | 2026-10-29 13:00 | 保留的历史来源 |
-| 重庆联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E9%87%8D%E5%BA%86%E8%81%94%E9%80%9A.m3u) | 126 | 2026-10-29 13:00 | 保留的历史来源 |
-| 四川电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%9B%9B%E5%B7%9D%E7%94%B5%E4%BF%A1.m3u) | 236 | 2026-10-29 13:00 | 保留的历史来源 |
-| 贵州电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E8%B4%B5%E5%B7%9E%E7%94%B5%E4%BF%A1.m3u) | 36 | 2026-10-29 13:00 | 保留的历史来源 |
-| 云南电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E4%BA%91%E5%8D%97%E7%94%B5%E4%BF%A1.m3u) | 238 | 2026-10-29 13:00 | 保留的历史来源 |
-| 陕西电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E9%99%95%E8%A5%BF%E7%94%B5%E4%BF%A1.m3u) | 179 | 2026-10-29 13:00 | 保留的历史来源 |
-| 甘肃联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E7%94%98%E8%82%83%E8%81%94%E9%80%9A.m3u) | 44 | 2026-10-29 13:00 | 保留的历史来源 |
+| 北京联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%8C%97%E4%BA%AC%E8%81%94%E9%80%9A.m3u) | 50 | 2026-10-29 16:01 | 源站直接采集 |
+| 河北电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B2%B3%E5%8C%97%E7%94%B5%E4%BF%A1.m3u) | 290 | 2026-10-29 16:01 | 源站直接采集 |
+| 河北联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B2%B3%E5%8C%97%E8%81%94%E9%80%9A.m3u) | 294 | 2026-10-29 16:01 | 源站直接采集 |
+| 浙江电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B5%99%E6%B1%9F%E7%94%B5%E4%BF%A1.m3u) | 114 | 2026-10-29 16:01 | 源站直接采集 |
+| 湖南电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B9%96%E5%8D%97%E7%94%B5%E4%BF%A1.m3u) | 145 | 2026-10-29 16:01 | 源站直接采集 |
 
 ## 第 8 页仍无可用来源
 
