@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml.gz"
-#EXTINF:-1 tvg-id="24KZ" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",24KZ
+#EXTINF:-1 tvg-id="24KZ" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",24KZ
 http://120.70.60.179:85/tsfile/live/1003_1.m3u8?key=txiptv&amp;playlive=0&amp;authid=0
 #EXTINF:-1 tvg-id="CCTV-1" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV-1
 http://120.70.60.179:85/tsfile/live/1007_1.m3u8?key=txiptv&amp;playlive=1&amp;authid=0

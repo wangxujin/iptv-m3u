@@ -1,33 +1,33 @@
 #EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml.gz"
-#EXTINF:-1 tvg-id="CCTV4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",CCTV4K
+#EXTINF:-1 tvg-id="CCTV4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",CCTV4K
 http://122.246.150.240:8188/rtp/233.50.201.226:5140
-#EXTINF:-1 tvg-id="CCTV16 4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",CCTV16 4K
+#EXTINF:-1 tvg-id="CCTV16 4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",CCTV16 4K
 http://122.246.150.240:8188/rtp/233.50.200.112:5140
-#EXTINF:-1 tvg-id="东方卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",东方卫视4K
+#EXTINF:-1 tvg-id="东方卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",东方卫视4K
 http://122.246.150.240:8188/rtp/233.50.202.105:5140
-#EXTINF:-1 tvg-id="北京卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",北京卫视4K
+#EXTINF:-1 tvg-id="北京卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",北京卫视4K
 http://122.246.150.240:8188/rtp/233.50.202.100:5140
-#EXTINF:-1 tvg-id="四川卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",四川卫视4K
+#EXTINF:-1 tvg-id="四川卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",四川卫视4K
 http://122.246.150.240:8188/rtp/233.50.202.109:5140
-#EXTINF:-1 tvg-id="山东卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",山东卫视4K
+#EXTINF:-1 tvg-id="山东卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",山东卫视4K
 http://122.246.150.240:8188/rtp/233.50.202.108:5140
-#EXTINF:-1 tvg-id="广东卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",广东卫视4K
+#EXTINF:-1 tvg-id="广东卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",广东卫视4K
 http://122.246.150.240:8188/rtp/233.50.202.101:5140
-#EXTINF:-1 tvg-id="欢笑剧场4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",欢笑剧场4K
+#EXTINF:-1 tvg-id="欢笑剧场4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",欢笑剧场4K
 http://122.246.150.240:8188/rtp/233.50.200.52:5140
-#EXTINF:-1 tvg-id="江苏卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",江苏卫视4K
+#EXTINF:-1 tvg-id="江苏卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",江苏卫视4K
 http://122.246.150.240:8188/rtp/233.50.202.107:5140
-#EXTINF:-1 tvg-id="浙江卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",浙江卫视4K
+#EXTINF:-1 tvg-id="浙江卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",浙江卫视4K
 http://122.246.150.240:8188/rtp/233.50.202.104:5140
-#EXTINF:-1 tvg-id="深圳卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",深圳卫视4K
+#EXTINF:-1 tvg-id="深圳卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",深圳卫视4K
 http://122.246.150.240:8188/rtp/233.50.202.102:5140
-#EXTINF:-1 tvg-id="湖南卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",湖南卫视4K
+#EXTINF:-1 tvg-id="湖南卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",湖南卫视4K
 http://122.246.150.240:8188/rtp/233.50.202.106:5140
-#EXTINF:-1 tvg-id="百事通4K-1" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",百事通4K-1
+#EXTINF:-1 tvg-id="百事通4K-1" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",百事通4K-1
 http://122.246.150.240:8188/rtp/233.50.200.182:5140
-#EXTINF:-1 tvg-id="百事通4k-2" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",百事通4k-2
+#EXTINF:-1 tvg-id="百事通4k-2" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",百事通4k-2
 http://122.246.150.240:8188/rtp/233.50.200.183:5140
-#EXTINF:-1 tvg-id="百事通电影4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",百事通电影4K
+#EXTINF:-1 tvg-id="百事通电影4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",百事通电影4K
 http://122.246.150.240:8188/rtp/233.50.200.185:5140
 #EXTINF:-1 tvg-id="CCTV1" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV1
 http://122.246.150.240:8188/rtp/233.50.200.130:5140

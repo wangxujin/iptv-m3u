@@ -1,11 +1,11 @@
 #EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml.gz"
-#EXTINF:-1 tvg-id="4K超高清电影" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",4K超高清电影
+#EXTINF:-1 tvg-id="4K超高清电影" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",4K超高清电影
 http://183.222.206.251:4000/rtp/239.10.0.187:5140
-#EXTINF:-1 tvg-id="CCTV4K测试" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",CCTV4K测试
+#EXTINF:-1 tvg-id="CCTV4K测试" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",CCTV4K测试
 http://183.222.206.251:4000/rtp/239.10.0.108:5140
-#EXTINF:-1 tvg-id="爱上4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",爱上4K
+#EXTINF:-1 tvg-id="爱上4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",爱上4K
 http://183.222.206.251:4000/rtp/239.11.0.120:5140
-#EXTINF:-1 tvg-id="真4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",真4K
+#EXTINF:-1 tvg-id="真4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",真4K
 http://183.222.206.251:4000/rtp/239.11.0.122:5140
 #EXTINF:-1 tvg-id="CCTV1" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV1
 http://183.222.206.251:4000/rtp/239.11.0.130:5140

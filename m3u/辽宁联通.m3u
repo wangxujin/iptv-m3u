@@ -1,7 +1,7 @@
 #EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml.gz"
-#EXTINF:-1 tvg-id="4K欢笑剧场" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",4K欢笑剧场
+#EXTINF:-1 tvg-id="4K欢笑剧场" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",4K欢笑剧场
 http://101.wifi98.com:9001/rtp/232.0.0.98:1234
-#EXTINF:-1 tvg-id="爱上4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="4K超清",爱上4K
+#EXTINF:-1 tvg-id="爱上4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="超清体验",爱上4K
 http://101.wifi98.com:9001/rtp/232.0.0.187:1234
 #EXTINF:-1 tvg-id="CCTV-1综合" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/.png" group-title="央视频道",CCTV-1综合
 http://101.wifi98.com:9001/rtp/232.0.0.27:1234

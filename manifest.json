@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source_policy": "replace_confirmed_scope_remove_unavailable",
   "split_files": false,
-  "mapping_sha256": "68618bd5aa6cb707839fcc417a1a727a7f5b3a75e88b33d67e954d494b4c2f4e",
+  "mapping_sha256": "26e17521fd03a2add087a77f26234e4d614a0f92cbb80e99f5f4be2926be8927",
   "epg_url": "https://gh-proxy.com/https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/epg.xml.gz",
   "playback_tested": false,
   "providers": {
@@ -15,7 +15,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 3,
+        "超清体验": 3,
         "央视频道": 18,
         "卫视频道": 38,
         "体育频道": 2,
@@ -26,8 +26,8 @@
         "新闻频道": 3,
         "其他": 54
       },
-      "bytes": 24292,
-      "sha256": "985bfe1cce2b6eea9dcd0b2a75b9b695bbc57865111622dcfdc1745d2ce614b7",
+      "bytes": 24304,
+      "sha256": "6ea9bf82993728eeb17bf7bebfbfb0667fb77eb9635d2cf345be71e58b8dbc30",
       "source": {
         "servers": [
           {
@@ -135,7 +135,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 10,
+        "超清体验": 10,
         "央视频道": 30,
         "卫视频道": 32,
         "体育频道": 2,
@@ -145,8 +145,8 @@
         "新闻频道": 3,
         "其他": 42
       },
-      "bytes": 24538,
-      "sha256": "221aaf622bfdebe0d56d077adb8fc0cdc2da2150ae5717421caec2a232b9eb55",
+      "bytes": 24578,
+      "sha256": "5edd18f1f620f4b6bcb9e821c59c44cae33adc5109dbae63c8c5aca667c8ffa1",
       "source": {
         "servers": [
           {
@@ -254,7 +254,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 3,
+        "超清体验": 3,
         "央视频道": 32,
         "卫视频道": 38,
         "体育频道": 3,
@@ -265,8 +265,8 @@
         "新闻频道": 2,
         "其他": 72
       },
-      "bytes": 29088,
-      "sha256": "d3f7566465f97b37534441cc6a9db50093dd5edeead3b2aa30c7d8e3085e13be",
+      "bytes": 29100,
+      "sha256": "d5a83a0b3622898308c537b0890c2d887d7617ec29f4adb51e310595522c4d79",
       "source": {
         "servers": [
           {
@@ -374,7 +374,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 3,
+        "超清体验": 3,
         "央视频道": 26,
         "卫视频道": 35,
         "体育频道": 4,
@@ -385,8 +385,8 @@
         "新闻频道": 12,
         "其他": 193
       },
-      "bytes": 53540,
-      "sha256": "1f5283718de05c18889d5f33c31c4a5fdd855fa0b8b1db246dc14f1564334bcc",
+      "bytes": 53552,
+      "sha256": "4936d7f27b80d9352be1294528e613beaa22b1b4bf3871601f6ce765e6d1121a",
       "source": {
         "servers": [
           {
@@ -494,7 +494,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 4,
+        "超清体验": 4,
         "央视频道": 26,
         "卫视频道": 24,
         "体育频道": 1,
@@ -505,8 +505,8 @@
         "新闻频道": 14,
         "其他": 208
       },
-      "bytes": 53930,
-      "sha256": "00a67eb102c114b782b97d8a2b152f6bce6df1ea63d95fc5d8774a7e8225b06f",
+      "bytes": 53946,
+      "sha256": "5ee69d6ba9d725a0f36152d2c6a57b963e7321c22e90614f02213e77ed5d0196",
       "source": {
         "servers": [
           {
@@ -732,7 +732,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 9,
+        "超清体验": 9,
         "央视频道": 20,
         "卫视频道": 34,
         "体育频道": 1,
@@ -743,8 +743,8 @@
         "新闻频道": 3,
         "其他": 61
       },
-      "bytes": 25601,
-      "sha256": "a4640901b603c939c25dfe366492d814386e64abaef01fa51941b51585be65de",
+      "bytes": 25637,
+      "sha256": "6458a8d8ea3cffd82afee0fc5bd4cd73a5e6d0c13c0bb1801fdf1287ac52a7ca",
       "source": {
         "servers": [
           {
@@ -852,7 +852,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 10,
+        "超清体验": 10,
         "央视频道": 26,
         "卫视频道": 36,
         "少儿频道": 4,
@@ -861,8 +861,8 @@
         "新闻频道": 12,
         "其他": 73
       },
-      "bytes": 31019,
-      "sha256": "7ff21439756c35a09850f4248a930c2c738fdf72625cbbcfe5abbcc20dcc0d2c",
+      "bytes": 31059,
+      "sha256": "bd7abe4cba98ce1fd9a93ae25561d706b7febd55611ecbf8ab4f4bff9b8fb96c",
       "source": {
         "servers": [
           {
@@ -970,15 +970,15 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 11,
+        "超清体验": 11,
         "央视频道": 26,
         "卫视频道": 37,
         "少儿频道": 4,
         "新闻频道": 1,
         "其他": 23
       },
-      "bytes": 18910,
-      "sha256": "8e3742fe44dc06f9e441e27aeaaae5c9b146a4be2b443a98ce6ff2fb3bd3f7c4",
+      "bytes": 18954,
+      "sha256": "a37b99cff229b07f611c0e546387c78518713c9680716f8f0d39e8fe846b9cef",
       "source": {
         "servers": [
           {
@@ -1203,7 +1203,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 2,
+        "超清体验": 2,
         "央视频道": 29,
         "卫视频道": 37,
         "体育频道": 4,
@@ -1212,8 +1212,8 @@
         "新闻频道": 3,
         "其他": 44
       },
-      "bytes": 24383,
-      "sha256": "846d09169fbed2305b2d64506d7014e2418dc635ce244cfe27928945efcf7ff8",
+      "bytes": 24391,
+      "sha256": "103fd67d51e4c48a4cb5d499c7e14e72e9bb235f9ff47d6b26bdb111dedc42d0",
       "source": {
         "servers": [
           {
@@ -1663,7 +1663,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 16,
+        "超清体验": 16,
         "央视频道": 20,
         "卫视频道": 36,
         "体育频道": 2,
@@ -1672,8 +1672,8 @@
         "新闻频道": 3,
         "其他": 32
       },
-      "bytes": 22521,
-      "sha256": "fa27a814a2f8bedc753f89992c7b2373b46ac9f1917bbf9448ec54b64dd81216",
+      "bytes": 22585,
+      "sha256": "279885996cfa78f31a89cb654f34a007445f8f4734d64de7c74e7e1f37307631",
       "source": {
         "servers": [
           {
@@ -1893,7 +1893,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 3,
+        "超清体验": 3,
         "央视频道": 19,
         "卫视频道": 34,
         "体育频道": 4,
@@ -1904,8 +1904,8 @@
         "新闻频道": 12,
         "其他": 93
       },
-      "bytes": 34967,
-      "sha256": "d3cf763c3d61d705a4be99cc8969d328352a0beb9f2be5d11c4967a348319805",
+      "bytes": 34979,
+      "sha256": "60026969d5b208aae97848f090cf6c6336732d93620c081d3e904fbcf1046f6d",
       "source": {
         "servers": [
           {
@@ -2013,7 +2013,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 15,
+        "超清体验": 15,
         "央视频道": 17,
         "卫视频道": 30,
         "体育频道": 4,
@@ -2023,8 +2023,8 @@
         "新闻频道": 6,
         "其他": 34
       },
-      "bytes": 21104,
-      "sha256": "d2ce2b4437ba09b4e0d3220fc2e18ea0beab7cd00dc8ef23902ded947cfbd871",
+      "bytes": 21164,
+      "sha256": "29b59c4993a4dffaf81149eb86759aa970f8df7adf02522231c5b77226ca8d33",
       "source": {
         "servers": [
           {
@@ -2132,7 +2132,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 9,
+        "超清体验": 9,
         "央视频道": 30,
         "卫视频道": 36,
         "体育频道": 2,
@@ -2143,8 +2143,8 @@
         "新闻频道": 46,
         "其他": 62
       },
-      "bytes": 37465,
-      "sha256": "98635275207fb92e4f42b62a98c680fad33c7658953d13a36a1388c51cfac848",
+      "bytes": 37501,
+      "sha256": "55857ebadccd692ba9e8ce275ca787f6ae32e80d6f5013db73e4953685fc477d",
       "source": {
         "servers": [
           {
@@ -2366,7 +2366,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 4,
+        "超清体验": 4,
         "央视频道": 28,
         "卫视频道": 35,
         "体育频道": 3,
@@ -2376,8 +2376,8 @@
         "新闻频道": 5,
         "其他": 107
       },
-      "bytes": 38383,
-      "sha256": "1ffadedef1159db5f05e39a1f66200bde5c885f4313eb22628747a18646c0990",
+      "bytes": 38399,
+      "sha256": "38d6d864984501fc4d6b684f1a4dbc21761a2dfced23e4012a2a78b176c9f3b9",
       "source": {
         "servers": [
           {
@@ -2485,14 +2485,14 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 5,
+        "超清体验": 5,
         "央视频道": 27,
         "卫视频道": 36,
         "体育频道": 3,
         "港澳台": 159
       },
-      "bytes": 41694,
-      "sha256": "4a4f925e6b762b1a872418ddb4c395e65fc5245689ded74f5329985b41b058a2",
+      "bytes": 41714,
+      "sha256": "2877b637fe932a59140c448a2b0b761bfcad9a8ec153819fb4f3864bc50dbf46",
       "source": {
         "servers": [
           {
@@ -2717,7 +2717,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 7,
+        "超清体验": 7,
         "央视频道": 18,
         "卫视频道": 26,
         "体育频道": 2,
@@ -2726,8 +2726,8 @@
         "新闻频道": 3,
         "其他": 28
       },
-      "bytes": 16711,
-      "sha256": "f15f9d2e3945304f4b3c59454a073d1c71c9b7b01f3922e081bb8ad008042306",
+      "bytes": 16739,
+      "sha256": "786b7513c01a9f91507b64886551165c17e3e79449da56dad5f370f8c2c2bdf2",
       "source": {
         "servers": [
           {
@@ -2948,7 +2948,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 11,
+        "超清体验": 11,
         "央视频道": 28,
         "卫视频道": 35,
         "体育频道": 3,
@@ -2959,8 +2959,8 @@
         "新闻频道": 17,
         "其他": 89
       },
-      "bytes": 38744,
-      "sha256": "bee6471541575e6a4c56ebef741b0b17092e49d6181a143e0d4204773c950994",
+      "bytes": 38788,
+      "sha256": "e961951197c8d879774f4c4d6d06bd1eaceea6b30858ff2376a1695c7a1fa24e",
       "source": {
         "servers": [
           {
@@ -3068,7 +3068,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 12,
+        "超清体验": 12,
         "央视频道": 27,
         "卫视频道": 36,
         "体育频道": 1,
@@ -3078,8 +3078,8 @@
         "新闻频道": 3,
         "其他": 49
       },
-      "bytes": 25233,
-      "sha256": "33b80121614b54d92d3954176df4f90d6b490c5a7c860e54fb3f0cebec1f8db4",
+      "bytes": 25281,
+      "sha256": "3cd061bb0531042369214f2e412f2b553465f3e6bb576d7f44a3dfee2144ca8d",
       "source": {
         "servers": [
           {
@@ -3187,7 +3187,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 13,
+        "超清体验": 13,
         "央视频道": 28,
         "卫视频道": 32,
         "体育频道": 1,
@@ -3198,8 +3198,8 @@
         "新闻频道": 4,
         "其他": 56
       },
-      "bytes": 26634,
-      "sha256": "be69ba9c9fb1b7660e5a9fc6456cfb202693c2f00d19df1cfcf6d70f153af0ce",
+      "bytes": 26686,
+      "sha256": "741c09ec2767dbdc0e4d8f8a106ce2305c5507834fb0251455e7bc676c909d89",
       "source": {
         "servers": [
           {
@@ -3307,7 +3307,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 13,
+        "超清体验": 13,
         "央视频道": 31,
         "卫视频道": 38,
         "体育频道": 4,
@@ -3317,8 +3317,8 @@
         "新闻频道": 4,
         "其他": 88
       },
-      "bytes": 36298,
-      "sha256": "8a82e355130135fd1f1598acf5aba334668bc904ef5b11b8baf6edbb95c909e4",
+      "bytes": 36350,
+      "sha256": "92915c83688a76822e7067df1461978752a62df1a0877a42621f0c199c3319b1",
       "source": {
         "servers": [
           {
@@ -3426,7 +3426,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 3,
+        "超清体验": 3,
         "央视频道": 30,
         "卫视频道": 36,
         "体育频道": 2,
@@ -3436,8 +3436,8 @@
         "新闻频道": 1,
         "其他": 20
       },
-      "bytes": 20158,
-      "sha256": "5d58251ebb443cbdc9b6301c60dac7e0a31c72a924c998e4541e45ec7e8e3567",
+      "bytes": 20170,
+      "sha256": "ace336ec6e6c32c3a652e6f6a5c8dfe842fdc323e3eebbdab73252b08567c27f",
       "source": {
         "servers": [
           {
@@ -3659,7 +3659,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 12,
+        "超清体验": 12,
         "央视频道": 26,
         "卫视频道": 36,
         "体育频道": 2,
@@ -3668,8 +3668,8 @@
         "新闻频道": 3,
         "其他": 56
       },
-      "bytes": 27685,
-      "sha256": "1673c1011fa224a3f133ae40ad696a686d2ae5509e73486be4d53d115567f205",
+      "bytes": 27733,
+      "sha256": "a5193490553d80f540c3b96d522645402e9c864e9004d3f650dfc09d707cb181",
       "source": {
         "servers": [
           {
@@ -3777,7 +3777,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 10,
+        "超清体验": 10,
         "央视频道": 25,
         "卫视频道": 34,
         "体育频道": 1,
@@ -3786,8 +3786,8 @@
         "新闻频道": 3,
         "其他": 67
       },
-      "bytes": 30226,
-      "sha256": "504d15ca960720f87e9dce495cfae993930ac5e1e0412f2f7fa8db9da174d28d",
+      "bytes": 30266,
+      "sha256": "e4f4bf2f43989d027e5b8c701dfcf1cc9fd9fbe7865eee49a042b14262c2e3af",
       "source": {
         "servers": [
           {
@@ -3895,7 +3895,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 10,
+        "超清体验": 10,
         "央视频道": 18,
         "卫视频道": 34,
         "体育频道": 2,
@@ -3905,8 +3905,8 @@
         "新闻频道": 3,
         "其他": 39
       },
-      "bytes": 23744,
-      "sha256": "3a777c2ea42a1a56b175ce6cd9890f507b644f2f297d67dd0e9c2f2e11cff86e",
+      "bytes": 23784,
+      "sha256": "9f2d20d189c97f8512cdd3cf65f4cc2f35e3563e18c5e085609174e0926e2ebb",
       "source": {
         "servers": [
           {
@@ -4014,7 +4014,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 19,
+        "超清体验": 19,
         "央视频道": 22,
         "卫视频道": 45,
         "体育频道": 4,
@@ -4024,8 +4024,8 @@
         "新闻频道": 5,
         "其他": 114
       },
-      "bytes": 43164,
-      "sha256": "4976530adcd4d2f39355d199e2457d73d855903f5a803ac8a7237b8faab4c982",
+      "bytes": 43240,
+      "sha256": "c19012a9cca0d8f61fcdb59faedaebd74d7bedb2cf408c2e2f88fe226802c140",
       "source": {
         "servers": [
           {
@@ -4133,7 +4133,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 4,
+        "超清体验": 4,
         "央视频道": 18,
         "卫视频道": 37,
         "体育频道": 11,
@@ -4144,8 +4144,8 @@
         "新闻频道": 6,
         "其他": 124
       },
-      "bytes": 44637,
-      "sha256": "75b6b660e1102b0b100fde5bad792bee938413d2fb92d78849299855064f228d",
+      "bytes": 44653,
+      "sha256": "7c5c44e9c3842e9faeaded82b015d3392cff3db999b67b86190f4f7b3d5efc61",
       "source": {
         "servers": [
           {
@@ -4367,7 +4367,7 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 12,
+        "超清体验": 12,
         "央视频道": 27,
         "卫视频道": 37,
         "体育频道": 3,
@@ -4377,8 +4377,8 @@
         "新闻频道": 2,
         "其他": 88
       },
-      "bytes": 33370,
-      "sha256": "c39e6d986a8847a0265ba34b4520480cd19827b1a7766fe95606685ab06f607e",
+      "bytes": 33418,
+      "sha256": "b2d82dfd2d413c300f350e290365b048270b51f3b3599b05432a1b61486e9b0c",
       "source": {
         "servers": [
           {
@@ -4602,13 +4602,13 @@
       "selection_policy": "one_uhd_and_one_other_newest_update_multicast_tie",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "4K超清": 1,
+        "超清体验": 1,
         "央视频道": 11,
         "卫视频道": 2,
         "其他": 9
       },
-      "bytes": 5058,
-      "sha256": "78e3cf0653c2ae7288ba97e819431be1394fdbc661040c31b3ed7b9b1610348e",
+      "bytes": 5062,
+      "sha256": "ed6a0580e5c9d7cadb26989fdb00b76a1f323ac695358d05058a92b81d57dd76",
       "source": {
         "servers": [
           {
