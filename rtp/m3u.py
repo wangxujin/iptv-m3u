@@ -89,7 +89,7 @@ def normalize_group(name: str, g: str = '') -> str:
     """按用户给出的顺序规范 OK影视 / TVBox 菜单，英文忽略大小写。"""
     s = unicodedata.normalize('NFKC', f'{name} {g}')
     for pattern, group in [
-        (r'4K|2160|UHD|超高清|8K', '4K超清'),
+        (r'4K|2160|UHD|超高清|8K|超清体验', '超清体验'),
         (r'CCTV|CGTN|央视|中央', '央视频道')]:
         if re.search(pattern, s, re.I):
             return group
@@ -148,7 +148,7 @@ def quality_rank(record: dict) -> int:
     text = unicodedata.normalize('NFKC', text)
     if re.search(r'8K|4320', text, re.I):
         return 4
-    if re.search(r'4K|2160|UHD|超高清', text, re.I):
+    if re.search(r'4K|2160|UHD|超高清|超清体验', text, re.I):
         return 3
     if re.search(r'HD|1080|720|高清|蓝光', text, re.I):
         return 2
