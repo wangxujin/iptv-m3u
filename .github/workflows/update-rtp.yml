@@ -3,8 +3,10 @@ name: Update IPTV Lists and EPG
 on:
   workflow_dispatch:
   schedule:
-    # 显式按北京时间每天 00:00 / 12:00 调度。
+    # 北京时间每两小时更新 M3U；其中 00:00 / 12:00 同时更新 EPG。
     - cron: "0 0,12 * * *"
+      timezone: "Asia/Shanghai"
+    - cron: "0 2,4,6,8,10,14,16,18,20,22 * * *"
       timezone: "Asia/Shanghai"
   push:
     branches: [main]
@@ -27,6 +29,8 @@ concurrency:
 
 jobs:
   epg:
+    # 按计划时段判断，避免 GitHub 延迟启动改变 EPG 更新频率；手动和推送仍更新。
+    if: ${{ github.event_name != 'schedule' || github.event.schedule == '0 0,12 * * *' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -75,7 +79,7 @@ jobs:
             git push origin "HEAD:$TARGET_BRANCH"
           fi
   update:
-    # EPG 先独立发布；任一采集失败都不会阻止另一个采集任务。
+    # EPG 未到时段而跳过或执行失败时，仍继续采集 M3U。
     needs: epg
     if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
