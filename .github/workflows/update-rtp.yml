@@ -96,7 +96,7 @@ jobs:
         run: python -m pip install requests==2.34.2
       - name: Update and validate
         run: |
-          python -u rtp/b.py --fresh
+          python -u rtp/b.py
       - name: Upload lists
         uses: actions/upload-artifact@v4
         with:
