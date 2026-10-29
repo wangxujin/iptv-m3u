@@ -2,7 +2,7 @@
   "url": "https://iptv.cqshushu.com/index.php",
   "pages_per_province": 5,
   "fallback_pages": 8,
-  "max_workers": 3,
+  "max_workers": 2,
   "request_interval_seconds": 5,
   "timeout_seconds": 45,
   "max_attempts": 5
