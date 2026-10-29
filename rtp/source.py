@@ -130,6 +130,9 @@ def signing_key(script):
 
 
 class Client:
+    RECOVERY_SUCCESSES = 20
+    RECOVERY_SECONDS = 120
+
     def __init__(self, config):
         try: import requests
         except ImportError as exc: raise SourceError('在线采集需安装 requests==2.34.2') from exc
@@ -143,7 +146,52 @@ class Client:
             raise SourceError('源站地址或网络参数无效')
         self.lock, self.local, self.stop = threading.Lock(), threading.local(), threading.Event()
         self.sessions, self.key, self.next_request = [], None, 0
-        self.stats = {'requests': 0, 'retries': 0}
+        self.base_delay, self.successes, self.stable_since = self.delay, 0, time.monotonic()
+        self.cooldowns = {}
+        self.stats = {'requests': 0, 'retries': 0, 'http_429': 0, 'rate_recoveries': 0,
+                      'stages': {}, 'worker_wait_seconds': {}, 'cooldown_events': {}, 'playlist_results': {}}
+
+    @staticmethod
+    def stage(url):
+        query = parse_qs(urlsplit(url).query)
+        if 's' in query: return 'm3u_format' if query.get('format') == ['m3u'] else 'm3u_download'
+        if 'p' in query: return 'detail'
+        if 'page' in query: return 'list'
+        return 'script' if urlsplit(url).path.endswith('.js') else 'home'
+
+    def failed(self):
+        with self.lock:
+            self.successes, self.stable_since = 0, time.monotonic()
+
+    def succeeded(self, started):
+        with self.lock:
+            # 异常发生前发出的其他线程请求，不能作为恢复限速的证据。
+            if started < self.stable_since: return
+            self.successes += 1
+            now = time.monotonic()
+            if (self.delay <= self.base_delay or self.successes < self.RECOVERY_SUCCESSES
+                    or now - self.stable_since < self.RECOVERY_SECONDS): return
+            before = self.delay
+            self.delay = max(self.base_delay, self.delay - 5)
+            self.successes, self.stable_since = 0, now
+            self.stats['rate_recoveries'] += 1
+            # 已安排的请求间隔和冷却截止时间不缩短，恢复仅影响后续请求。
+            print(f'[限速恢复] 持续稳定成功，全局间隔 {before:g}s → {self.delay:g}s', flush=True)
+
+    def playlist_result(self, mode, outcome):
+        with self.lock:
+            counts = self.stats['playlist_results'].setdefault(mode, {})
+            counts[outcome] = counts.get(outcome, 0) + 1
+        if outcome == 'success': self.succeeded(self.local.request_started)
+        else: self.failed()
+
+    def metrics(self):
+        with self.lock:
+            result = json.loads(json.dumps(self.stats))
+            result['current_interval_seconds'] = self.delay
+        for item in result['stages'].values(): item['network_seconds'] = round(item['network_seconds'], 3)
+        result['worker_wait_seconds'] = {k: round(v, 3) for k, v in result['worker_wait_seconds'].items()}
+        return result
 
     def session(self):
         if not hasattr(self.local, 'session'):
@@ -157,18 +205,32 @@ class Client:
     def wait(self):
         while True:
             with self.lock:
-                pause = max(0, self.next_request - time.monotonic())
+                reason, until = max([('rate_interval', self.next_request), *self.cooldowns.items()], key=lambda item: item[1])
+                pause = max(0, until - time.monotonic())
                 if not pause and not self.stop.is_set():
                     self.next_request = time.monotonic() + self.delay
                     return
-            if self.stop.wait(pause): raise SourceError('其他请求失败，停止剩余采集')
+            started = time.monotonic()
+            stopped = self.stop.wait(pause)
+            with self.lock:
+                waits = self.stats['worker_wait_seconds']
+                waits[reason] = waits.get(reason, 0) + max(0, time.monotonic() - started)
+            if stopped: raise SourceError('其他请求失败，停止剩余采集')
+
+    def _cooldown(self, seconds, reason):
+        # 调用者持有 lock；与降速及重试计数一起更新，避免其他线程穿过冷却窗口。
+        self.cooldowns[reason] = max(self.cooldowns.get(reason, 0), time.monotonic() + seconds)
+        counts = self.stats['cooldown_events']
+        counts[reason] = counts.get(reason, 0) + 1
+        self.successes, self.stable_since = 0, time.monotonic()
 
     def cooldown(self, seconds):
-        with self.lock: self.next_request = max(self.next_request, time.monotonic() + seconds)
+        with self.lock: self._cooldown(seconds, 'playlist_recheck')
 
     def get(self, url, label='首页', signed=True):
         url = urljoin(self.base, url)
         if not same_site(url, self.base): raise SourceError('拒绝请求源站以外的地址')
+        stage = self.stage(url)
         for attempt in range(1, self.attempts + 1):
             self.wait()
             headers, retry_after = {}, 0
@@ -177,8 +239,14 @@ class Client:
                 message = f'{int(time.time())}|{secrets.token_hex(10)}'
                 headers = {'X-Requested-With': 'XMLHttpRequest',
                            'X-CSRF-TOKEN': message + '|' + hmac.new(self.key, message.encode(), hashlib.sha256).hexdigest()}
-            with self.lock: self.stats['requests'] += 1
+            with self.lock:
+                self.stats['requests'] += 1
+                timing = self.stats['stages'].setdefault(stage, {'requests': 0, 'retries': 0, 'network_seconds': 0,
+                                                                'statuses': {}, 'failures': 0})
+                timing['requests'] += 1
             print(f'[{label}] GET {urlsplit(url).path}，尝试 {attempt}/{self.attempts}', flush=True)
+            started = self.local.request_started = time.monotonic()
+            status, complete = None, False
             try:
                 with self.session().get(url, headers=headers, timeout=(15, self.timeout), allow_redirects=False, stream=True) as response:
                     status = response.status_code
@@ -191,7 +259,13 @@ class Client:
                         if label.endswith('完整 M3U'):
                             content_type = response.headers.get('Content-Type', '未提供').split(';')[0][:80]
                             print(f'[{label}] HTTP 200，响应 {size} 字节，Content-Type {content_type}', flush=True)
-                        return b''.join(chunks).decode('utf-8-sig')
+                        content = b''.join(chunks).decode('utf-8-sig')
+                        complete = True
+                        # M3U 必须等解析及有效地址检查成功，空文件不能帮助恢复限速。
+                        if not stage.startswith('m3u_'):
+                            if content.strip(): self.succeeded(started)
+                            else: self.failed()
+                        return content
                     if status not in (408, 429, 500, 502, 503, 504): raise SourceError(f'[{label}] HTTP {status}，停止更新')
                     reason = f'HTTP {status}'
                     value = response.headers.get('Retry-After', '0')
@@ -206,12 +280,22 @@ class Client:
                 reason = type(exc).__name__
             except self.requests.exceptions.RequestException as exc:
                 raise SourceError(f'[{label}] 请求失败：{type(exc).__name__}') from exc
+            finally:
+                elapsed = max(0, time.monotonic() - started)
+                with self.lock:
+                    timing['network_seconds'] += elapsed
+                    key = str(status) if status is not None else 'network_error'
+                    timing['statuses'][key] = timing['statuses'].get(key, 0) + 1
+                    timing['failures'] += not complete
+                    self.stats['http_429'] += status == 429
+                    if not complete: self.successes, self.stable_since = 0, time.monotonic()
             if attempt == self.attempts: raise SourceError(f'[{label}] {reason}，尝试次数已用完')
             pause = max(retry_after, 60 if reason == 'HTTP 429' else min(2 ** attempt, 30))
             with self.lock:
                 self.stats['retries'] += 1
-                if reason == 'HTTP 429': self.delay = min(max(5, self.delay * 2), 15)
-                self.next_request = max(self.next_request, time.monotonic() + pause)
+                timing['retries'] += 1
+                if reason == 'HTTP 429': self.delay = min(max(5, self.delay * 2), max(15, self.base_delay))
+                self._cooldown(pause, 'http_429' if reason == 'HTTP 429' else 'network_retry')
             print(f'[{label}] {reason}，全局冷却 {pause:g}s 后重试', flush=True)
 
     def bootstrap(self):
@@ -290,20 +374,26 @@ def download_playlist(client, target, label):
     params['format'] = ['m3u']
     interface = urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(params, doseq=True), ''))
     for attempt, url in enumerate((target, interface)):
+        mode = 'format' if attempt else 'download'
         # 仅处理响应内容异常；网络异常仍向外抛出并保留整轮旧文件。
         try:
             raw = client.get(url, f'{label} 完整 M3U')
             rows = parse_playlist(raw)
         except UnicodeDecodeError:
             reason = 'M3U 不是有效 UTF-8 文本'
+            client.playlist_result(mode, 'invalid_encoding')
         except SourceError:
+            client.playlist_result(mode, 'network_error')
             raise
         except ValueError as exc:
             reason = f'M3U 格式异常：{exc}'
+            client.playlist_result(mode, 'invalid_format')
         else:
+            valid = sum(valid_http(row['url']) for row in rows)
             print(f'[{label}] EXTINF {raw.count("#EXTINF:")} 条，解析 {len(rows)} 条，'
-                  f'有效 HTTP {sum(valid_http(row["url"]) for row in rows)} 条', flush=True)
-            if rows: return raw, rows, 'format' if attempt else 'download'
+                  f'有效 HTTP {valid} 条', flush=True)
+            client.playlist_result(mode, 'success' if valid else 'no_http_channels' if rows else 'empty')
+            if rows: return raw, rows, mode
             reason = 'M3U 空目录'
         if not attempt:
             print(f'[{label}] {reason}，冷却 30s 后使用网页 M3U 接口复核', flush=True)
@@ -313,7 +403,7 @@ def download_playlist(client, target, label):
 
 def fetch_source(config, provinces=None, client=None):
     normal, fallback = int(config.get('pages_per_province', 5)), int(config.get('fallback_pages', 8))
-    workers = int(config.get('max_workers', 2))
+    workers = int(config.get('max_workers', 3))
     if not 1 <= normal <= fallback <= 8 or not 1 <= workers <= 4:
         raise SourceError('页数须为 1～8，并发为 1～4')
     owned, started = client is None, time.monotonic()
@@ -338,9 +428,16 @@ def fetch_source(config, provinces=None, client=None):
 
             for number in range(1, fallback + 1):
                 page = Page(client.get(url, f'{province} 列表第 {number} 页'))
-                candidates.extend(row for row in servers(page, province, skip) if (row['type'], row['token']) not in seen)
                 tokens = {(r.get('type'), r['token']) for r in page.rows if r['token']}
+                rows = servers(page, province, skip)
                 if tokens and not tokens - seen: raise SourceError(f'{province} 分页内容重复')
+                page_seen = set()
+                for row in sorted(rows, key=lambda r: source_timestamp(r['updated']), reverse=True):
+                    key = row['type'], row['token']
+                    identity = (*key, row['provider'])
+                    if key not in seen and identity not in page_seen:
+                        candidates.append(row)
+                        page_seen.add(identity)
                 seen.update(tokens)
                 ended = page.empty and not tokens or not any(label == '下一页' for _, label in page.links)
                 if number >= normal or ended:
@@ -422,11 +519,15 @@ def fetch_source(config, provinces=None, client=None):
              'url': config['url'] + '?' + urlencode(dict(t='all', province=home.provinces[p], limit=10, page=8))}
             for p in selected if pages[p] == 8 and not any(name.startswith(p) for name in groups)
             and not any(name.startswith(p) for name in source['protected_providers'])]
-        source['metrics'] = dict(client.stats, elapsed_seconds=round(time.monotonic() - started, 2))
+        source['metrics'] = dict(client.metrics(), elapsed_seconds=round(time.monotonic() - started, 2))
         for group in groups.values():
             group['source'].update({k: v for k, v in source.items()
                                     if k not in ('unavailable_provinces', 'protected_providers', 'skipped_servers')})
         print(json.dumps({'crawler': source['metrics'], 'pages': source['pages']}, ensure_ascii=False), flush=True)
         return SourceSnapshot(groups, tuple(provinces or PROVINCES), source)
+    except Exception:
+        print(json.dumps({'crawler': dict(client.metrics(), elapsed_seconds=round(time.monotonic() - started, 2)),
+                          'status': 'failed'}, ensure_ascii=False), flush=True)
+        raise
     finally:
         if owned: client.close()
