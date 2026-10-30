@@ -1,6 +1,6 @@
 # IPTV M3U
 
-当前输出 **4 个省份、6 份 M3U、1,118 条频道线路**。其中 6 份来自最近成功采集或导入，0 份保留历史来源。每个省份与运营商的组合只有一份文件。
+当前输出 **4 个省份、5 份 M3U、978 条频道线路**。其中 5 份来自最近成功采集或导入，0 份保留历史来源。每个省份与运营商的组合只有一份文件。
 
 本轮采集范围：北京、浙江、湖南、河北；只代表配置的分页范围。
 
@@ -14,12 +14,11 @@
 
 | 省份／运营商 | M3U | 频道线路 | 数据快照（北京时间） | 来源状态 |
 |---|---|---:|---|---|
-| 北京移动 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%8C%97%E4%BA%AC%E7%A7%BB%E5%8A%A8.m3u) | 140 | 2026-10-30 06:31 | 源站直接采集 |
-| 北京联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%8C%97%E4%BA%AC%E8%81%94%E9%80%9A.m3u) | 135 | 2026-10-30 06:31 | 源站直接采集 |
-| 河北电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B2%B3%E5%8C%97%E7%94%B5%E4%BF%A1.m3u) | 290 | 2026-10-30 06:31 | 源站直接采集 |
-| 河北联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B2%B3%E5%8C%97%E8%81%94%E9%80%9A.m3u) | 294 | 2026-10-30 06:31 | 源站直接采集 |
-| 浙江电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B5%99%E6%B1%9F%E7%94%B5%E4%BF%A1.m3u) | 114 | 2026-10-30 06:31 | 源站直接采集 |
-| 湖南电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B9%96%E5%8D%97%E7%94%B5%E4%BF%A1.m3u) | 145 | 2026-10-30 06:31 | 源站直接采集 |
+| 北京联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%8C%97%E4%BA%AC%E8%81%94%E9%80%9A.m3u) | 135 | 2026-10-30 12:49 | 源站直接采集 |
+| 河北电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B2%B3%E5%8C%97%E7%94%B5%E4%BF%A1.m3u) | 290 | 2026-10-30 12:49 | 源站直接采集 |
+| 河北联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B2%B3%E5%8C%97%E8%81%94%E9%80%9A.m3u) | 294 | 2026-10-30 12:49 | 源站直接采集 |
+| 浙江电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B5%99%E6%B1%9F%E7%94%B5%E4%BF%A1.m3u) | 114 | 2026-10-30 12:49 | 源站直接采集 |
+| 湖南电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B9%96%E5%8D%97%E7%94%B5%E4%BF%A1.m3u) | 145 | 2026-10-30 12:49 | 源站直接采集 |
 
 ## 第 8 页仍无可用来源
 
