@@ -461,14 +461,15 @@ def fetch_source(config, provinces=None, client=None):
                         if not usable_status(status):
                             if '失效' not in status: skip(provider, '详情状态无法识别')
                             continue
-                        owner = detail.field('类型')
-                        operator = operator_name(owner)
-                        if operator is None:
-                            skip(provider, '详情运营商无法识别')
-                            continue
-                        if province not in owner or province + operator != provider:
+                        owner = detail.field('类型') or ''
+                        regions = [p for p in PROVINCES if p in owner]
+                        operators = [op for op in OPERATORS if op in owner]
+                        if any(p != province for p in regions) or any(province + op != provider for op in operators):
                             skip(provider, '详情省份或运营商归属不符')
                             continue
+                        ownership_fallback = not regions or not operators
+                        if ownership_fallback:
+                            print(f'[{label}] 详情归属不完整（类型={owner!r}），使用列表归属：{provider}', flush=True)
                         updated = update_time(detail.field('更新时间'))
                         times = [value for value in (server['updated'], updated) if value is not None]
                         if not times:
@@ -495,6 +496,8 @@ def fetch_source(config, provinces=None, client=None):
                         group['records'].extend(rows)
                         group['source']['servers'].append({'id': source_id, 'type': server['type'], 'channels': len(rows), 'updated_at': updated,
                                                            'download_mode': mode, 'response_bytes': len(raw.encode()),
+                                                           'ownership_source': 'list_fallback' if ownership_fallback else 'detail',
+                                                           'detail_owner': owner,
                                                            'sha256': hashlib.sha256(raw.encode()).hexdigest()})
                         print(f'[{provider}] 已选 {server["type"]}#{source_id}，保留 {len(rows)} 条，跳过后续同组服务器', flush=True)
                     candidates.clear()
