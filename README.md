@@ -14,12 +14,12 @@
 
 | 省份／运营商 | M3U | 频道线路 | 数据快照（北京时间） | 来源状态 |
 |---|---|---:|---|---|
-| 北京联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%8C%97%E4%BA%AC%E8%81%94%E9%80%9A.m3u) | 135 | 2026-10-31 07:29 | 源站直接采集 |
-| 河北电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B2%B3%E5%8C%97%E7%94%B5%E4%BF%A1.m3u) | 290 | 2026-10-31 07:29 | 源站直接采集 |
-| 河北联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B2%B3%E5%8C%97%E8%81%94%E9%80%9A.m3u) | 294 | 2026-10-31 07:29 | 源站直接采集 |
-| 浙江电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B5%99%E6%B1%9F%E7%94%B5%E4%BF%A1.m3u) | 114 | 2026-10-31 07:29 | 源站直接采集 |
-| 浙江联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B5%99%E6%B1%9F%E8%81%94%E9%80%9A.m3u) | 42 | 2026-10-31 07:29 | 源站直接采集 |
-| 湖南电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B9%96%E5%8D%97%E7%94%B5%E4%BF%A1.m3u) | 145 | 2026-10-31 07:29 | 源站直接采集 |
+| 北京联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%8C%97%E4%BA%AC%E8%81%94%E9%80%9A.m3u) | 135 | 2026-10-31 12:34 | 源站直接采集 |
+| 河北电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B2%B3%E5%8C%97%E7%94%B5%E4%BF%A1.m3u) | 290 | 2026-10-31 12:34 | 源站直接采集 |
+| 河北联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B2%B3%E5%8C%97%E8%81%94%E9%80%9A.m3u) | 294 | 2026-10-31 12:34 | 源站直接采集 |
+| 浙江电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B5%99%E6%B1%9F%E7%94%B5%E4%BF%A1.m3u) | 114 | 2026-10-31 12:34 | 源站直接采集 |
+| 浙江联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B5%99%E6%B1%9F%E8%81%94%E9%80%9A.m3u) | 42 | 2026-10-31 12:34 | 源站直接采集 |
+| 湖南电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B9%96%E5%8D%97%E7%94%B5%E4%BF%A1.m3u) | 145 | 2026-10-31 12:34 | 源站直接采集 |
 
 ## 第 8 页仍无可用来源
 
