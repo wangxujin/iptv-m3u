@@ -1,1914 +1,6 @@
 {
   "schema_version": 1,
   "providers": {
-    "北京联通": {
-      "records": [
-        {
-          "name": "CCTV1",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.129:8008",
-          "attrs": {
-            "tvg-id": "CCTV1",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV1.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV2",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.60:8084",
-          "attrs": {
-            "tvg-id": "CCTV2",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV2.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV3",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.172:8001",
-          "attrs": {
-            "tvg-id": "CCTV3",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV3.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV4",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.105:8092",
-          "attrs": {
-            "tvg-id": "CCTV4",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV4.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV4欧洲",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.213:4220",
-          "attrs": {
-            "tvg-id": "CCTV4欧洲",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV4欧洲.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV4美洲",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.214:4220",
-          "attrs": {
-            "tvg-id": "CCTV4美洲",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV4美洲.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV5",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.173:8001",
-          "attrs": {
-            "tvg-id": "CCTV5",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV5.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV5+",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.130:8004",
-          "attrs": {
-            "tvg-id": "CCTV5+",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV5+.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV6",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.174:8001",
-          "attrs": {
-            "tvg-id": "CCTV6",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV6.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV7",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.61:8104",
-          "attrs": {
-            "tvg-id": "CCTV7",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV7.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV8",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.175:8001",
-          "attrs": {
-            "tvg-id": "CCTV8",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV8.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV9",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.62:8112",
-          "attrs": {
-            "tvg-id": "CCTV9",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV9.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV10",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.63:8116",
-          "attrs": {
-            "tvg-id": "CCTV10",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV10.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV11",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.152:8120",
-          "attrs": {
-            "tvg-id": "CCTV11",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV11.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV12",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.64:8124",
-          "attrs": {
-            "tvg-id": "CCTV12",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV12.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV13",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.124:8128",
-          "attrs": {
-            "tvg-id": "CCTV13",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV13.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV14",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.65:8132",
-          "attrs": {
-            "tvg-id": "CCTV14",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV14.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV15",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.153:8136",
-          "attrs": {
-            "tvg-id": "CCTV15",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV15.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV16",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.184:8001",
-          "attrs": {
-            "tvg-id": "CCTV16",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV16.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CCTV17",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.151:8144",
-          "attrs": {
-            "tvg-id": "CCTV17",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV17.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CETV1",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.57:8152",
-          "attrs": {
-            "tvg-id": "CETV1",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CETV1.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CETV2",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.54:4120",
-          "attrs": {
-            "tvg-id": "CETV2",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CETV2.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CETV4",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.56:4120",
-          "attrs": {
-            "tvg-id": "CETV4",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CETV4.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CGTN",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.215:4220",
-          "attrs": {
-            "tvg-id": "CGTN",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CGTN.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CGTN纪录",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.216:4220",
-          "attrs": {
-            "tvg-id": "CGTN纪录",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CGTN纪录.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CGTN阿语",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.219:4220",
-          "attrs": {
-            "tvg-id": "CGTN阿语",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CGTN阿语.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CGTN俄语",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.220:4220",
-          "attrs": {
-            "tvg-id": "CGTN俄语",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CGTN俄语.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CGTN西语",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.217:4220",
-          "attrs": {
-            "tvg-id": "CGTN西语",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CGTN西语.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "CGTN法语",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.218:4220",
-          "attrs": {
-            "tvg-id": "CGTN法语",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CGTN法语.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "茶频道",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.165:8001",
-          "attrs": {
-            "tvg-id": "茶频道",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/茶频道.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "金鹰纪实",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.58:8156",
-          "attrs": {
-            "tvg-id": "金鹰纪实",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/金鹰纪实.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "快乐垂钓",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.164:8001",
-          "attrs": {
-            "tvg-id": "快乐垂钓",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/快乐垂钓.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "中国交通",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.188:8001",
-          "attrs": {
-            "tvg-id": "中国交通",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/中国交通.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "北京卫视4K",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.140:8001",
-          "attrs": {
-            "tvg-id": "北京卫视4K",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京卫视4K.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "北京卫视4K",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.139:8001",
-          "attrs": {
-            "tvg-id": "北京卫视4K",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京卫视4K.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "东方卫视4K",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.119:3006",
-          "attrs": {
-            "tvg-id": "东方卫视4K",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/东方卫视4K.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "广东卫视4K",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.203:2000",
-          "attrs": {
-            "tvg-id": "广东卫视4K",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/广东卫视4K.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "深圳卫视4K",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.202:2000",
-          "attrs": {
-            "tvg-id": "深圳卫视4K",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/深圳卫视4K.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "湖南卫视4K",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.112:3002",
-          "attrs": {
-            "tvg-id": "湖南卫视4K",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/湖南卫视4K.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "山东卫视4K",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.144:3005",
-          "attrs": {
-            "tvg-id": "山东卫视4K",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/山东卫视4K.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "四川卫视4K",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.131:3001",
-          "attrs": {
-            "tvg-id": "四川卫视4K",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/四川卫视4K.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "浙江卫视4K",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.114:3004",
-          "attrs": {
-            "tvg-id": "浙江卫视4K",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/浙江卫视4K.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "江苏卫视4K",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.113:3003",
-          "attrs": {
-            "tvg-id": "江苏卫视4K",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/江苏卫视4K.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "重庆卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.122:8160",
-          "attrs": {
-            "tvg-id": "重庆卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/重庆卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "江苏卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.135:8028",
-          "attrs": {
-            "tvg-id": "江苏卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/江苏卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "浙江卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.137:8036",
-          "attrs": {
-            "tvg-id": "浙江卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/浙江卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "东方卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.136:8032",
-          "attrs": {
-            "tvg-id": "东方卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/东方卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "深圳卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.134:8020",
-          "attrs": {
-            "tvg-id": "深圳卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/深圳卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "北京卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.241:8000",
-          "attrs": {
-            "tvg-id": "北京卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "山东卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.209:8052",
-          "attrs": {
-            "tvg-id": "山东卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/山东卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "天津卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.141:1234",
-          "attrs": {
-            "tvg-id": "天津卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/天津卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "贵州卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.149:8076",
-          "attrs": {
-            "tvg-id": "贵州卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/贵州卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "四川卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.29:8288",
-          "attrs": {
-            "tvg-id": "四川卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/四川卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "云南卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.26:8108",
-          "attrs": {
-            "tvg-id": "云南卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/云南卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "广西卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.39:8300",
-          "attrs": {
-            "tvg-id": "广西卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/广西卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "黑龙江卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.133:8016",
-          "attrs": {
-            "tvg-id": "黑龙江卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/黑龙江卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "安徽卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.211:8064",
-          "attrs": {
-            "tvg-id": "安徽卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/安徽卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "山西卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.42:8172",
-          "attrs": {
-            "tvg-id": "山西卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/山西卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "江西卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.123:8164",
-          "attrs": {
-            "tvg-id": "江西卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/江西卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "湖北卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.138:8044",
-          "attrs": {
-            "tvg-id": "湖北卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/湖北卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "旅游卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.45:8304",
-          "attrs": {
-            "tvg-id": "旅游卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/旅游卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "陕西卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.41:8140",
-          "attrs": {
-            "tvg-id": "陕西卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/陕西卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "东南卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.156:8148",
-          "attrs": {
-            "tvg-id": "东南卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/东南卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "厦门卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.143:4120",
-          "attrs": {
-            "tvg-id": "厦门卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/厦门卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "吉林卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.240:8172",
-          "attrs": {
-            "tvg-id": "吉林卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/吉林卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "辽宁卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.210:8056",
-          "attrs": {
-            "tvg-id": "辽宁卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/辽宁卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "内蒙古卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.43:8176",
-          "attrs": {
-            "tvg-id": "内蒙古卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/内蒙古卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "湖南卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.132:8012",
-          "attrs": {
-            "tvg-id": "湖南卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/湖南卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "广东卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.142:8048",
-          "attrs": {
-            "tvg-id": "广东卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/广东卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "河南卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.50:8184",
-          "attrs": {
-            "tvg-id": "河南卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/河南卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "河北卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.148:8072",
-          "attrs": {
-            "tvg-id": "河北卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/河北卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "青海卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.44:8184",
-          "attrs": {
-            "tvg-id": "青海卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/青海卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "西藏卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.166:8188",
-          "attrs": {
-            "tvg-id": "西藏卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/西藏卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "三沙卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.155:4120",
-          "attrs": {
-            "tvg-id": "三沙卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/三沙卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "金鹰卡通",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.51:9252",
-          "attrs": {
-            "tvg-id": "金鹰卡通",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/金鹰卡通.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "嘉佳卡通",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.147:9268",
-          "attrs": {
-            "tvg-id": "嘉佳卡通",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/嘉佳卡通.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "卡酷少儿",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.189:8000",
-          "attrs": {
-            "tvg-id": "卡酷少儿",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/卡酷少儿.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "山东教育卫视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.52:4120",
-          "attrs": {
-            "tvg-id": "山东教育卫视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/山东教育卫视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "北京新闻",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.159:8000",
-          "attrs": {
-            "tvg-id": "北京新闻",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京新闻.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "北京生活",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.117:8000",
-          "attrs": {
-            "tvg-id": "北京生活",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京生活.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "北京影视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.158:8000",
-          "attrs": {
-            "tvg-id": "北京影视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京影视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "北京文艺",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.242:8000",
-          "attrs": {
-            "tvg-id": "北京文艺",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京文艺.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "北京体育休闲",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.243:8000",
-          "attrs": {
-            "tvg-id": "北京体育休闲",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京体育休闲.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "北京纪实科教",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.115:8000",
-          "attrs": {
-            "tvg-id": "北京纪实科教",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京纪实科教.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "北京财经",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.116:8000",
-          "attrs": {
-            "tvg-id": "北京财经",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京财经.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "北京国际",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.235:8000",
-          "attrs": {
-            "tvg-id": "北京国际",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京国际.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "北京朝阳",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.163:8001",
-          "attrs": {
-            "tvg-id": "北京朝阳",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京朝阳.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "北京密云",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.154:8001",
-          "attrs": {
-            "tvg-id": "北京密云",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京密云.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "北京延庆",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.187:8001",
-          "attrs": {
-            "tvg-id": "北京延庆",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京延庆.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "北京房山",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.96:8001",
-          "attrs": {
-            "tvg-id": "北京房山",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京房山.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "北京通州",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.221:8001",
-          "attrs": {
-            "tvg-id": "北京通州",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京通州.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "北京门头沟",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.59:8001",
-          "attrs": {
-            "tvg-id": "北京门头沟",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京门头沟.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "淘电影",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.250:8001",
-          "attrs": {
-            "tvg-id": "淘电影",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/淘电影.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "淘剧场",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.95:8001",
-          "attrs": {
-            "tvg-id": "淘剧场",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/淘剧场.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "淘娱乐",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.100:8001",
-          "attrs": {
-            "tvg-id": "淘娱乐",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/淘娱乐.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "淘baby",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.238:8001",
-          "attrs": {
-            "tvg-id": "淘baby",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/淘baby.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "萌宠TV",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.102:8001",
-          "attrs": {
-            "tvg-id": "萌宠TV",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/萌宠TV.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "睛彩竞技",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.125:8001",
-          "attrs": {
-            "tvg-id": "睛彩竞技",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/睛彩竞技.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "睛彩广场舞",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.128:8001",
-          "attrs": {
-            "tvg-id": "睛彩广场舞",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/睛彩广场舞.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "睛彩篮球",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.126:8001",
-          "attrs": {
-            "tvg-id": "睛彩篮球",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/睛彩篮球.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "睛彩青少",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.127:8001",
-          "attrs": {
-            "tvg-id": "睛彩青少",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/睛彩青少.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "聚鲨环球精选",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.160:8001",
-          "attrs": {
-            "tvg-id": "聚鲨环球精选",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/聚鲨环球精选.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "聚鲨环球精选",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.179:8001",
-          "attrs": {
-            "tvg-id": "聚鲨环球精选",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/聚鲨环球精选.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV少儿动画",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.199:9000",
-          "attrs": {
-            "tvg-id": "IPTV少儿动画",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV少儿动画.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV热播剧场",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.194:9020",
-          "attrs": {
-            "tvg-id": "IPTV热播剧场",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV热播剧场.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV经典电影",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.195:9024",
-          "attrs": {
-            "tvg-id": "IPTV经典电影",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV经典电影.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV魅力时尚",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.196:9012",
-          "attrs": {
-            "tvg-id": "IPTV魅力时尚",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV魅力时尚.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "央视网CCTV3",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.193:8012",
-          "attrs": {
-            "tvg-id": "央视网CCTV3",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/央视网CCTV3.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "央视网CCTV5",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.89:4120",
-          "attrs": {
-            "tvg-id": "央视网CCTV5",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/央视网CCTV5.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "央视网CCTV8",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.85:4120",
-          "attrs": {
-            "tvg-id": "央视网CCTV8",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/央视网CCTV8.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "央视网CCTV10",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.86:4120",
-          "attrs": {
-            "tvg-id": "央视网CCTV10",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/央视网CCTV10.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "财富天下",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.53:9136",
-          "attrs": {
-            "tvg-id": "财富天下",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/财富天下.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV光影",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.84:4120",
-          "attrs": {
-            "tvg-id": "IPTV光影",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV光影.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV军事",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.76:4120",
-          "attrs": {
-            "tvg-id": "IPTV军事",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV军事.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV军旅剧场",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.69:4120",
-          "attrs": {
-            "tvg-id": "IPTV军旅剧场",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV军旅剧场.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV军旅剧场",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.68:4120",
-          "attrs": {
-            "tvg-id": "IPTV军旅剧场",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV军旅剧场.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV动作影院",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.92:4120",
-          "attrs": {
-            "tvg-id": "IPTV动作影院",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV动作影院.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV动画",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.80:4120",
-          "attrs": {
-            "tvg-id": "IPTV动画",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV动画.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV喜剧剧场",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.91:4120",
-          "attrs": {
-            "tvg-id": "IPTV喜剧剧场",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV喜剧剧场.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV国学",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.77:4120",
-          "attrs": {
-            "tvg-id": "IPTV国学",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV国学.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV地理",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.71:4120",
-          "attrs": {
-            "tvg-id": "IPTV地理",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV地理.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV墨宝",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.83:4120",
-          "attrs": {
-            "tvg-id": "IPTV墨宝",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV墨宝.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV好学生",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.81:4120",
-          "attrs": {
-            "tvg-id": "IPTV好学生",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV好学生.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV家庭影院",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.93:4120",
-          "attrs": {
-            "tvg-id": "IPTV家庭影院",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV家庭影院.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV影视",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.88:4120",
-          "attrs": {
-            "tvg-id": "IPTV影视",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV影视.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV戏曲",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.78:4120",
-          "attrs": {
-            "tvg-id": "IPTV戏曲",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV戏曲.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV早教",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.79:4120",
-          "attrs": {
-            "tvg-id": "IPTV早教",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV早教.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV星影",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.94:4120",
-          "attrs": {
-            "tvg-id": "IPTV星影",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV星影.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV武侠剧场",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.90:4120",
-          "attrs": {
-            "tvg-id": "IPTV武侠剧场",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV武侠剧场.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV武术",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.87:4120",
-          "attrs": {
-            "tvg-id": "IPTV武术",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV武术.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV精选",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.74:4120",
-          "attrs": {
-            "tvg-id": "IPTV精选",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV精选.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV美人",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.73:4120",
-          "attrs": {
-            "tvg-id": "IPTV美人",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV美人.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV美妆",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.72:4120",
-          "attrs": {
-            "tvg-id": "IPTV美妆",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV美妆.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV解密",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.75:4120",
-          "attrs": {
-            "tvg-id": "IPTV解密",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV解密.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV都市剧场",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.67:4120",
-          "attrs": {
-            "tvg-id": "IPTV都市剧场",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV都市剧场.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV鉴赏",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.82:4120",
-          "attrs": {
-            "tvg-id": "IPTV鉴赏",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV鉴赏.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "IPTV音乐现场",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.70:4120",
-          "attrs": {
-            "tvg-id": "IPTV音乐现场",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV音乐现场.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        },
-        {
-          "name": "爱上4K",
-          "url": "http://222.131.113.193:8000/rtp/239.3.1.236:2000",
-          "attrs": {
-            "tvg-id": "爱上4K",
-            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/爱上4K.png",
-            "group-title": "北京组播 北京联通"
-          },
-          "options": [],
-          "source_type": "multicast",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:14"
-        }
-      ],
-      "retained": false,
-      "source": {
-        "servers": [
-          {
-            "id": "4029ad5d",
-            "type": "multicast",
-            "channels": 138,
-            "updated_at": "2026-11-08 03:50:14",
-            "download_mode": "download",
-            "response_bytes": 28704,
-            "ownership_source": "detail",
-            "detail_owner": "北京组播 北京联通",
-            "sha256": "9ac0c807e222d6344914189f57949f67fbfe41bcb937156a0ecb7c5a67a66ac3"
-          }
-        ],
-        "kind": "website",
-        "url": "https://iptv.cqshushu.com/index.php",
-        "protocol": "index",
-        "source_types": [
-          "hotel",
-          "multicast"
-        ],
-        "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-11-07T19:46:27+00:00",
-        "checked_provinces": [
-          "北京",
-          "浙江",
-          "湖南",
-          "河北"
-        ],
-        "page_policy": {
-          "size": 10,
-          "normal": 5,
-          "fallback_if_empty": 8
-        },
-        "pages": {
-          "北京": 5,
-          "浙江": 5,
-          "湖南": 8,
-          "河北": 5
-        },
-        "metrics": {
-          "requests": 38,
-          "retries": 3,
-          "http_429": 3,
-          "rate_recoveries": 1,
-          "stages": {
-            "home": {
-              "requests": 1,
-              "retries": 0,
-              "network_seconds": 8.274,
-              "statuses": {
-                "200": 1
-              },
-              "failures": 0
-            },
-            "script": {
-              "requests": 1,
-              "retries": 0,
-              "network_seconds": 0.015,
-              "statuses": {
-                "200": 1
-              },
-              "failures": 0
-            },
-            "list": {
-              "requests": 26,
-              "retries": 3,
-              "network_seconds": 85.575,
-              "statuses": {
-                "200": 23,
-                "429": 3
-              },
-              "failures": 3
-            },
-            "detail": {
-              "requests": 7,
-              "retries": 0,
-              "network_seconds": 53.716,
-              "statuses": {
-                "200": 7
-              },
-              "failures": 0
-            },
-            "m3u_download": {
-              "requests": 3,
-              "retries": 0,
-              "network_seconds": 1.408,
-              "statuses": {
-                "200": 3
-              },
-              "failures": 0
-            }
-          },
-          "worker_wait_seconds": {
-            "rate_interval": 661.526,
-            "http_429": 180.012
-          },
-          "cooldown_events": {
-            "http_429": 3
-          },
-          "playlist_results": {
-            "download": {
-              "success": 3
-            }
-          },
-          "current_interval_seconds": 15,
-          "elapsed_seconds": 554.87
-        }
-      }
-    },
     "浙江联通": {
       "records": [
         {
@@ -1921,8 +13,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "CCTV2-财经",
@@ -1934,8 +26,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "CCTV3-综艺",
@@ -1947,8 +39,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "CCTV4-国际",
@@ -1960,8 +52,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "CCTV5-体育",
@@ -1973,8 +65,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "CCTV6-电影",
@@ -1986,8 +78,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "CCTV7-军农",
@@ -1999,8 +91,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "CCTV8-电视剧",
@@ -2012,8 +104,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "CCTV9-纪录",
@@ -2025,8 +117,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "CCTV10-科教",
@@ -2038,8 +130,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "CCTV11-戏曲",
@@ -2051,8 +143,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "CCTV12-社会与法",
@@ -2064,8 +156,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "CCTV13-新闻",
@@ -2077,8 +169,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "CCTV14-少儿",
@@ -2090,8 +182,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "CCTV15-音乐",
@@ -2103,8 +195,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "北京卫视",
@@ -2116,8 +208,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "江苏卫视",
@@ -2129,8 +221,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "东方卫视",
@@ -2142,8 +234,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "湖南卫视",
@@ -2155,8 +247,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "安徽卫视",
@@ -2168,8 +260,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "重庆卫视",
@@ -2181,8 +273,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "广东卫视",
@@ -2194,8 +286,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "四川卫视",
@@ -2207,8 +299,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "江西卫视",
@@ -2220,8 +312,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "贵州卫视",
@@ -2233,8 +325,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "山东卫视",
@@ -2246,8 +338,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "辽宁卫视",
@@ -2259,8 +351,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "吉林卫视",
@@ -2272,8 +364,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "黑龙江卫视",
@@ -2285,8 +377,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "东南卫视",
@@ -2298,8 +390,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "河南卫视",
@@ -2311,8 +403,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "湖北卫视",
@@ -2324,8 +416,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "陕西卫视",
@@ -2337,8 +429,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "山西卫视",
@@ -2350,8 +442,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "广西卫视",
@@ -2363,8 +455,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "云南卫视",
@@ -2376,8 +468,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "河北卫视",
@@ -2389,8 +481,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "金鹰卡通",
@@ -2402,8 +494,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "宁夏卫视",
@@ -2415,8 +507,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "浙江卫视",
@@ -2428,8 +520,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "浙江新闻",
@@ -2441,8 +533,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         },
         {
           "name": "杭州影视",
@@ -2454,8 +546,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活6天",
-          "source_updated_at": "2026-11-08 03:50:44"
+          "source_status": "存活7天",
+          "source_updated_at": "2026-11-08 05:35:52"
         }
       ],
       "retained": false,
@@ -2465,7 +557,7 @@
             "id": "218a020e",
             "type": "hotel",
             "channels": 42,
-            "updated_at": "2026-11-08 03:50:44",
+            "updated_at": "2026-11-08 05:35:52",
             "download_mode": "download",
             "response_bytes": 10784,
             "ownership_source": "detail",
@@ -2481,7 +573,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-11-07T19:46:27+00:00",
+        "fetched_at": "2026-11-07T21:33:31+00:00",
         "checked_provinces": [
           "北京",
           "浙江",
@@ -2494,21 +586,21 @@
           "fallback_if_empty": 8
         },
         "pages": {
-          "北京": 5,
+          "北京": 8,
           "浙江": 5,
           "湖南": 8,
           "河北": 5
         },
         "metrics": {
           "requests": 38,
-          "retries": 3,
-          "http_429": 3,
-          "rate_recoveries": 1,
+          "retries": 2,
+          "http_429": 2,
+          "rate_recoveries": 0,
           "stages": {
             "home": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 8.274,
+              "network_seconds": 0.45,
               "statuses": {
                 "200": 1
               },
@@ -2517,35 +609,35 @@
             "script": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 0.015,
+              "network_seconds": 0.012,
               "statuses": {
                 "200": 1
               },
               "failures": 0
             },
             "list": {
-              "requests": 26,
-              "retries": 3,
-              "network_seconds": 85.575,
+              "requests": 28,
+              "retries": 2,
+              "network_seconds": 6.525,
               "statuses": {
-                "200": 23,
-                "429": 3
+                "200": 26,
+                "429": 2
               },
-              "failures": 3
+              "failures": 2
             },
             "detail": {
-              "requests": 7,
+              "requests": 5,
               "retries": 0,
-              "network_seconds": 53.716,
+              "network_seconds": 28.212,
               "statuses": {
-                "200": 7
+                "200": 5
               },
               "failures": 0
             },
             "m3u_download": {
               "requests": 3,
               "retries": 0,
-              "network_seconds": 1.408,
+              "network_seconds": 1.078,
               "statuses": {
                 "200": 3
               },
@@ -2553,11 +645,11 @@
             }
           },
           "worker_wait_seconds": {
-            "rate_interval": 661.526,
-            "http_429": 180.012
+            "rate_interval": 739.523,
+            "http_429": 225.378
           },
           "cooldown_events": {
-            "http_429": 3
+            "http_429": 2
           },
           "playlist_results": {
             "download": {
@@ -2565,7 +657,1954 @@
             }
           },
           "current_interval_seconds": 15,
-          "elapsed_seconds": 554.87
+          "elapsed_seconds": 510.9
+        }
+      }
+    },
+    "北京移动": {
+      "records": [
+        {
+          "name": "CCTV4K",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.227:2000",
+          "attrs": {
+            "tvg-id": "CCTV4K",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV4K.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "北京卫视4K",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.235:8002",
+          "attrs": {
+            "tvg-id": "北京卫视4K",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京卫视4K.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "东方卫视4K",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.43:3006",
+          "attrs": {
+            "tvg-id": "东方卫视4K",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/东方卫视4K.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "广东卫视4K",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.241:2000",
+          "attrs": {
+            "tvg-id": "广东卫视4K",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/广东卫视4K.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "深圳卫视4K",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.240:2000",
+          "attrs": {
+            "tvg-id": "深圳卫视4K",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/深圳卫视4K.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "湖南卫视4K",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.40:3002",
+          "attrs": {
+            "tvg-id": "湖南卫视4K",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/湖南卫视4K.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "山东卫视4K",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.46:3006",
+          "attrs": {
+            "tvg-id": "山东卫视4K",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/山东卫视4K.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "四川卫视4K",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.47:3000",
+          "attrs": {
+            "tvg-id": "四川卫视4K",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/四川卫视4K.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "浙江卫视4K",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.45:3004",
+          "attrs": {
+            "tvg-id": "浙江卫视4K",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/浙江卫视4K.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "江苏卫视4K",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.41:3002",
+          "attrs": {
+            "tvg-id": "江苏卫视4K",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/江苏卫视4K.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "爱上4K",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.38:2000",
+          "attrs": {
+            "tvg-id": "爱上4K",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/爱上4K.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "北京4K超清",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.123:8001",
+          "attrs": {
+            "tvg-id": "北京4K超清",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京4K超清.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "北京纪实科教8K",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.217:8002",
+          "attrs": {
+            "tvg-id": "北京纪实科教8K",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京纪实科教8K.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV1HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.28:8008",
+          "attrs": {
+            "tvg-id": "CCTV1HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV1HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV2HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.24:8084",
+          "attrs": {
+            "tvg-id": "CCTV2HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV2HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV3HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.191:8002",
+          "attrs": {
+            "tvg-id": "CCTV3HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV3HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV4HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.25:8092",
+          "attrs": {
+            "tvg-id": "CCTV4HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV4HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV4欧洲HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.213:4220",
+          "attrs": {
+            "tvg-id": "CCTV4欧洲HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV4欧洲HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV4美洲HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.203:4220",
+          "attrs": {
+            "tvg-id": "CCTV4美洲HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV4美洲HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV5HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.192:8002",
+          "attrs": {
+            "tvg-id": "CCTV5HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV5HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV5+HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.23:8004",
+          "attrs": {
+            "tvg-id": "CCTV5+HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV5+HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV6HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.193:8002",
+          "attrs": {
+            "tvg-id": "CCTV6HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV6HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV7HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.26:8104",
+          "attrs": {
+            "tvg-id": "CCTV7HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV7HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV8HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.194:8002",
+          "attrs": {
+            "tvg-id": "CCTV8HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV8HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV9HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.27:8112",
+          "attrs": {
+            "tvg-id": "CCTV9HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV9HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV10HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.29:8116",
+          "attrs": {
+            "tvg-id": "CCTV10HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV10HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV11HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.182:8120",
+          "attrs": {
+            "tvg-id": "CCTV11HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV11HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV12HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.30:8124",
+          "attrs": {
+            "tvg-id": "CCTV12HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV12HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV13HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.212:8128",
+          "attrs": {
+            "tvg-id": "CCTV13HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV13HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV14HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.31:8132",
+          "attrs": {
+            "tvg-id": "CCTV14HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV14HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV15HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.183:8136",
+          "attrs": {
+            "tvg-id": "CCTV15HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV15HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV16HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.215:8002",
+          "attrs": {
+            "tvg-id": "CCTV16HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV16HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CCTV17HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.181:8144",
+          "attrs": {
+            "tvg-id": "CCTV17HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV17HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CETV1HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.32:8152",
+          "attrs": {
+            "tvg-id": "CETV1HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CETV1HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CGTNHD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.204:4220",
+          "attrs": {
+            "tvg-id": "CGTNHD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CGTNHD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CGTN纪录HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.205:4220",
+          "attrs": {
+            "tvg-id": "CGTN纪录HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CGTN纪录HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CGTN俄语HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.209:4220",
+          "attrs": {
+            "tvg-id": "CGTN俄语HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CGTN俄语HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CGTN西语HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.206:4220",
+          "attrs": {
+            "tvg-id": "CGTN西语HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CGTN西语HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CGTN法语HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.207:4220",
+          "attrs": {
+            "tvg-id": "CGTN法语HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CGTN法语HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CHC动作电影HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.238:7000",
+          "attrs": {
+            "tvg-id": "CHC动作电影HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CHC动作电影HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "茶频道HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.145:8002",
+          "attrs": {
+            "tvg-id": "茶频道HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/茶频道HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "金鹰纪实HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.34:8156",
+          "attrs": {
+            "tvg-id": "金鹰纪实HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/金鹰纪实HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "国学HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.158:4120",
+          "attrs": {
+            "tvg-id": "国学HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/国学HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "快乐垂钓HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.144:8002",
+          "attrs": {
+            "tvg-id": "快乐垂钓HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/快乐垂钓HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "中国交通HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.222:8002",
+          "attrs": {
+            "tvg-id": "中国交通HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/中国交通HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "重庆卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.210:8160",
+          "attrs": {
+            "tvg-id": "重庆卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/重庆卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "江苏卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.37:8028",
+          "attrs": {
+            "tvg-id": "江苏卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/江苏卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "浙江卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.13:8036",
+          "attrs": {
+            "tvg-id": "浙江卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/浙江卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "东方卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.39:8032",
+          "attrs": {
+            "tvg-id": "东方卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/东方卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "深圳卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.36:8020",
+          "attrs": {
+            "tvg-id": "深圳卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/深圳卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "北京卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.115:8000",
+          "attrs": {
+            "tvg-id": "北京卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "山东卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.18:8052",
+          "attrs": {
+            "tvg-id": "山东卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/山东卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "天津卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.15:1234",
+          "attrs": {
+            "tvg-id": "天津卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/天津卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "贵州卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.188:8076",
+          "attrs": {
+            "tvg-id": "贵州卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/贵州卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "黑龙江卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.35:8016",
+          "attrs": {
+            "tvg-id": "黑龙江卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/黑龙江卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "安徽卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.21:8064",
+          "attrs": {
+            "tvg-id": "安徽卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/安徽卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "江西卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.211:8164",
+          "attrs": {
+            "tvg-id": "江西卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/江西卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "湖北卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.16:8044",
+          "attrs": {
+            "tvg-id": "湖北卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/湖北卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "东南卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.185:8148",
+          "attrs": {
+            "tvg-id": "东南卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/东南卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "吉林卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.214:8172",
+          "attrs": {
+            "tvg-id": "吉林卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/吉林卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "辽宁卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.19:8056",
+          "attrs": {
+            "tvg-id": "辽宁卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/辽宁卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "湖南卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.33:8012",
+          "attrs": {
+            "tvg-id": "湖南卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/湖南卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "广东卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.17:8048",
+          "attrs": {
+            "tvg-id": "广东卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/广东卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "河南卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.236:8184",
+          "attrs": {
+            "tvg-id": "河南卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/河南卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "河北卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.187:8072",
+          "attrs": {
+            "tvg-id": "河北卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/河北卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "宁夏卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.244:8212",
+          "attrs": {
+            "tvg-id": "宁夏卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/宁夏卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "甘肃卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.242:8180",
+          "attrs": {
+            "tvg-id": "甘肃卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/甘肃卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "新疆卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.246:8192",
+          "attrs": {
+            "tvg-id": "新疆卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/新疆卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "西藏卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.245:8188",
+          "attrs": {
+            "tvg-id": "西藏卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/西藏卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "兵团卫视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.243:8196",
+          "attrs": {
+            "tvg-id": "兵团卫视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/兵团卫视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "卡酷少儿HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.195:8000",
+          "attrs": {
+            "tvg-id": "卡酷少儿HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/卡酷少儿HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "北京新闻HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.189:8000",
+          "attrs": {
+            "tvg-id": "北京新闻HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京新闻HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "北京生活HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.198:8000",
+          "attrs": {
+            "tvg-id": "北京生活HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京生活HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "北京影视HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.190:8000",
+          "attrs": {
+            "tvg-id": "北京影视HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京影视HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "北京文艺HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.116:8000",
+          "attrs": {
+            "tvg-id": "北京文艺HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京文艺HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "北京体育休闲HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.117:8000",
+          "attrs": {
+            "tvg-id": "北京体育休闲HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京体育休闲HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "北京纪实科教HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.196:8000",
+          "attrs": {
+            "tvg-id": "北京纪实科教HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京纪实科教HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "北京财经HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.197:8000",
+          "attrs": {
+            "tvg-id": "北京财经HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京财经HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "北京国际HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.111:8000",
+          "attrs": {
+            "tvg-id": "北京国际HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京国际HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "北京朝阳HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.140:8001",
+          "attrs": {
+            "tvg-id": "北京朝阳HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京朝阳HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "北京房山HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.139:8001",
+          "attrs": {
+            "tvg-id": "北京房山HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京房山HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "淘电影HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.124:8001",
+          "attrs": {
+            "tvg-id": "淘电影HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/淘电影HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "淘剧场HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.126:8001",
+          "attrs": {
+            "tvg-id": "淘剧场HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/淘剧场HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "淘娱乐HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.133:8001",
+          "attrs": {
+            "tvg-id": "淘娱乐HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/淘娱乐HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "淘babyHD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.128:8001",
+          "attrs": {
+            "tvg-id": "淘babyHD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/淘babyHD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "萌宠TVHD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.135:8002",
+          "attrs": {
+            "tvg-id": "萌宠TVHD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/萌宠TVHD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "睛彩竞技HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.223:8002",
+          "attrs": {
+            "tvg-id": "睛彩竞技HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/睛彩竞技HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "睛彩广场舞HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.226:8002",
+          "attrs": {
+            "tvg-id": "睛彩广场舞HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/睛彩广场舞HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "睛彩篮球HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.224:8002",
+          "attrs": {
+            "tvg-id": "睛彩篮球HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/睛彩篮球HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "睛彩青少HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.225:8002",
+          "attrs": {
+            "tvg-id": "睛彩青少HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/睛彩青少HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "古装剧场HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.150:4120",
+          "attrs": {
+            "tvg-id": "古装剧场HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/古装剧场HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "军旅剧场HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.149:4120",
+          "attrs": {
+            "tvg-id": "军旅剧场HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/军旅剧场HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "IPTV少儿动画HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.83:9000",
+          "attrs": {
+            "tvg-id": "IPTV少儿动画HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV少儿动画HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "IPTV热播剧场HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.88:9020",
+          "attrs": {
+            "tvg-id": "IPTV热播剧场HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV热播剧场HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "IPTV经典电影HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.89:9024",
+          "attrs": {
+            "tvg-id": "IPTV经典电影HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV经典电影HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "IPTV魅力时尚HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.86:9012",
+          "attrs": {
+            "tvg-id": "IPTV魅力时尚HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV魅力时尚HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "城市剧场HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.148:4120",
+          "attrs": {
+            "tvg-id": "城市剧场HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/城市剧场HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "音乐现场HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.151:4120",
+          "attrs": {
+            "tvg-id": "音乐现场HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/音乐现场HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "地理HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.152:4120",
+          "attrs": {
+            "tvg-id": "地理HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/地理HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "美妆HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.153:4120",
+          "attrs": {
+            "tvg-id": "美妆HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/美妆HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "精选HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.154:4120",
+          "attrs": {
+            "tvg-id": "精选HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/精选HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "精选HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.155:4120",
+          "attrs": {
+            "tvg-id": "精选HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/精选HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "解密HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.156:4120",
+          "attrs": {
+            "tvg-id": "解密HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/解密HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "军事HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.157:4120",
+          "attrs": {
+            "tvg-id": "军事HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/军事HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "戏曲HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.159:4120",
+          "attrs": {
+            "tvg-id": "戏曲HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/戏曲HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "早教HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.160:4120",
+          "attrs": {
+            "tvg-id": "早教HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/早教HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "动画HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.161:4120",
+          "attrs": {
+            "tvg-id": "动画HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/动画HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "好学生HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.162:4120",
+          "attrs": {
+            "tvg-id": "好学生HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/好学生HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "鉴赏HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.163:4120",
+          "attrs": {
+            "tvg-id": "鉴赏HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/鉴赏HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "墨宝HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.164:4120",
+          "attrs": {
+            "tvg-id": "墨宝HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/墨宝HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "光影HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.165:4120",
+          "attrs": {
+            "tvg-id": "光影HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/光影HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "爱生活HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.167:4120",
+          "attrs": {
+            "tvg-id": "爱生活HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/爱生活HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "武术HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.168:4120",
+          "attrs": {
+            "tvg-id": "武术HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/武术HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "足球HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.170:4120",
+          "attrs": {
+            "tvg-id": "足球HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/足球HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "武侠剧场HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.171:4120",
+          "attrs": {
+            "tvg-id": "武侠剧场HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/武侠剧场HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "喜剧影院HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.172:4120",
+          "attrs": {
+            "tvg-id": "喜剧影院HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/喜剧影院HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "动作影院HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.173:4120",
+          "attrs": {
+            "tvg-id": "动作影院HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/动作影院HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "家庭影院HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.174:4120",
+          "attrs": {
+            "tvg-id": "家庭影院HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/家庭影院HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "星影HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.175:4120",
+          "attrs": {
+            "tvg-id": "星影HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/星影HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CFTN阿语HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.208:4220",
+          "attrs": {
+            "tvg-id": "CFTN阿语HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CFTN阿语HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "IPTV收视指南HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.108:8012",
+          "attrs": {
+            "tvg-id": "IPTV收视指南HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/IPTV收视指南HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "古早影院HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.169:4120",
+          "attrs": {
+            "tvg-id": "古早影院HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/古早影院HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "四大名著剧场HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.166:4120",
+          "attrs": {
+            "tvg-id": "四大名著剧场HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/四大名著剧场HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "重温经典HD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.237:8002",
+          "attrs": {
+            "tvg-id": "重温经典HD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/重温经典HD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CETV2SD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.97:4120",
+          "attrs": {
+            "tvg-id": "CETV2SD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CETV2SD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "CETV4SD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.99:4120",
+          "attrs": {
+            "tvg-id": "CETV4SD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CETV4SD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "四川卫视SD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.77:8288",
+          "attrs": {
+            "tvg-id": "四川卫视SD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/四川卫视SD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "云南卫视SD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.44:8108",
+          "attrs": {
+            "tvg-id": "云南卫视SD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/云南卫视SD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "广西卫视SD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.80:8300",
+          "attrs": {
+            "tvg-id": "广西卫视SD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/广西卫视SD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "山西卫视SD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.58:8172",
+          "attrs": {
+            "tvg-id": "山西卫视SD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/山西卫视SD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "旅游卫视SD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.81:8304",
+          "attrs": {
+            "tvg-id": "旅游卫视SD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/旅游卫视SD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "陕西卫视SD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.53:8140",
+          "attrs": {
+            "tvg-id": "陕西卫视SD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/陕西卫视SD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "厦门卫视SD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.176:4120",
+          "attrs": {
+            "tvg-id": "厦门卫视SD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/厦门卫视SD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "内蒙古卫视SD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.59:8176",
+          "attrs": {
+            "tvg-id": "内蒙古卫视SD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/内蒙古卫视SD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "青海卫视SD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.60:8184",
+          "attrs": {
+            "tvg-id": "青海卫视SD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/青海卫视SD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "三沙卫视SD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.186:4120",
+          "attrs": {
+            "tvg-id": "三沙卫视SD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/三沙卫视SD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "金鹰卡通SD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.92:9252",
+          "attrs": {
+            "tvg-id": "金鹰卡通SD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/金鹰卡通SD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "嘉佳卡通SD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.93:9268",
+          "attrs": {
+            "tvg-id": "嘉佳卡通SD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/嘉佳卡通SD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "山东教育卫视SD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.96:4120",
+          "attrs": {
+            "tvg-id": "山东教育卫视SD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/山东教育卫视SD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "北京延庆SD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.219:8002",
+          "attrs": {
+            "tvg-id": "北京延庆SD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京延庆SD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        },
+        {
+          "name": "财富天下SD",
+          "url": "http://223.72.115.83:8888/rtp/228.1.1.90:9136",
+          "attrs": {
+            "tvg-id": "财富天下SD",
+            "tvg-logo": "https://gcore.jsdelivr.net/gh/taksssss/tv/icon/财富天下SD.png",
+            "group-title": "北京组播 北京移动"
+          },
+          "options": [],
+          "source_type": "multicast",
+          "source_status": "存活12天",
+          "source_updated_at": "2026-11-08 05:38:12"
+        }
+      ],
+      "retained": false,
+      "source": {
+        "servers": [
+          {
+            "id": "d8fc122a",
+            "type": "multicast",
+            "channels": 141,
+            "updated_at": "2026-11-08 05:38:12",
+            "download_mode": "download",
+            "response_bytes": 29489,
+            "ownership_source": "detail",
+            "detail_owner": "北京组播 北京移动",
+            "sha256": "e8ac03ccb76b51361c6b83c982198704f743e5288665c1ded61ab847e84a5464"
+          }
+        ],
+        "kind": "website",
+        "url": "https://iptv.cqshushu.com/index.php",
+        "protocol": "index",
+        "source_types": [
+          "hotel",
+          "multicast"
+        ],
+        "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
+        "fetched_at": "2026-11-07T21:33:31+00:00",
+        "checked_provinces": [
+          "北京",
+          "浙江",
+          "湖南",
+          "河北"
+        ],
+        "page_policy": {
+          "size": 10,
+          "normal": 5,
+          "fallback_if_empty": 8
+        },
+        "pages": {
+          "北京": 8,
+          "浙江": 5,
+          "湖南": 8,
+          "河北": 5
+        },
+        "metrics": {
+          "requests": 38,
+          "retries": 2,
+          "http_429": 2,
+          "rate_recoveries": 0,
+          "stages": {
+            "home": {
+              "requests": 1,
+              "retries": 0,
+              "network_seconds": 0.45,
+              "statuses": {
+                "200": 1
+              },
+              "failures": 0
+            },
+            "script": {
+              "requests": 1,
+              "retries": 0,
+              "network_seconds": 0.012,
+              "statuses": {
+                "200": 1
+              },
+              "failures": 0
+            },
+            "list": {
+              "requests": 28,
+              "retries": 2,
+              "network_seconds": 6.525,
+              "statuses": {
+                "200": 26,
+                "429": 2
+              },
+              "failures": 2
+            },
+            "detail": {
+              "requests": 5,
+              "retries": 0,
+              "network_seconds": 28.212,
+              "statuses": {
+                "200": 5
+              },
+              "failures": 0
+            },
+            "m3u_download": {
+              "requests": 3,
+              "retries": 0,
+              "network_seconds": 1.078,
+              "statuses": {
+                "200": 3
+              },
+              "failures": 0
+            }
+          },
+          "worker_wait_seconds": {
+            "rate_interval": 739.523,
+            "http_429": 225.378
+          },
+          "cooldown_events": {
+            "http_429": 2
+          },
+          "playlist_results": {
+            "download": {
+              "success": 3
+            }
+          },
+          "current_interval_seconds": 15,
+          "elapsed_seconds": 510.9
         }
       }
     },
@@ -2581,8 +2620,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "CCTV2财经",
@@ -2594,8 +2633,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "CCTV3综艺",
@@ -2607,8 +2646,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "CCTV4国际",
@@ -2620,8 +2659,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "CCTV5体育",
@@ -2633,8 +2672,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "CCTV6电影",
@@ -2646,8 +2685,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "CCTV7军事农业",
@@ -2659,8 +2698,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "CCTV8电视剧",
@@ -2672,8 +2711,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "CCTV9记录",
@@ -2685,8 +2724,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "CCTV10科教",
@@ -2698,8 +2737,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "CCTV11戏曲",
@@ -2711,8 +2750,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "CCTV12社会与法",
@@ -2724,8 +2763,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "CCTV13新闻",
@@ -2737,8 +2776,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "CCTV14少儿",
@@ -2750,8 +2789,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "CCTV15音乐",
@@ -2763,8 +2802,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "CCTV16外语",
@@ -2776,8 +2815,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "CCTV5+体育",
@@ -2789,8 +2828,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "河北卫视",
@@ -2802,8 +2841,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "湖南卫视",
@@ -2815,8 +2854,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "江苏卫视",
@@ -2828,8 +2867,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "北京卫视",
@@ -2841,8 +2880,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "天津卫视",
@@ -2854,8 +2893,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "深圳卫视",
@@ -2867,8 +2906,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "山东卫视",
@@ -2880,8 +2919,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "广东卫视",
@@ -2893,8 +2932,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "浙江卫视",
@@ -2906,8 +2945,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "黑龙江卫视",
@@ -2919,8 +2958,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "辽宁卫视",
@@ -2932,8 +2971,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "安徽卫视",
@@ -2945,8 +2984,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "湖北卫视",
@@ -2958,8 +2997,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "四川卫视",
@@ -2971,8 +3010,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "东方卫视",
@@ -2984,8 +3023,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "重庆卫视",
@@ -2997,8 +3036,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "东南卫视",
@@ -3010,8 +3049,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "广西卫视",
@@ -3023,8 +3062,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "吉林卫视",
@@ -3036,8 +3075,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "陕西卫视",
@@ -3049,8 +3088,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "山西卫视",
@@ -3062,8 +3101,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "内蒙古卫视",
@@ -3075,8 +3114,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "青海卫视",
@@ -3088,8 +3127,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "宁夏卫视",
@@ -3101,8 +3140,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "西藏卫视",
@@ -3114,8 +3153,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "新疆卫视",
@@ -3127,8 +3166,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "甘肃卫视",
@@ -3140,8 +3179,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "旅游卫视",
@@ -3153,8 +3192,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "卡酷少儿",
@@ -3166,8 +3205,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "云南卫视",
@@ -3179,8 +3218,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "河南卫视",
@@ -3192,8 +3231,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "贵州卫视",
@@ -3205,8 +3244,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "金鹰卡通",
@@ -3218,8 +3257,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "足球频道",
@@ -3231,8 +3270,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "怀旧剧场",
@@ -3244,8 +3283,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "风云剧场",
@@ -3257,8 +3296,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "河北经济",
@@ -3270,8 +3309,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "河北都市",
@@ -3283,8 +3322,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "河北影视",
@@ -3296,8 +3335,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "河北少儿",
@@ -3309,8 +3348,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "河北公共",
@@ -3322,8 +3361,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         },
         {
           "name": "河北农民",
@@ -3335,8 +3374,8 @@
           },
           "options": [],
           "source_type": "hotel",
-          "source_status": "存活5天",
-          "source_updated_at": "2026-11-08 03:55:19"
+          "source_status": "存活6天",
+          "source_updated_at": "2026-11-08 05:41:27"
         }
       ],
       "retained": false,
@@ -3346,7 +3385,7 @@
             "id": "766eb395",
             "type": "hotel",
             "channels": 59,
-            "updated_at": "2026-11-08 03:55:19",
+            "updated_at": "2026-11-08 05:41:27",
             "download_mode": "download",
             "response_bytes": 12597,
             "ownership_source": "detail",
@@ -3362,7 +3401,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-11-07T19:46:27+00:00",
+        "fetched_at": "2026-11-07T21:33:31+00:00",
         "checked_provinces": [
           "北京",
           "浙江",
@@ -3375,21 +3414,21 @@
           "fallback_if_empty": 8
         },
         "pages": {
-          "北京": 5,
+          "北京": 8,
           "浙江": 5,
           "湖南": 8,
           "河北": 5
         },
         "metrics": {
           "requests": 38,
-          "retries": 3,
-          "http_429": 3,
-          "rate_recoveries": 1,
+          "retries": 2,
+          "http_429": 2,
+          "rate_recoveries": 0,
           "stages": {
             "home": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 8.274,
+              "network_seconds": 0.45,
               "statuses": {
                 "200": 1
               },
@@ -3398,35 +3437,35 @@
             "script": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 0.015,
+              "network_seconds": 0.012,
               "statuses": {
                 "200": 1
               },
               "failures": 0
             },
             "list": {
-              "requests": 26,
-              "retries": 3,
-              "network_seconds": 85.575,
+              "requests": 28,
+              "retries": 2,
+              "network_seconds": 6.525,
               "statuses": {
-                "200": 23,
-                "429": 3
+                "200": 26,
+                "429": 2
               },
-              "failures": 3
+              "failures": 2
             },
             "detail": {
-              "requests": 7,
+              "requests": 5,
               "retries": 0,
-              "network_seconds": 53.716,
+              "network_seconds": 28.212,
               "statuses": {
-                "200": 7
+                "200": 5
               },
               "failures": 0
             },
             "m3u_download": {
               "requests": 3,
               "retries": 0,
-              "network_seconds": 1.408,
+              "network_seconds": 1.078,
               "statuses": {
                 "200": 3
               },
@@ -3434,11 +3473,11 @@
             }
           },
           "worker_wait_seconds": {
-            "rate_interval": 661.526,
-            "http_429": 180.012
+            "rate_interval": 739.523,
+            "http_429": 225.378
           },
           "cooldown_events": {
-            "http_429": 3
+            "http_429": 2
           },
           "playlist_results": {
             "download": {
@@ -3446,7 +3485,7 @@
             }
           },
           "current_interval_seconds": 15,
-          "elapsed_seconds": 554.87
+          "elapsed_seconds": 510.9
         }
       }
     }
@@ -3460,7 +3499,7 @@
       "multicast"
     ],
     "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-    "fetched_at": "2026-11-07T19:46:27+00:00",
+    "fetched_at": "2026-11-07T21:33:31+00:00",
     "checked_provinces": [
       "北京",
       "浙江",
@@ -3473,7 +3512,7 @@
       "fallback_if_empty": 8
     },
     "pages": {
-      "北京": 5,
+      "北京": 8,
       "浙江": 5,
       "湖南": 8,
       "河北": 5
@@ -3484,20 +3523,20 @@
       {
         "province": "湖南",
         "pages": 8,
-        "checked_at": "2026-11-07T19:53:43+00:00",
+        "checked_at": "2026-11-07T21:41:42+00:00",
         "url": "https://iptv.cqshushu.com/index.php?t=all&province=hn&limit=10&page=8"
       }
     ],
     "metrics": {
       "requests": 38,
-      "retries": 3,
-      "http_429": 3,
-      "rate_recoveries": 1,
+      "retries": 2,
+      "http_429": 2,
+      "rate_recoveries": 0,
       "stages": {
         "home": {
           "requests": 1,
           "retries": 0,
-          "network_seconds": 8.274,
+          "network_seconds": 0.45,
           "statuses": {
             "200": 1
           },
@@ -3506,35 +3545,35 @@
         "script": {
           "requests": 1,
           "retries": 0,
-          "network_seconds": 0.015,
+          "network_seconds": 0.012,
           "statuses": {
             "200": 1
           },
           "failures": 0
         },
         "list": {
-          "requests": 26,
-          "retries": 3,
-          "network_seconds": 85.575,
+          "requests": 28,
+          "retries": 2,
+          "network_seconds": 6.525,
           "statuses": {
-            "200": 23,
-            "429": 3
+            "200": 26,
+            "429": 2
           },
-          "failures": 3
+          "failures": 2
         },
         "detail": {
-          "requests": 7,
+          "requests": 5,
           "retries": 0,
-          "network_seconds": 53.716,
+          "network_seconds": 28.212,
           "statuses": {
-            "200": 7
+            "200": 5
           },
           "failures": 0
         },
         "m3u_download": {
           "requests": 3,
           "retries": 0,
-          "network_seconds": 1.408,
+          "network_seconds": 1.078,
           "statuses": {
             "200": 3
           },
@@ -3542,11 +3581,11 @@
         }
       },
       "worker_wait_seconds": {
-        "rate_interval": 661.526,
-        "http_429": 180.012
+        "rate_interval": 739.523,
+        "http_429": 225.378
       },
       "cooldown_events": {
-        "http_429": 3
+        "http_429": 2
       },
       "playlist_results": {
         "download": {
@@ -3554,7 +3593,7 @@
         }
       },
       "current_interval_seconds": 15,
-      "elapsed_seconds": 554.87
+      "elapsed_seconds": 510.9
     }
   },
   "source_policy": "replace_confirmed_scope_remove_unavailable"
