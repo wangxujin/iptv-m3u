@@ -14,9 +14,9 @@
 
 | 省份／运营商 | M3U | 频道线路 | 数据快照（北京时间） | 来源状态 |
 |---|---|---:|---|---|
-| 河北联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B2%B3%E5%8C%97%E8%81%94%E9%80%9A.m3u) | 66 | 2026-11-09 17:20 | 源站直接采集 |
-| 浙江电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B5%99%E6%B1%9F%E7%94%B5%E4%BF%A1.m3u) | 114 | 2026-11-09 17:20 | 源站直接采集 |
-| 浙江联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B5%99%E6%B1%9F%E8%81%94%E9%80%9A.m3u) | 42 | 2026-11-09 17:20 | 源站直接采集 |
+| 河北联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B2%B3%E5%8C%97%E8%81%94%E9%80%9A.m3u) | 66 | 2026-11-09 20:25 | 源站直接采集 |
+| 浙江电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B5%99%E6%B1%9F%E7%94%B5%E4%BF%A1.m3u) | 114 | 2026-11-09 20:25 | 源站直接采集 |
+| 浙江联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B5%99%E6%B1%9F%E8%81%94%E9%80%9A.m3u) | 42 | 2026-11-09 20:25 | 源站直接采集 |
 
 ## 第 8 页仍无可用来源
 
@@ -24,8 +24,8 @@
 
 | 省份 | 已采页数 | 检查时间（北京时间） | 对照查询 |
 |---|---:|---|---|
-| 北京 | 8 | 2026-11-09 17:29:34 | [查看第 8 页](https://iptv.cqshushu.com/index.php?t=all&province=bj&limit=10&page=8) |
-| 湖南 | 8 | 2026-11-09 17:25:59 | [查看第 8 页](https://iptv.cqshushu.com/index.php?t=all&province=hn&limit=10&page=8) |
+| 北京 | 8 | 2026-11-09 20:28:46 | [查看第 8 页](https://iptv.cqshushu.com/index.php?t=all&province=bj&limit=10&page=8) |
+| 湖南 | 8 | 2026-11-09 20:32:31 | [查看第 8 页](https://iptv.cqshushu.com/index.php?t=all&province=hn&limit=10&page=8) |
 
 来源时间不代表播放可用性已验证；历史来源表示保留的缓存。
 
