@@ -14,7 +14,7 @@
 
 | 省份／运营商 | M3U | 频道线路 | 数据快照（北京时间） | 来源状态 |
 |---|---|---:|---|---|
-| 北京联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%8C%97%E4%BA%AC%E8%81%94%E9%80%9A.m3u) | 135 | 2026-11-11 13:08 | 源站直接采集 |
+| 北京联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E5%8C%97%E4%BA%AC%E8%81%94%E9%80%9A.m3u) | 135 | 2026-11-11 19:37 | 源站直接采集 |
 
 ## 第 8 页仍无可用来源
 
@@ -22,9 +22,9 @@
 
 | 省份 | 已采页数 | 检查时间（北京时间） | 对照查询 |
 |---|---:|---|---|
-| 浙江 | 8 | 2026-11-11 13:14:46 | [查看第 8 页](https://iptv.cqshushu.com/index.php?t=all&province=zj&limit=10&page=8) |
-| 湖南 | 8 | 2026-11-11 13:18:17 | [查看第 8 页](https://iptv.cqshushu.com/index.php?t=all&province=hn&limit=10&page=8) |
-| 河北 | 8 | 2026-11-11 13:20:17 | [查看第 8 页](https://iptv.cqshushu.com/index.php?t=all&province=he&limit=10&page=8) |
+| 浙江 | 8 | 2026-11-11 19:41:21 | [查看第 8 页](https://iptv.cqshushu.com/index.php?t=all&province=zj&limit=10&page=8) |
+| 湖南 | 8 | 2026-11-11 19:44:21 | [查看第 8 页](https://iptv.cqshushu.com/index.php?t=all&province=hn&limit=10&page=8) |
+| 河北 | 8 | 2026-11-11 19:47:31 | [查看第 8 页](https://iptv.cqshushu.com/index.php?t=all&province=he&limit=10&page=8) |
 
 来源时间不代表播放可用性已验证；历史来源表示保留的缓存。
 
