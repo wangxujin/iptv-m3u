@@ -20,11 +20,12 @@ from source import SourceSnapshot, fetch_source
 
 ROOT = Path(__file__).resolve().parents[1]
 ONLINE_POLICY = 'replace_confirmed_scope_remove_unavailable'
+EXTRA_PLAYLIST_FILES = {'migu': 'm3u/migu.m3u'}
 DEFAULT_README = """# IPTV M3U
 
 {{SUMMARY}}
 
-仅采集酒店和组播源；每个省份与运营商组合只输出一个 M3U。
+省份数据仅采集酒店和组播源，每个省份与运营商组合只输出一个 M3U；另同步咪咕到 m3u/migu.m3u。
 同一频道超高清与其他画质各保留一条，各档先按更新时间从新到旧选择，更新时间相同优先组播，再比较清晰度。
 分组按 超清体验、央视频道、卫视频道、体育频道、港澳台、少儿频道、影视频道、纪实频道、新闻频道等顺序规范。
 频道分类见 [config/groups.json](config/groups.json)，源站设置见 [config/source.json](config/source.json)，
@@ -33,6 +34,8 @@ DEFAULT_README = """# IPTV M3U
 ## 订阅列表
 
 {{FILES}}
+
+{{EXTRA_FILES}}
 
 {{UNAVAILABLE}}
 
@@ -48,13 +51,17 @@ python3 rtp/b.py           # 按 config/source.json 的 provinces 采集并生�
 python3 rtp/b.py --provinces 北京 河北 # 临时覆盖配置的省份
 python3 rtp/b.py --offline # 使用已有缓存重建
 python3 rtp/b.py --check   # 校验生成结果
+python3 rtp/b.py --migu    # 同步咪咕，复用现有缓存、清单和生成器
 python3 epg/update.py     # 按 1 → 3 → 2 合并 EPG
 python3 epg/update.py --check # 校验 epg.xml.gz
 ```
 
-频道列表计划在北京时间每两小时整点更新（00:00、02:00……22:00）；EPG 仅在 00:00、12:00 的定时任务中更新。
-EPG 按计划时段判断，不受实际启动时间延迟影响；同轮需更新 EPG 时先独立发布，再采集频道。
-手动触发或推送触发工作流时，两项都更新。
+咪咕和四省频道列表在北京时间每两小时整点更新；先同步咪咕，再采集四省。
+EPG 仅在 00:00、12:00 的定时任务中更新，顺序为咪咕 → EPG → 四省 M3U。
+EPG 按计划时段判断，不受实际启动延迟影响；手动或相关推送触发时三项都运行。
+咪咕配置见 config/migu.json，合并两份源到 m3u/migu.m3u，央视列表归入“央视专版”。
+咪咕常规频道使用现有规范分组，央视专版独立分组；组内复用两档线路优选，共用项目 EPG 地址。
+任何咪咕源下载、解析或地址校验失败都保留旧结果；内容不变时保留上次变更时间。
 GitHub schedule 显式设置 timezone: Asia/Shanghai，计划时间不等于实际启动时间，平台可能延迟。
 严格控制执行时间需使用自行管理的定时器及执行环境，单改 cron 或时区不能保证准点。
 来源顺序见 config/epg.json，同名频道合并，节目冲突优先保留前面的来源，后面的来源补齐空缺时段。
@@ -63,7 +70,8 @@ M3U 文件头引用项目配置中的 EPG 地址。
 
 首次成功采集后自动创建 data/、m3u/、manifest.json、epg.xml.gz 和本文件。采集失败不会清空已有结果。
 在线采集成功后自动删除本轮范围内确认没有可用来源的 M3U；仅接收新上线或存活 N 天，并复查详情状态。
-列表或详情无法唯一识别运营商时，记录日志并跳过该服务器。
+列表无法唯一识别运营商时跳过；详情归属缺失、未知或不完整时使用列表归属兜底，明确冲突仍跳过。
+成功来源在 servers 中记录 ownership_source（detail／list_fallback）及 detail_owner，状态和 M3U 继续校验。
 完整采集确认零可用来源时允许清空该范围；异常情况按以下规则处理。
 列表数量仅供参考，数量无效仍下载，下载数量不一致只提示；更新时间由列表、详情互补，两处均无效则跳过。
 单台归属冲突、缺少状态或频道入口、M3U 格式损坏时跳过，不占来源名额。
@@ -96,6 +104,9 @@ def read_source(folder: Path) -> dict:
     groups = {}
     directory = folder / 'm3u' if (folder / 'm3u').is_dir() else folder
     for path in sorted(directory.glob('*.m3u')):
+        if path.name in {Path(value).name for value in EXTRA_PLAYLIST_FILES.values()}:
+            print(f'[导入] {path.name} 由独立网络源同步，不作为省份导入', flush=True)
+            continue
         provider = provider_name(path.stem)
         raw = path.read_bytes()
         records = parse_playlist(raw.decode('utf-8-sig'))
@@ -177,9 +188,22 @@ def build_readme(template: str, manifest: dict, repository: str | None, branch: 
         status = ('保留的历史来源' if item['retained'] else
                   '源站直接采集' if source.get('kind') == 'website' else '本地导入')
         rows.append(f'| {provider} | [M3U]({url}) | {item["channels"]} | {date} | {status} |')
-    summary = (f'当前输出 **{manifest["province_count"]} 个省份、{manifest["file_count"]} 份 M3U、'
-               f'{manifest["total_channels"]:,} 条频道线路**。其中 {manifest["current_provider_count"]} 份来自最近成功采集或导入，'
+    provider_count = len(manifest['providers'])
+    provider_channels = sum(item['channels'] for item in manifest['providers'].values())
+    summary = (f'当前输出 **{manifest["province_count"]} 个省份、{provider_count} 份 M3U、'
+               f'{provider_channels:,} 条频道线路**。其中 {manifest["current_provider_count"]} 份来自最近成功采集或导入，'
                f'{manifest["retained_provider_count"]} 份保留历史来源。每个省份与运营商的组合只有一份文件。')
+    extra_rows = []
+    if manifest.get('extra_playlists'):
+        extra_rows = ['## 网络源列表', '', '| 列表 | M3U | 频道线路 | 最近内容变更（北京时间） |', '|---|---|---:|---|']
+        for name, item in manifest['extra_playlists'].items():
+            relative = EXTRA_PLAYLIST_FILES[name]
+            url = (f'https://raw.githubusercontent.com/{repository}/refs/heads/{quote(branch, safe="")}/' + quote(relative)
+                   if repository else relative)
+            date = datetime.fromisoformat(item['source']['fetched_at'].replace('Z', '+00:00')).astimezone(ZoneInfo('Asia/Shanghai'))
+            extra_rows.append(f'| {"咪咕" if name == "migu" else name} | [M3U]({url}) | {item["channels"]} | {date:%Y-%m-%d %H:%M} |')
+        summary += f'\n\n另有 **{len(manifest["extra_playlists"])} 份网络源列表**，全部合计 {manifest["file_count"]} 份 M3U、{manifest["total_channels"]:,} 条频道线路。'
+        if '{{EXTRA_FILES}}' not in template: template += '\n\n{{EXTRA_FILES}}\n'
     scopes = {tuple(item['source'].get('checked_provinces', [])) for item in manifest['providers'].values()}
     if len(scopes) == 1 and next(iter(scopes)):
         summary += '\n\n本轮采集范围：' + '、'.join(next(iter(scopes))) + '；只代表配置的分页范围。'
@@ -210,7 +234,13 @@ def build_readme(template: str, manifest: dict, repository: str | None, branch: 
     if '{{UNAVAILABLE}}' not in template:
         template += '\n\n{{UNAVAILABLE}}\n'
     return (template.replace('{{SUMMARY}}', summary).replace('{{FILES}}', '\n'.join(rows))
+            .replace('{{EXTRA_FILES}}', '\n'.join(extra_rows))
             .replace('{{COVERAGE}}', '\n'.join(coverage)).replace('{{UNAVAILABLE}}', '\n'.join(unavailable)))
+
+
+def build_extra_playlist(data: dict, classifier: Classifier, epg_url: str | None):
+    groups = tuple(item['group'] for item in data['source']['sources'] if item.get('group'))
+    return build_provider(data['records'], classifier, epg_url, preserve_groups=groups)
 
 
 def generate(state: dict, config: dict, output: Path, template: str, repository: str | None, branch: str,
@@ -235,14 +265,23 @@ def generate(state: dict, config: dict, output: Path, template: str, repository:
             raise ValueError(f'{provider} 没有有效 HTTP(S) 地址，停止更新并保留旧输出')
         files[f'm3u/{provider}.m3u'] = content
         manifest['providers'][provider] = dict(stats, source=data['source'], retained=data['retained'])
+    extras = state.get('extra_playlists', {})
+    if set(extras) - set(EXTRA_PLAYLIST_FILES): raise ValueError('缓存中存在未支持的网络源列表')
+    for name, data in sorted(extras.items()):
+        content, stats = build_extra_playlist(data, classifier, epg_url)
+        if not stats['channels']: raise ValueError(f'{name} 没有有效 HTTP(S) 频道，保留旧结果')
+        relative = EXTRA_PLAYLIST_FILES[name]
+        files[relative] = content
+        manifest.setdefault('extra_playlists', {})[name] = dict(stats, file=relative, source=data['source'])
     confirmed_empty = (state.get('source_policy') == ONLINE_POLICY
                        and state.get('last_sync', {}).get('kind') == 'website'
                        and state.get('last_sync', {}).get('checked_provinces'))
     if not files and not confirmed_empty:
         raise ValueError('没有可输出的数据，保留旧文件')
-    manifest.update(file_count=len(manifest['providers']),
+    manifest.update(file_count=len(manifest['providers']) + len(extras),
                     province_count=len({next(p for p in PROVINCES if name.startswith(p)) for name in manifest['providers']}),
-                    total_channels=sum(row['channels'] for row in manifest['providers'].values()),
+                    total_channels=sum(row['channels'] for row in manifest['providers'].values())
+                                   + sum(row['channels'] for row in manifest.get('extra_playlists', {}).values()),
                     current_provider_count=sum(not row['retained'] for row in manifest['providers'].values()),
                     retained_provider_count=sum(row['retained'] for row in manifest['providers'].values()))
     files['manifest.json'] = json.dumps(manifest, ensure_ascii=False, indent=2) + '\n'
@@ -252,10 +291,13 @@ def generate(state: dict, config: dict, output: Path, template: str, repository:
     output.mkdir(parents=True, exist_ok=True)
     (output / 'm3u').mkdir(exist_ok=True)
     previous = output / 'manifest.json'
-    old_providers = json.loads(previous.read_text(encoding='utf-8')).get('providers', {}) if previous.exists() else {}
+    old_manifest = json.loads(previous.read_text(encoding='utf-8')) if previous.exists() else {}
+    old_providers = old_manifest.get('providers', {})
     for provider in old_providers:
         if provider_name(provider) != provider:
             raise ValueError('旧清单含非法文件名')
+    old_extras = old_manifest.get('extra_playlists', {})
+    if set(old_extras) - set(EXTRA_PLAYLIST_FILES): raise ValueError('旧清单含未支持的网络源列表')
     with tempfile.TemporaryDirectory(prefix='.iptv-build-', dir=output) as temporary:
         staging = Path(temporary)
         for name, content in files.items():
@@ -269,6 +311,8 @@ def generate(state: dict, config: dict, output: Path, template: str, repository:
     # 只清理本工具上次清单中管理的文件，绝不扫描删除用户的其他文件。
     for provider in set(old_providers) - set(manifest['providers']):
         (output / 'm3u' / f'{provider}.m3u').unlink(missing_ok=True)
+    for name in set(old_extras) - set(extras):
+        (output / EXTRA_PLAYLIST_FILES[name]).unlink(missing_ok=True)
     return manifest
 
 
@@ -277,13 +321,17 @@ def validate_outputs(output: Path, config: dict, epg_url: str | None = None) -> 
     state = json.loads((output / 'data/sources.json').read_text(encoding='utf-8'))
     if set(state['providers']) != set(manifest['providers']):
         raise ValueError('缓存与清单中的运营商组合不一致')
+    extras = state.get('extra_playlists', {})
+    if set(extras) != set(manifest.get('extra_playlists', {})) or set(extras) - set(EXTRA_PLAYLIST_FILES):
+        raise ValueError('缓存与清单中的网络源列表不一致')
     header = playlist_header(epg_url)
     if manifest.get('epg_url') != epg_url:
         raise ValueError('清单中的 EPG 地址与项目配置不一致')
-    expected = {name + '.m3u' for name in manifest['providers']}
+    expected = {name + '.m3u' for name in manifest['providers']} | {Path(EXTRA_PLAYLIST_FILES[name]).name for name in extras}
     actual = {p.name for p in (output / 'm3u').glob('*.m3u')}
     if expected != actual:
         raise ValueError('输出有缺失文件或多余编号分卷')
+    if manifest['file_count'] != len(expected): raise ValueError('M3U 文件总数与清单不一致')
     total = 0
     classifier = Classifier(config)
     for provider, item in manifest['providers'].items():
@@ -301,6 +349,15 @@ def validate_outputs(output: Path, config: dict, epg_url: str | None = None) -> 
         if raw != expected_content.encode('utf-8'):
             raise ValueError('频道分组或线路选择与缓存不一致：' + provider)
         total += len(records)
+    for name, data in extras.items():
+        item = manifest['extra_playlists'][name]
+        relative = EXTRA_PLAYLIST_FILES[name]
+        raw = (output / relative).read_bytes()
+        content, stats = build_extra_playlist(data, classifier, epg_url)
+        if (raw != content.encode('utf-8') or item.get('file') != relative
+                or any(item.get(key) != value for key, value in stats.items()) or item['source'] != data['source']):
+            raise ValueError('网络源内容、缓存或清单不一致：' + name)
+        total += stats['channels']
     if total != manifest['total_channels']:
         raise ValueError('频道总数不一致')
     return {'files': len(actual), 'channels': total, 'split_files': False, 'playback_tested': False}
@@ -312,6 +369,7 @@ def main() -> int:
     modes.add_argument('--offline', action='store_true', help='使用随仓库保存的输入，完全离线重建')
     modes.add_argument('--source-dir', type=Path, help='导入本地 M3U 目录，无需 Git 仓库')
     modes.add_argument('--check', action='store_true', help='只校验输出文件、数量、哈希和分组')
+    modes.add_argument('--migu', action='store_true', help='同步咪咕列表，保留省份缓存并共用生成、校验流程')
     parser.add_argument('--output', type=Path, default=ROOT)
     parser.add_argument('--repository', help='用于订阅链接的 owner/repository；Actions 中自动识别')
     parser.add_argument('--branch', help='输出订阅地址的分支，默认使用 Actions 分支或项目配置')
@@ -323,23 +381,35 @@ def main() -> int:
         config = json.loads((ROOT / 'config/groups.json').read_text(encoding='utf-8'))
         project = json.loads((ROOT / 'config/project.json').read_text(encoding='utf-8'))
         branch = args.branch or os.getenv('GITHUB_REF_NAME') or project['branch']
-        if args.provinces and (args.offline or args.source_dir or args.check):
+        if args.provinces and (args.offline or args.source_dir or args.check or args.migu):
             raise ValueError('--provinces 只能用于在线源站采集')
-        if args.fresh and (args.offline or args.source_dir or args.check):
+        if args.fresh and (args.offline or args.source_dir or args.check or args.migu):
             raise ValueError('--fresh 只能用于在线源站采集')
         if args.check:
             print(json.dumps(validate_outputs(args.output, config, project['epg_url']), ensure_ascii=False))
             return 0
         state_root = ROOT if args.offline or args.source_dir else args.output.resolve()
         state_path = state_root / 'data/sources.json'
-        if state_path.exists() and not args.fresh:
+        if state_path.exists():
             state = json.loads(state_path.read_text(encoding='utf-8'))
+            if args.fresh:
+                state = {'schema_version': 1, 'providers': {}, 'extra_playlists': state.get('extra_playlists', {})}
         elif args.offline:
             raise ValueError('尚无数据缓存；请先在线采集或使用 --source-dir 导入 M3U')
         else:
             state = {'schema_version': 1, 'providers': {}}
         if args.source_dir:
             state = merge_source(state, read_source(args.source_dir))
+        elif args.migu:
+            from migu import fetch_migu
+            incoming = fetch_migu(json.loads((ROOT / 'config/migu.json').read_text(encoding='utf-8')))
+            previous = state.get('extra_playlists', {}).get('migu')
+            classifier = Classifier(config)
+            if (previous and build_extra_playlist(previous, classifier, project['epg_url'])[0]
+                    == build_extra_playlist(incoming, classifier, project['epg_url'])[0]):
+                print('[咪咕] 内容未变化，保留上次内容变更时间', flush=True)
+            else:
+                state.setdefault('extra_playlists', {})['migu'] = incoming
         elif not args.offline:
             source_config = json.loads((ROOT / 'config/source.json').read_text(encoding='utf-8'))
             state = apply_snapshot(state, fetch_source(source_config, args.provinces))
