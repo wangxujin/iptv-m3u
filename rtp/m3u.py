@@ -23,7 +23,7 @@ def provider_name(stem: str) -> str:
     return match.group(1) + match.group(2)
 
 
-def parse_extinf(line: str) -> tuple[str, dict]:
+def parse_extinf(line: str, repair_name_separator: bool = False) -> tuple[str, dict]:
     head = re.match(r'#EXTINF:-?\d+(?:\.\d+)?', line)
     if not head:
         raise ValueError('EXTINF 时长格式无效')
@@ -32,12 +32,14 @@ def parse_extinf(line: str) -> tuple[str, dict]:
         attributes[match.group(1).lower()] = match.group(2) if match.group(2) is not None else match.group(3)
         position = match.end()
     tail = line[position:].lstrip()
+    if repair_name_separator and attributes and tail and not tail.startswith(','):
+        tail = ',' + tail
     if not tail.startswith(',') or not tail[1:].strip():
         raise ValueError('EXTINF 缺少频道名称或分隔符')
     return tail[1:].strip(), attributes
 
 
-def parse_playlist(content: str) -> list[dict]:
+def parse_playlist(content: str, repair_name_separator: bool = False) -> list[dict]:
     lines = content.lstrip('\ufeff').splitlines()
     if not lines or not re.fullmatch(r'#EXTM3U(?:\s.*)?', lines[0].strip()):
         raise ValueError('缺少 #EXTM3U 文件头')
@@ -49,7 +51,7 @@ def parse_playlist(content: str) -> list[dict]:
         if line.startswith('#EXTINF:'):
             if pending is not None:
                 raise ValueError('频道缺少播放地址')
-            pending = parse_extinf(line)
+            pending = parse_extinf(line, repair_name_separator)
             options = []
         elif line.startswith(('#EXTVLCOPT:', '#KODIPROP:')) and pending:
             options.append(line)
@@ -190,8 +192,13 @@ def playlist_header(epg_url: str | None = None) -> str:
     return f'#EXTM3U x-tvg-url="{epg_url}"'
 
 
-def build_provider(records: list[dict], classifier: Classifier, epg_url: str | None = None) -> tuple[str, dict]:
+def build_provider(records: list[dict], classifier: Classifier, epg_url: str | None = None,
+                   preserve_groups: tuple[str, ...] = ()) -> tuple[str, dict]:
     """一个省份＋运营商始终只生成一个 M3U，不按来源、数量或字节数分卷。"""
+    def group_for(record):
+        source_group = record.get('attrs', {}).get('group-title', '')
+        return source_group if source_group in preserve_groups else classifier.classify(record['name'], source_group)
+
     by_url = {}
     invalid = duplicate = 0
     for record in records:
@@ -206,12 +213,12 @@ def build_provider(records: list[dict], classifier: Classifier, epg_url: str | N
             by_url[url] = record
     selected = {}
     for record in by_url.values():
-        key = channel_key(record['name'], classifier), quality_rank(record) >= 3
+        key = (channel_key(record['name'], classifier), quality_rank(record) >= 3,
+               group_for(record) if preserve_groups else '')
         if key not in selected or better_route(record, selected[key]):
             selected[key] = record
     channel_duplicates = len(by_url) - len(selected)
-    accepted = [(classifier.classify(record['name'], record.get('attrs', {}).get('group-title', '')), record)
-                for record in selected.values()]
+    accepted = [(group_for(record), record) for record in selected.values()]
     rank = {group: index for index, group in enumerate(classifier.order)}
     accepted.sort(key=lambda item: (rank.get(item[0], len(rank)), item[0],
                   natural_key(channel_key(item[1]['name'], classifier)), -quality_rank(item[1]), item[1]['url']))
@@ -231,7 +238,8 @@ def build_provider(records: list[dict], classifier: Classifier, epg_url: str | N
     stats = {'input_channels': len(records), 'channels': len(accepted),
              'duplicates_removed': duplicate + channel_duplicates, 'exact_url_duplicates_removed': duplicate,
              'channel_duplicates_removed': channel_duplicates,
-             'selection_policy': 'one_uhd_and_one_other_newest_update_multicast_tie', 'invalid_or_non_http_removed': invalid,
+             'selection_policy': ('one_uhd_and_one_other_per_group' if preserve_groups else
+                                  'one_uhd_and_one_other_newest_update_multicast_tie'), 'invalid_or_non_http_removed': invalid,
              'groups': dict(Counter(group for group, _ in accepted)), 'bytes': len(content.encode('utf-8')),
              'sha256': hashlib.sha256(content.encode('utf-8')).hexdigest()}
     return content, stats
