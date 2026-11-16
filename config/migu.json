@@ -1,0 +1,12 @@
+{
+  "sources": [
+    {"url": "https://raw.githubusercontent.com/ioptu/migu_video/main/migu.m3u"},
+    {
+      "url": "https://raw.githubusercontent.com/ioptu/migu_video/main/cctv.migu.m3u",
+      "group": "央视专版",
+      "repair_name_separator": true
+    }
+  ],
+  "timeout_seconds": 30,
+  "max_attempts": 3
+}
