@@ -665,9 +665,54 @@
   "unavailable_provinces": [],
   "protected_providers": [],
   "skipped_servers": [],
-  "file_count": 5,
+  "extra_playlists": {
+    "migu": {
+      "input_channels": 122,
+      "channels": 105,
+      "duplicates_removed": 17,
+      "exact_url_duplicates_removed": 17,
+      "channel_duplicates_removed": 0,
+      "selection_policy": "one_uhd_and_one_other_per_group",
+      "invalid_or_non_http_removed": 0,
+      "groups": {
+        "央视频道": 11,
+        "卫视频道": 20,
+        "体育频道": 3,
+        "港澳台": 4,
+        "少儿频道": 3,
+        "影视频道": 6,
+        "新闻频道": 14,
+        "其他": 27,
+        "央视专版": 17
+      },
+      "bytes": 99370,
+      "sha256": "d92d2cfd43b53b6c6db64a7fe804958ffaeb347c58a8754dcab402f5f8fd8770",
+      "file": "m3u/migu.m3u",
+      "source": {
+        "kind": "migu",
+        "sources": [
+          {
+            "url": "https://raw.githubusercontent.com/ioptu/migu_video/main/migu.m3u",
+            "sha256": "ca073eb1f863538ca2458bf33bd48180e70b2d448756a2714fbb6fabf835c451",
+            "channels": 105,
+            "bytes": 89198
+          },
+          {
+            "url": "https://raw.githubusercontent.com/ioptu/migu_video/main/cctv.migu.m3u",
+            "group": "央视专版",
+            "repair_name_separator": true,
+            "sha256": "96d795c70604b1c5763eacdffd0300beb54288cedab8b9490d19b843725f9267",
+            "channels": 17,
+            "bytes": 14026
+          }
+        ],
+        "fetched_at": "2026-11-16T12:14:55+00:00"
+      }
+    }
+  },
+  "file_count": 6,
   "province_count": 4,
-  "total_channels": 543,
+  "total_channels": 648,
   "current_provider_count": 5,
   "retained_provider_count": 0
 }

@@ -2,9 +2,11 @@
 
 当前输出 **4 个省份、5 份 M3U、543 条频道线路**。其中 5 份来自最近成功采集或导入，0 份保留历史来源。每个省份与运营商的组合只有一份文件。
 
+另有 **1 份网络源列表**，全部合计 6 份 M3U、648 条频道线路。
+
 本轮采集范围：北京、浙江、湖南、河北；只代表配置的分页范围。
 
-仅采集酒店和组播源；每个省份与运营商组合只输出一个 M3U。
+省份数据仅采集酒店和组播源，每个省份与运营商组合只输出一个 M3U；另同步咪咕到 m3u/migu.m3u。
 同一频道超高清与其他画质各保留一条，各档先按更新时间从新到旧选择，更新时间相同优先组播，再比较清晰度。
 分组按 超清体验、央视频道、卫视频道、体育频道、港澳台、少儿频道、影视频道、纪实频道、新闻频道等顺序规范。
 频道分类见 [config/groups.json](config/groups.json)，源站设置见 [config/source.json](config/source.json)，
@@ -19,6 +21,12 @@
 | 浙江电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B5%99%E6%B1%9F%E7%94%B5%E4%BF%A1.m3u) | 114 | 2026-11-16 13:20 | 源站直接采集 |
 | 浙江联通 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B5%99%E6%B1%9F%E8%81%94%E9%80%9A.m3u) | 42 | 2026-11-16 13:20 | 源站直接采集 |
 | 湖南电信 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/%E6%B9%96%E5%8D%97%E7%94%B5%E4%BF%A1.m3u) | 145 | 2026-11-16 13:20 | 源站直接采集 |
+
+## 网络源列表
+
+| 列表 | M3U | 频道线路 | 最近内容变更（北京时间） |
+|---|---|---:|---|
+| 咪咕 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/migu.m3u) | 105 | 2026-11-16 20:14 |
 
 ## 第 8 页仍无可用来源
 
@@ -36,13 +44,17 @@ python3 rtp/b.py           # 按 config/source.json 的 provinces 采集并生�
 python3 rtp/b.py --provinces 北京 河北 # 临时覆盖配置的省份
 python3 rtp/b.py --offline # 使用已有缓存重建
 python3 rtp/b.py --check   # 校验生成结果
+python3 rtp/b.py --migu    # 同步咪咕，复用现有缓存、清单和生成器
 python3 epg/update.py     # 按 1 → 3 → 2 合并 EPG
 python3 epg/update.py --check # 校验 epg.xml.gz
 ```
 
-频道列表计划在北京时间每两小时整点更新（00:00、02:00……22:00）；EPG 仅在 00:00、12:00 的定时任务中更新。
-EPG 按计划时段判断，不受实际启动时间延迟影响；同轮需更新 EPG 时先独立发布，再采集频道。
-手动触发或推送触发工作流时，两项都更新。
+咪咕和四省频道列表在北京时间每两小时整点更新；先同步咪咕，再采集四省。
+EPG 仅在 00:00、12:00 的定时任务中更新，顺序为咪咕 → EPG → 四省 M3U。
+EPG 按计划时段判断，不受实际启动延迟影响；手动或相关推送触发时三项都运行。
+咪咕配置见 config/migu.json，合并两份源到 m3u/migu.m3u，央视列表归入“央视专版”。
+咪咕常规频道使用现有规范分组，央视专版独立分组；组内复用两档线路优选，共用项目 EPG 地址。
+任何咪咕源下载、解析或地址校验失败都保留旧结果；内容不变时保留上次变更时间。
 GitHub schedule 显式设置 timezone: Asia/Shanghai，计划时间不等于实际启动时间，平台可能延迟。
 严格控制执行时间需使用自行管理的定时器及执行环境，单改 cron 或时区不能保证准点。
 来源顺序见 config/epg.json，同名频道合并，节目冲突优先保留前面的来源，后面的来源补齐空缺时段。
@@ -51,7 +63,8 @@ M3U 文件头引用项目配置中的 EPG 地址。
 
 首次成功采集后自动创建 data/、m3u/、manifest.json、epg.xml.gz 和本文件。采集失败不会清空已有结果。
 在线采集成功后自动删除本轮范围内确认没有可用来源的 M3U；仅接收新上线或存活 N 天，并复查详情状态。
-列表或详情无法唯一识别运营商时，记录日志并跳过该服务器。
+列表无法唯一识别运营商时跳过；详情归属缺失、未知或不完整时使用列表归属兜底，明确冲突仍跳过。
+成功来源在 servers 中记录 ownership_source（detail／list_fallback）及 detail_owner，状态和 M3U 继续校验。
 完整采集确认零可用来源时允许清空该范围；异常情况按以下规则处理。
 列表数量仅供参考，数量无效仍下载，下载数量不一致只提示；更新时间由列表、详情互补，两处均无效则跳过。
 单台归属冲突、缺少状态或频道入口、M3U 格式损坏时跳过，不占来源名额。
