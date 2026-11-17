@@ -226,7 +226,8 @@ def build_provider(records: list[dict], classifier: Classifier, epg_url: str | N
     for group, record in accepted:
         attrs = dict(record.get('attrs', {}))
         attrs.setdefault('tvg-id', record['name'])
-        attrs['group-title'] = group
+        if group or 'group-title' in attrs:
+            attrs['group-title'] = group
         keys = [key for key in ('tvg-id', 'tvg-name', 'tvg-logo', 'group-title') if key in attrs]
         keys += sorted(set(attrs) - set(keys))
         metadata = ' '.join(f'{key}="{clean_attribute(str(attrs[key]))}"' for key in keys)
