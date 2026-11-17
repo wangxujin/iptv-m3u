@@ -815,42 +815,59 @@
   "skipped_servers": [],
   "extra_playlists": {
     "migu": {
-      "input_channels": 122,
+      "input_channels": 105,
       "channels": 105,
-      "duplicates_removed": 17,
-      "exact_url_duplicates_removed": 17,
+      "duplicates_removed": 0,
+      "exact_url_duplicates_removed": 0,
       "channel_duplicates_removed": 0,
-      "selection_policy": "one_uhd_and_one_other_per_group",
+      "selection_policy": "first_success_by_name_upstream_order",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "央视": 11,
+        "央视": 28,
         "卫视": 20,
-        "其它": 57,
-        "央视专版": 17
+        "其它": 57
       },
-      "bytes": 99016,
-      "sha256": "68d39777c674f63e77984539b514d8f721325ffcf04419451f9804961b98fd97",
+      "bytes": 99217,
+      "sha256": "d65ae1b70747ec65db7ef3d88cc50019e1a35ccf802718637f596d02ad64e322",
       "file": "m3u/migu.m3u",
-      "group_policy": "source",
+      "group_policy": "migu_direct",
       "source": {
         "kind": "migu",
-        "sources": [
+        "mode": "direct",
+        "url": "https://program-sc.miguvideo.com/live/v2/tv-data/",
+        "proxy_url": "https://workspace.apipost.net/proxy/v2/http",
+        "categories": [
+          "央视",
+          "卫视",
+          "地方",
+          "体育",
+          "影视",
+          "少儿",
+          "新闻",
+          "教育",
+          "纪实"
+        ],
+        "catalogue_channels": 108,
+        "fetched_channels": 105,
+        "failed_channels": [
           {
-            "url": "https://raw.githubusercontent.com/ioptu/migu_video/main/migu.m3u",
-            "sha256": "ca073eb1f863538ca2458bf33bd48180e70b2d448756a2714fbb6fabf835c451",
-            "channels": 105,
-            "bytes": 89198
+            "name": "东南卫视",
+            "pid": "849116810",
+            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           },
           {
-            "url": "https://raw.githubusercontent.com/ioptu/migu_video/main/cctv.migu.m3u",
-            "group": "央视专版",
-            "repair_name_separator": true,
-            "sha256": "96d795c70604b1c5763eacdffd0300beb54288cedab8b9490d19b843725f9267",
-            "channels": 17,
-            "bytes": 14026
+            "name": "海峡卫视",
+            "pid": "849119120",
+            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
+          },
+          {
+            "name": "武术世界",
+            "pid": "958475359",
+            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           }
         ],
-        "fetched_at": "2026-11-17T02:05:36+00:00"
+        "failed_categories": [],
+        "fetched_at": "2026-11-17T03:44:46+00:00"
       }
     }
   },
