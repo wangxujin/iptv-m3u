@@ -60,8 +60,9 @@ python3 epg/update.py --check # 校验 epg.xml.gz
 EPG 仅在 00:00、12:00 的定时任务中更新，顺序为咪咕 → EPG → 四省 M3U。
 EPG 按计划时段判断，不受实际启动延迟影响；手动或相关推送触发时三项都运行。
 咪咕配置见 config/migu.json，合并两份源到 m3u/migu.m3u，央视列表归入“央视专版”。
-咪咕常规频道使用现有规范分组，央视专版独立分组；组内复用两档线路优选，共用项目 EPG 地址。
-任何咪咕源下载、解析或地址校验失败都保留旧结果；内容不变时保留上次变更时间。
+咪咕保留普通源原始 group-title，央视专用源设为“央视专版”；分组顺序按源中首次出现的顺序。
+咪咕分组独立于省份的分类、别名和菜单配置；共用项目 EPG 地址。
+咪咕每轮同步成功都刷新数据快照，包括频道内容未变化的情况；失败保留旧结果和上次快照。
 GitHub schedule 显式设置 timezone: Asia/Shanghai，计划时间不等于实际启动时间，平台可能延迟。
 严格控制执行时间需使用自行管理的定时器及执行环境，单改 cron 或时区不能保证准点。
 来源顺序见 config/epg.json，同名频道合并，节目冲突优先保留前面的来源，后面的来源补齐空缺时段。
@@ -195,7 +196,7 @@ def build_readme(template: str, manifest: dict, repository: str | None, branch: 
                f'{manifest["retained_provider_count"]} 份保留历史来源。每个省份与运营商的组合只有一份文件。')
     extra_rows = []
     if manifest.get('extra_playlists'):
-        extra_rows = ['## 网络源列表', '', '| 列表 | M3U | 频道线路 | 最近内容变更（北京时间） |', '|---|---|---:|---|']
+        extra_rows = ['## 网络源列表', '', '| 列表 | M3U | 频道线路 | 数据快照（北京时间） |', '|---|---|---:|---|']
         for name, item in manifest['extra_playlists'].items():
             relative = EXTRA_PLAYLIST_FILES[name]
             url = (f'https://raw.githubusercontent.com/{repository}/refs/heads/{quote(branch, safe="")}/' + quote(relative)
@@ -238,8 +239,9 @@ def build_readme(template: str, manifest: dict, repository: str | None, branch: 
             .replace('{{COVERAGE}}', '\n'.join(coverage)).replace('{{UNAVAILABLE}}', '\n'.join(unavailable)))
 
 
-def build_extra_playlist(data: dict, classifier: Classifier, epg_url: str | None):
-    groups = tuple(item['group'] for item in data['source']['sources'] if item.get('group'))
+def build_extra_playlist(data: dict, epg_url: str | None):
+    groups = tuple(dict.fromkeys(row.get('attrs', {}).get('group-title', '') for row in data['records']))
+    classifier = Classifier({'group_order': list(groups) or [''], 'aliases': {}})
     return build_provider(data['records'], classifier, epg_url, preserve_groups=groups)
 
 
@@ -268,11 +270,11 @@ def generate(state: dict, config: dict, output: Path, template: str, repository:
     extras = state.get('extra_playlists', {})
     if set(extras) - set(EXTRA_PLAYLIST_FILES): raise ValueError('缓存中存在未支持的网络源列表')
     for name, data in sorted(extras.items()):
-        content, stats = build_extra_playlist(data, classifier, epg_url)
+        content, stats = build_extra_playlist(data, epg_url)
         if not stats['channels']: raise ValueError(f'{name} 没有有效 HTTP(S) 频道，保留旧结果')
         relative = EXTRA_PLAYLIST_FILES[name]
         files[relative] = content
-        manifest.setdefault('extra_playlists', {})[name] = dict(stats, file=relative, source=data['source'])
+        manifest.setdefault('extra_playlists', {})[name] = dict(stats, file=relative, group_policy='source', source=data['source'])
     confirmed_empty = (state.get('source_policy') == ONLINE_POLICY
                        and state.get('last_sync', {}).get('kind') == 'website'
                        and state.get('last_sync', {}).get('checked_provinces'))
@@ -353,7 +355,14 @@ def validate_outputs(output: Path, config: dict, epg_url: str | None = None) -> 
         item = manifest['extra_playlists'][name]
         relative = EXTRA_PLAYLIST_FILES[name]
         raw = (output / relative).read_bytes()
-        content, stats = build_extra_playlist(data, classifier, epg_url)
+        if item.get('group_policy') == 'source':
+            content, stats = build_extra_playlist(data, epg_url)
+        elif 'group_policy' not in item:
+            # 旧清单仍按发布时的规则严格校验；下一次生成一律切换到源分组。
+            groups = tuple(row['group'] for row in data['source']['sources'] if row.get('group'))
+            content, stats = build_provider(data['records'], classifier, epg_url, preserve_groups=groups)
+        else:
+            raise ValueError('未知的网络源分组规则：' + name)
         if (raw != content.encode('utf-8') or item.get('file') != relative
                 or any(item.get(key) != value for key, value in stats.items()) or item['source'] != data['source']):
             raise ValueError('网络源内容、缓存或清单不一致：' + name)
@@ -404,12 +413,10 @@ def main() -> int:
             from migu import fetch_migu
             incoming = fetch_migu(json.loads((ROOT / 'config/migu.json').read_text(encoding='utf-8')))
             previous = state.get('extra_playlists', {}).get('migu')
-            classifier = Classifier(config)
-            if (previous and build_extra_playlist(previous, classifier, project['epg_url'])[0]
-                    == build_extra_playlist(incoming, classifier, project['epg_url'])[0]):
-                print('[咪咕] 内容未变化，保留上次内容变更时间', flush=True)
-            else:
-                state.setdefault('extra_playlists', {})['migu'] = incoming
+            if (previous and build_extra_playlist(previous, project['epg_url'])[0]
+                    == build_extra_playlist(incoming, project['epg_url'])[0]):
+                print('[咪咕] 频道内容未变化，本轮成功后更新数据快照', flush=True)
+            state.setdefault('extra_playlists', {})['migu'] = incoming
         elif not args.offline:
             source_config = json.loads((ROOT / 'config/source.json').read_text(encoding='utf-8'))
             state = apply_snapshot(state, fetch_source(source_config, args.provinces))
