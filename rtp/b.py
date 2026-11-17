@@ -59,9 +59,9 @@ python3 epg/update.py --check # 校验 epg.xml.gz
 咪咕和四省频道列表在北京时间每两小时整点更新；先同步咪咕，再采集四省。
 EPG 仅在 00:00、12:00 的定时任务中更新，顺序为咪咕 → EPG → 四省 M3U。
 EPG 按计划时段判断，不受实际启动延迟影响；手动或相关推送触发时三项都运行。
-咪咕配置见 config/migu.json，合并两份源到 m3u/migu.m3u，央视列表归入“央视专版”。
-咪咕保留普通源原始 group-title，央视专用源设为“央视专版”；分组顺序按源中首次出现的顺序。
-咪咕分组独立于省份的分类、别名和菜单配置；共用项目 EPG 地址。
+咪咕配置见 config/migu.json，通过咪咕目录、客户端签名和 ApiPost 代理取得播放地址。
+按央视、卫视、其它排序，同名频道保留首条成功线路，输出 m3u/migu.m3u。
+单台或单类失败后继续其他频道，全部失败保留旧文件；共用项目 EPG 地址。
 咪咕每轮同步成功都刷新数据快照，包括频道内容未变化的情况；失败保留旧结果和上次快照。
 GitHub schedule 显式设置 timezone: Asia/Shanghai，计划时间不等于实际启动时间，平台可能延迟。
 严格控制执行时间需使用自行管理的定时器及执行环境，单改 cron 或时区不能保证准点。
@@ -240,6 +240,10 @@ def build_readme(template: str, manifest: dict, repository: str | None, branch: 
 
 
 def build_extra_playlist(data: dict, epg_url: str | None):
+    if data['source'].get('mode') == 'direct':
+        from migu import build_playlist
+        return build_playlist(data['records'], epg_url)
+    # 已发布缓存按原规则重建，首次直采成功后即替换为新的取址与排序结果。
     groups = tuple(dict.fromkeys(row.get('attrs', {}).get('group-title', '') for row in data['records']))
     classifier = Classifier({'group_order': list(groups) or [''], 'aliases': {}})
     return build_provider(data['records'], classifier, epg_url, preserve_groups=groups)
@@ -274,7 +278,8 @@ def generate(state: dict, config: dict, output: Path, template: str, repository:
         if not stats['channels']: raise ValueError(f'{name} 没有有效 HTTP(S) 频道，保留旧结果')
         relative = EXTRA_PLAYLIST_FILES[name]
         files[relative] = content
-        manifest.setdefault('extra_playlists', {})[name] = dict(stats, file=relative, group_policy='source', source=data['source'])
+        policy = 'migu_direct' if data['source'].get('mode') == 'direct' else 'source'
+        manifest.setdefault('extra_playlists', {})[name] = dict(stats, file=relative, group_policy=policy, source=data['source'])
     confirmed_empty = (state.get('source_policy') == ONLINE_POLICY
                        and state.get('last_sync', {}).get('kind') == 'website'
                        and state.get('last_sync', {}).get('checked_provinces'))
@@ -355,7 +360,13 @@ def validate_outputs(output: Path, config: dict, epg_url: str | None = None) -> 
         item = manifest['extra_playlists'][name]
         relative = EXTRA_PLAYLIST_FILES[name]
         raw = (output / relative).read_bytes()
-        if item.get('group_policy') == 'source':
+        if item.get('group_policy') == 'migu_direct':
+            if data['source'].get('mode') != 'direct':
+                raise ValueError('咪咕清单与缓存的采集方式不一致')
+            content, stats = build_extra_playlist(data, epg_url)
+        elif data['source'].get('mode') == 'direct':
+            raise ValueError('咪咕直采缓存缺少对应的清单规则')
+        elif item.get('group_policy') == 'source':
             content, stats = build_extra_playlist(data, epg_url)
         elif 'group_policy' not in item:
             # 旧清单仍按发布时的规则严格校验；下一次生成一律切换到源分组。
