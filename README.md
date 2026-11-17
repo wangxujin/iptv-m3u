@@ -25,9 +25,9 @@
 
 ## 网络源列表
 
-| 列表 | M3U | 频道线路 | 最近内容变更（北京时间） |
+| 列表 | M3U | 频道线路 | 数据快照（北京时间） |
 |---|---|---:|---|
-| 咪咕 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/migu.m3u) | 105 | 2026-11-16 20:14 |
+| 咪咕 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/migu.m3u) | 105 | 2026-11-17 10:05 |
 
 ## 第 8 页仍无可用来源
 
@@ -54,8 +54,9 @@ python3 epg/update.py --check # 校验 epg.xml.gz
 EPG 仅在 00:00、12:00 的定时任务中更新，顺序为咪咕 → EPG → 四省 M3U。
 EPG 按计划时段判断，不受实际启动延迟影响；手动或相关推送触发时三项都运行。
 咪咕配置见 config/migu.json，合并两份源到 m3u/migu.m3u，央视列表归入“央视专版”。
-咪咕常规频道使用现有规范分组，央视专版独立分组；组内复用两档线路优选，共用项目 EPG 地址。
-任何咪咕源下载、解析或地址校验失败都保留旧结果；内容不变时保留上次变更时间。
+咪咕保留普通源原始 group-title，央视专用源设为“央视专版”；分组顺序按源中首次出现的顺序。
+咪咕分组独立于省份的分类、别名和菜单配置；共用项目 EPG 地址。
+咪咕每轮同步成功都刷新数据快照，包括频道内容未变化的情况；失败保留旧结果和上次快照。
 GitHub schedule 显式设置 timezone: Asia/Shanghai，计划时间不等于实际启动时间，平台可能延迟。
 严格控制执行时间需使用自行管理的定时器及执行环境，单改 cron 或时区不能保证准点。
 来源顺序见 config/epg.json，同名频道合并，节目冲突优先保留前面的来源，后面的来源补齐空缺时段。

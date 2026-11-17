@@ -823,19 +823,15 @@
       "selection_policy": "one_uhd_and_one_other_per_group",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "央视频道": 11,
-        "卫视频道": 20,
-        "体育频道": 3,
-        "港澳台": 4,
-        "少儿频道": 3,
-        "影视频道": 6,
-        "新闻频道": 14,
-        "其他": 27,
+        "央视": 11,
+        "卫视": 20,
+        "其它": 57,
         "央视专版": 17
       },
-      "bytes": 99370,
-      "sha256": "d92d2cfd43b53b6c6db64a7fe804958ffaeb347c58a8754dcab402f5f8fd8770",
+      "bytes": 99016,
+      "sha256": "68d39777c674f63e77984539b514d8f721325ffcf04419451f9804961b98fd97",
       "file": "m3u/migu.m3u",
+      "group_policy": "source",
       "source": {
         "kind": "migu",
         "sources": [
@@ -854,7 +850,7 @@
             "bytes": 14026
           }
         ],
-        "fetched_at": "2026-11-16T12:14:55+00:00"
+        "fetched_at": "2026-11-17T02:05:36+00:00"
       }
     }
   },
