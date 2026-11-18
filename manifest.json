@@ -801,8 +801,8 @@
   "skipped_servers": [],
   "extra_playlists": {
     "migu": {
-      "input_channels": 102,
-      "channels": 102,
+      "input_channels": 107,
+      "channels": 107,
       "duplicates_removed": 0,
       "exact_url_duplicates_removed": 0,
       "channel_duplicates_removed": 0,
@@ -810,11 +810,11 @@
       "invalid_or_non_http_removed": 0,
       "groups": {
         "央视": 28,
-        "卫视": 17,
-        "其它": 57
+        "卫视": 21,
+        "其它": 58
       },
-      "bytes": 96404,
-      "sha256": "915ac0a20690e146e9e689b80e99d23ca10bb3828b96b88a8d01cb40007384ad",
+      "bytes": 101094,
+      "sha256": "1ef09903a474daffb03208b04b9737a56b03e59ba16216c165584546f78e4dd8",
       "file": "m3u/migu.m3u",
       "group_policy": "migu_direct",
       "source": {
@@ -834,47 +834,22 @@
           "纪实"
         ],
         "catalogue_channels": 108,
-        "fetched_channels": 102,
+        "fetched_channels": 107,
         "failed_channels": [
-          {
-            "name": "江西卫视",
-            "pid": "783847495",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "陕西卫视",
-            "pid": "738910838",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "青海卫视",
-            "pid": "947472506",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
           {
             "name": "海峡卫视",
             "pid": "849119120",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "重庆卫视",
-            "pid": "738910914",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "体育休闲频道",
-            "pid": "626064707",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           }
         ],
         "failed_categories": [],
-        "fetched_at": "2026-11-18T12:33:29+00:00"
+        "fetched_at": "2026-11-18T15:17:52+00:00"
       }
     }
   },
   "file_count": 7,
   "province_count": 4,
-  "total_channels": 893,
+  "total_channels": 898,
   "current_provider_count": 6,
   "retained_provider_count": 0
 }
