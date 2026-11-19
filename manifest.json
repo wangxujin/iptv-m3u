@@ -800,20 +800,20 @@
   "skipped_servers": [],
   "extra_playlists": {
     "migu": {
-      "input_channels": 106,
-      "channels": 106,
+      "input_channels": 105,
+      "channels": 105,
       "duplicates_removed": 0,
       "exact_url_duplicates_removed": 0,
       "channel_duplicates_removed": 0,
       "selection_policy": "first_success_by_name_upstream_order",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "央视": 28,
+        "央视": 27,
         "卫视": 20,
         "其它": 58
       },
-      "bytes": 100147,
-      "sha256": "9b3b8a00080f624bb392b08f3c53d5afeff6b72b00d6235e8887acf802d74140",
+      "bytes": 99206,
+      "sha256": "d663e67c15be304fe92db4cddb728fe97c9d3c43dcd983c8c802d4b0529dcc06",
       "file": "m3u/migu.m3u",
       "group_policy": "migu_direct",
       "source": {
@@ -833,8 +833,13 @@
           "纪实"
         ],
         "catalogue_channels": 109,
-        "fetched_channels": 106,
+        "fetched_channels": 105,
         "failed_channels": [
+          {
+            "name": "CCTV10科教",
+            "pid": "624878405",
+            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
+          },
           {
             "name": "东南卫视",
             "pid": "849116810",
@@ -846,19 +851,19 @@
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           },
           {
-            "name": "体育休闲频道",
-            "pid": "626064707",
+            "name": "上视东方影视",
+            "pid": "617290047",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           }
         ],
         "failed_categories": [],
-        "fetched_at": "2026-11-19T17:09:33+00:00"
+        "fetched_at": "2026-11-19T22:52:35+00:00"
       }
     }
   },
   "file_count": 7,
   "province_count": 4,
-  "total_channels": 1120,
+  "total_channels": 1119,
   "current_provider_count": 6,
   "retained_provider_count": 0
 }
