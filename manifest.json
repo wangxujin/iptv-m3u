@@ -812,8 +812,8 @@
   "skipped_servers": [],
   "extra_playlists": {
     "migu": {
-      "input_channels": 105,
-      "channels": 105,
+      "input_channels": 107,
+      "channels": 107,
       "duplicates_removed": 0,
       "exact_url_duplicates_removed": 0,
       "channel_duplicates_removed": 0,
@@ -822,10 +822,10 @@
       "groups": {
         "央视": 28,
         "卫视": 20,
-        "其它": 57
+        "其它": 59
       },
-      "bytes": 99204,
-      "sha256": "2a1fa63d49f65865929d1cd9f80051cdf31620622fd54cbd046b10815d1283e7",
+      "bytes": 101089,
+      "sha256": "136049eb7205a9c9361f8ebba3ba1b9799406347e2eccab01ece1c3ac5064e09",
       "file": "m3u/migu.m3u",
       "group_policy": "migu_direct",
       "source": {
@@ -844,8 +844,8 @@
           "教育",
           "纪实"
         ],
-        "catalogue_channels": 108,
-        "fetched_channels": 105,
+        "catalogue_channels": 109,
+        "fetched_channels": 107,
         "failed_channels": [
           {
             "name": "东南卫视",
@@ -856,21 +856,16 @@
             "name": "海峡卫视",
             "pid": "849119120",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "上视东方影视",
-            "pid": "617290047",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           }
         ],
         "failed_categories": [],
-        "fetched_at": "2026-11-19T00:00:40+00:00"
+        "fetched_at": "2026-11-19T07:11:31+00:00"
       }
     }
   },
   "file_count": 7,
   "province_count": 4,
-  "total_channels": 1119,
+  "total_channels": 1121,
   "current_provider_count": 6,
   "retained_provider_count": 0
 }
