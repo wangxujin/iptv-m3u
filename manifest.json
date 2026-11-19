@@ -803,20 +803,20 @@
   "skipped_servers": [],
   "extra_playlists": {
     "migu": {
-      "input_channels": 104,
-      "channels": 104,
+      "input_channels": 105,
+      "channels": 105,
       "duplicates_removed": 0,
       "exact_url_duplicates_removed": 0,
       "channel_duplicates_removed": 0,
       "selection_policy": "first_success_by_name_upstream_order",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "央视": 27,
+        "央视": 28,
         "卫视": 20,
         "其它": 57
       },
-      "bytes": 98270,
-      "sha256": "4a85d4395f3e591aed43df616e2c225f55daac6604bb0ef7b6e876e6732697e7",
+      "bytes": 99204,
+      "sha256": "2a1fa63d49f65865929d1cd9f80051cdf31620622fd54cbd046b10815d1283e7",
       "file": "m3u/migu.m3u",
       "group_policy": "migu_direct",
       "source": {
@@ -836,13 +836,8 @@
           "纪实"
         ],
         "catalogue_channels": 108,
-        "fetched_channels": 104,
+        "fetched_channels": 105,
         "failed_channels": [
-          {
-            "name": "CCTV10科教",
-            "pid": "624878405",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
           {
             "name": "东南卫视",
             "pid": "849116810",
@@ -860,13 +855,13 @@
           }
         ],
         "failed_categories": [],
-        "fetched_at": "2026-11-18T22:49:30+00:00"
+        "fetched_at": "2026-11-19T00:00:40+00:00"
       }
     }
   },
   "file_count": 7,
   "province_count": 4,
-  "total_channels": 1124,
+  "total_channels": 1125,
   "current_provider_count": 6,
   "retained_provider_count": 0
 }
