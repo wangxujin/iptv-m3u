@@ -808,12 +808,12 @@
       "selection_policy": "first_success_by_name_upstream_order",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "央视": 28,
+        "央视": 27,
         "卫视": 20,
-        "其它": 58
+        "其它": 59
       },
-      "bytes": 100147,
-      "sha256": "7aedd8e2f5a16a07c395da112383822b050af052c27deeb51852effbf0a9f992",
+      "bytes": 99981,
+      "sha256": "fb1c876160f58b89b3daadb9edac16721a45f163462571736be3b7762fe8d979",
       "file": "m3u/migu.m3u",
       "group_policy": "migu_direct",
       "source": {
@@ -832,7 +832,7 @@
           "教育",
           "纪实"
         ],
-        "catalogue_channels": 109,
+        "catalogue_channels": 108,
         "fetched_channels": 106,
         "failed_channels": [
           {
@@ -841,18 +841,13 @@
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           },
           {
-            "name": "重庆卫视",
-            "pid": "738910914",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "体育休闲频道",
-            "pid": "626064707",
+            "name": "海峡卫视",
+            "pid": "849119120",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           }
         ],
         "failed_categories": [],
-        "fetched_at": "2026-11-20T00:23:25+00:00"
+        "fetched_at": "2026-11-20T09:48:03+00:00"
       }
     }
   },
