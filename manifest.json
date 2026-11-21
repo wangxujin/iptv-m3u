@@ -800,8 +800,8 @@
   "skipped_servers": [],
   "extra_playlists": {
     "migu": {
-      "input_channels": 103,
-      "channels": 103,
+      "input_channels": 105,
+      "channels": 105,
       "duplicates_removed": 0,
       "exact_url_duplicates_removed": 0,
       "channel_duplicates_removed": 0,
@@ -809,11 +809,11 @@
       "invalid_or_non_http_removed": 0,
       "groups": {
         "央视": 27,
-        "卫视": 18,
+        "卫视": 20,
         "其它": 58
       },
-      "bytes": 97150,
-      "sha256": "5ab166405668a1521ea888ebaa5e16831634e469ff3fc631d844896da97c6955",
+      "bytes": 99039,
+      "sha256": "9d74fe49619e7d06a71ebf87f6d96d1f3bdb8d017162313c27ec2b3f713db86f",
       "file": "m3u/migu.m3u",
       "group_policy": "migu_direct",
       "source": {
@@ -833,13 +833,8 @@
           "纪实"
         ],
         "catalogue_channels": 108,
-        "fetched_channels": 103,
+        "fetched_channels": 105,
         "failed_channels": [
-          {
-            "name": "广东卫视",
-            "pid": "608831231",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
           {
             "name": "东南卫视",
             "pid": "849116810",
@@ -851,24 +846,19 @@
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           },
           {
-            "name": "重庆卫视",
-            "pid": "738910914",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "上视东方影视",
-            "pid": "617290047",
+            "name": "体育休闲频道",
+            "pid": "626064707",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           }
         ],
         "failed_categories": [],
-        "fetched_at": "2026-11-20T22:28:23+00:00"
+        "fetched_at": "2026-11-21T01:09:18+00:00"
       }
     }
   },
   "file_count": 7,
   "province_count": 4,
-  "total_channels": 1117,
+  "total_channels": 1119,
   "current_provider_count": 6,
   "retained_provider_count": 0
 }
