@@ -800,20 +800,20 @@
   "skipped_servers": [],
   "extra_playlists": {
     "migu": {
-      "input_channels": 105,
-      "channels": 105,
+      "input_channels": 104,
+      "channels": 104,
       "duplicates_removed": 0,
       "exact_url_duplicates_removed": 0,
       "channel_duplicates_removed": 0,
       "selection_policy": "first_success_by_name_upstream_order",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "央视": 27,
-        "卫视": 19,
-        "其它": 59
+        "央视": 26,
+        "卫视": 20,
+        "其它": 58
       },
-      "bytes": 99064,
-      "sha256": "a22ff43899f90900f7e9b5fbaf144191b69ae78054683bc3348d7a16cd185b9b",
+      "bytes": 98107,
+      "sha256": "274cea4ae21ab5c038f4b9944205aa6a9de2d7e903cf2acd6f3c93ef64c8bcfb",
       "file": "m3u/migu.m3u",
       "group_policy": "migu_direct",
       "source": {
@@ -833,11 +833,16 @@
           "纪实"
         ],
         "catalogue_channels": 108,
-        "fetched_channels": 105,
+        "fetched_channels": 104,
         "failed_channels": [
           {
-            "name": "广东卫视",
-            "pid": "608831231",
+            "name": "CCTV10科教",
+            "pid": "624878405",
+            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
+          },
+          {
+            "name": "东南卫视",
+            "pid": "849116810",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           },
           {
@@ -846,19 +851,19 @@
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           },
           {
-            "name": "重庆卫视",
-            "pid": "738910914",
+            "name": "上视东方影视",
+            "pid": "617290047",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           }
         ],
         "failed_categories": [],
-        "fetched_at": "2026-11-22T21:26:52+00:00"
+        "fetched_at": "2026-11-22T23:22:32+00:00"
       }
     }
   },
   "file_count": 7,
   "province_count": 4,
-  "total_channels": 1119,
+  "total_channels": 1118,
   "current_provider_count": 6,
   "retained_provider_count": 0
 }
