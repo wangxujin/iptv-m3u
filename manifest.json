@@ -800,20 +800,20 @@
   "skipped_servers": [],
   "extra_playlists": {
     "migu": {
-      "input_channels": 97,
-      "channels": 97,
+      "input_channels": 106,
+      "channels": 106,
       "duplicates_removed": 0,
       "exact_url_duplicates_removed": 0,
       "channel_duplicates_removed": 0,
       "selection_policy": "first_success_by_name_upstream_order",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "央视": 26,
-        "卫视": 14,
-        "其它": 57
+        "央视": 27,
+        "卫视": 20,
+        "其它": 59
       },
-      "bytes": 91584,
-      "sha256": "1e62411b447ee1cb454fc251acfed71cf77d99c667ceb6f804dce2478062ccc3",
+      "bytes": 99962,
+      "sha256": "4b50a4daa6364ae5d15622a8f432c7557a1196e8468b3fe4accfee7d1db4dacb",
       "file": "m3u/migu.m3u",
       "group_policy": "migu_direct",
       "source": {
@@ -833,72 +833,27 @@
           "纪实"
         ],
         "catalogue_channels": 108,
-        "fetched_channels": 97,
+        "fetched_channels": 106,
         "failed_channels": [
-          {
-            "name": "CCTV10科教",
-            "pid": "624878405",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "东方卫视",
-            "pid": "651632648",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
           {
             "name": "广东卫视",
             "pid": "608831231",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           },
           {
-            "name": "江西卫视",
-            "pid": "783847495",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "陕西卫视",
-            "pid": "738910838",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "青海卫视",
-            "pid": "947472506",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "东南卫视",
-            "pid": "849116810",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
             "name": "海峡卫视",
             "pid": "849119120",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "重庆卫视",
-            "pid": "738910914",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "上视东方影视",
-            "pid": "617290047",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "体育休闲频道",
-            "pid": "626064707",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           }
         ],
         "failed_categories": [],
-        "fetched_at": "2026-11-22T12:12:15+00:00"
+        "fetched_at": "2026-11-22T14:18:09+00:00"
       }
     }
   },
   "file_count": 7,
   "province_count": 4,
-  "total_channels": 1111,
+  "total_channels": 1120,
   "current_provider_count": 6,
   "retained_provider_count": 0
 }
