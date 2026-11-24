@@ -800,8 +800,8 @@
   "skipped_servers": [],
   "extra_playlists": {
     "migu": {
-      "input_channels": 105,
-      "channels": 105,
+      "input_channels": 104,
+      "channels": 104,
       "duplicates_removed": 0,
       "exact_url_duplicates_removed": 0,
       "channel_duplicates_removed": 0,
@@ -809,11 +809,11 @@
       "invalid_or_non_http_removed": 0,
       "groups": {
         "央视": 27,
-        "卫视": 20,
+        "卫视": 19,
         "其它": 58
       },
-      "bytes": 99051,
-      "sha256": "9b8c1898a63b5bc60278e9366853db6b761368e55126db8bbce6bf80c7e1f8d0",
+      "bytes": 98124,
+      "sha256": "5b88b6ac77e2371748b508034e1b62cb0c1f6bf79bd6b6d649682a3a13ef6651",
       "file": "m3u/migu.m3u",
       "group_policy": "migu_direct",
       "source": {
@@ -833,7 +833,7 @@
           "纪实"
         ],
         "catalogue_channels": 108,
-        "fetched_channels": 105,
+        "fetched_channels": 104,
         "failed_channels": [
           {
             "name": "广东卫视",
@@ -841,8 +841,13 @@
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           },
           {
-            "name": "东南卫视",
-            "pid": "849116810",
+            "name": "海峡卫视",
+            "pid": "849119120",
+            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
+          },
+          {
+            "name": "重庆卫视",
+            "pid": "738910914",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           },
           {
@@ -852,13 +857,13 @@
           }
         ],
         "failed_categories": [],
-        "fetched_at": "2026-11-24T04:40:44+00:00"
+        "fetched_at": "2026-11-24T14:28:43+00:00"
       }
     }
   },
   "file_count": 7,
   "province_count": 4,
-  "total_channels": 1119,
+  "total_channels": 1118,
   "current_provider_count": 6,
   "retained_provider_count": 0
 }
