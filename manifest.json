@@ -815,20 +815,20 @@
   "skipped_servers": [],
   "extra_playlists": {
     "migu": {
-      "input_channels": 103,
-      "channels": 103,
+      "input_channels": 105,
+      "channels": 105,
       "duplicates_removed": 0,
       "exact_url_duplicates_removed": 0,
       "channel_duplicates_removed": 0,
       "selection_policy": "first_success_by_name_upstream_order",
       "invalid_or_non_http_removed": 0,
       "groups": {
-        "央视": 26,
+        "央视": 27,
         "卫视": 20,
-        "其它": 57
+        "其它": 58
       },
-      "bytes": 97186,
-      "sha256": "bc61d906bf48a25ddf8b4db87f4a3f23a15bc786e41335d42b95bb2acd661aca",
+      "bytes": 99051,
+      "sha256": "9b8c1898a63b5bc60278e9366853db6b761368e55126db8bbce6bf80c7e1f8d0",
       "file": "m3u/migu.m3u",
       "group_policy": "migu_direct",
       "source": {
@@ -848,11 +848,11 @@
           "纪实"
         ],
         "catalogue_channels": 108,
-        "fetched_channels": 103,
+        "fetched_channels": 105,
         "failed_channels": [
           {
-            "name": "CCTV10科教",
-            "pid": "624878405",
+            "name": "广东卫视",
+            "pid": "608831231",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           },
           {
@@ -861,29 +861,19 @@
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           },
           {
-            "name": "海峡卫视",
-            "pid": "849119120",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
             "name": "上视东方影视",
             "pid": "617290047",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "武术世界",
-            "pid": "958475359",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           }
         ],
         "failed_categories": [],
-        "fetched_at": "2026-11-24T02:43:54+00:00"
+        "fetched_at": "2026-11-24T04:40:44+00:00"
       }
     }
   },
   "file_count": 7,
   "province_count": 4,
-  "total_channels": 1123,
+  "total_channels": 1125,
   "current_provider_count": 6,
   "retained_provider_count": 0
 }
