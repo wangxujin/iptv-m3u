@@ -33,7 +33,7 @@
             "id": "32db6220",
             "type": "multicast",
             "channels": 141,
-            "updated_at": "2026-11-25 21:49:54",
+            "updated_at": "2026-11-26 05:18:54",
             "download_mode": "download",
             "response_bytes": 30335,
             "ownership_source": "detail",
@@ -49,7 +49,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-11-25T13:47:19+00:00",
+        "fetched_at": "2026-11-25T21:15:48+00:00",
         "checked_provinces": [
           "北京",
           "浙江",
@@ -71,12 +71,12 @@
           "requests": 38,
           "retries": 2,
           "http_429": 2,
-          "rate_recoveries": 0,
+          "rate_recoveries": 1,
           "stages": {
             "home": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 0.656,
+              "network_seconds": 0.592,
               "statuses": {
                 "200": 1
               },
@@ -85,7 +85,7 @@
             "script": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 0.456,
+              "network_seconds": 0.039,
               "statuses": {
                 "200": 1
               },
@@ -94,7 +94,7 @@
             "list": {
               "requests": 22,
               "retries": 2,
-              "network_seconds": 8.749,
+              "network_seconds": 7.075,
               "statuses": {
                 "200": 20,
                 "429": 2
@@ -104,7 +104,7 @@
             "detail": {
               "requests": 7,
               "retries": 0,
-              "network_seconds": 22.41,
+              "network_seconds": 7.893,
               "statuses": {
                 "200": 7
               },
@@ -113,7 +113,7 @@
             "m3u_download": {
               "requests": 7,
               "retries": 0,
-              "network_seconds": 9.194,
+              "network_seconds": 4.343,
               "statuses": {
                 "200": 7
               },
@@ -121,8 +121,8 @@
             }
           },
           "worker_wait_seconds": {
-            "rate_interval": 605.061,
-            "http_429": 225.536
+            "rate_interval": 511.957,
+            "http_429": 175.269
           },
           "cooldown_events": {
             "http_429": 2
@@ -132,8 +132,8 @@
               "success": 7
             }
           },
-          "current_interval_seconds": 15,
-          "elapsed_seconds": 476.32
+          "current_interval_seconds": 10.0,
+          "elapsed_seconds": 421.31
         }
       },
       "retained": false
@@ -157,20 +157,20 @@
         "新闻频道": 3,
         "其他": 42
       },
-      "bytes": 26091,
-      "sha256": "360676c1b339e8f77dc614983a5deca2d57baa5b312146a0f9e7606ccdb8a42b",
+      "bytes": 25821,
+      "sha256": "c14e09e5ab854969249720937e31f4340bf8002752f7a531515be4dea663a6d7",
       "source": {
         "servers": [
           {
-            "id": "b2df637c",
+            "id": "ddeb9e3e",
             "type": "multicast",
             "channels": 138,
-            "updated_at": "2026-11-25 21:50:14",
+            "updated_at": "2026-11-26 05:18:25",
             "download_mode": "download",
-            "response_bytes": 28704,
+            "response_bytes": 28428,
             "ownership_source": "detail",
             "detail_owner": "北京组播 北京联通",
-            "sha256": "cb979a312bf513280bf6ffba30526094d704acbc46845cea63adada6c5a72beb"
+            "sha256": "c93913fcc5c88660b5a44f199a34b683cec206ebc2f44b683fa352b3596e1d57"
           }
         ],
         "kind": "website",
@@ -181,7 +181,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-11-25T13:47:19+00:00",
+        "fetched_at": "2026-11-25T21:15:48+00:00",
         "checked_provinces": [
           "北京",
           "浙江",
@@ -203,12 +203,12 @@
           "requests": 38,
           "retries": 2,
           "http_429": 2,
-          "rate_recoveries": 0,
+          "rate_recoveries": 1,
           "stages": {
             "home": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 0.656,
+              "network_seconds": 0.592,
               "statuses": {
                 "200": 1
               },
@@ -217,7 +217,7 @@
             "script": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 0.456,
+              "network_seconds": 0.039,
               "statuses": {
                 "200": 1
               },
@@ -226,7 +226,7 @@
             "list": {
               "requests": 22,
               "retries": 2,
-              "network_seconds": 8.749,
+              "network_seconds": 7.075,
               "statuses": {
                 "200": 20,
                 "429": 2
@@ -236,7 +236,7 @@
             "detail": {
               "requests": 7,
               "retries": 0,
-              "network_seconds": 22.41,
+              "network_seconds": 7.893,
               "statuses": {
                 "200": 7
               },
@@ -245,7 +245,7 @@
             "m3u_download": {
               "requests": 7,
               "retries": 0,
-              "network_seconds": 9.194,
+              "network_seconds": 4.343,
               "statuses": {
                 "200": 7
               },
@@ -253,8 +253,8 @@
             }
           },
           "worker_wait_seconds": {
-            "rate_interval": 605.061,
-            "http_429": 225.536
+            "rate_interval": 511.957,
+            "http_429": 175.269
           },
           "cooldown_events": {
             "http_429": 2
@@ -264,8 +264,8 @@
               "success": 7
             }
           },
-          "current_interval_seconds": 15,
-          "elapsed_seconds": 476.32
+          "current_interval_seconds": 10.0,
+          "elapsed_seconds": 421.31
         }
       },
       "retained": false
@@ -291,19 +291,19 @@
         "其他": 193
       },
       "bytes": 57857,
-      "sha256": "59f94e3a6e44a8b75c2ae69e9b0c12afc2f5c461f0572ce12cf80c2fece72bce",
+      "sha256": "1efc5cb397fdc289b93337fba32330a8a710de8e1ad79c88b2f75d54e36db18a",
       "source": {
         "servers": [
           {
-            "id": "9d25cb20",
+            "id": "23f2fc6c",
             "type": "multicast",
             "channels": 310,
-            "updated_at": "2026-11-25 21:45:25",
+            "updated_at": "2026-11-26 05:22:35",
             "download_mode": "download",
-            "response_bytes": 68802,
+            "response_bytes": 69732,
             "ownership_source": "detail",
-            "detail_owner": "河北邯郸组播 河北电信",
-            "sha256": "650c89e7ef9e97563271f7b2738d6ec29256787c6d9084a19f1cf2a9a48cf78e"
+            "detail_owner": "河北石家庄组播 河北电信",
+            "sha256": "467717e9a4488859a9c1f71410755c86c22ea06fb0b9a2655ed569150d158af9"
           }
         ],
         "kind": "website",
@@ -314,7 +314,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-11-25T13:47:19+00:00",
+        "fetched_at": "2026-11-25T21:15:48+00:00",
         "checked_provinces": [
           "北京",
           "浙江",
@@ -336,12 +336,12 @@
           "requests": 38,
           "retries": 2,
           "http_429": 2,
-          "rate_recoveries": 0,
+          "rate_recoveries": 1,
           "stages": {
             "home": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 0.656,
+              "network_seconds": 0.592,
               "statuses": {
                 "200": 1
               },
@@ -350,7 +350,7 @@
             "script": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 0.456,
+              "network_seconds": 0.039,
               "statuses": {
                 "200": 1
               },
@@ -359,7 +359,7 @@
             "list": {
               "requests": 22,
               "retries": 2,
-              "network_seconds": 8.749,
+              "network_seconds": 7.075,
               "statuses": {
                 "200": 20,
                 "429": 2
@@ -369,7 +369,7 @@
             "detail": {
               "requests": 7,
               "retries": 0,
-              "network_seconds": 22.41,
+              "network_seconds": 7.893,
               "statuses": {
                 "200": 7
               },
@@ -378,7 +378,7 @@
             "m3u_download": {
               "requests": 7,
               "retries": 0,
-              "network_seconds": 9.194,
+              "network_seconds": 4.343,
               "statuses": {
                 "200": 7
               },
@@ -386,8 +386,8 @@
             }
           },
           "worker_wait_seconds": {
-            "rate_interval": 605.061,
-            "http_429": 225.536
+            "rate_interval": 511.957,
+            "http_429": 175.269
           },
           "cooldown_events": {
             "http_429": 2
@@ -397,8 +397,8 @@
               "success": 7
             }
           },
-          "current_interval_seconds": 15,
-          "elapsed_seconds": 476.32
+          "current_interval_seconds": 10.0,
+          "elapsed_seconds": 421.31
         }
       },
       "retained": false
@@ -423,20 +423,20 @@
         "新闻频道": 14,
         "其他": 208
       },
-      "bytes": 58024,
-      "sha256": "8d4635ef0c0e8a03782ecfdee2011dbd65eceacf1a412891aa959909b26bc751",
+      "bytes": 57730,
+      "sha256": "bb19ffff9a76181096b8d5ff68134b03e4338600bc6add3ac0fae6f9554f1bb3",
       "source": {
         "servers": [
           {
-            "id": "0b9acd40",
+            "id": "ef4ed662",
             "type": "multicast",
             "channels": 313,
-            "updated_at": "2026-11-25 21:54:57",
+            "updated_at": "2026-11-26 05:22:16",
             "download_mode": "download",
-            "response_bytes": 69880,
+            "response_bytes": 68628,
             "ownership_source": "detail",
-            "detail_owner": "河北石家庄组播 河北联通",
-            "sha256": "c2229b308bfa1adb3a5623e83f8ef90527d6dcf54d3dafeeff83e11240090a7c"
+            "detail_owner": "河北保定组播 河北联通",
+            "sha256": "77ff0ec919408caa21e5d2cff64df5a8bd89f8afd0096b44f48840798df2ae5c"
           }
         ],
         "kind": "website",
@@ -447,7 +447,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-11-25T13:47:19+00:00",
+        "fetched_at": "2026-11-25T21:15:48+00:00",
         "checked_provinces": [
           "北京",
           "浙江",
@@ -469,12 +469,12 @@
           "requests": 38,
           "retries": 2,
           "http_429": 2,
-          "rate_recoveries": 0,
+          "rate_recoveries": 1,
           "stages": {
             "home": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 0.656,
+              "network_seconds": 0.592,
               "statuses": {
                 "200": 1
               },
@@ -483,7 +483,7 @@
             "script": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 0.456,
+              "network_seconds": 0.039,
               "statuses": {
                 "200": 1
               },
@@ -492,7 +492,7 @@
             "list": {
               "requests": 22,
               "retries": 2,
-              "network_seconds": 8.749,
+              "network_seconds": 7.075,
               "statuses": {
                 "200": 20,
                 "429": 2
@@ -502,7 +502,7 @@
             "detail": {
               "requests": 7,
               "retries": 0,
-              "network_seconds": 22.41,
+              "network_seconds": 7.893,
               "statuses": {
                 "200": 7
               },
@@ -511,7 +511,7 @@
             "m3u_download": {
               "requests": 7,
               "retries": 0,
-              "network_seconds": 9.194,
+              "network_seconds": 4.343,
               "statuses": {
                 "200": 7
               },
@@ -519,8 +519,8 @@
             }
           },
           "worker_wait_seconds": {
-            "rate_interval": 605.061,
-            "http_429": 225.536
+            "rate_interval": 511.957,
+            "http_429": 175.269
           },
           "cooldown_events": {
             "http_429": 2
@@ -530,8 +530,8 @@
               "success": 7
             }
           },
-          "current_interval_seconds": 15,
-          "elapsed_seconds": 476.32
+          "current_interval_seconds": 10.0,
+          "elapsed_seconds": 421.31
         }
       },
       "retained": false
@@ -555,20 +555,20 @@
         "新闻频道": 6,
         "其他": 34
       },
-      "bytes": 22110,
-      "sha256": "a5613d68f0fa59cc09f25cae7cf1754e669a906b046962135e2c90d8030904af",
+      "bytes": 22452,
+      "sha256": "030c62be862d71b35522e1e7891da4d56a9721de27f943932b4e0b5a962a67d6",
       "source": {
         "servers": [
           {
-            "id": "eed27000",
+            "id": "9d352f5c",
             "type": "multicast",
             "channels": 199,
-            "updated_at": "2026-11-25 21:49:14",
+            "updated_at": "2026-11-26 05:17:55",
             "download_mode": "download",
-            "response_bytes": 42225,
+            "response_bytes": 42822,
             "ownership_source": "detail",
-            "detail_owner": "浙江温州组播 浙江电信",
-            "sha256": "b31b6273b19830898712b8ecf1d5389bc02787b4de3401e550522033d0a59bd9"
+            "detail_owner": "浙江宁波组播 浙江电信",
+            "sha256": "923cfea48ee8fd9c4424242c25ae17cddb95b62586cbd98cac31d28fda567abc"
           }
         ],
         "kind": "website",
@@ -579,7 +579,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-11-25T13:47:19+00:00",
+        "fetched_at": "2026-11-25T21:15:48+00:00",
         "checked_provinces": [
           "北京",
           "浙江",
@@ -601,12 +601,12 @@
           "requests": 38,
           "retries": 2,
           "http_429": 2,
-          "rate_recoveries": 0,
+          "rate_recoveries": 1,
           "stages": {
             "home": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 0.656,
+              "network_seconds": 0.592,
               "statuses": {
                 "200": 1
               },
@@ -615,7 +615,7 @@
             "script": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 0.456,
+              "network_seconds": 0.039,
               "statuses": {
                 "200": 1
               },
@@ -624,7 +624,7 @@
             "list": {
               "requests": 22,
               "retries": 2,
-              "network_seconds": 8.749,
+              "network_seconds": 7.075,
               "statuses": {
                 "200": 20,
                 "429": 2
@@ -634,7 +634,7 @@
             "detail": {
               "requests": 7,
               "retries": 0,
-              "network_seconds": 22.41,
+              "network_seconds": 7.893,
               "statuses": {
                 "200": 7
               },
@@ -643,7 +643,7 @@
             "m3u_download": {
               "requests": 7,
               "retries": 0,
-              "network_seconds": 9.194,
+              "network_seconds": 4.343,
               "statuses": {
                 "200": 7
               },
@@ -651,8 +651,8 @@
             }
           },
           "worker_wait_seconds": {
-            "rate_interval": 605.061,
-            "http_429": 225.536
+            "rate_interval": 511.957,
+            "http_429": 175.269
           },
           "cooldown_events": {
             "http_429": 2
@@ -662,8 +662,8 @@
               "success": 7
             }
           },
-          "current_interval_seconds": 15,
-          "elapsed_seconds": 476.32
+          "current_interval_seconds": 10.0,
+          "elapsed_seconds": 421.31
         }
       },
       "retained": false
@@ -688,7 +688,7 @@
             "id": "a4eab08f",
             "type": "hotel",
             "channels": 36,
-            "updated_at": "2026-11-25 21:50:25",
+            "updated_at": "2026-11-26 05:18:45",
             "download_mode": "download",
             "response_bytes": 9332,
             "ownership_source": "detail",
@@ -704,7 +704,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-11-25T13:47:19+00:00",
+        "fetched_at": "2026-11-25T21:15:48+00:00",
         "checked_provinces": [
           "北京",
           "浙江",
@@ -726,12 +726,12 @@
           "requests": 38,
           "retries": 2,
           "http_429": 2,
-          "rate_recoveries": 0,
+          "rate_recoveries": 1,
           "stages": {
             "home": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 0.656,
+              "network_seconds": 0.592,
               "statuses": {
                 "200": 1
               },
@@ -740,7 +740,7 @@
             "script": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 0.456,
+              "network_seconds": 0.039,
               "statuses": {
                 "200": 1
               },
@@ -749,7 +749,7 @@
             "list": {
               "requests": 22,
               "retries": 2,
-              "network_seconds": 8.749,
+              "network_seconds": 7.075,
               "statuses": {
                 "200": 20,
                 "429": 2
@@ -759,7 +759,7 @@
             "detail": {
               "requests": 7,
               "retries": 0,
-              "network_seconds": 22.41,
+              "network_seconds": 7.893,
               "statuses": {
                 "200": 7
               },
@@ -768,7 +768,7 @@
             "m3u_download": {
               "requests": 7,
               "retries": 0,
-              "network_seconds": 9.194,
+              "network_seconds": 4.343,
               "statuses": {
                 "200": 7
               },
@@ -776,8 +776,8 @@
             }
           },
           "worker_wait_seconds": {
-            "rate_interval": 605.061,
-            "http_429": 225.536
+            "rate_interval": 511.957,
+            "http_429": 175.269
           },
           "cooldown_events": {
             "http_429": 2
@@ -787,8 +787,8 @@
               "success": 7
             }
           },
-          "current_interval_seconds": 15,
-          "elapsed_seconds": 476.32
+          "current_interval_seconds": 10.0,
+          "elapsed_seconds": 421.31
         }
       },
       "retained": false
@@ -821,7 +821,7 @@
             "id": "3ff4cf57",
             "type": "multicast",
             "channels": 330,
-            "updated_at": "2026-11-25 21:52:05",
+            "updated_at": "2026-11-26 05:20:25",
             "download_mode": "download",
             "response_bytes": 71697,
             "ownership_source": "detail",
@@ -837,7 +837,7 @@
           "multicast"
         ],
         "selection_policy": "one_server_per_provider_multicast_first_newest_within_type",
-        "fetched_at": "2026-11-25T13:47:19+00:00",
+        "fetched_at": "2026-11-25T21:15:48+00:00",
         "checked_provinces": [
           "北京",
           "浙江",
@@ -859,12 +859,12 @@
           "requests": 38,
           "retries": 2,
           "http_429": 2,
-          "rate_recoveries": 0,
+          "rate_recoveries": 1,
           "stages": {
             "home": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 0.656,
+              "network_seconds": 0.592,
               "statuses": {
                 "200": 1
               },
@@ -873,7 +873,7 @@
             "script": {
               "requests": 1,
               "retries": 0,
-              "network_seconds": 0.456,
+              "network_seconds": 0.039,
               "statuses": {
                 "200": 1
               },
@@ -882,7 +882,7 @@
             "list": {
               "requests": 22,
               "retries": 2,
-              "network_seconds": 8.749,
+              "network_seconds": 7.075,
               "statuses": {
                 "200": 20,
                 "429": 2
@@ -892,7 +892,7 @@
             "detail": {
               "requests": 7,
               "retries": 0,
-              "network_seconds": 22.41,
+              "network_seconds": 7.893,
               "statuses": {
                 "200": 7
               },
@@ -901,7 +901,7 @@
             "m3u_download": {
               "requests": 7,
               "retries": 0,
-              "network_seconds": 9.194,
+              "network_seconds": 4.343,
               "statuses": {
                 "200": 7
               },
@@ -909,8 +909,8 @@
             }
           },
           "worker_wait_seconds": {
-            "rate_interval": 605.061,
-            "http_429": 225.536
+            "rate_interval": 511.957,
+            "http_429": 175.269
           },
           "cooldown_events": {
             "http_429": 2
@@ -920,8 +920,8 @@
               "success": 7
             }
           },
-          "current_interval_seconds": 15,
-          "elapsed_seconds": 476.32
+          "current_interval_seconds": 10.0,
+          "elapsed_seconds": 421.31
         }
       },
       "retained": false
