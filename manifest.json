@@ -932,8 +932,8 @@
   "skipped_servers": [],
   "extra_playlists": {
     "migu": {
-      "input_channels": 104,
-      "channels": 104,
+      "input_channels": 103,
+      "channels": 103,
       "duplicates_removed": 0,
       "exact_url_duplicates_removed": 0,
       "channel_duplicates_removed": 0,
@@ -942,10 +942,10 @@
       "groups": {
         "央视": 27,
         "卫视": 20,
-        "其它": 57
+        "其它": 56
       },
-      "bytes": 98098,
-      "sha256": "d50a6bbf47ca6827c618bf93953912c6c651977679b9dfe3a10e7609588b8d97",
+      "bytes": 97186,
+      "sha256": "c224987e8e915db1c2fff35f3dc75d422d33a4b6b1e9f623922f6d0cbf318603",
       "file": "m3u/migu.m3u",
       "group_policy": "migu_direct",
       "source": {
@@ -965,7 +965,7 @@
           "纪实"
         ],
         "catalogue_channels": 108,
-        "fetched_channels": 104,
+        "fetched_channels": 103,
         "failed_channels": [
           {
             "name": "东南卫视",
@@ -983,19 +983,24 @@
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           },
           {
+            "name": "武术世界",
+            "pid": "958475359",
+            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
+          },
+          {
             "name": "南方影视",
             "pid": "614961829",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           }
         ],
         "failed_categories": [],
-        "fetched_at": "2026-11-25T00:17:56+00:00"
+        "fetched_at": "2026-11-25T01:59:18+00:00"
       }
     }
   },
   "file_count": 8,
   "province_count": 4,
-  "total_channels": 1258,
+  "total_channels": 1257,
   "current_provider_count": 7,
   "retained_provider_count": 0
 }
