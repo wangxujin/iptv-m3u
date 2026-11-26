@@ -1077,11 +1077,11 @@
       "invalid_or_non_http_removed": 0,
       "groups": {
         "央视": 27,
-        "卫视": 21,
-        "其它": 58
+        "卫视": 20,
+        "其它": 59
       },
-      "bytes": 100014,
-      "sha256": "ca1c6a877caf2c11d02289f39de45dc7270425d46c92ab6c02bf00cc2e5aa904",
+      "bytes": 100023,
+      "sha256": "66fd4083232c17b37e51d031915c6b83c7a558e57c04b85ef9864b80822e261d",
       "file": "m3u/migu.m3u",
       "group_policy": "migu_direct",
       "source": {
@@ -1104,18 +1104,18 @@
         "fetched_channels": 106,
         "failed_channels": [
           {
-            "name": "青海卫视",
-            "pid": "947472506",
+            "name": "东南卫视",
+            "pid": "849116810",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           },
           {
-            "name": "上视东方影视",
-            "pid": "617290047",
+            "name": "重庆卫视",
+            "pid": "738910914",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           }
         ],
         "failed_categories": [],
-        "fetched_at": "2026-11-26T13:26:50+00:00"
+        "fetched_at": "2026-11-26T16:33:41+00:00"
       }
     }
   },

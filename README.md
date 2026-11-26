@@ -29,7 +29,7 @@
 
 | 列表 | M3U | 频道线路 | 数据快照（北京时间） |
 |---|---|---:|---|
-| 咪咕 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/migu.m3u) | 106 | 2026-11-26 21:26 |
+| 咪咕 | [M3U](https://raw.githubusercontent.com/wangxujin/iptv-m3u/refs/heads/main/m3u/migu.m3u) | 106 | 2026-11-27 00:33 |
 
 ## 第 8 页仍无可用来源
 
