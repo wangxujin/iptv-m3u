@@ -1077,11 +1077,11 @@
       "invalid_or_non_http_removed": 0,
       "groups": {
         "央视": 27,
-        "卫视": 22,
-        "其它": 57
+        "卫视": 21,
+        "其它": 58
       },
-      "bytes": 99983,
-      "sha256": "8449ff9ef74c5000b3037ef201cfa9d6cea33d940ffc3a5de55c87bf24754635",
+      "bytes": 100014,
+      "sha256": "ca1c6a877caf2c11d02289f39de45dc7270425d46c92ab6c02bf00cc2e5aa904",
       "file": "m3u/migu.m3u",
       "group_policy": "migu_direct",
       "source": {
@@ -1104,18 +1104,18 @@
         "fetched_channels": 106,
         "failed_channels": [
           {
-            "name": "上视东方影视",
-            "pid": "617290047",
+            "name": "青海卫视",
+            "pid": "947472506",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           },
           {
-            "name": "武术世界",
-            "pid": "958475359",
+            "name": "上视东方影视",
+            "pid": "617290047",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           }
         ],
         "failed_categories": [],
-        "fetched_at": "2026-11-26T03:59:49+00:00"
+        "fetched_at": "2026-11-26T13:26:50+00:00"
       }
     }
   },
