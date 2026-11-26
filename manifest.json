@@ -935,8 +935,8 @@
   "skipped_servers": [],
   "extra_playlists": {
     "migu": {
-      "input_channels": 104,
-      "channels": 104,
+      "input_channels": 106,
+      "channels": 106,
       "duplicates_removed": 0,
       "exact_url_duplicates_removed": 0,
       "channel_duplicates_removed": 0,
@@ -944,11 +944,11 @@
       "invalid_or_non_http_removed": 0,
       "groups": {
         "央视": 27,
-        "卫视": 19,
-        "其它": 58
+        "卫视": 22,
+        "其它": 57
       },
-      "bytes": 98119,
-      "sha256": "a7846db236f79041b6cdc5cbc0ac8b3a0e23eb0c9388ae8e03002aab64b93e0e",
+      "bytes": 99983,
+      "sha256": "8449ff9ef74c5000b3037ef201cfa9d6cea33d940ffc3a5de55c87bf24754635",
       "file": "m3u/migu.m3u",
       "group_policy": "migu_direct",
       "source": {
@@ -968,37 +968,27 @@
           "纪实"
         ],
         "catalogue_channels": 108,
-        "fetched_channels": 104,
+        "fetched_channels": 106,
         "failed_channels": [
-          {
-            "name": "东南卫视",
-            "pid": "849116810",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "海峡卫视",
-            "pid": "849119120",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "重庆卫视",
-            "pid": "738910914",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
           {
             "name": "上视东方影视",
             "pid": "617290047",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
+          },
+          {
+            "name": "武术世界",
+            "pid": "958475359",
+            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           }
         ],
         "failed_categories": [],
-        "fetched_at": "2026-11-25T23:56:50+00:00"
+        "fetched_at": "2026-11-26T03:59:49+00:00"
       }
     }
   },
   "file_count": 8,
   "province_count": 4,
-  "total_channels": 1264,
+  "total_channels": 1266,
   "current_provider_count": 7,
   "retained_provider_count": 0
 }
