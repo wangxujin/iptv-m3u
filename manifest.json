@@ -1068,8 +1068,8 @@
   "skipped_servers": [],
   "extra_playlists": {
     "migu": {
-      "input_channels": 108,
-      "channels": 108,
+      "input_channels": 107,
+      "channels": 107,
       "duplicates_removed": 0,
       "exact_url_duplicates_removed": 0,
       "channel_duplicates_removed": 0,
@@ -1078,10 +1078,10 @@
       "groups": {
         "央视": 27,
         "卫视": 22,
-        "其它": 59
+        "其它": 58
       },
-      "bytes": 101865,
-      "sha256": "a1503834ea9f879062529297063c684a1e1adfa6d0cca568f250f0cc4cbb16cc",
+      "bytes": 100916,
+      "sha256": "7c913b8481049e0461beb3de88124c388dfed29575bf7ac557b5102bb8f4d4a8",
       "file": "m3u/migu.m3u",
       "group_policy": "migu_direct",
       "source": {
@@ -1101,16 +1101,22 @@
           "纪实"
         ],
         "catalogue_channels": 108,
-        "fetched_channels": 108,
-        "failed_channels": [],
+        "fetched_channels": 107,
+        "failed_channels": [
+          {
+            "name": "上视东方影视",
+            "pid": "617290047",
+            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
+          }
+        ],
         "failed_categories": [],
-        "fetched_at": "2026-11-27T10:37:50+00:00"
+        "fetched_at": "2026-11-27T13:23:37+00:00"
       }
     }
   },
   "file_count": 9,
   "province_count": 4,
-  "total_channels": 1411,
+  "total_channels": 1410,
   "current_provider_count": 8,
   "retained_provider_count": 0
 }
