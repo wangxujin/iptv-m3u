@@ -22768,7 +22768,7 @@
       "records": [
         {
           "name": "CCTV1综合",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/cctv/cctv1hd/1200/index.m3u8?msisdn=81e6dac8eb8d8bac5dc67e88eaf777c0&mdspid=&spid=699004&netType=0&sid=2201057821&pid=2028597139&timestamp=20261128075152&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=608807420&ParentNodeID=-99&assertID=2201057821&client_ip=8.142.213.0&SecurityKey=20261128075152&promotionId=&mvid=2201057821&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=7ba42a97d5e748df28b734266cd69fc7&ddCalcu=77cbvfaa94y62adac9676d254e3774b88d2f&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/cctv/cctv1hd/1200/index.m3u8?msisdn=8c79da0237983c925d717e6119349fff&mdspid=&spid=699004&netType=0&sid=2201057821&pid=2028597139&timestamp=20261128114626&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=608807420&ParentNodeID=-99&assertID=2201057821&client_ip=39.103.155.149&SecurityKey=20261128114626&promotionId=&mvid=2201057821&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=e08cddc14e813d864da046b5e87376dd&ddCalcu=ded0v68a7cy3da7d8ce154be684103add846&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV1综合",
@@ -22781,7 +22781,7 @@
         },
         {
           "name": "CCTV2财经",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/cctv/cctv2hd/1500/index.m3u8?msisdn=19ba4f8420088b36fa22293239362b58&mdspid=&spid=699004&netType=0&sid=5500346945&pid=2028597139&timestamp=20261128075152&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=631780532&ParentNodeID=-99&assertID=5500346945&client_ip=8.142.213.0&SecurityKey=20261128075152&promotionId=&mvid=5101064231&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=684bfe3aef217dcf84f60e38d00df16d&ddCalcu=d668v14afbzdfa0e03da8e3fe20167fd4c8f&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/cctv/cctv2hd/1500/index.m3u8?msisdn=b50846b714d872c3b8951ce6d2944853&mdspid=&spid=699004&netType=0&sid=5500346945&pid=2028597139&timestamp=20261128114625&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=631780532&ParentNodeID=-99&assertID=5500346945&client_ip=39.103.155.149&SecurityKey=20261128114625&promotionId=&mvid=5101064231&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=88125f46261311963ade1392649ae0b6&ddCalcu=68b8v01ae2za5a9f446622963113e1d1a936&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV2财经",
@@ -22794,7 +22794,7 @@
         },
         {
           "name": "CCTV3综艺",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/cctv3hd/2000/index.m3u8?msisdn=59e7db387eba8d8ca5f0b84ad922e35e&mdspid=&spid=699004&netType=0&sid=5500212864&pid=2028597139&timestamp=20261128075152&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=624878271&ParentNodeID=-99&assertID=5500212864&client_ip=39.103.155.149&SecurityKey=20261128075152&promotionId=&mvid=5100001683&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=7e9681fdb327e1001eec69350345c564&ddCalcu=476ev59ac6a58a413f0d5b339267cee1e010&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/cctv3hd/2000/index.m3u8?msisdn=3d68f5c516f166a660fe8e7c959481b2&mdspid=&spid=699004&netType=0&sid=5500212864&pid=2028597139&timestamp=20261128114625&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=624878271&ParentNodeID=-99&assertID=5500212864&client_ip=39.103.155.149&SecurityKey=20261128114625&promotionId=&mvid=5100001683&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=8f8e9b60861b741d1a1ba43207d33407&ddCalcu=780fv48a3ea39adb7600283641abb714a11d&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV3综艺",
@@ -22807,7 +22807,7 @@
         },
         {
           "name": "CCTV4中文国际",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/cctv/cctv4hd/1500/index.m3u8?msisdn=03c0707439ca7ef8f543688f65d48cd0&mdspid=&spid=699004&netType=0&sid=5500346947&pid=2028597139&timestamp=20261128075152&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=631780421&ParentNodeID=-99&assertID=5500346947&client_ip=8.142.213.0&SecurityKey=20261128075152&promotionId=&mvid=5101064235&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=d4d05cba916e9603f7112db7cf971755&ddCalcu=5d54v7da10y75a9cfbca79b1d62e191670f3&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/cctv/cctv4hd/1500/index.m3u8?msisdn=e0bfce0a3ff5625c31476d15581a16c1&mdspid=&spid=699004&netType=0&sid=5500346947&pid=2028597139&timestamp=20261128114625&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=631780421&ParentNodeID=-99&assertID=5500346947&client_ip=39.103.155.149&SecurityKey=20261128114625&promotionId=&mvid=5101064235&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=b303a6ec3dfed401a57ef8ed25a3627e&ddCalcu=eb73v20a63y3aaa65e2cd3ed8ffeed7450a1&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV4中文国际",
@@ -22820,7 +22820,7 @@
         },
         {
           "name": "CCTV5体育",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/cctv/cctv5hdnew/1200/index.m3u8?msisdn=03c0707439ca7ef8f543688f65d48cd0&mdspid=&spid=699004&netType=0&sid=5500516171&pid=2028597139&timestamp=20261128075152&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=641886683&ParentNodeID=-99&assertID=5500516171&client_ip=39.103.155.149&SecurityKey=20261128075152&promotionId=&mvid=5102048712&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=fce82dffa79bd80cec02d49d48e2005c&ddCalcu=cf5cv0ea08w22aed8f4fda9749db2d08c0ec&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/cctv/cctv5hdnew/1200/index.m3u8?msisdn=e0bfce0a3ff5625c31476d15581a16c1&mdspid=&spid=699004&netType=0&sid=5500516171&pid=2028597139&timestamp=20261128114625&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=641886683&ParentNodeID=-99&assertID=5500516171&client_ip=8.142.213.0&SecurityKey=20261128114625&promotionId=&mvid=5102048712&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=3648ac27c0ef88aab0a5acf927221c75&ddCalcu=5376vc4a18w2aa2c72279cf0ceaf58a80aba&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV5体育",
@@ -22833,7 +22833,7 @@
         },
         {
           "name": "CCTV5+体育赛事",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/cctv/cctv5plusnew/1200/index.m3u8?msisdn=1ac073451272b410d8f6b67e5e5451c8&mdspid=&spid=699004&netType=0&sid=5500516288&pid=2028597139&timestamp=20261128075154&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=641886773&ParentNodeID=-99&assertID=5500516288&client_ip=39.103.155.149&SecurityKey=20261128075154&promotionId=&mvid=5102048803&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=ad63ee26c1bd143010b54cf2cf81256d&ddCalcu=da6dv56a23x1ea8ef2c62cf1cb4d51b40310&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/cctv/cctv5plusnew/1200/index.m3u8?msisdn=cf94138b18b21cdfb370cf60784ef144&mdspid=&spid=699004&netType=0&sid=5500516288&pid=2028597139&timestamp=20261128114627&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=641886773&ParentNodeID=-99&assertID=5500516288&client_ip=8.142.213.0&SecurityKey=20261128114627&promotionId=&mvid=5102048803&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=3672c5b3d801e57c977e51f6aad3acb8&ddCalcu=83b6vc7aa2x3cad5aba36df81051ee75779c&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV5+体育赛事",
@@ -22846,7 +22846,7 @@
         },
         {
           "name": "CCTV6电影",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/cctv6hd/2000/index.m3u8?msisdn=9aa9221e5654eed02729563dd0d14998&mdspid=&spid=699004&netType=0&sid=5500212872&pid=2028597139&timestamp=20261128075154&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=624878396&ParentNodeID=-99&assertID=5500212872&client_ip=8.142.213.0&SecurityKey=20261128075154&promotionId=&mvid=5100001694&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=c08260739958687d30f700b7eb718240&ddCalcu=0c40v28a82b16a70b7e379b9050876f8073d&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/cctv6hd/2000/index.m3u8?msisdn=e64fa68492f05101afe74724692fac35&mdspid=&spid=699004&netType=0&sid=5500212872&pid=2028597139&timestamp=20261128114630&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=624878396&ParentNodeID=-99&assertID=5500212872&client_ip=8.142.213.0&SecurityKey=20261128114630&promotionId=&mvid=5100001694&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=78016b7a2d92457edf8b13971f6981ce&ddCalcu=e7c8v10a81b96a6bf71a729d3912b485f7de&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV6电影",
@@ -22859,7 +22859,7 @@
         },
         {
           "name": "CCTV7国防军事",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv7hd/51/index.m3u8?msisdn=27f246eab09662a25b638aa8902bdc0c&mdspid=&spid=699004&netType=0&sid=5501083622&pid=2028597139&timestamp=20261128075154&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=673168121&ParentNodeID=-99&assertID=5501083622&client_ip=8.142.213.0&SecurityKey=20261128075154&promotionId=&mvid=5102910278&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=379b19a90a8093f79a2a596fefa5621e&ddCalcu=e317v29a6bd51aa9fae9f06a9850a923af97&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv7hd/51/index.m3u8?msisdn=a0da0ab1bb37987af1e8e0c55d0a261d&mdspid=&spid=699004&netType=0&sid=5501083622&pid=2028597139&timestamp=20261128114627&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=673168121&ParentNodeID=-99&assertID=5501083622&client_ip=39.103.155.149&SecurityKey=20261128114627&promotionId=&mvid=5102910278&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=124016fb4d66977845513764ef03d406&ddCalcu=6102v44ad0d31a06ffeb446d763619575748&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV7国防军事",
@@ -22872,7 +22872,7 @@
         },
         {
           "name": "CCTV8电视剧",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/cctv8hd/2000/index.m3u8?msisdn=61a648823e812c70cc55e4168d117a05&mdspid=&spid=699004&netType=0&sid=5500212868&pid=2028597139&timestamp=20261128075154&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=624878356&ParentNodeID=-99&assertID=5500212868&client_ip=8.142.213.0&SecurityKey=20261128075154&promotionId=&mvid=5100001695&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=1e89ae7b96d3bcab959ece6abb4f69ae&ddCalcu=e1aev98a69bfaa4eb7bba966edc3eb9c5a9b&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/cctv8hd/2000/index.m3u8?msisdn=52ac969296bd0898039c697b3cd2c115&mdspid=&spid=699004&netType=0&sid=5500212868&pid=2028597139&timestamp=20261128114627&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=624878356&ParentNodeID=-99&assertID=5500212868&client_ip=8.142.213.0&SecurityKey=20261128114627&promotionId=&mvid=5100001695&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=415a231e9a9f09e96413d88f5960dce0&ddCalcu=04e1vc5adab02a63915ef98a89df30194e69&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV8电视剧",
@@ -22885,7 +22885,7 @@
         },
         {
           "name": "CCTV9纪录",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv9hd/51/index.m3u8?msisdn=875d49a4b1e8456da72cd9cadcb2718f&mdspid=&spid=699004&netType=0&sid=5501083624&pid=2028597139&timestamp=20261128075154&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=673168140&ParentNodeID=-99&assertID=5501083624&client_ip=39.103.155.149&SecurityKey=20261128075154&promotionId=&mvid=5102910384&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=7e92dcba5235b702091817e241a02a9a&ddCalcu=a79eva9a22d0daac1b4a25e273158b179002&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv9hd/51/index.m3u8?msisdn=111ef8e626dd06718efe11d511dd7031&mdspid=&spid=699004&netType=0&sid=5501083624&pid=2028597139&timestamp=20261128114628&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=673168140&ParentNodeID=-99&assertID=5501083624&client_ip=8.142.213.0&SecurityKey=20261128114628&promotionId=&mvid=5102910384&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=4bdd7516100460a7e874b16de353e5ea&ddCalcu=a4ebv5daedd37a5531e6d16010b446708ae7&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV9纪录",
@@ -22898,7 +22898,7 @@
         },
         {
           "name": "CCTV10科教",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/cctv10hd/2000/index.m3u8?msisdn=34907c06b0dfb6e3c4f898ae5acffccb&mdspid=&spid=699004&netType=0&sid=5500212874&pid=2028597139&timestamp=20261128075155&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=624878405&ParentNodeID=-99&assertID=5500212874&client_ip=8.142.213.0&SecurityKey=20261128075155&promotionId=&mvid=5100001696&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=fc97fe7e6c075c4d5a86cca8a33538c7&ddCalcu=7fccv89a37y5fa3e37ae86acc0c7658ca45d&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/cctv10hd/2000/index.m3u8?msisdn=d7e0265acf068761e6f1f2d6800c4316&mdspid=&spid=699004&netType=0&sid=5500212874&pid=2028597139&timestamp=20261128114628&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=624878405&ParentNodeID=-99&assertID=5500212874&client_ip=39.103.155.149&SecurityKey=20261128114628&promotionId=&mvid=5100001696&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=1036f92b3b513eb854a161bc6249413f&ddCalcu=f130v13a46y9fa49226bc3bb156113ae4b58&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV10科教",
@@ -22911,7 +22911,7 @@
         },
         {
           "name": "CCTV11戏曲",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/cctv11hd/51/20200103/index.m3u8?msisdn=fd597f21c8380b1b9f43dcda1a3a5d89&mdspid=&spid=699004&netType=0&sid=5500988610&pid=2028597139&timestamp=20261128075155&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=667987558&ParentNodeID=-99&assertID=5500988610&client_ip=39.103.155.149&SecurityKey=20261128075155&promotionId=&mvid=5102751362&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=9660d10f7e1e63ba0766a84c1b24c02d&ddCalcu=d926v06ac0z4da21b01fc74e81ae66637b0a&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/cctv11hd/51/20200103/index.m3u8?msisdn=2d1083b98e502f8cf049f55f393cfc1c&mdspid=&spid=699004&netType=0&sid=5500988610&pid=2028597139&timestamp=20261128114628&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=667987558&ParentNodeID=-99&assertID=5500988610&client_ip=8.142.213.0&SecurityKey=20261128114628&promotionId=&mvid=5102751362&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=a5b1de114c5d46e0e9d055984d972e66&ddCalcu=6a65veba21z7da9ed141849c555d04d69ee0&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV11戏曲",
@@ -22924,7 +22924,7 @@
         },
         {
           "name": "CCTV12社会与法",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv12hd/51/index.m3u8?msisdn=40221d38f4189e2d9415bcafac9f1ce3&mdspid=&spid=699004&netType=0&sid=5501083627&pid=2028597139&timestamp=20261128075155&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=673168185&ParentNodeID=-99&assertID=5501083627&client_ip=39.103.155.149&SecurityKey=20261128075155&promotionId=&mvid=5102910389&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=c2f56d2c6d26ebfcba0f8d834a877215&ddCalcu=5c12v2fa75d76a8da24c368dd286fe0bafbc&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv12hd/51/index.m3u8?msisdn=7295e017235bb34f51937c425d448491&mdspid=&spid=699004&netType=0&sid=5501083627&pid=2028597139&timestamp=20261128114629&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=673168185&ParentNodeID=-99&assertID=5501083627&client_ip=8.142.213.0&SecurityKey=20261128114629&promotionId=&mvid=5102910389&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=29186808aff362677337eb31b238fb28&ddCalcu=8229vb1af8d86a3820b81a3fbfe376323677&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV12社会与法",
@@ -22937,7 +22937,7 @@
         },
         {
           "name": "CCTV13新闻",
-          "url": "http://gslbmgsplive.miguvideo.com/envivo_x/2018/SD/cctv13/2000/index.m3u8?msisdn=5e853df3e3c4036c83a71f8c0680dd43&mdspid=&spid=699004&netType=0&sid=2202208864&pid=2028597139&timestamp=20261128075155&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=608807423&ParentNodeID=-99&assertID=2202208864&client_ip=39.103.155.149&SecurityKey=20261128075155&promotionId=&mvid=2202208864&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=85c7e2b56ad9fb1c4c3892a7c4ac443a&ddCalcu=a835v4ca47yceaa24bc576aa2d998f3bc14c&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/envivo_x/2018/SD/cctv13/2000/index.m3u8?msisdn=19331f40833012141d0529d6c506afb8&mdspid=&spid=699004&netType=0&sid=2202208864&pid=2028597139&timestamp=20261128114630&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=608807423&ParentNodeID=-99&assertID=2202208864&client_ip=39.103.155.149&SecurityKey=20261128114630&promotionId=&mvid=2202208864&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=f883bc480ddfc111de85ff168375af03&ddCalcu=3f08vf8aa3y5ba7c3488601dfdff5c81e1d1&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV13新闻",
@@ -22950,7 +22950,7 @@
         },
         {
           "name": "CCTV14少儿",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/cctv14hd/2000/index.m3u8?msisdn=0e3a2dca792de2b74956ff2b6a9c699a&mdspid=&spid=699004&netType=0&sid=5500212875&pid=2028597139&timestamp=20261128075155&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=624878440&ParentNodeID=-99&assertID=5500212875&client_ip=8.142.213.0&SecurityKey=20261128075155&promotionId=&mvid=5100001697&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=fd1ebad359ab4652fff5db05fe7bd063&ddCalcu=3f6dv01adeybba7aedf35509badb54f6f5f2&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/cctv14hd/2000/index.m3u8?msisdn=92b15e97a1af5db2781a861a5a6eccd6&mdspid=&spid=699004&netType=0&sid=5500212875&pid=2028597139&timestamp=20261128114631&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=624878440&ParentNodeID=-99&assertID=5500212875&client_ip=8.142.213.0&SecurityKey=20261128114631&promotionId=&mvid=5100001697&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=0137b7bac604dd47f6c8f2b82f003590&ddCalcu=0091v53a37y0ba07fb2a8cb620f48dcd64f7&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV14少儿",
@@ -22963,7 +22963,7 @@
         },
         {
           "name": "CCTV15音乐",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv15hd/51/index.m3u8?msisdn=47bd25dbd8b080a6afc5b86e1432e6b0&mdspid=&spid=699004&netType=0&sid=5501083628&pid=2028597139&timestamp=20261128075156&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=673168223&ParentNodeID=-99&assertID=5501083628&client_ip=8.142.213.0&SecurityKey=20261128075156&promotionId=&mvid=5102910391&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=51fff0f9bbe75b8ca442e3ec83cbc81e&ddCalcu=e511v8facfabfac03f89cbeb3ee7254b48ac&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv15hd/51/index.m3u8?msisdn=b0c5377dfc715894f18a44e0d4eab321&mdspid=&spid=699004&netType=0&sid=5501083628&pid=2028597139&timestamp=20261128114631&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=673168223&ParentNodeID=-99&assertID=5501083628&client_ip=8.142.213.0&SecurityKey=20261128114631&promotionId=&mvid=5102910391&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=a641340168b94e77541ccc21f1220b75&ddCalcu=5a76vb4a01a23a2410f11628cbc9c41e4757&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV15音乐",
@@ -22976,7 +22976,7 @@
         },
         {
           "name": "CCTV17农业农村",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv17hd/51/index.m3u8?msisdn=3d167e4d165e0d7d9f295a80ddfc1dc6&mdspid=&spid=699004&netType=0&sid=5501083631&pid=2028597139&timestamp=20261128075157&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=673168256&ParentNodeID=-99&assertID=5501083631&client_ip=39.103.155.149&SecurityKey=20261128075157&promotionId=&mvid=5102910396&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=ea8158803da18d66a10101b73247ab73&ddCalcu=3e7avb8aa1a75a48283073bd1a01180d16a6&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv17hd/51/index.m3u8?msisdn=c40e31bce4477bb0a46dba00248068b9&mdspid=&spid=699004&netType=0&sid=5501083631&pid=2028597139&timestamp=20261128114630&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=673168256&ParentNodeID=-99&assertID=5501083631&client_ip=8.142.213.0&SecurityKey=20261128114630&promotionId=&mvid=5102910396&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=8d9f6a8cf3f71d0fda6bde840ca09512&ddCalcu=281dv59a9fa06aaac80c4f83efd7b16da0df&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV17农业农村",
@@ -22989,7 +22989,7 @@
         },
         {
           "name": "CCTV4欧洲",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv4ouhd/51/index.m3u8?msisdn=4babe5a1232ae83c73406334b966c00d&mdspid=&spid=699004&netType=0&sid=2200179315&pid=2028597139&timestamp=20261128075157&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=608807419&ParentNodeID=-99&assertID=2200179315&client_ip=39.103.155.149&SecurityKey=20261128075157&promotionId=&mvid=2200179315&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=fced94abd60ad87fede8c543594b2efe&ddCalcu=effcveea2dyb9a449a5b3d4650ca8de8d7ef&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv4ouhd/51/index.m3u8?msisdn=1aa1dcad98928c444f968af51b6235de&mdspid=&spid=699004&netType=0&sid=2200179315&pid=2028597139&timestamp=20261128114632&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=608807419&ParentNodeID=-99&assertID=2200179315&client_ip=8.142.213.0&SecurityKey=20261128114632&promotionId=&mvid=2200179315&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=68374aa236ec2eb9423fdfa284019b18&ddCalcu=8618vb3a97y14a0a4a8223a6fedcf23e2b49&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV4欧洲",
@@ -23002,7 +23002,7 @@
         },
         {
           "name": "CCTV4美洲",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv4meihd/51/index.m3u8?msisdn=b59a61edbdc80be31073b94f5acccace&mdspid=&spid=699004&netType=0&sid=2200179344&pid=2028597139&timestamp=20261128075157&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=608807416&ParentNodeID=-99&assertID=2200179344&client_ip=39.103.155.149&SecurityKey=20261128075157&promotionId=&mvid=2200179344&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=7ccfbd48645fb7a163ad162b8d43b4ce&ddCalcu=e7ccv4cabfy3ba4dd488b624651fdba73a61&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv4meihd/51/index.m3u8?msisdn=9334045131e2b382d3a33ad89ade8a66&mdspid=&spid=699004&netType=0&sid=2200179344&pid=2028597139&timestamp=20261128114631&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=608807416&ParentNodeID=-99&assertID=2200179344&client_ip=8.142.213.0&SecurityKey=20261128114631&promotionId=&mvid=2200179344&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=50dbf4301daefa7709e4aee7e245280a&ddCalcu=a500v8da2by5fa4423e071edeaae4fea9707&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CCTV4美洲",
@@ -23015,7 +23015,7 @@
         },
         {
           "name": "CGTN外语纪录",
-          "url": "http://gslbmgsplive.miguvideo.com/envivo_v/2018/SD/cctv/doc/1000/index.m3u8?msisdn=0ab64d79d4baec103b9d94d4cfca2ec9&mdspid=&spid=699004&netType=0&sid=2200179356&pid=2028597139&timestamp=20261128075157&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=609006487&ParentNodeID=-99&assertID=2200179356&client_ip=39.103.155.149&SecurityKey=20261128075157&promotionId=&mvid=2200179356&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=e699e70437a59072a69c5cc14eef0635&ddCalcu=5e36v69a09yfeae7e04413c7ca55c99067a2&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/envivo_v/2018/SD/cctv/doc/1000/index.m3u8?msisdn=8a4f4d1aae6161b4faef56a55e273582&mdspid=&spid=699004&netType=0&sid=2200179356&pid=2028597139&timestamp=20261128114632&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=609006487&ParentNodeID=-99&assertID=2200179356&client_ip=8.142.213.0&SecurityKey=20261128114632&promotionId=&mvid=2200179356&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=ae1de2318c1439098f52757af2d13a55&ddCalcu=5a5eva1a3dy1ead223f1a87c51742359f089&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CGTN外语纪录",
@@ -23028,7 +23028,7 @@
         },
         {
           "name": "CGTN阿拉伯语",
-          "url": "http://gslbmgsplive.miguvideo.com/envivo_v/SD/cctv/alabo/1000/index.m3u8?msisdn=9235f90b0f57c5911ccd5b19776c9ab3&mdspid=&spid=699004&netType=0&sid=2200179303&pid=2028597139&timestamp=20261128075158&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=609154345&ParentNodeID=-99&assertID=2200179303&client_ip=39.103.155.149&SecurityKey=20261128075158&promotionId=&mvid=2200179303&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=468e7d7aa0e7a5c3f8017d2ee41cfdaa&ddCalcu=a4a6vd8afebc7a1d47eaea20de771a058cf3&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/envivo_v/SD/cctv/alabo/1000/index.m3u8?msisdn=a94a5ab77fd0eb66c84e58685cf5cca0&mdspid=&spid=699004&netType=0&sid=2200179303&pid=2028597139&timestamp=20261128114632&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=609154345&ParentNodeID=-99&assertID=2200179303&client_ip=39.103.155.149&SecurityKey=20261128114632&promotionId=&mvid=2200179303&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=70d39f028b65c2febf867756bc7e2726&ddCalcu=6720v7da23be9a7fc0b2685b76756c82ffbe&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CGTN阿拉伯语",
@@ -23041,7 +23041,7 @@
         },
         {
           "name": "CGTN西班牙语",
-          "url": "http://gslbmgsplive.miguvideo.com/envivo_v/2018/SD/cctv/xibanya/1000/index.m3u8?msisdn=3ea41560ac29d8b1c213e3eba896a71d&mdspid=&spid=699004&netType=0&sid=2200179337&pid=2028597139&timestamp=20261128075158&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=609006450&ParentNodeID=-99&assertID=2200179337&client_ip=8.142.213.0&SecurityKey=20261128075158&promotionId=&mvid=2200179337&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=67bda80a0ab909000d81e988005f16a9&ddCalcu=96a7v6ba1dyfaa58000a808a9be91089d000&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/envivo_v/2018/SD/cctv/xibanya/1000/index.m3u8?msisdn=e4785fee6b2969bbf67de0505fae1d2c&mdspid=&spid=699004&netType=0&sid=2200179337&pid=2028597139&timestamp=20261128114633&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=609006450&ParentNodeID=-99&assertID=2200179337&client_ip=8.142.213.0&SecurityKey=20261128114633&promotionId=&mvid=2200179337&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=cbadadb70df2c6aa6fe77434a78e9a96&ddCalcu=6c9bvaaa9dyeaa8d7ba7403d4f727ce6fa6a&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CGTN西班牙语",
@@ -23054,7 +23054,7 @@
         },
         {
           "name": "CGTN法语",
-          "url": "http://gslbmgsplive.miguvideo.com/envivo_v/2018/SD/cctv/fayu/1000/index.m3u8?msisdn=04d8f0653e616d88ac715221936c827d&mdspid=&spid=699004&netType=0&sid=2200179324&pid=2028597139&timestamp=20261128075158&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=609006476&ParentNodeID=-99&assertID=2200179324&client_ip=39.103.155.149&SecurityKey=20261128075158&promotionId=&mvid=2200179324&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=6676aea821ffdac304a5ec7be6b5f591&ddCalcu=1696v57af6y5aabe6ae8b271cfef5daa4c03&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/envivo_v/2018/SD/cctv/fayu/1000/index.m3u8?msisdn=62fbe075238bb2a225097b67256dd33d&mdspid=&spid=699004&netType=0&sid=2200179324&pid=2028597139&timestamp=20261128114633&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=609006476&ParentNodeID=-99&assertID=2200179324&client_ip=8.142.213.0&SecurityKey=20261128114633&promotionId=&mvid=2200179324&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=e3ab2a9c5771fd2b15dd58abfe87d8ae&ddCalcu=eea3v8aadby72a8ae9fcb5a78751dfdd521b&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CGTN法语",
@@ -23067,7 +23067,7 @@
         },
         {
           "name": "CGTN俄语",
-          "url": "http://gslbmgsplive.miguvideo.com/envivo_v/2018/SD/cctv/eyu/1000/index.m3u8?msisdn=20c2c649ba8d45fcba2df2f7c956b9fe&mdspid=&spid=699004&netType=0&sid=2200179332&pid=2028597139&timestamp=20261128075159&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=609006446&ParentNodeID=-99&assertID=2200179332&client_ip=8.142.213.0&SecurityKey=20261128075159&promotionId=&mvid=2200179332&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=0034a8d03ebcee5c09c8ab7ec0951fe9&ddCalcu=90e0vf3a14y5aa980dc0e37ebbac8ece950c&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/envivo_v/2018/SD/cctv/eyu/1000/index.m3u8?msisdn=571c5d78b33cc715aeb96c6a00432f61&mdspid=&spid=699004&netType=0&sid=2200179332&pid=2028597139&timestamp=20261128114633&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=609006446&ParentNodeID=-99&assertID=2200179332&client_ip=39.103.155.149&SecurityKey=20261128114633&promotionId=&mvid=2200179332&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=619936b1580f5aa7917b27cf7fa20294&ddCalcu=4691v29a09y23aa6fb71f5c8702fb57a1a97&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CGTN俄语",
@@ -23080,7 +23080,7 @@
         },
         {
           "name": "老故事",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/cctvlaogushi/50/20231109/index.m3u8?msisdn=37e536187541b06ce5329167e02c848b&mdspid=&spid=699004&netType=0&sid=5910022002&pid=2028597139&timestamp=20261128075159&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=884121956&ParentNodeID=-99&assertID=5910022002&client_ip=8.142.213.0&SecurityKey=20261128075159&promotionId=&mvid=5900006372&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=9fa307562a6560e60ea7fb8b3ac6e550&ddCalcu=095fv5aae3l60ac7a536b28ab6f576a0ee06&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/cctvlaogushi/50/20231109/index.m3u8?msisdn=0d3a39dcd0c34e51d078915942ada2c6&mdspid=&spid=699004&netType=0&sid=5910022002&pid=2028597139&timestamp=20261128114633&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=884121956&ParentNodeID=-99&assertID=5910022002&client_ip=39.103.155.149&SecurityKey=20261128114633&promotionId=&mvid=5900006372&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=def979f16be523f6b58572455628999b&ddCalcu=bd9ev9fa99l87a296f51564b2e7552835fb6&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "老故事",
@@ -23093,7 +23093,7 @@
         },
         {
           "name": "发现之旅",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r3/cnr/faxianzhilv/2000/index.m3u8?msisdn=c874862e13897a72a8e13c225016daa3&mdspid=&spid=699004&netType=0&sid=5500212893&pid=2028597139&timestamp=20261128075159&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=624878970&ParentNodeID=-99&assertID=5500212893&client_ip=8.142.213.0&SecurityKey=20261128075159&promotionId=&mvid=5100001701&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=2850a96369955d1e395a119a1ec8e25a&ddCalcu=a258v25ae0l8aac9e613a6991915a55d913e&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r3/cnr/faxianzhilv/2000/index.m3u8?msisdn=c15e8ac3739b740fae899cca41cdba23&mdspid=&spid=699004&netType=0&sid=5500212893&pid=2028597139&timestamp=20261128114635&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=624878970&ParentNodeID=-99&assertID=5500212893&client_ip=8.142.213.0&SecurityKey=20261128114635&promotionId=&mvid=5100001701&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=6aa4c12d0aa894a565ffc9dd73056257&ddCalcu=765av2aa64l5ca01327dd0da9ac8f9f45a65&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "发现之旅",
@@ -23106,7 +23106,7 @@
         },
         {
           "name": "CGTN",
-          "url": "http://gslbmgsplive.miguvideo.com/envivo_x/2018/SD/cctvnews/1000/index.m3u8?msisdn=a3f934481bcff5ed30e69f53c5b3c20f&mdspid=&spid=699004&netType=0&sid=2202196407&pid=2028597139&timestamp=20261128075159&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=609017205&ParentNodeID=-99&assertID=2202196407&client_ip=39.103.155.149&SecurityKey=20261128075159&promotionId=&mvid=2202196407&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=c145171c94b9fae24a478c443f9ab152&ddCalcu=2c51v14ab5aa1a97f13c4944cb897f4aae42&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/envivo_x/2018/SD/cctvnews/1000/index.m3u8?msisdn=96a2584d09f1dd1afe20d5c1864ae466&mdspid=&spid=699004&netType=0&sid=2202196407&pid=2028597139&timestamp=20261128114635&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=609017205&ParentNodeID=-99&assertID=2202196407&client_ip=8.142.213.0&SecurityKey=20261128114635&promotionId=&mvid=2202196407&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=f340539d6d9aeff57fd85c376312925d&ddCalcu=df53v24a90a25a13396d763dc95a8edfff75&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CGTN",
@@ -23119,7 +23119,7 @@
         },
         {
           "name": "东方卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r4/dfl/dongfangwshd/1200/index.m3u8?msisdn=32983d9f64abec1fc2d7ea652ecb0a11&mdspid=&spid=600697&netType=0&sid=5910022185&pid=2028597139&timestamp=20261128075200&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=651632648&ParentNodeID=-99&assertID=5910022185&client_ip=8.142.213.0&SecurityKey=20261128075200&promotionId=&mvid=5100043384&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=639cd0badc652595aa22e20557660225&ddCalcu=5623v29a0cw6da607b5a5d0c26e52225a9a5&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r4/dfl/dongfangwshd/1200/index.m3u8?msisdn=24658a9882a0ae03d122e7a14771e5ee&mdspid=&spid=600697&netType=0&sid=5910022185&pid=2028597139&timestamp=20261128114635&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=651632648&ParentNodeID=-99&assertID=5910022185&client_ip=39.103.155.149&SecurityKey=20261128114635&promotionId=&mvid=5100043384&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=629bb5739707e24b751cb9af661b17e0&ddCalcu=06e2v79a1bwbba156763f9a790b7ce12547b&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "东方卫视",
@@ -23132,7 +23132,7 @@
         },
         {
           "name": "江苏卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/cctv/jiangsuhd/1200/index.m3u8?msisdn=2a4f4f8e042aff0782784da5c3aa5506&mdspid=&spid=699067&netType=0&sid=5500199408&pid=2028597139&timestamp=20261128075200&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=623899368&ParentNodeID=-99&assertID=5500199408&client_ip=8.142.213.0&SecurityKey=20261128075200&promotionId=&mvid=5100156802&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=91e826db40d283ad8e0ffa54d637bc88&ddCalcu=8981vceab8b72a366ddb4450adf2f803ea8d&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/cctv/jiangsuhd/1200/index.m3u8?msisdn=ebd6eb0645f22204766d7d38f6127544&mdspid=&spid=699067&netType=0&sid=5500199408&pid=2028597139&timestamp=20261128114635&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=623899368&ParentNodeID=-99&assertID=5500199408&client_ip=8.142.213.0&SecurityKey=20261128114635&promotionId=&mvid=5100156802&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=0c0383a4321321b2f4182c11982b2a9a&ddCalcu=a09cva0a23bb8a238a941312c12382114bf2&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "江苏卫视",
@@ -23145,7 +23145,7 @@
         },
         {
           "name": "广东卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/ws_w/2018/gdws/gdws711/1000/index.m3u8?msisdn=51390235dd4ff46bddd574660af04156&mdspid=&spid=699054&netType=0&sid=2202428795&pid=2028597139&timestamp=20261128075200&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=608831231&ParentNodeID=-99&assertID=2202428795&client_ip=39.103.155.149&SecurityKey=20261128075200&promotionId=&mvid=2202428795&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=60f7612fe2b749e73010b4431e79a78b&ddCalcu=b680v7faa7a96a71e21f3e424bb704190e37&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/ws_w/2018/gdws/gdws711/1000/index.m3u8?msisdn=a2f6c0fbaf20d93db251cff0f45e41fd&mdspid=&spid=699054&netType=0&sid=2202428795&pid=2028597139&timestamp=20261128114635&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=608831231&ParentNodeID=-99&assertID=2202428795&client_ip=8.142.213.0&SecurityKey=20261128114635&promotionId=&mvid=2202428795&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=d88d4ea50bc3aa247f834c7dbc18442e&ddCalcu=ed28v48a4da84a1ecab5d07bcc433a8af274&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "广东卫视",
@@ -23158,7 +23158,7 @@
         },
         {
           "name": "北京卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/bjws/51/20251127/index.m3u8?msisdn=8a83fe3df94ad08ae0e289fada877a68&mdspid=&spid=600697&netType=0&sid=5910022306&pid=2028597139&timestamp=20261128075201&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=630287636&ParentNodeID=-99&assertID=5910022306&client_ip=39.103.155.149&SecurityKey=20261128075201&promotionId=&mvid=5101042960&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=90bc030a3e47ca426736900bd9ec7628&ddCalcu=8920v6ba7cwc0ae390dab30e04976c3a7462&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/bjws/51/20251127/index.m3u8?msisdn=12748e3787a3fe820217baf8a7eb1929&mdspid=&spid=600697&netType=0&sid=5910022306&pid=2028597139&timestamp=20261128114637&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=630287636&ParentNodeID=-99&assertID=5910022306&client_ip=39.103.155.149&SecurityKey=20261128114637&promotionId=&mvid=5101042960&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=5582dfc7df71b167922afdc82feae53f&ddCalcu=f535v58ae2wadaeffc278dcfd7f1ab212697&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "北京卫视",
@@ -23171,7 +23171,7 @@
         },
         {
           "name": "辽宁卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/liaoningwshd/2000/index.m3u8?msisdn=8d5b3dc2b2ad3b76a47bd4c1e1a1a5ab&mdspid=&spid=600572&netType=0&sid=5910022198&pid=2028597139&timestamp=20261128075201&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=630291707&ParentNodeID=-99&assertID=5910022198&client_ip=39.103.155.149&SecurityKey=20261128075201&promotionId=&mvid=5101043014&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=629e317c738eeb3b3285925a12ee8bf2&ddCalcu=26f2vb9a8exe3ae1271ca753289e5e8b233b&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/liaoningwshd/2000/index.m3u8?msisdn=ea97319a24cbe86938ff86d1749d0bdb&mdspid=&spid=600572&netType=0&sid=5910022198&pid=2028597139&timestamp=20261128114636&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=630291707&ParentNodeID=-99&assertID=5910022198&client_ip=8.142.213.0&SecurityKey=20261128114636&promotionId=&mvid=5101043014&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=06df2070c318086f821d47663a3e7c44&ddCalcu=4046vcda7fxe2a30a7306c637148d018268f&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "辽宁卫视",
@@ -23184,7 +23184,7 @@
         },
         {
           "name": "河北卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/hbws/51/20251225/index.m3u8?msisdn=533c6c06557bc9e05a175cbea20f4eb8&mdspid=&spid=600725&netType=0&sid=5910022316&pid=2028597139&timestamp=20261128075201&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=962042070&ParentNodeID=-99&assertID=5910022316&client_ip=8.142.213.0&SecurityKey=20261128075201&promotionId=&mvid=5900006782&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=2adaedc8acccc2c619c35592ede0396d&ddCalcu=d26av9da3ac0eaeddce82a9c5c5c3cc29c16&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/hbws/51/20251225/index.m3u8?msisdn=181f25944fd921a66fa833b7ac2301b5&mdspid=&spid=600725&netType=0&sid=5910022316&pid=2028597139&timestamp=20261128114637&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=962042070&ParentNodeID=-99&assertID=5910022316&client_ip=8.142.213.0&SecurityKey=20261128114637&promotionId=&mvid=5900006782&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=456e0da30d19d8c53ff814d516b6c788&ddCalcu=8485v76acec60abd6a1350dd41198df8fc35&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "河北卫视",
@@ -23197,7 +23197,7 @@
         },
         {
           "name": "江西卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/jxwshd/51/20190820/index.m3u8?msisdn=5f0c21a5ac81a3f273223278ba08d54d&mdspid=&spid=600633&netType=0&sid=5910021492&pid=2028597139&timestamp=20261128075202&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=783847495&ParentNodeID=-99&assertID=5910021492&client_ip=39.103.155.149&SecurityKey=20261128075202&promotionId=&mvid=5900004351&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=99a0b417c08ac3c60541dd9258a1c546&ddCalcu=6949v5aac0y1baa481572c90d8da1c435c06&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/jxwshd/51/20190820/index.m3u8?msisdn=23484dfc847fdb450d34d1e5b2f4b512&mdspid=&spid=600633&netType=0&sid=5910021492&pid=2028597139&timestamp=20261128114637&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=783847495&ParentNodeID=-99&assertID=5910021492&client_ip=39.103.155.149&SecurityKey=20261128114637&promotionId=&mvid=5900004351&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=648c270c35ecb484daaf2e52f78e1f18&ddCalcu=8614vf8a1cye2a8770fc2355ee2cfba4a8d4&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "江西卫视",
@@ -23210,7 +23210,7 @@
         },
         {
           "name": "河南卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/wd-henanwssd-600/index.m3u8?msisdn=2a48b6b27445ea1b3b21b211e48c6512&mdspid=&spid=600633&netType=0&sid=5910021585&pid=2028597139&timestamp=20261128075202&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=790187291&ParentNodeID=-99&assertID=5910021585&client_ip=8.142.213.0&SecurityKey=20261128075202&promotionId=&mvid=5900005706&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=233aa8e827ef14128f54accaef20de24&ddCalcu=4223ve3adaa0aa28fee8a2c7ceaf4154f182&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd-henanwssd-600/index.m3u8?msisdn=772637bb11488abd08da7b01b7dfc9bd&mdspid=&spid=600633&netType=0&sid=5910021585&pid=2028597139&timestamp=20261128114637&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=790187291&ParentNodeID=-99&assertID=5910021585&client_ip=39.103.155.149&SecurityKey=20261128114637&promotionId=&mvid=5900005706&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=d206a2a95d7236ce8c84e799a1c8031c&ddCalcu=cd12v30a06a8aac21aa9959d77e24386cc8e&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "河南卫视",
@@ -23223,7 +23223,7 @@
         },
         {
           "name": "陕西卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/shan3xiws/51/20220809/index.m3u8?msisdn=99c575002293b6dd296d87db799e55ea&mdspid=&spid=600633&netType=0&sid=5910020475&pid=2028597139&timestamp=20261128075202&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=738910838&ParentNodeID=-99&assertID=5910020475&client_ip=8.142.213.0&SecurityKey=20261128075202&promotionId=&mvid=5900004331&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=60449badaabbeb90469ae24ca6f5691c&ddCalcu=c610v94a64k59afb6aadca4a2bebae9b6940&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/shan3xiws/51/20220809/index.m3u8?msisdn=fe53ce50456c90beb4cf061f335d71f4&mdspid=&spid=600633&netType=0&sid=5910020475&pid=2028597139&timestamp=20261128114638&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=738910838&ParentNodeID=-99&assertID=5910020475&client_ip=8.142.213.0&SecurityKey=20261128114638&promotionId=&mvid=5900004331&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=2d1b199eee054cec04dd5369358a3289&ddCalcu=928dv21a3bka1a89593e9e6e3055d4dc4e0c&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "陕西卫视",
@@ -23236,7 +23236,7 @@
         },
         {
           "name": "大湾区卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r3/2018/nfmedia/nfws/1000/index.m3u8?msisdn=88827a7024c851b27e39ef91d9699152&mdspid=&spid=699054&netType=0&sid=2200322852&pid=2028597139&timestamp=20261128075203&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=608917627&ParentNodeID=-99&assertID=2200322852&client_ip=8.142.213.0&SecurityKey=20261128075203&promotionId=&mvid=2200322852&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=2a24005c671a3fda5ed3e268f711cc58&ddCalcu=825avc2ac4w10a1075fc866721ea33dfed5a&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r3/2018/nfmedia/nfws/1000/index.m3u8?msisdn=94616f11de33f29295f8f41987efeeb5&mdspid=&spid=699054&netType=0&sid=2200322852&pid=2028597139&timestamp=20261128114638&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=608917627&ParentNodeID=-99&assertID=2200322852&client_ip=39.103.155.149&SecurityKey=20261128114638&promotionId=&mvid=2200322852&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=5dec7bf3a1e168327e0bfbb0dde1d9a3&ddCalcu=35adv9eadcw17aebdfd30ab1bef1b608e372&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "大湾区卫视",
@@ -23249,7 +23249,7 @@
         },
         {
           "name": "湖北卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/hubeiwshd/2000/index.m3u8?msisdn=6b2bb7edb0e208bda25a408b184a703b&mdspid=&spid=600633&netType=0&sid=5910022163&pid=2028597139&timestamp=20261128075203&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=947472496&ParentNodeID=-99&assertID=5910022163&client_ip=39.103.155.149&SecurityKey=20261128075203&promotionId=&mvid=5900004355&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=b026cf828b1baf77137072bd53366b63&ddCalcu=3b60vb2a66y6ca3f3852d8bb217b0a7f3717&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/2018/ocn/hubeiwshd/2000/index.m3u8?msisdn=8188b32e1d6b0b0bc28bdd88d77a44e5&mdspid=&spid=600633&netType=0&sid=5910022163&pid=2028597139&timestamp=20261128114639&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=947472496&ParentNodeID=-99&assertID=5910022163&client_ip=39.103.155.149&SecurityKey=20261128114639&promotionId=&mvid=5900004355&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=a04a21e16068c516f63c84ee6a429e5c&ddCalcu=ca50ve4a9ay22a41ae61e6e04688cc3561f6&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "湖北卫视",
@@ -23262,7 +23262,7 @@
         },
         {
           "name": "吉林卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/envivo_v/2018/SD/jilin/1000/index.m3u8?msisdn=d365c4e936ab338ef22fda7525bd5238&mdspid=&spid=600633&netType=0&sid=5910022164&pid=2028597139&timestamp=20261128075203&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=947472500&ParentNodeID=-99&assertID=5910022164&client_ip=8.142.213.0&SecurityKey=20261128075203&promotionId=&mvid=5900004357&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=991e1570c469ed748d997db6c28541d3&ddCalcu=39d9v11a4ez51a8527c06cb4d6799e9dd784&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/envivo_v/2018/SD/jilin/1000/index.m3u8?msisdn=496211260e592af00ce2dd491689ef53&mdspid=&spid=600633&netType=0&sid=5910022164&pid=2028597139&timestamp=20261128114638&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=947472500&ParentNodeID=-99&assertID=5910022164&client_ip=8.142.213.0&SecurityKey=20261128114638&promotionId=&mvid=5900004357&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=af98e4e152a7ee9d5883b273451defb1&ddCalcu=1abfvf9ae8zdea145e4135722ab73e8e895d&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "吉林卫视",
@@ -23275,7 +23275,7 @@
         },
         {
           "name": "青海卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/envivo_w/2018/SD/qinghai/1000/index.m3u8?msisdn=8954e276285ef2dcc2d916dc76a2f8f7&mdspid=&spid=600633&netType=0&sid=5910022166&pid=2028597139&timestamp=20261128075203&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=947472506&ParentNodeID=-99&assertID=5910022166&client_ip=39.103.155.149&SecurityKey=20261128075203&promotionId=&mvid=5900004353&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=652bafbc77a6d1783dadca1c15d672ac&ddCalcu=c6a5v22a7bz6aadf5b1cc717aac6dda1d738&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/envivo_w/2018/SD/qinghai/1000/index.m3u8?msisdn=6c6d3167067c07a163cc24e184714396&mdspid=&spid=600633&netType=0&sid=5910022166&pid=2028597139&timestamp=20261128114639&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=947472506&ParentNodeID=-99&assertID=5910022166&client_ip=8.142.213.0&SecurityKey=20261128114639&promotionId=&mvid=5900004353&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=604dd6f29d57e984407eeb53660ed468&ddCalcu=8660v44addzeda066f62395db5e7ee790844&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "青海卫视",
@@ -23288,7 +23288,7 @@
         },
         {
           "name": "东南卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/dongnanws/51/20230724/index.m3u8?msisdn=5ea6e301bf02b91a166b085c3925e380&mdspid=&spid=600717&netType=0&sid=5910022182&pid=2028597139&timestamp=20261128075204&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=849116810&ParentNodeID=-99&assertID=5910022182&client_ip=39.103.155.149&SecurityKey=20261128075204&promotionId=&mvid=5900006229&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=d5cab6d281d430b1660c20ec0b60876e&ddCalcu=ed65v7ca8ak0ba66bd02c8e10d24c3006b61&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/dongnanws/51/20230724/index.m3u8?msisdn=a8043716cc908f546ffadf61a1cf4bc4&mdspid=&spid=600717&netType=0&sid=5910022182&pid=2028597139&timestamp=20261128114640&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=849116810&ParentNodeID=-99&assertID=5910022182&client_ip=8.142.213.0&SecurityKey=20261128114640&promotionId=&mvid=5900006229&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=14a47ec419bbdce46f4ead0930d683cd&ddCalcu=d1c4v3aa84k67ade0c349109dbabed4cfe64&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "东南卫视",
@@ -23301,7 +23301,7 @@
         },
         {
           "name": "海南卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/envivo_x/SD/lvyou/711/index.m3u8?msisdn=bccd9a721b1c544ab7e20b961e44c351&mdspid=&spid=600633&netType=0&sid=5910022165&pid=2028597139&timestamp=20261128075204&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=947472502&ParentNodeID=-99&assertID=5910022165&client_ip=8.142.213.0&SecurityKey=20261128075204&promotionId=&mvid=5900004359&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=6f7b297a4ae0789965e0ab872704209d&ddCalcu=d69fv07a2bz42a09772a748abea007e85969&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/envivo_x/SD/lvyou/711/index.m3u8?msisdn=9227120120fee1fcce721b33b85c7896&mdspid=&spid=600633&netType=0&sid=5910022165&pid=2028597139&timestamp=20261128114640&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=947472502&ParentNodeID=-99&assertID=5910022165&client_ip=39.103.155.149&SecurityKey=20261128114640&promotionId=&mvid=5900004359&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=6cf662fed9d903aaefc2c677cf1dfdc9&ddCalcu=96ccvdfaf6zd6a12ffce7d796dc920c3faea&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "海南卫视",
@@ -23314,7 +23314,7 @@
         },
         {
           "name": "海峡卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/haixiaws/51/20230724/index.m3u8?msisdn=c3e89e1b77c00a8985c36c5aaf7c407a&mdspid=&spid=600717&netType=0&sid=5910022183&pid=2028597139&timestamp=20261128075204&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=849119120&ParentNodeID=-99&assertID=5910022183&client_ip=8.142.213.0&SecurityKey=20261128075204&promotionId=&mvid=5900006231&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=92340d57a3c6a839c2d80f2179f0beba&ddCalcu=a9b2ve3ab4d00afd95771a23fc068ad823c9&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/haixiaws/51/20230724/index.m3u8?msisdn=3038b0c2352aeb694744c8f435e648c1&mdspid=&spid=600717&netType=0&sid=5910022183&pid=2028597139&timestamp=20261128114641&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=849119120&ParentNodeID=-99&assertID=5910022183&client_ip=39.103.155.149&SecurityKey=20261128114641&promotionId=&mvid=5900006231&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=a3de64a53d0471d2dcc05251b6664073&ddCalcu=3a73v0da4ed66a646ab5135d205407c1cdd2&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "海峡卫视",
@@ -23327,7 +23327,7 @@
         },
         {
           "name": "中国农林卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/zgnlws/51/20250804/index.m3u8?msisdn=cb2e2849361c9c3d995a98ae6c0843a3&mdspid=&spid=600572&netType=0&sid=5910022186&pid=2028597139&timestamp=20261128075204&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956904896&ParentNodeID=-99&assertID=5910022186&client_ip=39.103.155.149&SecurityKey=20261128075204&promotionId=&mvid=5900006709&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=e89281466408cf5959761c2e2448467c&ddCalcu=ce78v69a42k88a414426e624c0186c7f9559&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/zgnlws/51/20250804/index.m3u8?msisdn=1f56875042ebce86bc2106866e4fadeb&mdspid=&spid=600572&netType=0&sid=5910022186&pid=2028597139&timestamp=20261128114641&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956904896&ParentNodeID=-99&assertID=5910022186&client_ip=8.142.213.0&SecurityKey=20261128114641&promotionId=&mvid=5900006709&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=c8050220a5f3394672ac6d269e528aa4&ddCalcu=4ca8va0a85k20a52e2906a25df63c3a92476&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "中国农林卫视",
@@ -23340,7 +23340,7 @@
         },
         {
           "name": "兵团卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/btws/51/20250804/index.m3u8?msisdn=c25d12b3762eb14f996bb935e31a8c4f&mdspid=&spid=600697&netType=0&sid=5910022192&pid=2028597139&timestamp=20261128075205&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956923145&ParentNodeID=-99&assertID=5910022192&client_ip=8.142.213.0&SecurityKey=20261128075205&promotionId=&mvid=5900006716&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=88af1552dc5160dcde9cf647c197912b&ddCalcu=b828v1aa9fd71a9515c27d4c65f1c690eddc&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/btws/51/20250804/index.m3u8?msisdn=b33270f103f7e1e104c7d123ac02868c&mdspid=&spid=600697&netType=0&sid=5910022192&pid=2028597139&timestamp=20261128114641&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956923145&ParentNodeID=-99&assertID=5910022192&client_ip=39.103.155.149&SecurityKey=20261128114641&promotionId=&mvid=5900006716&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=132245d542f84c425221095ecad79b0a&ddCalcu=a103vb2a92d74ad5adc5e4529f08142c2452&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "兵团卫视",
@@ -23353,7 +23353,7 @@
         },
         {
           "name": "宁夏卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/envivo_x/2018/SD/ningxia/1000/index.m3u8?msisdn=131960831f7e0d8ca5ee87b1cb2c55ff&mdspid=&spid=600697&netType=0&sid=5910022262&pid=2028597139&timestamp=20261128075205&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=738910535&ParentNodeID=-99&assertID=5910022262&client_ip=39.103.155.149&SecurityKey=20261128075205&promotionId=&mvid=5900004337&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=d869ba3e5b27a945663cfeca8162b8fc&ddCalcu=cdf8v86ab9z2ba6a138ea5cbe2f7ca396465&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/envivo_x/2018/SD/ningxia/1000/index.m3u8?msisdn=1e36a2be89c565d8083330d3b2b32061&mdspid=&spid=600697&netType=0&sid=5910022262&pid=2028597139&timestamp=20261128114641&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=738910535&ParentNodeID=-99&assertID=5910022262&client_ip=39.103.155.149&SecurityKey=20261128114641&promotionId=&mvid=5900004337&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=e55239a9deb23179c6e3946ad750964d&ddCalcu=de45v65a92z03a597ad9ad6e4b9233e167c9&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "宁夏卫视",
@@ -23366,7 +23366,7 @@
         },
         {
           "name": "重庆卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/envivo_x/2018/SD/chongqing/1000/index.m3u8?msisdn=09b8046170f64e610b8004198eff6551&mdspid=&spid=600697&netType=0&sid=5910022305&pid=2028597139&timestamp=20261128075205&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=738910914&ParentNodeID=-99&assertID=5910022305&client_ip=8.142.213.0&SecurityKey=20261128075205&promotionId=&mvid=5900004329&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=9c5021593d103c75605de16faef201be&ddCalcu=e9bcv15a00l22af1e5a9f36d11e0d35c0765&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/envivo_x/2018/SD/chongqing/1000/index.m3u8?msisdn=3d574bf5be442aca77471a3b6bee7d06&mdspid=&spid=600697&netType=0&sid=5910022305&pid=2028597139&timestamp=20261128114641&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=738910914&ParentNodeID=-99&assertID=5910022305&client_ip=8.142.213.0&SecurityKey=20261128114641&promotionId=&mvid=5900004329&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=4dc3d68500c44493919c64c8493f9060&ddCalcu=046dv0ca93lfda36984580c04c64c4941993&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "重庆卫视",
@@ -23379,7 +23379,7 @@
         },
         {
           "name": "三沙卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/ssws/50/20251127/index.m3u8?msisdn=abaab57f96b650664cc2eb5206fcaa41&mdspid=&spid=600697&netType=0&sid=5910022307&pid=2028597139&timestamp=20261128075206&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=961023778&ParentNodeID=-99&assertID=5910022307&client_ip=8.142.213.0&SecurityKey=20261128075206&promotionId=&mvid=5900006777&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=691f572434842e8790a89a617762b718&ddCalcu=8619v71abfx25a6772741364a89482ae0897&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/ssws/50/20251127/index.m3u8?msisdn=8510cf858f5f4f6bc069131e3d421f53&mdspid=&spid=600697&netType=0&sid=5910022307&pid=2028597139&timestamp=20261128114642&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=961023778&ParentNodeID=-99&assertID=5910022307&client_ip=8.142.213.0&SecurityKey=20261128114642&promotionId=&mvid=5900006777&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=b01c6cd91411b9e5b55dcd19960767a7&ddCalcu=7ba0v71a6cx76a0c6d999114d1c1db595eb5&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "三沙卫视",
@@ -23392,7 +23392,7 @@
         },
         {
           "name": "黑龙江卫视",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/nxjj/51/20251225/index.m3u8?msisdn=1f90cf29b53030e523903015e6907c5b&mdspid=&spid=600697&netType=0&sid=5910022409&pid=2028597139&timestamp=20261128075206&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=738906901&ParentNodeID=-99&assertID=5910022409&client_ip=39.103.155.149&SecurityKey=20261128075206&promotionId=&mvid=5900004349&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=73b0f831c10c1eb5ffb8444a76a89414&ddCalcu=4713v4ba90l8faa86371ac41404c81befbf5&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/nxjj/51/20251225/index.m3u8?msisdn=4cb00df2df2a9874aeda172814a73755&mdspid=&spid=600697&netType=0&sid=5910022409&pid=2028597139&timestamp=20261128114644&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=738906901&ParentNodeID=-99&assertID=5910022409&client_ip=39.103.155.149&SecurityKey=20261128114644&promotionId=&mvid=5900004349&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=959227040a4eb0a9e15a10969f1985b5&ddCalcu=59b5v59a82l92a17f094609a041eab501ae9&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "黑龙江卫视",
@@ -23405,7 +23405,7 @@
         },
         {
           "name": "上视新闻综合",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r4/dfl/xinwenzonghehd/1200/index.m3u8?msisdn=b9647350ae9c7be09d07025371b44d6c&mdspid=&spid=600697&netType=0&sid=5910022325&pid=2028597139&timestamp=20261128075206&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=651632657&ParentNodeID=-99&assertID=5910022325&client_ip=39.103.155.149&SecurityKey=20261128075206&promotionId=&mvid=5100001716&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=ad6489c90337aa225d95206bcfc6a061&ddCalcu=1a6dv06aa4w68ac9fcc9b06303275a9ad252&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r4/dfl/xinwenzonghehd/1200/index.m3u8?msisdn=b53e329b325da162f54e5708e8487ac3&mdspid=&spid=600697&netType=0&sid=5910022325&pid=2028597139&timestamp=20261128114643&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=651632657&ParentNodeID=-99&assertID=5910022325&client_ip=39.103.155.149&SecurityKey=20261128114643&promotionId=&mvid=5100001716&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=cc42fe6b37ac64468f838f86ca6d4174&ddCalcu=4c7cv14a42wdfa6ea6cb6387fa8c3684f486&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "上视新闻综合",
@@ -23418,7 +23418,7 @@
         },
         {
           "name": "上海第一财经",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r1/2018/bestv/dycj/1000/index.m3u8?msisdn=fa78a848858dac4a942d1f3f7af0e03b&mdspid=&spid=699212&netType=0&sid=2201008312&pid=2028597139&timestamp=20261128075207&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=608780988&ParentNodeID=-99&assertID=2201008312&client_ip=39.103.155.149&SecurityKey=20261128075207&promotionId=&mvid=2201008312&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=97aec63daeadd3e4ff20b7280af36c28&ddCalcu=8927vcaa6el3caf6a30d8a2e7abd0d23fef4&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r1/2018/bestv/dycj/1000/index.m3u8?msisdn=fc8617bec52efad854bddba656ca6a5f&mdspid=&spid=699212&netType=0&sid=2201008312&pid=2028597139&timestamp=20261128114644&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=608780988&ParentNodeID=-99&assertID=2201008312&client_ip=8.142.213.0&SecurityKey=20261128114644&promotionId=&mvid=2201008312&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=0ef2e3d6ce928193efb3f665ae483e73&ddCalcu=307evefa32l8ea43eda65c6e69f238b1f9e3&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "上海第一财经",
@@ -23431,7 +23431,7 @@
         },
         {
           "name": "南京新闻综合频道",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/nanjingxwzh/50/20230719/index.m3u8?msisdn=4b02b809ea82da45b59ffebaa65663a8&mdspid=&spid=699067&netType=0&sid=5910021863&pid=2028597139&timestamp=20261128075207&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=838109047&ParentNodeID=-99&assertID=5910021863&client_ip=8.142.213.0&SecurityKey=20261128075207&promotionId=&mvid=5900006203&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=60dee09b56179564ddd54b02f62f2fb9&ddCalcu=96b0vfda2ecfea2069fb2506b14759d5d6d4&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/nanjingxwzh/50/20230719/index.m3u8?msisdn=7ee549fc1d6ab2a619cbf6b53eb93f23&mdspid=&spid=699067&netType=0&sid=5910021863&pid=2028597139&timestamp=20261128114644&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=838109047&ParentNodeID=-99&assertID=5910021863&client_ip=39.103.155.149&SecurityKey=20261128114644&promotionId=&mvid=5900006203&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=7523fdd2d8250bdfd57f9bf0de4b1261&ddCalcu=1765v22a13cbfa4dedd20df8b295f07b5ddf&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "南京新闻综合频道",
@@ -23444,7 +23444,7 @@
         },
         {
           "name": "南京教科频道",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/nanjingkj/50/20230719/index.m3u8?msisdn=d4f984fad1705d58ec396194f32de141&mdspid=&spid=699067&netType=0&sid=5910021865&pid=2028597139&timestamp=20261128075207&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=838153729&ParentNodeID=-99&assertID=5910021865&client_ip=39.103.155.149&SecurityKey=20261128075207&promotionId=&mvid=5900006205&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=6b02b5ba5aebbf8104245be6af509ed8&ddCalcu=86dbve0a92x0ba55fbaa65eabe5b4b2f4801&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/nanjingkj/50/20230719/index.m3u8?msisdn=cc441413c8a8832dde46b9499f6b50de&mdspid=&spid=699067&netType=0&sid=5910021865&pid=2028597139&timestamp=20261128114645&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=838153729&ParentNodeID=-99&assertID=5910021865&client_ip=39.103.155.149&SecurityKey=20261128114645&promotionId=&mvid=5900006205&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=5cb698921ef955076182803485071de5&ddCalcu=55ecvdba16x79a085982413e0f8925851067&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "南京教科频道",
@@ -23457,7 +23457,7 @@
         },
         {
           "name": "南京十八频道",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/nanjingsb/50/20230719/index.m3u8?msisdn=d3ed9a49ba711ad2d2a6722de2fa5b17&mdspid=&spid=699067&netType=0&sid=5910021864&pid=2028597139&timestamp=20261128075208&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=838151753&ParentNodeID=-99&assertID=5910021864&client_ip=39.103.155.149&SecurityKey=20261128075208&promotionId=&mvid=5900006207&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=083a33b93d5b212e0b5798498887057d&ddCalcu=d078v53a0ax73a838b89934d859b7251b20e&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/nanjingsb/50/20230719/index.m3u8?msisdn=94ad0e3f4ecc62bd0c2cdadc27c4a1cf&mdspid=&spid=699067&netType=0&sid=5910021864&pid=2028597139&timestamp=20261128114645&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=838151753&ParentNodeID=-99&assertID=5910021864&client_ip=8.142.213.0&SecurityKey=20261128114645&promotionId=&mvid=5900006207&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=97ff53f4adb31c8cfa417b4b7b15d118&ddCalcu=8917v1fadfx55a13bf74ba4dbb73114ca8fc&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "南京十八频道",
@@ -23470,7 +23470,7 @@
         },
         {
           "name": "体育休闲频道",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/jstiyu/600/index.m3u8?msisdn=946d3156ba9646ce8379cd3624084c0c&mdspid=&spid=699067&netType=0&sid=5500260554&pid=2028597139&timestamp=20261128075208&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=626064707&ParentNodeID=-99&assertID=5500260554&client_ip=8.142.213.0&SecurityKey=20261128075208&promotionId=&mvid=5100186459&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=fb9a74a4541af65abd1bd61d8fe1c163&ddCalcu=3f6bv19acax17ae4fa84d51461dabf16d5ba&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/jstiyu/600/index.m3u8?msisdn=7971eb23ede60ce78073216ea08cd05d&mdspid=&spid=699067&netType=0&sid=5500260554&pid=2028597139&timestamp=20261128114646&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=626064707&ParentNodeID=-99&assertID=5500260554&client_ip=8.142.213.0&SecurityKey=20261128114646&promotionId=&mvid=5100186459&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=d7a5dcbce2852619f8014d18a7ff4355&ddCalcu=5d57v3aa45xfdafc7bac8e12d845120681f9&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "体育休闲频道",
@@ -23483,7 +23483,7 @@
         },
         {
           "name": "江苏城市频道",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/jschengshi/600/index.m3u8?msisdn=3371ac78ca45ead2eb553458f9834a36&mdspid=&spid=699067&netType=0&sid=5500260508&pid=2028597139&timestamp=20261128075209&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=626064714&ParentNodeID=-99&assertID=5500260508&client_ip=8.142.213.0&SecurityKey=20261128075209&promotionId=&mvid=5100186409&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=ba00900146ba5cd2a7b737785b8e3473&ddCalcu=3b7av40a30xe9a80b05184767b3a75bc7da2&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/jschengshi/600/index.m3u8?msisdn=1117d7077fca97206dbaa73013a51b87&mdspid=&spid=699067&netType=0&sid=5500260508&pid=2028597139&timestamp=20261128114646&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=626064714&ParentNodeID=-99&assertID=5500260508&client_ip=39.103.155.149&SecurityKey=20261128114646&promotionId=&mvid=5100186409&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=2f9697e13964206a23eb5677567a4620&ddCalcu=022fv69a46xa9a776e5173796654b2e0362a&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "江苏城市频道",
@@ -23496,7 +23496,7 @@
         },
         {
           "name": "江苏国际",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/jsguoji/600/index.m3u8?msisdn=e0a231c6db10bb6bd7a9db1c67cb8f7b&mdspid=&spid=699067&netType=0&sid=5500260577&pid=2028597139&timestamp=20261128075209&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=626064674&ParentNodeID=-99&assertID=5500260577&client_ip=39.103.155.149&SecurityKey=20261128075209&promotionId=&mvid=5100186482&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=205f679fc27b496871e94718cdfdbcfa&ddCalcu=a2f0vc5abfwd6af7d9cf8c12774b94e91678&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/jsguoji/600/index.m3u8?msisdn=0ef7d749a0894add4c93afb2b43903aa&mdspid=&spid=699067&netType=0&sid=5500260577&pid=2028597139&timestamp=20261128114647&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=626064674&ParentNodeID=-99&assertID=5500260577&client_ip=8.142.213.0&SecurityKey=20261128114647&promotionId=&mvid=5100186482&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=31adb3a25ed43b7d6a981133600c25a4&ddCalcu=43a1v5aa2dwcba030a62353e1d14839ba76d&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "江苏国际",
@@ -23509,7 +23509,7 @@
         },
         {
           "name": "江苏教育",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/jsjiaoyu/600/index.m3u8?msisdn=47951b7f1a4ecab1421a0db3f0fd689b&mdspid=&spid=699067&netType=0&sid=5500287493&pid=2028597139&timestamp=20261128075209&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=628008321&ParentNodeID=-99&assertID=5500287493&client_ip=8.142.213.0&SecurityKey=20261128075209&promotionId=&mvid=5101012819&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=d677a17b9076900f2d039fab4ef8c677&ddCalcu=7d76v67ac7b8aaf1e74bb9a0f7963900d02f&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/jsjiaoyu/600/index.m3u8?msisdn=1a20320a6e0efdb44a90bb472aab995e&mdspid=&spid=699067&netType=0&sid=5500287493&pid=2028597139&timestamp=20261128114648&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=628008321&ParentNodeID=-99&assertID=5500287493&client_ip=8.142.213.0&SecurityKey=20261128114648&promotionId=&mvid=5101012819&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=0ddf59eda28c912520055eab77d86d61&ddCalcu=106dvdda6fb85ad97e7dbaa2e85c59010225&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "江苏教育",
@@ -23522,7 +23522,7 @@
         },
         {
           "name": "江苏影视频道",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/jsyingshi/600/index.m3u8?msisdn=fe7b007f5c7d62d048c919829c576ba8&mdspid=&spid=699067&netType=0&sid=5500260517&pid=2028597139&timestamp=20261128075210&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=626064697&ParentNodeID=-99&assertID=5500260517&client_ip=39.103.155.149&SecurityKey=20261128075210&promotionId=&mvid=5100186424&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=fb946cba2da7b9b33b3c811715d011d9&ddCalcu=9fdbv19a14w06adc5b1a721d1a87cb39bb33&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/jsyingshi/600/index.m3u8?msisdn=f3181380e5e8193f591746c37c06e232&mdspid=&spid=699067&netType=0&sid=5500260517&pid=2028597139&timestamp=20261128114648&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=626064697&ParentNodeID=-99&assertID=5500260517&client_ip=39.103.155.149&SecurityKey=20261128114648&promotionId=&mvid=5100186424&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=a615ac1a5eee527598a4d7e63f228687&ddCalcu=7a86v61a85w2aa2cf13a65ee7ede45a28795&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "江苏影视频道",
@@ -23535,7 +23535,7 @@
         },
         {
           "name": "江苏综艺频道",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/jszongyi/600/index.m3u8?msisdn=0c3276a373425e2244796216790555a4&mdspid=&spid=699067&netType=0&sid=5500260513&pid=2028597139&timestamp=20261128075210&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=626065193&ParentNodeID=-99&assertID=5500260513&client_ip=39.103.155.149&SecurityKey=20261128075210&promotionId=&mvid=5100186420&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=c7ce0ee6331bbb7e8ec802cfc9392000&ddCalcu=0c07v0ca2ed90a3e9ec6f3c3210b8bcbe78e&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/jszongyi/600/index.m3u8?msisdn=fce4ccf29fb90cc566334ac75730d141&mdspid=&spid=699067&netType=0&sid=5500260513&pid=2028597139&timestamp=20261128114649&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=626065193&ParentNodeID=-99&assertID=5500260513&client_ip=8.142.213.0&SecurityKey=20261128114649&promotionId=&mvid=5100186420&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=8e378c923bb9d45f7f15b1555a5d6c66&ddCalcu=686evc3a67dd8a5ca952535b1bb95d14f57f&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "江苏综艺频道",
@@ -23548,7 +23548,7 @@
         },
         {
           "name": "公共新闻频道",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/jsgonggong/600/index.m3u8?msisdn=38565e722b7d09246917ead833b70fb8&mdspid=&spid=699067&netType=0&sid=5500260520&pid=2028597139&timestamp=20261128075210&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=626064693&ParentNodeID=-99&assertID=5500260520&client_ip=8.142.213.0&SecurityKey=20261128075210&promotionId=&mvid=5100186429&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=375616043c0815969e4e6f65c667377a&ddCalcu=a377v75a36w71a6660c4536cf068e145e996&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/jsgonggong/600/index.m3u8?msisdn=e30f3ff5582be95891b817a7128636c5&mdspid=&spid=699067&netType=0&sid=5500260520&pid=2028597139&timestamp=20261128114649&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=626064693&ParentNodeID=-99&assertID=5500260520&client_ip=39.103.155.149&SecurityKey=20261128114649&promotionId=&mvid=5100186429&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=1826cecc22215efde92f1102b592e19a&ddCalcu=a198v12ae6w2ca9e5cbc22021211f52e9fed&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "公共新闻频道",
@@ -23561,7 +23561,7 @@
         },
         {
           "name": "盐城新闻综合",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/ycxwzh/51/20250604/index.m3u8?msisdn=4a97cf864a21a23425ffaf1cf9322549&mdspid=&spid=699067&netType=0&sid=5500469360&pid=2028597139&timestamp=20261128075210&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639731825&ParentNodeID=-99&assertID=5500469360&client_ip=8.142.213.0&SecurityKey=20261128075210&promotionId=&mvid=5102012617&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=510645a3837a095d50ea0900ebbb6f5f&ddCalcu=f551vf0a66kb4ab5bae30803970aa0e9055d&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/ycxwzh/51/20250604/index.m3u8?msisdn=6a75f33ebb397772cbcb7982abd7bacf&mdspid=&spid=699067&netType=0&sid=5500469360&pid=2028597139&timestamp=20261128114650&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639731825&ParentNodeID=-99&assertID=5500469360&client_ip=39.103.155.149&SecurityKey=20261128114650&promotionId=&mvid=5102012617&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=bb5292f817bedaeb61aee4806353323b&ddCalcu=bb3bv25a32k39a523f6801874beeedaa1e6b&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "盐城新闻综合",
@@ -23574,7 +23574,7 @@
         },
         {
           "name": "淮安新闻综合",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/haxinwenzonghe/600/index.m3u8?msisdn=540d40bcf1f060ba1b6b55bf5bb22dff&mdspid=&spid=699067&netType=0&sid=5500469363&pid=2028597139&timestamp=20261128075211&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639731826&ParentNodeID=-99&assertID=5500469363&client_ip=39.103.155.149&SecurityKey=20261128075211&promotionId=&mvid=5102012618&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=a1852b572828fef072295c32ac817a6f&ddCalcu=fa61va8a75k12a8bc5a72238c2589f2e2f70&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/haxinwenzonghe/600/index.m3u8?msisdn=5327048a63834b584614abb708ae4062&mdspid=&spid=699067&netType=0&sid=5500469363&pid=2028597139&timestamp=20261128114651&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639731826&ParentNodeID=-99&assertID=5500469363&client_ip=39.103.155.149&SecurityKey=20261128114651&promotionId=&mvid=5102012618&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=30c38e3158cb32128eb206e28cf83036&ddCalcu=6330v0ca33k88afec38125e86c0b23b2e182&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "淮安新闻综合",
@@ -23587,7 +23587,7 @@
         },
         {
           "name": "泰州新闻综合",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/tzxinwenzonghe/600/index.m3u8?msisdn=9b46e301d795e6e692cfac152ad62651&mdspid=&spid=699067&netType=0&sid=5500469354&pid=2028597139&timestamp=20261128075211&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639731818&ParentNodeID=-99&assertID=5500469354&client_ip=39.103.155.149&SecurityKey=20261128075211&promotionId=&mvid=5102012615&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=ead715b1703564b0c8cab07bcc54aacf&ddCalcu=fecavadaa7k41a55cbc1b77003b5a6c48bc0&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/tzxinwenzonghe/600/index.m3u8?msisdn=2060f4a3030816b3dc8ac80535754ec8&mdspid=&spid=699067&netType=0&sid=5500469354&pid=2028597139&timestamp=20261128114650&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639731818&ParentNodeID=-99&assertID=5500469354&client_ip=8.142.213.0&SecurityKey=20261128114650&promotionId=&mvid=5102012615&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=11ac0327bf63aedd9eadf4f3c2a92a56&ddCalcu=6151vaaa2ck90aa322c73bff46f3daaeed9d&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "泰州新闻综合",
@@ -23600,7 +23600,7 @@
         },
         {
           "name": "连云港新闻综合",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/lygxinwenzonghe/600/index.m3u8?msisdn=90b5419545dbacf46f4e576b694a98c5&mdspid=&spid=699067&netType=0&sid=5500469369&pid=2028597139&timestamp=20261128075212&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639731715&ParentNodeID=-99&assertID=5500469369&client_ip=39.103.155.149&SecurityKey=20261128075212&promotionId=&mvid=5102012621&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=b6ae61f4223bc53f711cf75650ff4edd&ddCalcu=dbd6veaa4exf6af10f54625273fbcc15137f&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/lygxinwenzonghe/600/index.m3u8?msisdn=fde00f3dd662a268bc7dda2723d5b7c3&mdspid=&spid=699067&netType=0&sid=5500469369&pid=2028597139&timestamp=20261128114651&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639731715&ParentNodeID=-99&assertID=5500469369&client_ip=39.103.155.149&SecurityKey=20261128114651&promotionId=&mvid=5102012621&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=9b09ebd8899c88153007e60fecfc867d&ddCalcu=d97bv60a89xceafbcde8f80969ec78080135&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "连云港新闻综合",
@@ -23613,7 +23613,7 @@
         },
         {
           "name": "宿迁新闻综合",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/sqxinwenzonghe/600/index.m3u8?msisdn=516e32d01ca780c0318e49f003af84a9&mdspid=&spid=699067&netType=0&sid=5500469357&pid=2028597139&timestamp=20261128075212&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639731832&ParentNodeID=-99&assertID=5500469357&client_ip=39.103.155.149&SecurityKey=20261128075212&promotionId=&mvid=5102012616&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=9b76b6d53284f4eb053ec66d382bba5b&ddCalcu=b95bva7ab6kbba268d35d36268c4ef345e0b&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/sqxinwenzonghe/600/index.m3u8?msisdn=26f5b6d63a58fcc4421f2daaeb020c12&mdspid=&spid=699067&netType=0&sid=5500469357&pid=2028597139&timestamp=20261128114651&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639731832&ParentNodeID=-99&assertID=5500469357&client_ip=8.142.213.0&SecurityKey=20261128114651&promotionId=&mvid=5102012616&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=7b6955b51d995ed05758ba97ae5fa874&ddCalcu=477bv86aa9kf5a55eba5719da9b9855e7d50&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "宿迁新闻综合",
@@ -23626,7 +23626,7 @@
         },
         {
           "name": "徐州新闻综合",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/xzxinwenzonghe/600/index.m3u8?msisdn=d778723b6738a475df459fa34f258d15&mdspid=&spid=699067&netType=0&sid=5500469368&pid=2028597139&timestamp=20261128075213&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639731747&ParentNodeID=-99&assertID=5500469368&client_ip=8.142.213.0&SecurityKey=20261128075213&promotionId=&mvid=5102012620&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=69e96e480ec09ce424902d019ef5adae&ddCalcu=e6a9vdeaa9x56afee498100edc20099c4e24&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/xzxinwenzonghe/600/index.m3u8?msisdn=226871644dd2c2c97687ad94e756403d&mdspid=&spid=699067&netType=0&sid=5500469368&pid=2028597139&timestamp=20261128114652&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639731747&ParentNodeID=-99&assertID=5500469368&client_ip=39.103.155.149&SecurityKey=20261128114652&promotionId=&mvid=5102012620&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=05a321b3a0e78997d636dfe4c3b2c8ec&ddCalcu=c0e5v8aac3x22ab13bc34ae0fed7683969d7&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "徐州新闻综合",
@@ -23639,7 +23639,7 @@
         },
         {
           "name": "优漫卡通频道",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/ymkt/600/index.m3u8?msisdn=f1ab842c94f1343573336ca777d9843d&mdspid=&spid=699067&netType=0&sid=5500260553&pid=2028597139&timestamp=20261128075213&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=626064703&ParentNodeID=-99&assertID=5500260553&client_ip=8.142.213.0&SecurityKey=20261128075213&promotionId=&mvid=5100186455&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=58c91608c28f68486839e0d93ff12e93&ddCalcu=3598veca29x11af6f0389cd208ef96388468&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/jstv/ymkt/600/index.m3u8?msisdn=380fa261266b687cbd69de21a446c3ba&mdspid=&spid=699067&netType=0&sid=5500260553&pid=2028597139&timestamp=20261128114652&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=626064703&ParentNodeID=-99&assertID=5500260553&client_ip=39.103.155.149&SecurityKey=20261128114652&promotionId=&mvid=5100186455&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=ab3853115699f8e74f2a58955b62ffef&ddCalcu=faebvf3af8x25a63b15155968959af28fe47&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "优漫卡通频道",
@@ -23652,7 +23652,7 @@
         },
         {
           "name": "南通新闻综合",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/ntxwzh/51/20250604/index.m3u8?msisdn=ac0bce8b6c9376bf42584f71b7ddbbb9&mdspid=&spid=699067&netType=0&sid=5910022178&pid=2028597139&timestamp=20261128075213&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=955227985&ParentNodeID=-99&assertID=5910022178&client_ip=39.103.155.149&SecurityKey=20261128075213&promotionId=&mvid=5900006706&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=4eb51f71aa34dc511e58c354ef06e4cc&ddCalcu=c4cev4bae5l61a0ff7e14a5a33c48d5ce511&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/ntxwzh/51/20250604/index.m3u8?msisdn=8a43f11912277b3f9a808ef47bd583ca&mdspid=&spid=699067&netType=0&sid=5910022178&pid=2028597139&timestamp=20261128114653&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=955227985&ParentNodeID=-99&assertID=5910022178&client_ip=8.142.213.0&SecurityKey=20261128114653&promotionId=&mvid=5900006706&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=d6ce7fbf91eb1cd92dbd0028f0cad333&ddCalcu=3d36v3cadela7acf0bff89210e0bd1bcdd29&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "南通新闻综合",
@@ -23665,7 +23665,7 @@
         },
         {
           "name": "宜兴新闻综合",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/yxxwzh/51/20250604/index.m3u8?msisdn=a9b020acfa32a4831e0ee3d18efa5269&mdspid=&spid=699067&netType=0&sid=5910022179&pid=2028597139&timestamp=20261128075213&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=955227996&ParentNodeID=-99&assertID=5910022179&client_ip=8.142.213.0&SecurityKey=20261128075213&promotionId=&mvid=5900006707&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=ca5cc833a0d6c012a439ae4822e342ea&ddCalcu=aceav25a4cl3cae823238a40eda69c3041a2&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/yxxwzh/51/20250604/index.m3u8?msisdn=ef57a1e9b071ad87aa411bbdfd851432&mdspid=&spid=699067&netType=0&sid=5910022179&pid=2028597139&timestamp=20261128114655&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=955227996&ParentNodeID=-99&assertID=5910022179&client_ip=8.142.213.0&SecurityKey=20261128114655&promotionId=&mvid=5900006707&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=60dcb9f0851c40e9d16b55d871830c80&ddCalcu=0680vcda0cl3ba891f7088d5515cb4601ed9&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "宜兴新闻综合",
@@ -23678,7 +23678,7 @@
         },
         {
           "name": "溧水新闻综合",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/wxxwzh/51/20250604/index.m3u8?msisdn=3d18299780516c4b501e46368a94268f&mdspid=&spid=699067&netType=0&sid=5500469349&pid=2028597139&timestamp=20261128075214&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639737327&ParentNodeID=-99&assertID=5500469349&client_ip=8.142.213.0&SecurityKey=20261128075214&promotionId=&mvid=5102012612&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=4e113b97e0d3ef25838fb41d549da352&ddCalcu=245ev31aa1bd3a9b4957de104db3fe8f3285&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/wxxwzh/51/20250604/index.m3u8?msisdn=8f0a2a38a5da35da66207ec9888a3f8d&mdspid=&spid=699067&netType=0&sid=5500469349&pid=2028597139&timestamp=20261128114654&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639737327&ParentNodeID=-99&assertID=5500469349&client_ip=8.142.213.0&SecurityKey=20261128114654&promotionId=&mvid=5102012612&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=45298385d98243a3a5c7caebdfbcddbc&ddCalcu=c4b5vd2ad9bc8ab3f8d5bde9a8c274c35aa3&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "溧水新闻综合",
@@ -23691,7 +23691,7 @@
         },
         {
           "name": "陕西银龄频道",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/sxylpd/51/20250804/index.m3u8?msisdn=0c741d34f56af2055b8e100413cbf124&mdspid=&spid=600572&netType=0&sid=5910022191&pid=2028597139&timestamp=20261128075214&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956909362&ParentNodeID=-99&assertID=5910022191&client_ip=8.142.213.0&SecurityKey=20261128075214&promotionId=&mvid=5900006714&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=eb8f2d2e71966167a70b91a965e9f2e5&ddCalcu=5eebv28affb92aed526e97a11996b60176a7&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/sxylpd/51/20250804/index.m3u8?msisdn=1cb27f86d68ccaf7acbca697e0a244a8&mdspid=&spid=600572&netType=0&sid=5910022191&pid=2028597139&timestamp=20261128114654&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956909362&ParentNodeID=-99&assertID=5910022191&client_ip=39.103.155.149&SecurityKey=20261128114654&promotionId=&mvid=5900006714&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=dc55f2243aac2cbf251637f68c11bd2e&ddCalcu=ed2cvd5ab5b1fa12c28463fa7a3c621c5b2f&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "陕西银龄频道",
@@ -23704,7 +23704,7 @@
         },
         {
           "name": "陕西都市青春频道",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/sxdsqc/51/20250804/index.m3u8?msisdn=9fe2cd4a7bc0b7bb42bce47a246b002b&mdspid=&spid=600572&netType=0&sid=5910022190&pid=2028597139&timestamp=20261128075215&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956909358&ParentNodeID=-99&assertID=5910022190&client_ip=8.142.213.0&SecurityKey=20261128075215&promotionId=&mvid=5900006713&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=b8f7d1850da4ea7c37cb080cf5d476e0&ddCalcu=0be8v6fa77b4dad158f5c00d8a04beca773c&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/sxdsqc/51/20250804/index.m3u8?msisdn=29ccb4d367f84d99c713bf32ca5fb97a&mdspid=&spid=600572&netType=0&sid=5910022190&pid=2028597139&timestamp=20261128114654&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956909358&ParentNodeID=-99&assertID=5910022190&client_ip=39.103.155.149&SecurityKey=20261128114654&promotionId=&mvid=5900006713&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=6cfde2c1ca11c8c3c7f1627e31bb135d&ddCalcu=d65cv3fa1dbbeab21c31ec7a21611cf87cc3&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "陕西都市青春频道",
@@ -23717,7 +23717,7 @@
         },
         {
           "name": "陕西体育休闲频道",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/sxtyxx/51/20250804/index.m3u8?msisdn=927bddf8a30b19fdd1992015727be969&mdspid=&spid=600572&netType=0&sid=5910022189&pid=2028597139&timestamp=20261128075215&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956909356&ParentNodeID=-99&assertID=5910022189&client_ip=8.142.213.0&SecurityKey=20261128075215&promotionId=&mvid=5900006712&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=2d872889c3ce6d52eca33a4c068ad577&ddCalcu=727dv58ad7ba2a886809cc43ac3e36adc5e2&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/sxtyxx/51/20250804/index.m3u8?msisdn=5f889e5f467167a994a7676b920f5bc9&mdspid=&spid=600572&netType=0&sid=5910022189&pid=2028597139&timestamp=20261128114657&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956909356&ParentNodeID=-99&assertID=5910022189&client_ip=8.142.213.0&SecurityKey=20261128114657&promotionId=&mvid=5900006712&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=0317f2e35573003ff64bb2e4c68922cf&ddCalcu=f0c3v21a27b9fa826ec345e527b3b04063ff&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "陕西体育休闲频道",
@@ -23730,7 +23730,7 @@
         },
         {
           "name": "陕西秦腔频道",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/sxqqpd/51/20250804/index.m3u8?msisdn=71111059347e391a5a25e6dc26ad9574&mdspid=&spid=600572&netType=0&sid=5910022188&pid=2028597139&timestamp=20261128075216&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956909303&ParentNodeID=-99&assertID=5910022188&client_ip=39.103.155.149&SecurityKey=20261128075216&promotionId=&mvid=5900006711&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=ccbb08c21afee32b69183b055424f4c0&ddCalcu=0cccv4bafbb40a284c52510abf3e8e13926b&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/sxqqpd/51/20250804/index.m3u8?msisdn=ee51edd88084b5fb2fddd4ed10b09651&mdspid=&spid=600572&netType=0&sid=5910022188&pid=2028597139&timestamp=20261128114656&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956909303&ParentNodeID=-99&assertID=5910022188&client_ip=39.103.155.149&SecurityKey=20261128114656&promotionId=&mvid=5900006711&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=254250394d01cc89891883763183245c&ddCalcu=c255v44a22b35a801339647d30818c1c9889&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "陕西秦腔频道",
@@ -23743,7 +23743,7 @@
         },
         {
           "name": "陕西新闻资讯频道",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/sxxwzx/51/20250804/index.m3u8?msisdn=6deedda5ed3e525f11970c67eccb627f&mdspid=&spid=600572&netType=0&sid=5910022187&pid=2028597139&timestamp=20261128075216&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956909289&ParentNodeID=-99&assertID=5910022187&client_ip=39.103.155.149&SecurityKey=20261128075216&promotionId=&mvid=5900006710&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=8fcf17dbf38a588352f4fe0ce071d986&ddCalcu=688fv9cadfa11a770debcf03e8fa45f82853&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/sxxwzx/51/20250804/index.m3u8?msisdn=3850fb18c307afba12bc18d11cfd59fa&mdspid=&spid=600572&netType=0&sid=5910022187&pid=2028597139&timestamp=20261128114656&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956909289&ParentNodeID=-99&assertID=5910022187&client_ip=39.103.155.149&SecurityKey=20261128114656&promotionId=&mvid=5900006710&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=919e595240467ef255256a0547e728b7&ddCalcu=79b1v89a2ea75ae975425400a466572e5f52&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "陕西新闻资讯频道",
@@ -23756,7 +23756,7 @@
         },
         {
           "name": "财富天下",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/cftx/51/20250804/index.m3u8?msisdn=afca6a92c9cba3514fdff4d60d2de871&mdspid=&spid=600697&netType=0&sid=5910022193&pid=2028597139&timestamp=20261128075216&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956923159&ParentNodeID=-99&assertID=5910022193&client_ip=39.103.155.149&SecurityKey=20261128075216&promotionId=&mvid=5900006715&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=b3a77342096f89615bcfaa6bed17bfa9&ddCalcu=9ba3vfaab7d77a13d4e2b069a6aff8c9b651&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/cftx/51/20250804/index.m3u8?msisdn=8188db360043deffa52ad8cebceca0b0&mdspid=&spid=600697&netType=0&sid=5910022193&pid=2028597139&timestamp=20261128114657&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=956923159&ParentNodeID=-99&assertID=5910022193&client_ip=8.142.213.0&SecurityKey=20261128114657&promotionId=&mvid=5900006715&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=988b6baedaf9ebe41587b0945317d32c&ddCalcu=c928v38adbd76a1b3a5e4d9a0fb97e8b5e14&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "财富天下",
@@ -23769,7 +23769,7 @@
         },
         {
           "name": "镇江新闻综合",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/zjxwzh/50/20251127/index.m3u8?msisdn=55f7d616928f71051d666b8989aa1c7a&mdspid=&spid=699067&netType=0&sid=5500469365&pid=2028597139&timestamp=20261128075216&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639731783&ParentNodeID=-99&assertID=5500469365&client_ip=8.142.213.0&SecurityKey=20261128075216&promotionId=&mvid=5102012619&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=5e53a2e1c62dc2cf64f7c63ef9153079&ddCalcu=957ev05a33x5aa129ef1ec3662cd7cf24c6f&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/zjxwzh/50/20251127/index.m3u8?msisdn=7b7d62b8effbf59668519be5e77aa5c8&mdspid=&spid=699067&netType=0&sid=5500469365&pid=2028597139&timestamp=20261128114659&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639731783&ParentNodeID=-99&assertID=5500469365&client_ip=39.103.155.149&SecurityKey=20261128114659&promotionId=&mvid=5102012619&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=dc1976382607562220cb3f9563ea390f&ddCalcu=fd0cv91a39xa7ae633685296f037b5c60222&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "镇江新闻综合",
@@ -23782,7 +23782,7 @@
         },
         {
           "name": "广东珠江频道",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/szxwzh/51/20250604/index.m3u8?msisdn=8becd2951d76b8c99a9ce704f94a9084&mdspid=&spid=600697&netType=0&sid=5910022410&pid=2028597139&timestamp=20261128075217&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639731952&ParentNodeID=-99&assertID=5910022410&client_ip=39.103.155.149&SecurityKey=20261128075217&promotionId=&mvid=5102012610&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=80be959e1c7c851ad547889128b5814d&ddCalcu=d840v1ba8el59ab5892e119c878c784551da&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/szxwzh/51/20250604/index.m3u8?msisdn=f60b13126208ed168fe3e1f8b862812a&mdspid=&spid=600697&netType=0&sid=5910022410&pid=2028597139&timestamp=20261128114658&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=639731952&ParentNodeID=-99&assertID=5910022410&client_ip=8.142.213.0&SecurityKey=20261128114658&promotionId=&mvid=5102012610&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=787f51ae7cff89bb19c8018e36221338&ddCalcu=8738v37a1fl25a216a3ee78c1f0f88c99b1b&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "广东珠江频道",
@@ -23795,7 +23795,7 @@
         },
         {
           "name": "吉林生活频道",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/jlshpd/51/20261014/index.m3u8?msisdn=10777f14fd1628a2a017a079652e258b&mdspid=&spid=600572&netType=0&sid=5910022519&pid=2028597139&timestamp=20261128075217&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=968553133&ParentNodeID=-99&assertID=5910022519&client_ip=39.103.155.149&SecurityKey=20261128075217&promotionId=&mvid=5900006890&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=d40020644db4bf973f8c9653ae88b9e7&ddCalcu=7de4v90ab0d82a80e6a4345d6b94cb8ff937&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/jlshpd/51/20261014/index.m3u8?msisdn=710bb92d88927ecc15a74baa7d031636&mdspid=&spid=600572&netType=0&sid=5910022519&pid=2028597139&timestamp=20261128114658&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=968553133&ParentNodeID=-99&assertID=5910022519&client_ip=39.103.155.149&SecurityKey=20261128114658&promotionId=&mvid=5900006890&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=9d5bcb483f0a49a69d58bd4c3ed6447f&ddCalcu=f97dv45a4bd6cadbe438c34fd0ba8459da96&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "吉林生活频道",
@@ -23808,7 +23808,7 @@
         },
         {
           "name": "吉林综艺文化频道",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/jlzywhpd/51/20261014/index.m3u8?msisdn=a819261451afb08e9c0a18a0451ae895&mdspid=&spid=600572&netType=0&sid=5910022520&pid=2028597139&timestamp=20261128075217&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=968553163&ParentNodeID=-99&assertID=5910022520&client_ip=39.103.155.149&SecurityKey=20261128075217&promotionId=&mvid=5900006893&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=951bebc72782a2eba4b51be9bec0c7ce&ddCalcu=e9c5v71acbd0eacbecb792e7b8125ab24eab&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/jlzywhpd/51/20261014/index.m3u8?msisdn=d264e8d48b6ab70609e8332e851d8134&mdspid=&spid=600572&netType=0&sid=5910022520&pid=2028597139&timestamp=20261128114700&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=968553163&ParentNodeID=-99&assertID=5910022520&client_ip=39.103.155.149&SecurityKey=20261128114700&promotionId=&mvid=5900006893&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=3dd1a3cc03e251cf6b5786f8374bba49&ddCalcu=934dvadab1dbaa437c3c80f36e827551bc6f&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "吉林综艺文化频道",
@@ -23821,7 +23821,7 @@
         },
         {
           "name": "吉林乡村频道",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/jlxcpd/51/20261014/index.m3u8?msisdn=1d0f41349f45170784e8be359a6ebe28&mdspid=&spid=600572&netType=0&sid=5910022521&pid=2028597139&timestamp=20261128075218&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=968553176&ParentNodeID=-99&assertID=5910022521&client_ip=8.142.213.0&SecurityKey=20261128075218&promotionId=&mvid=5900006891&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=f0c85f17a686e99ea94056228df2fc4a&ddCalcu=af40vccaf8d25affd1872a2668560e4999ae&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/jlxcpd/51/20261014/index.m3u8?msisdn=27a9f94fed4eb33ac2d53f5be96bda59&mdspid=&spid=600572&netType=0&sid=5910022521&pid=2028597139&timestamp=20261128114659&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=968553176&ParentNodeID=-99&assertID=5910022521&client_ip=39.103.155.149&SecurityKey=20261128114659&promotionId=&mvid=5900006891&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=6979b512c7ab04381a7e95cfdda49762&ddCalcu=2669v77a99d4baa5d1d2fcc75a9be074a318&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "吉林乡村频道",
@@ -23834,7 +23834,7 @@
         },
         {
           "name": "吉林影视频道",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/jlyspd/51/20261014/index.m3u8?msisdn=a53014e71e1526c5c4714cd9d75a0e61&mdspid=&spid=600572&netType=0&sid=5910022522&pid=2028597139&timestamp=20261128075218&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=968553184&ParentNodeID=-99&assertID=5910022522&client_ip=39.103.155.149&SecurityKey=20261128075218&promotionId=&mvid=5900006892&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=a283cc0cf0cab0327a92fa2292b869e1&ddCalcu=1ae2v98a63d8cabc209c2f20acfa2b90a372&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/jlyspd/51/20261014/index.m3u8?msisdn=03632a840ed19ca9a2080422394830d7&mdspid=&spid=600572&netType=0&sid=5910022522&pid=2028597139&timestamp=20261128114659&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=968553184&ParentNodeID=-99&assertID=5910022522&client_ip=8.142.213.0&SecurityKey=20261128114659&promotionId=&mvid=5900006892&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=cd39e02d7613e326b110b16325000439&ddCalcu=9c3dv43a09d0ea00522d376611b30e1312b6&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "吉林影视频道",
@@ -23847,7 +23847,7 @@
         },
         {
           "name": "吉林都市频道",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/jldspd/51/20261014/index.m3u8?msisdn=31f9fe8fd5b51c503ddfc7db22ea677e&mdspid=&spid=600572&netType=0&sid=5910022523&pid=2028597139&timestamp=20261128075219&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=968553190&ParentNodeID=-99&assertID=5910022523&client_ip=39.103.155.149&SecurityKey=20261128075219&promotionId=&mvid=5900006889&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=f5b84dc3aebd1dd68ee38cf722b41070&ddCalcu=0f75v0ba18d44abd2c237afecb8d31eded86&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/jldspd/51/20261014/index.m3u8?msisdn=7f0fc7c1587e7d72f523598a9f9171c3&mdspid=&spid=600572&netType=0&sid=5910022523&pid=2028597139&timestamp=20261128114659&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=968553190&ParentNodeID=-99&assertID=5910022523&client_ip=39.103.155.149&SecurityKey=20261128114659&promotionId=&mvid=5900006889&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=678aeb133b1a95e2e57f7945ce36f260&ddCalcu=0667v28afad6ea3be1c3534b917af9755ee2&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "吉林都市频道",
@@ -23860,7 +23860,7 @@
         },
         {
           "name": "赛事最经典",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/saishijingdian/51/20250514/index.m3u8?msisdn=939015e2767966479b38eb6925f53e41&mdspid=&spid=699004&netType=0&sid=5500592947&pid=2028597139&timestamp=20261128075219&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=646596895&ParentNodeID=-99&assertID=5500592947&client_ip=39.103.155.149&SecurityKey=20261128075219&promotionId=&mvid=5101034296&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=74ffc4a274dcb0b38887c976054e205d&ddCalcu=d754v0fa2fkeca445a0267749dcc7b808b83&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/saishijingdian/51/20250514/index.m3u8?msisdn=c39389cf01fc3cad6a0e2e62723fd8d1&mdspid=&spid=699004&netType=0&sid=5500592947&pid=2028597139&timestamp=20261128114700&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=646596895&ParentNodeID=-99&assertID=5500592947&client_ip=39.103.155.149&SecurityKey=20261128114700&promotionId=&mvid=5101034296&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=810b797761ab06cd493a71a041526487&ddCalcu=7881v40a6bk27a59174706a11a7ba0369c4d&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "赛事最经典",
@@ -23873,7 +23873,7 @@
         },
         {
           "name": "体坛名栏汇",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/titanminglan/51/20250514/index.m3u8?msisdn=a954a27c06cf7af8799692f3ecdca7ff&mdspid=&spid=699004&netType=0&sid=5500315687&pid=2028597139&timestamp=20261128075219&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=629943305&ParentNodeID=-99&assertID=5500315687&client_ip=39.103.155.149&SecurityKey=20261128075219&promotionId=&mvid=5101034219&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=7566d228768a157fe921d18ba079ed3d&ddCalcu=d735vd6ae6b9da7202a8b78618da112597ef&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/titanminglan/51/20250514/index.m3u8?msisdn=ba6cda6380f669ec531cd1cb18691d43&mdspid=&spid=699004&netType=0&sid=5500315687&pid=2028597139&timestamp=20261128114700&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=629943305&ParentNodeID=-99&assertID=5500315687&client_ip=8.142.213.0&SecurityKey=20261128114700&promotionId=&mvid=5101034219&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=0223584025f3bcc31ce8df391d0739e2&ddCalcu=20e2v92a33b75a08d4109235ffd38beccc13&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "体坛名栏汇",
@@ -23886,7 +23886,7 @@
         },
         {
           "name": "四海钓鱼",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r4/peoplecn/shdiaoyu/1200/index.m3u8?msisdn=3d6c9fb24dc184e68bb1f86abb1789e2&mdspid=&spid=600697&netType=0&sid=5910022184&pid=2028597139&timestamp=20261128075219&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=637444975&ParentNodeID=-99&assertID=5910022184&client_ip=39.103.155.149&SecurityKey=20261128075219&promotionId=&mvid=5100132656&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=277c3711d2ef10ab3155cde38d58478d&ddCalcu=d287v77a4cl83a57d1813de2decf51501a3b&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r4/peoplecn/shdiaoyu/1200/index.m3u8?msisdn=06b2e468fd366a2bf6aa4ddfae876059&mdspid=&spid=600697&netType=0&sid=5910022184&pid=2028597139&timestamp=20261128114702&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=637444975&ParentNodeID=-99&assertID=5910022184&client_ip=8.142.213.0&SecurityKey=20261128114702&promotionId=&mvid=5100132656&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=ffe642db2b305300272a4d3c0af3603b&ddCalcu=bf3fv0ea66l34af2ad0bc23bd340a5237020&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "四海钓鱼",
@@ -23899,7 +23899,7 @@
         },
         {
           "name": "24小时城市联赛轮播台",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/lunbo/ouzhoubei/51/20240603/index.m3u8?msisdn=1c4593d84821ba87d3424f44e24a7b54&mdspid=&spid=800033&netType=0&sid=5910022136&pid=2028597139&timestamp=20261128075220&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=915512915&ParentNodeID=-99&assertID=5910022136&client_ip=39.103.155.149&SecurityKey=20261128075220&promotionId=&mvid=5900006618&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=9363ac9e57b4ef56fa78521898ac0ab9&ddCalcu=99b3va6a03lcaaac899e85172b548e7fa5f6&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/lunbo/ouzhoubei/51/20240603/index.m3u8?msisdn=60c86aacf5b7908e3895ea3aba3b6be3&mdspid=&spid=800033&netType=0&sid=5910022136&pid=2028597139&timestamp=20261128114701&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=915512915&ParentNodeID=-99&assertID=5910022136&client_ip=8.142.213.0&SecurityKey=20261128114701&promotionId=&mvid=5900006618&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=052ddca82caa7eebfabde8d44f4f65aa&ddCalcu=a0a5v52a6dlfda4cfa4842dc8aead7beaefb&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "24小时城市联赛轮播台",
@@ -23911,21 +23911,8 @@
           }
         },
         {
-          "name": "武术世界",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/wssj/51/20250915/index.m3u8?msisdn=b9d7cf35772f2fd4f9b67a56c3e3de1e&mdspid=&spid=600697&netType=0&sid=5910022201&pid=2028597139&timestamp=20261128075220&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=958475359&ParentNodeID=-99&assertID=5910022201&client_ip=39.103.155.149&SecurityKey=20261128075220&promotionId=&mvid=5900006724&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=211f3ddd6783a02eff07299b0fdba40c&ddCalcu=c201v41aafbb3addfd0db69798237a00f2fe&sv=10004&ct=android",
-          "options": [],
-          "attrs": {
-            "tvg-id": "武术世界",
-            "tvg-name": "武术世界",
-            "tvg-logo": "http://wapx.cmvideo.cn:8080/publish/poms/v1/image/5910/022/201/202509251348_1758698474363_H32_1080.webp",
-            "group-title": "体育",
-            "catchup": "append",
-            "catchup-source": "&playbackbegin=${(b)yyyyMMddHHmmss}&playbackend=${(e)yyyyMMddHHmmss}"
-          }
-        },
-        {
           "name": "快乐垂钓",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/ydcmklcd/51/20251225/index.m3u8?msisdn=2d92876c633e50982831f7b9453df28f&mdspid=&spid=600603&netType=0&sid=5910022317&pid=2028597139&timestamp=20261128075220&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=961930263&ParentNodeID=-99&assertID=5910022317&client_ip=8.142.213.0&SecurityKey=20261128075220&promotionId=&mvid=5900006783&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=7cc1462727263d54dcf59fa3ee055680&ddCalcu=078cv6ca51a54a06e2e732a7f29653fdc5d4&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/ydcmklcd/51/20251225/index.m3u8?msisdn=34e29e0bdb1f27766f45331d13b01638&mdspid=&spid=600603&netType=0&sid=5910022317&pid=2028597139&timestamp=20261128114704&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=961930263&ParentNodeID=-99&assertID=5910022317&client_ip=39.103.155.149&SecurityKey=20261128114704&promotionId=&mvid=5900006783&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=004cf1bccfaaaca61adacb8dd3aa2f07&ddCalcu=7000vf4a2caafaa13bdcdc8fbacaaadcaa16&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "快乐垂钓",
@@ -23938,7 +23925,7 @@
         },
         {
           "name": "建党105周年巡礼",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/virtuallive2/5900002413/51/20210706/index.m3u8?msisdn=4bebee61d551efa0a434657a5f02c1fb&mdspid=&spid=800033&netType=0&sid=5910019527&pid=2028597139&timestamp=20261128075220&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=713600957&ParentNodeID=-99&assertID=5910019527&client_ip=8.142.213.0&SecurityKey=20261128075220&promotionId=&mvid=5900002443&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=433945f77fbbf089dc4f42484457a5ed&ddCalcu=d4e3v53aa9l74a554f47874f2b4bff40c8d9&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/virtuallive2/5900002413/51/20210706/index.m3u8?msisdn=2e7f8c748507fcc44f6b3eeb0c33bc74&mdspid=&spid=800033&netType=0&sid=5910019527&pid=2028597139&timestamp=20261128114702&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=713600957&ParentNodeID=-99&assertID=5910019527&client_ip=8.142.213.0&SecurityKey=20261128114702&promotionId=&mvid=5900002443&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=cc2e7159041c15f3738271d988cbe170&ddCalcu=0c7cv12aeelb7ac1858990d4117c21853f73&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "建党105周年巡礼",
@@ -23951,7 +23938,7 @@
         },
         {
           "name": "经典香港电影",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/virtuallive/5100180869/150/index.m3u8?msisdn=957fec7deaf2cf88cbdb525babf87e8b&mdspid=&spid=800033&netType=0&sid=5500242089&pid=2028597139&timestamp=20261128075221&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=625703337&ParentNodeID=-99&assertID=5500242089&client_ip=39.103.155.149&SecurityKey=20261128075221&promotionId=&mvid=5100180869&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=890870912cd149f88df05d056dccadfa&ddCalcu=a8f9vd0aa8bc7ac0d961520cdd5104f9df88&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r2/virtuallive/5100180869/150/index.m3u8?msisdn=d3d5b4a0f9e340d902d158595f11e089&mdspid=&spid=800033&netType=0&sid=5500242089&pid=2028597139&timestamp=20261128114703&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=625703337&ParentNodeID=-99&assertID=5500242089&client_ip=8.142.213.0&SecurityKey=20261128114703&promotionId=&mvid=5100180869&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=9c1577631d5e5401ee4f851e2f04b1f9&ddCalcu=99fcv11ab5b47a07f623e11d558ef544e0e1&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "经典香港电影",
@@ -23964,7 +23951,7 @@
         },
         {
           "name": "新片放映厅",
-          "url": "http://gslbmgsplive.miguvideo.com/wd-virtuallive5100030975-150/index.m3u8?msisdn=ebd9b7ed622b8cf3407eeb3e3e303302&mdspid=&spid=800033&netType=0&sid=5500035175&pid=2028597139&timestamp=20261128075221&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=619495952&ParentNodeID=-99&assertID=5500035175&client_ip=8.142.213.0&SecurityKey=20261128075221&promotionId=&mvid=5100030975&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=11f1f2fff1ccd193ae0008f41ced3da8&ddCalcu=81a1vdfa31ldfae2cf1f4ff18c0c0d01e9a3&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd-virtuallive5100030975-150/index.m3u8?msisdn=1b6a1a9263c2b445403d775c3efad415&mdspid=&spid=800033&netType=0&sid=5500035175&pid=2028597139&timestamp=20261128114704&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=619495952&ParentNodeID=-99&assertID=5500035175&client_ip=8.142.213.0&SecurityKey=20261128114704&promotionId=&mvid=5100030975&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=bb029aadfbf195dd9ecba5793667bb4a&ddCalcu=ab4bvb0ab2l79a6a6a3d9f7b5fa1b9c5ed9d&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "新片放映厅",
@@ -23977,7 +23964,7 @@
         },
         {
           "name": "CHC影迷电影",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/chcymdy/51/20250415/index.m3u8?msisdn=2eb71caeec882003249786f2d92e09b4&mdspid=&spid=699004&netType=0&sid=5910022176&pid=2028597139&timestamp=20261128075222&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=952383261&ParentNodeID=-99&assertID=5910022176&client_ip=39.103.155.149&SecurityKey=20261128075222&promotionId=&mvid=5900006704&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=561c534e55969ea0d95462b46bc1d835&ddCalcu=5536v81adca15ac3b46e45b52966495e9ad0&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/chcymdy/51/20250415/index.m3u8?msisdn=f36d097c7983a80cbdae6a573427d868&mdspid=&spid=699004&netType=0&sid=5910022176&pid=2028597139&timestamp=20261128114704&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=952383261&ParentNodeID=-99&assertID=5910022176&client_ip=8.142.213.0&SecurityKey=20261128114704&promotionId=&mvid=5900006704&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=4b3842c924353a96894d37381e991e8e&ddCalcu=e48bve3a18a94a92ec1982347335d34a9986&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CHC影迷电影",
@@ -23990,7 +23977,7 @@
         },
         {
           "name": "和美乡途轮播台",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/virtuallive2/5900002411/51/20210706/index.m3u8?msisdn=0a90605d8b0860c9903895193be3abb2&mdspid=&spid=800033&netType=0&sid=5910019525&pid=2028597139&timestamp=20261128075222&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=713591450&ParentNodeID=-99&assertID=5910019525&client_ip=39.103.155.149&SecurityKey=20261128075222&promotionId=&mvid=5900002421&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=5676dd90bb0c5a911d4d8fc296575843&ddCalcu=3546v87a56y7da5d69902bcbf08cd54ad911&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/virtuallive2/5900002411/51/20210706/index.m3u8?msisdn=e6d524066cf643cb1efadec19785043d&mdspid=&spid=800033&netType=0&sid=5910019525&pid=2028597139&timestamp=20261128114704&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=713591450&ParentNodeID=-99&assertID=5910019525&client_ip=8.142.213.0&SecurityKey=20261128114704&promotionId=&mvid=5900002421&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=0db00961838b73741ab9a9b88e23716b&ddCalcu=b06dv1ba70y30a29e68188b398ab97b3a714&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "和美乡途轮播台",
@@ -24003,7 +23990,7 @@
         },
         {
           "name": "南方影视",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r1/2018/nfmedia/nfys/1000/index.m3u8?msisdn=5c409a7742502cf6ec4e1678e3e815e9&mdspid=&spid=699054&netType=0&sid=2206173738&pid=2028597139&timestamp=20261128075222&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=614961829&ParentNodeID=-99&assertID=2206173738&client_ip=39.103.155.149&SecurityKey=20261128075222&promotionId=&mvid=2206173738&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=d2464277724001b4e2ced2965fe6138d&ddCalcu=dd82v34a16k64ae2f757679224d0e0c12be4&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r1/2018/nfmedia/nfys/1000/index.m3u8?msisdn=ee5d711fd89235249875cdb2fad12291&mdspid=&spid=699054&netType=0&sid=2206173738&pid=2028597139&timestamp=20261128114705&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=614961829&ParentNodeID=-99&assertID=2206173738&client_ip=8.142.213.0&SecurityKey=20261128114705&promotionId=&mvid=2206173738&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=ea08cb593cdb718fb3f4ddb201b33708&ddCalcu=8e0av70a38k3cabb150923bcdddb47f138bf&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "南方影视",
@@ -24016,7 +24003,7 @@
         },
         {
           "name": "嘉佳卡通",
-          "url": "http://gslbmgsplive.miguvideo.com/wd_r1/2018/nfmedia/jjkt/1000/index.m3u8?msisdn=a8bda986fe37767dd1467149791159db&mdspid=&spid=699054&netType=0&sid=2206172388&pid=2028597139&timestamp=20261128075222&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=614952364&ParentNodeID=-99&assertID=2206172388&client_ip=8.142.213.0&SecurityKey=20261128075222&promotionId=&mvid=2206172388&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=39623525e81ab93d68abfb56c18fec17&ddCalcu=7319vc6ae2bf3a8512c56e58b1fabba9836d&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/wd_r1/2018/nfmedia/jjkt/1000/index.m3u8?msisdn=0216693ee094a9ba0004a7ae2b101060&mdspid=&spid=699054&netType=0&sid=2206172388&pid=2028597139&timestamp=20261128114705&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=614952364&ParentNodeID=-99&assertID=2206172388&client_ip=8.142.213.0&SecurityKey=20261128114705&promotionId=&mvid=2206172388&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=17ee306de7146a85b3c792c005966d58&ddCalcu=8157vdea6eb63a90560d0ec7219476ca38b5&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "嘉佳卡通",
@@ -24029,7 +24016,7 @@
         },
         {
           "name": "经典动画大集合",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/jingdiandonghua/51/20250514/index.m3u8?msisdn=ef07ce755f1eadcafd1780e2f3210a96&mdspid=&spid=699004&netType=0&sid=5500315652&pid=2028597139&timestamp=20261128075223&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=629942219&ParentNodeID=-99&assertID=5500315652&client_ip=8.142.213.0&SecurityKey=20261128075223&promotionId=&mvid=5101034205&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=b76d2cbf74fddd3f995a281e135479b2&ddCalcu=2bb7v96a7da42a5c3b1fe7148f2dad5d939f&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/jingdiandonghua/51/20250514/index.m3u8?msisdn=669dcef9c64142e345adb8c7a5ffae66&mdspid=&spid=699004&netType=0&sid=5500315652&pid=2028597139&timestamp=20261128114706&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=629942219&ParentNodeID=-99&assertID=5500315652&client_ip=39.103.155.149&SecurityKey=20261128114706&promotionId=&mvid=5101034205&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=6ceb2b9053bb330ad3da495966febd52&ddCalcu=265cvdeabbae2afb696095539b4ba3d330da&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "经典动画大集合",
@@ -24042,7 +24029,7 @@
         },
         {
           "name": "CETV1",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/cetv1/51/20240709/index.m3u8?msisdn=08dd616d1f0b44eb06f8510a45798023&mdspid=&spid=699004&netType=0&sid=5910022150&pid=2028597139&timestamp=20261128075223&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=923287154&ParentNodeID=-99&assertID=5910022150&client_ip=39.103.155.149&SecurityKey=20261128075223&promotionId=&mvid=5900006636&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=2eefe958c41379f34b8b90d25de1752d&ddCalcu=d22ev5ea7fd1eae9d5582cd40193b789bf43&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/cetv1/51/20240709/index.m3u8?msisdn=9e1b5dcc0b33b6d4abbb947fbc8a9519&mdspid=&spid=699004&netType=0&sid=5910022150&pid=2028597139&timestamp=20261128114706&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=923287154&ParentNodeID=-99&assertID=5910022150&client_ip=8.142.213.0&SecurityKey=20261128114706&promotionId=&mvid=5900006636&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=8913df714486fd1d47a747dd7e787ecd&ddCalcu=d8c9ve1a73d8da7fe771d4d478467fad714d&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CETV1",
@@ -24055,7 +24042,7 @@
         },
         {
           "name": "CETV2",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/cetv2/51/20240709/index.m3u8?msisdn=c2e2f3a7630aa4fb9c81e58c7a5d5da1&mdspid=&spid=699004&netType=0&sid=5910022152&pid=2028597139&timestamp=20261128075223&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=923287211&ParentNodeID=-99&assertID=5910022152&client_ip=8.142.213.0&SecurityKey=20261128075223&promotionId=&mvid=5900006638&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=7c6c1b6447f33774f14b90518d6d5f2e&ddCalcu=e72cvf6a5cad1a6bd68414570f93b34717f4&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/cetv2/51/20240709/index.m3u8?msisdn=0a2e24b503c1ec1f2df624d7a42657dd&mdspid=&spid=699004&netType=0&sid=5910022152&pid=2028597139&timestamp=20261128114707&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=923287211&ParentNodeID=-99&assertID=5910022152&client_ip=8.142.213.0&SecurityKey=20261128114707&promotionId=&mvid=5900006638&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=c04e74cd76ce2e16f67059ab35bee34c&ddCalcu=cc40v34aeeae7ab45c3db7a69c5e027e61f6&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CETV2",
@@ -24068,7 +24055,7 @@
         },
         {
           "name": "CETV4",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/cetv4/51/20240709/index.m3u8?msisdn=c9278d59b06188681c142cedf2dd3a99&mdspid=&spid=699004&netType=0&sid=5910022154&pid=2028597139&timestamp=20261128075223&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=923287339&ParentNodeID=-99&assertID=5910022154&client_ip=8.142.213.0&SecurityKey=20261128075223&promotionId=&mvid=5900006640&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=67a32d1d9325f96fc57d2548ccffb347&ddCalcu=7647v3aab3bf2afdc1cd89435225df7956cf&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/cetv4/51/20240709/index.m3u8?msisdn=2defb04ec77bdf5e2de1fe7543ddcc4b&mdspid=&spid=699004&netType=0&sid=5910022154&pid=2028597139&timestamp=20261128114707&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=923287339&ParentNodeID=-99&assertID=5910022154&client_ip=8.142.213.0&SecurityKey=20261128114707&promotionId=&mvid=5900006640&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=45d322274de2ac183fc164905f4c87d9&ddCalcu=94d5v7da83bc2a42f257049d4e621accf138&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "CETV4",
@@ -24081,7 +24068,7 @@
         },
         {
           "name": "山东教育",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/sdjyws/51/20250915/index.m3u8?msisdn=db5b438186fd2483c83d1437d43c6df8&mdspid=&spid=600697&netType=0&sid=5910022199&pid=2028597139&timestamp=20261128075223&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=609154353&ParentNodeID=-99&assertID=5910022199&client_ip=8.142.213.0&SecurityKey=20261128075223&promotionId=&mvid=2200208305&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=c0b0bbeed0ef9e649e88cf8afb101547&ddCalcu=7c40v5ba10b0ba1bbefead80fecf898ee694&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/sdjyws/51/20250915/index.m3u8?msisdn=d286167c932f03cce75544bf378056d4&mdspid=&spid=600697&netType=0&sid=5910022199&pid=2028597139&timestamp=20261128114709&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=609154353&ParentNodeID=-99&assertID=5910022199&client_ip=39.103.155.149&SecurityKey=20261128114709&promotionId=&mvid=2200208305&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=74016de03965b0264d1ec94c6923578a&ddCalcu=a784v70a51b36a2d9e60c34996c5eb10d246&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "山东教育",
@@ -24094,7 +24081,7 @@
         },
         {
           "name": "书画频道",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/ydcmxdm/51/20251225/index.m3u8?msisdn=dff833433cec22f15d6ac63ae79d1216&mdspid=&spid=600603&netType=0&sid=5910022524&pid=2028597139&timestamp=20261128075224&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=968663920&ParentNodeID=-99&assertID=5910022524&client_ip=8.142.213.0&SecurityKey=20261128075224&promotionId=&mvid=5900006894&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=ee82a27af2d1d3d1204458eb3ff66f26&ddCalcu=6e2evf8a62l6aaf2f73abfe28d514d430d21&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/ydcmxdm/51/20251225/index.m3u8?msisdn=bfbdb7c50ee963577bdc80d0be8b7e6f&mdspid=&spid=600603&netType=0&sid=5910022524&pid=2028597139&timestamp=20261128114708&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=968663920&ParentNodeID=-99&assertID=5910022524&client_ip=8.142.213.0&SecurityKey=20261128114708&promotionId=&mvid=5900006894&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=2c83faa0d397203396a1a2823bde7f40&ddCalcu=024cvf8a73lefadaba302d8329a712a06393&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "书画频道",
@@ -24107,7 +24094,7 @@
         },
         {
           "name": "新动力量创一流",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/virtuallive2/5900002409/51/20210706/index.m3u8?msisdn=24f20d3531f27d6e593442cb993e9445&mdspid=&spid=800033&netType=0&sid=5910019523&pid=2028597139&timestamp=20261128075225&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=713589837&ParentNodeID=-99&assertID=5910019523&client_ip=8.142.213.0&SecurityKey=20261128075225&promotionId=&mvid=5900002419&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=0ca772c5ed54caf0fc6a58851725638d&ddCalcu=d08cv3aa67k57a227c155e8d8554ac6acff0&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/virtuallive2/5900002409/51/20210706/index.m3u8?msisdn=a137d22b35b072e305917e948ca5ca2a&mdspid=&spid=800033&netType=0&sid=5910019523&pid=2028597139&timestamp=20261128114709&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=713589837&ParentNodeID=-99&assertID=5910019523&client_ip=8.142.213.0&SecurityKey=20261128114709&promotionId=&mvid=5900002419&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=b18061669a95ff8b206d48f2ecd0734b&ddCalcu=bb41v38a70k06ad1c6e629fa8945df6f082b&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "新动力量创一流",
@@ -24120,7 +24107,7 @@
         },
         {
           "name": "中华特产",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/zhtc/51/20251103/index.m3u8?msisdn=37f8da5b5f65db44b961d512dc954dfd&mdspid=&spid=600697&netType=0&sid=5910022295&pid=2028597139&timestamp=20261128075225&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=959986618&ParentNodeID=-99&assertID=5910022295&client_ip=8.142.213.0&SecurityKey=20261128075225&promotionId=&mvid=5900006771&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=9ad7bf3d9395a13609e8fb11faba49c5&ddCalcu=59cav9da47wababfa3fd1913b9f58ae19306&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/zhtc/51/20251103/index.m3u8?msisdn=bd729b366b283271899be763f80b278e&mdspid=&spid=600697&netType=0&sid=5910022295&pid=2028597139&timestamp=20261128114709&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=959986618&ParentNodeID=-99&assertID=5910022295&client_ip=8.142.213.0&SecurityKey=20261128114709&promotionId=&mvid=5900006771&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=9fd3f0d00fdc22b374bcd82225053ddf&ddCalcu=f9dfvdda33w5fa005d20202f8ddcc2b24b73&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "中华特产",
@@ -24133,7 +24120,7 @@
         },
         {
           "name": "环球旅游",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/hqly/51/20250915/index.m3u8?msisdn=6da3fd65c5ecb3e57b1c852c907d37e9&mdspid=&spid=600697&netType=0&sid=5910022200&pid=2028597139&timestamp=20261128075225&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=958475356&ParentNodeID=-99&assertID=5910022200&client_ip=8.142.213.0&SecurityKey=20261128075225&promotionId=&mvid=5900006723&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=d2563b4ea096b08789de421dc682f09d&ddCalcu=dd92v05af6b23a8b64ceda102946ebd09887&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/hqly/51/20250915/index.m3u8?msisdn=a410300c024b83117c847bc67bafc39d&mdspid=&spid=600697&netType=0&sid=5910022200&pid=2028597139&timestamp=20261128114709&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=958475356&ParentNodeID=-99&assertID=5910022200&client_ip=39.103.155.149&SecurityKey=20261128114709&promotionId=&mvid=5900006723&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=ea9f93c970187ecc84365ce72f4aebcb&ddCalcu=becavb9aefba9a43fc2977e0c158673e4c8c&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "环球旅游",
@@ -24146,7 +24133,7 @@
         },
         {
           "name": "梨园频道",
-          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/ydcmc/51/20251225/index.m3u8?msisdn=ff9860e0779e85083f24dbc1c4cb94d6&mdspid=&spid=600697&netType=0&sid=5910022344&pid=2028597139&timestamp=20261128075225&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=961930369&ParentNodeID=-99&assertID=5910022344&client_ip=39.103.155.149&SecurityKey=20261128075225&promotionId=&mvid=5900006785&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=dc27980dd97fb5851a179ddfc2ea4077&ddCalcu=7d7cv02a47ba9ae820cdfdd9d79f7b15a815&sv=10004&ct=android",
+          "url": "http://gslbmgsplive.miguvideo.com/migu/kailu/ydcmc/51/20251225/index.m3u8?msisdn=8abae8488b0c7bf83ca8a9761bbcd029&mdspid=&spid=600697&netType=0&sid=5910022344&pid=2028597139&timestamp=20261128114710&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=961930369&ParentNodeID=-99&assertID=5910022344&client_ip=39.103.155.149&SecurityKey=20261128114710&promotionId=&mvid=5900006785&mcid=500020&playurlVersion=WX-A1-9.11.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=10670f28976a2bd623d9186c4c686684&ddCalcu=4180v66a67b80a6fc248c967861a92db3d26&sv=10004&ct=android",
           "options": [],
           "attrs": {
             "tvg-id": "梨园频道",
@@ -24175,16 +24162,21 @@
           "纪实"
         ],
         "catalogue_channels": 108,
-        "fetched_channels": 107,
+        "fetched_channels": 106,
         "failed_channels": [
           {
             "name": "上视东方影视",
             "pid": "617290047",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
+          },
+          {
+            "name": "武术世界",
+            "pid": "958475359",
+            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           }
         ],
         "failed_categories": [],
-        "fetched_at": "2026-11-27T23:52:25+00:00"
+        "fetched_at": "2026-11-28T03:47:16+00:00"
       }
     }
   }
