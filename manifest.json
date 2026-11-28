@@ -1068,8 +1068,8 @@
   "skipped_servers": [],
   "extra_playlists": {
     "migu": {
-      "input_channels": 106,
-      "channels": 106,
+      "input_channels": 101,
+      "channels": 101,
       "duplicates_removed": 0,
       "exact_url_duplicates_removed": 0,
       "channel_duplicates_removed": 0,
@@ -1077,11 +1077,11 @@
       "invalid_or_non_http_removed": 0,
       "groups": {
         "央视": 27,
-        "卫视": 22,
-        "其它": 57
+        "卫视": 16,
+        "其它": 58
       },
-      "bytes": 99971,
-      "sha256": "825917364e01ba358764786673b3ac09617ecd540f93b8e462bd4d0f5d47fd8e",
+      "bytes": 95308,
+      "sha256": "1a71c5507bbc44279c4d2b92bc3c941373d336adf5a8a4ed08018a8302597144",
       "file": "m3u/migu.m3u",
       "group_policy": "migu_direct",
       "source": {
@@ -1101,27 +1101,52 @@
           "纪实"
         ],
         "catalogue_channels": 108,
-        "fetched_channels": 106,
+        "fetched_channels": 101,
         "failed_channels": [
+          {
+            "name": "江西卫视",
+            "pid": "783847495",
+            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
+          },
+          {
+            "name": "陕西卫视",
+            "pid": "738910838",
+            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
+          },
+          {
+            "name": "青海卫视",
+            "pid": "947472506",
+            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
+          },
+          {
+            "name": "东南卫视",
+            "pid": "849116810",
+            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
+          },
+          {
+            "name": "海峡卫视",
+            "pid": "849119120",
+            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
+          },
+          {
+            "name": "重庆卫视",
+            "pid": "738910914",
+            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
+          },
           {
             "name": "上视东方影视",
             "pid": "617290047",
             "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
-          },
-          {
-            "name": "武术世界",
-            "pid": "958475359",
-            "reason": "未返回播放地址（业务码 403，节目播出调整，换个内容看看吧！）"
           }
         ],
         "failed_categories": [],
-        "fetched_at": "2026-11-28T03:47:16+00:00"
+        "fetched_at": "2026-11-28T12:38:46+00:00"
       }
     }
   },
   "file_count": 9,
   "province_count": 4,
-  "total_channels": 1409,
+  "total_channels": 1404,
   "current_provider_count": 8,
   "retained_provider_count": 0
 }
